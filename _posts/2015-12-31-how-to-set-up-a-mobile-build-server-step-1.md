@@ -5,15 +5,15 @@ author: Danny Willems
 post_date: 2015-12-31 15:20:01
 post_excerpt: ""
 layout: post
-permalink: http://bit.ly/1ZDHqvo
+permalink: http://bit.ly/1OD0dir
 published: true
 bitly_url:
-  - http://bit.ly/1ZDHqvo
+  - http://bit.ly/1OD0dir
 bitly_hash:
-  - 1ZDHqvo
+  - 1OD0dir
 bitly_long_url:
   - >
-    http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-1/
+    http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-1/
 ---
 <ol>
         <li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server/">Introduction</a></li>

@@ -5,15 +5,15 @@ author: Danny Willems
 post_date: 2014-10-30 20:55:33
 post_excerpt: ""
 layout: post
-permalink: http://bit.ly/1TsDsCh
+permalink: http://bit.ly/1R5v1Pr
 published: true
 bitly_url:
-  - http://bit.ly/1TsDsCh
+  - http://bit.ly/1R5v1Pr
 bitly_hash:
-  - 1TsDsCh
+  - 1R5v1Pr
 bitly_long_url:
   - >
-    http://blog.danny-willems.be/index.php/sgconnected-hack-wecare4u-3rd-price/
+    http://blog.danny-willems.be/sgconnected-hack-wecare4u-3rd-price/
 ---
 <div class="entry-content">
 Just wait, I’ve to write the article…

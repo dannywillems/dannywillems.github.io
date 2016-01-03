@@ -5,15 +5,15 @@ author: Danny Willems
 post_date: 2015-04-30 20:42:13
 post_excerpt: ""
 layout: post
-permalink: http://bit.ly/1TsDsCf
+permalink: http://bit.ly/1R5v1Pl
 published: true
 bitly_url:
-  - http://bit.ly/1TsDsCf
+  - http://bit.ly/1R5v1Pl
 bitly_hash:
-  - 1TsDsCf
+  - 1R5v1Pl
 bitly_long_url:
   - >
-    http://blog.danny-willems.be/index.php/app-for-students-student-app/
+    http://blog.danny-willems.be/app-for-students-student-app/
 ---
 <div class="entry-content">
 

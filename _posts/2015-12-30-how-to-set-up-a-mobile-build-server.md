@@ -5,15 +5,15 @@ author: Danny Willems
 post_date: 2015-12-30 22:35:59
 post_excerpt: ""
 layout: post
-permalink: http://bit.ly/1ZDHlYJ
+permalink: http://bit.ly/1OD0fXC
 published: true
 bitly_url:
-  - http://bit.ly/1ZDHlYJ
+  - http://bit.ly/1OD0fXC
 bitly_hash:
-  - 1ZDHlYJ
+  - 1OD0fXC
 bitly_long_url:
   - >
-    http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server/
+    http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server/
 ---
 <h2 style="text-align: center">Why a mobile build server ?</h2>
 To develop mobile applications whether for Android, iOS, Tizen or Windows Phone, we need to use the SDK for the appropriate platform. The size of these SDK is more than 1Go for the basics and it can reach around 10-15Go if we download sdk for different versions.

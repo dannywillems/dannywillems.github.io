@@ -5,14 +5,14 @@ author: Danny Willems
 post_date: 2015-05-01 20:40:46
 post_excerpt: ""
 layout: post
-permalink: http://bit.ly/1TsDsCa
+permalink: http://bit.ly/1R5v2mv
 published: true
 bitly_url:
-  - http://bit.ly/1TsDsCa
+  - http://bit.ly/1R5v2mv
 bitly_hash:
-  - 1TsDsCa
+  - 1R5v2mv
 bitly_long_url:
   - >
-    http://blog.danny-willems.be/index.php/be-hackathon-metro-1st-price/
+    http://blog.danny-willems.be/be-hackathon-metro-1st-price/
 ---
 Just wait, I've to write the article...
