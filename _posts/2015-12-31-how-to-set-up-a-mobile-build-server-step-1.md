@@ -16,18 +16,18 @@ bitly_long_url:
     http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-1/
 ---
 <ol>
-        <li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server/">Introduction</a></li>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-1/">Server-side and client-side: (Optional) Create and configure an user on the build server</a></li>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-2/">Server-side: Install and configure the Android SDK</a></li>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-3/">Server-side: Install and configure cordova/ionic</a></li>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-4/">Client-side: Automate the build process</a></li>
+        <li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server/">Introduction</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-1/">Server-side and client-side: (Optional) Create and configure an user on the build server</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-2/">Server-side: Install and configure the Android SDK</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-3/">Server-side: Install and configure cordova/ionic</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-4/">Client-side: Automate the build process</a></li>
 </ol>
 
 <h2 style="text-align: center">Server-side and client-side: (Optional) Create and configure an user on the build server</h2>
 
 In this part, we will create a new user and configure ssh access. It's an optional part because you can use an existing user.
 I chose to separate the user because I think an user on a server must create for only one thing.
-On top of that, as I said <a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server/">in the introduction</a>, this method can be used for a C, LaTeX (or anything else) build server. An user for each build method is better in this case.
+On top of that, as I said <a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server/">in the introduction</a>, this method can be used for a C, LaTeX (or anything else) build server. An user for each build method is better in this case.
 
 The user will be called <span style="font-weight: bold">android-sdk</span>.
 <div class="dw-quote">It's the only part of this tutorial you need root access to create the user</div>
@@ -47,7 +47,7 @@ ssh-copy-id -i ~/.ssh/android-sdk android-sdk@[your-server]
 <div class="dw-quote">It's recommended to have different ssh keys for each ssh user that is for github.com, bitbucket.com or other users on your server.</div>
 <h3>Client-side: add a rule in the ssh config</h3>
 If you followed the previous command, you must add a rule in the ~/.ssh/config file to match the appropriate ssh key file.
-Open with your favorite text editor (<a href="http://blog.danny-willems.be/index.php/vim-ide/">vim</a> of course :D) and add these lines
+Open with your favorite text editor (<a href="http://blog.danny-willems.be/vim-ide/">vim</a> of course :D) and add these lines
 
 [code lang="bash"]
 Host build-server
@@ -110,4 +110,4 @@ echo 'Host $HOST\n Hostname $HOSTNAME\n IdentityFile ~/.ssh/$SSH_KEY_NAME\n User
 
 OK, user configured. Now, let's download and install the Android SDK in our new user environment.
 
-<span class="dashicons dashicons-arrow-right-alt"></span><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-2/">Go to the second part</a>
+<span class="dashicons dashicons-arrow-right-alt"></span><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-2/">Go to the second part</a>

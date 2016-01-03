@@ -16,11 +16,11 @@ bitly_long_url:
     http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-2/
 ---
 <ol>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server/">Introduction</a></li>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-1/">Server-side and client-side: (Optional) Create and configure an user on the build server</a></li>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-2/">Server-side: Install and configure the Android SDK</a></li>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-3/">Server-side: Install and configure cordova/ionic</a></li>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-4/">Client-side: Automate the build process</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server/">Introduction</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-1/">Server-side and client-side: (Optional) Create and configure an user on the build server</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-2/">Server-side: Install and configure the Android SDK</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-3/">Server-side: Install and configure cordova/ionic</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-4/">Client-side: Automate the build process</a></li>
 </ol>
 
 <h2 style="text-align: center">Server-side: Install and configure the Android SDK</h2>
@@ -37,7 +37,7 @@ The actual version is r24.4.1, so the command is
     wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /tmp/android-sdk.tgz
 [/code]
 
-<div class="dw-quote">I wrote a small python script which parse the html page and get the link of the most recent SDK version. <a href="http://blog.danny-willems.be/index.php/download/parse-android-website-and-download-android-sdk/">Download it</a></div>
+<div class="dw-quote">I wrote a small python script which parse the html page and get the link of the most recent SDK version. <a href="http://blog.danny-willems.be/download/parse-android-website-and-download-android-sdk/">Download it</a></div>
 We extract the android sdk into a new hidden directory in the home named .android-sdk.
 
 [code lang="bash"]
@@ -107,8 +107,8 @@ Install the API you want.
 The SDK is installed, only using the command line. Great !
 Now it's time to configure cordova and ionic. It would be a small step.
 
-<span class="dashicons dashicons-arrow-right-alt"></span><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-3/">Go to the third part</a> (coming soon)
+<span class="dashicons dashicons-arrow-right-alt"></span><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-3/">Go to the third part</a> (coming soon)
 
 <h2 style="text-align:center">Script</h2>
 
-<a href="http://blog.danny-willems.be/index.php/download/server-side-install-and-configure-the-android-sdk-script/">Download it</a>. Don't forget: it's a server-side script !
+<a href="http://blog.danny-willems.be/download/server-side-install-and-configure-the-android-sdk-script/">Download it</a>. Don't forget: it's a server-side script !

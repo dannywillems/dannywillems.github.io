@@ -16,11 +16,11 @@ bitly_long_url:
     http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-3/
 ---
 <ol>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server/">Introduction</a></li>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-1/">Server-side and client-side: (Optional) Create and configure an user on the build server</a></li>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-2/">Server-side: Install and configure the Android SDK</a></li>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-3/">Server-side: Install and configure cordova/ionic</a></li>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-4/">Client-side: Automate the build process</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server/">Introduction</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-1/">Server-side and client-side: (Optional) Create and configure an user on the build server</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-2/">Server-side: Install and configure the Android SDK</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-3/">Server-side: Install and configure cordova/ionic</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-4/">Client-side: Automate the build process</a></li>
 </ol>
 
 <h2 style="text-align: center">Server-side: Install and configure cordova/ionic</h2>
@@ -56,8 +56,8 @@ npm install -g cordova
 
 It's time to write our build script.
 
-<span class="dashicons dashicons-arrow-right-alt"></span><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-4/">Go to the last part</a> (coming soon)
+<span class="dashicons dashicons-arrow-right-alt"></span><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-4/">Go to the last part</a> (coming soon)
 
 <h2 style="text-align: center">Script</h2>
 
-You can download it <a href="http://blog.danny-willems.be/index.php/download/script-how-to-set-up-a-mobile-build-server-step-3/">here.</a>
+You can download it <a href="http://blog.danny-willems.be/download/script-how-to-set-up-a-mobile-build-server-step-3/">here.</a>

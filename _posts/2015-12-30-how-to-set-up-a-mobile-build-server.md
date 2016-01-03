@@ -45,14 +45,14 @@ No root privileges required, no need a lot of resources, easy to install and to 
 <h2 style="text-align: center">Now, let's go !</h2>
 This "How-To" tutorial will be separated into 3 parts for the server configuration and a script for the client.
 <ol>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-1/">Server-side and client-side: (Optional) Create and configure an user on the build server</a></li>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-2/">Server-side: Install and configure the Android SDK</a></li>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-3/">Server-side: Install and configure cordova/ionic</a></li>
-	<li><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-step-4/">Client-side: Automate the build process</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-1/">Server-side and client-side: (Optional) Create and configure an user on the build server</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-2/">Server-side: Install and configure the Android SDK</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-3/">Server-side: Install and configure cordova/ionic</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-4/">Client-side: Automate the build process</a></li>
 </ol>
 
 At the end of each part, a script to automate everything will be given.
 
 <strong>Important</strong>: we can transform the server for another type of compilation such as C, LaTeX, etc with the same idea. We only have to change the username and the client build script.
 
-<span class="dashicons dashicons-arrow-right-alt"></span><a href="http://blog.danny-willems.be/index.php/how-to-set-up-a-mobile-build-server-part-1/">Go to the first part</a>
+<span class="dashicons dashicons-arrow-right-alt"></span><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-part-1/">Go to the first part</a>
