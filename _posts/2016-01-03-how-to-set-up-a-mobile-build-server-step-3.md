@@ -2,7 +2,7 @@
 ID: 159
 post_title: 'How to set up a mobile build server: step 3'
 author: Danny Willems
-post_date: 2016-01-01 11:54:13
+post_date: 2016-01-03 18:25:58
 post_excerpt: ""
 layout: post
 permalink: http://bit.ly/1YVjWjd
