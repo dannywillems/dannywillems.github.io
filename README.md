@@ -1,2 +1,2 @@
-# blog.dany-willems.be
+# blog.danny-willems.be
 Articles from my blog
