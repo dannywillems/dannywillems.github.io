@@ -5,7 +5,8 @@ author: Danny Willems
 post_date: 2015-05-01 20:40:46
 post_excerpt: ""
 layout: post
-permalink: http://bit.ly/1R5v2mv
+permalink: >
+  http://blog.danny-willems.be/en/be-hackathon-metro-1st-price/
 published: true
 bitly_url:
   - http://bit.ly/1R5v2mv

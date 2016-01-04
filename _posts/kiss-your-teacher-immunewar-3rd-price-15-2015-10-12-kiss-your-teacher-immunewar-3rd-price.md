@@ -5,7 +5,8 @@ author: Danny Willems
 post_date: 2015-10-12 20:44:58
 post_excerpt: ""
 layout: post
-permalink: http://bit.ly/1OD0dyT
+permalink: >
+  http://blog.danny-willems.be/en/kiss-your-teacher-immunewar-3rd-price/
 published: true
 bitly_url:
   - http://bit.ly/1OD0dyT

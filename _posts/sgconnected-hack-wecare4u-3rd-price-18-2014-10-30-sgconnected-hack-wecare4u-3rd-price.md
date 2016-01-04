@@ -5,7 +5,8 @@ author: Danny Willems
 post_date: 2014-10-30 20:55:33
 post_excerpt: ""
 layout: post
-permalink: http://bit.ly/1R5v1Pr
+permalink: >
+  http://blog.danny-willems.be/en/sgconnected-hack-wecare4u-3rd-price/
 published: true
 bitly_url:
   - http://bit.ly/1R5v1Pr

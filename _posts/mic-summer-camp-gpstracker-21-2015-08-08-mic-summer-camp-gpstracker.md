@@ -5,7 +5,8 @@ author: Danny Willems
 post_date: 2015-08-08 20:56:56
 post_excerpt: ""
 layout: post
-permalink: http://bit.ly/1R5v1Pj
+permalink: >
+  http://blog.danny-willems.be/en/mic-summer-camp-gpstracker/
 published: true
 bitly_url:
   - http://bit.ly/1R5v1Pj
