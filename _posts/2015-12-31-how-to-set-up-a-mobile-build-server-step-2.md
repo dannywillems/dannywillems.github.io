@@ -111,7 +111,7 @@ Install the API you want.
 The SDK is installed, only using the command line. Great !
 Now it's time to configure cordova and ionic. It would be a small step.
 
-<span class="dashicons dashicons-arrow-right-alt"></span><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-3/">Go to the third part</a> (coming soon)
+<span class="dashicons dashicons-arrow-right-alt"></span><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-3/">Go to the third part</a>
 
 <h2 style="text-align:center">Script</h2>
 

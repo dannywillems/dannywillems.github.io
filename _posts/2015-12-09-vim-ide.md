@@ -7,7 +7,8 @@ author: Danny Willems
 post_date: 2015-12-09 21:29:42
 post_excerpt: ""
 layout: post
-permalink: http://blog.danny-willems.be/en/vim-ide/
+permalink: >
+  https://blog.danny-willems.be/en/vim-ide/
 published: true
 bitly_url:
   - http://bit.ly/1OD0ge8

@@ -45,7 +45,17 @@ npm config set prefix &quot;~/.npm-packages&quot;
 The executable files like <strong>cordova</strong> and <strong>ionic</strong> will be now in ~/.npm-packages/bin. We need to add this directory to te PATH to be able to use directly the command.
 
 [code lang="bash"]
-echo &quot;PATH=$PATH:~/.npm-packags/bin&quot; &gt;&gt; ~/.${SHELL##*/}rc
+echo &quot;export PATH=$PATH:~/.npm-packages/bin&quot; &gt;&gt; ~/.${SHELL##*/}rc
+[/code]
+
+You need to reload your shell configuration. You can do it by close and reopen your terminal or by using the command
+[code lang="bash"]
+source ~/.${SHELL##*/}rc
+[/code]
+
+Before to continue, check you have the directory ~/.npm-packages/bin in your PATH with
+[code lang="bash"]
+echo $PATH
 [/code]
 
 <h3>Install cordova and ionic without root privileges</h3>
@@ -60,7 +70,7 @@ npm install -g cordova
 
 It's time to write our build script.
 
-<span class="dashicons dashicons-arrow-right-alt"></span><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-4/">Go to the last part</a> (coming soon)
+<span class="dashicons dashicons-arrow-right-alt"></span><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-4/">Go to the last part</a> (coming soon). I'm working on several projects now, I don't have time to write this last part.
 
 <h2 style="text-align: center">Script</h2>
 

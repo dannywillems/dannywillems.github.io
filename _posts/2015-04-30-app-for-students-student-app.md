@@ -6,7 +6,7 @@ post_date: 2015-04-30 20:42:13
 post_excerpt: ""
 layout: post
 permalink: >
-  http://blog.danny-willems.be/en/app-for-students-student-app/
+  https://blog.danny-willems.be/en/app-for-students-student-app/
 published: true
 bitly_url:
   - http://bit.ly/1R5v1Pl
