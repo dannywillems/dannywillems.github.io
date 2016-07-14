@@ -8,7 +8,7 @@ post_date: 2016-01-05 22:51:29
 post_excerpt: ""
 layout: post
 permalink: >
-  https://blog.danny-willems.be/fr/comment-installer-un-blog-wordpress-multi-langage-et-collaboratif/
+  http://blog.danny-willems.be/fr/comment-installer-un-blog-wordpress-multi-langage-et-collaboratif/
 published: true
 ---
 <h2 class="text-center">Un blog wordpress multi-langage et collaboratif</h2>
