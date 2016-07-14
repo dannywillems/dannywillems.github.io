@@ -11,7 +11,7 @@ permalink: >
   http://blog.danny-willems.be/en/ocaml-cordova-secured-typed-hybrid-mobile-applications/
 published: true
 medium_post:
-  - 'O:11:"Medium_Post":11:{s:16:"author_image_url";N;s:10:"author_url";N;s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";s:2:"no";s:2:"id";N;s:21:"follower_notification";s:3:"yes";s:7:"license";s:14:"cc-40-by-nc-sa";s:14:"publication_id";s:2:"-1";s:6:"status";s:6:"public";s:3:"url";N;}'
+  - 'O:11:"Medium_Post":11:{s:16:"author_image_url";s:68:"https://cdn-images-1.medium.com/fit/c/200/200/0*AVih_6iBMFGPPcW8.jpg";s:10:"author_url";s:30:"https://medium.com/@dwillems42";s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";s:2:"no";s:2:"id";s:11:"fe389293d3f";s:21:"follower_notification";s:3:"yes";s:7:"license";s:14:"cc-40-by-nc-sa";s:14:"publication_id";s:2:"-1";s:6:"status";s:6:"public";s:3:"url";s:106:"https://medium.com/@dwillems42/ocaml-cordova-more-secured-typed-and-hybrid-mobile-applications-fe389293d3f";}'
 ---
 Since several months, I began to be interested in mobile development. I found a job in Brussels in July 215 where I learned how to develop hybrid mobile applications (one code = available for multiple mobile platforms) with Cordova and web technologies. I found it very interesting and after several month I continued to develop applications with this technology. I discovered a very great community about mobile development and some awesome frameworks like <a href="http://ionicframework.com/">Ionic</a>.
 
@@ -366,3 +366,9 @@ or (for iOS)
 [code lang="bash"]
 cordova run ios
 [/code]
+
+<h2 class="text-center">Conclusion</h2>
+
+I hope you liked this tutorial and I invite you to take a deeper look at the <a href="https://github.com/dannywillems/ocaml-cordova-plugin-list">ocaml-cordova-plugin-list</a> repository. You have the entire list of bindings and some examples.
+
+Don't hesitate to star the project and give a feedback!
