@@ -8,7 +8,7 @@ post_date: 2016-01-05 22:24:48
 post_excerpt: ""
 layout: post
 permalink: >
-  https://blog.danny-willems.be/en/how-to-set-up-a-multi-language-and-collaborative-wordpress-blog/
+  http://blog.danny-willems.be/en/how-to-set-up-a-multi-language-and-collaborative-wordpress-blog/
 published: true
 ---
 <h2 class="text-center">A multi-language and collaborative blog</h2>
