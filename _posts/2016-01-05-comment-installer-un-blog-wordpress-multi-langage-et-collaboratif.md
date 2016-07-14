@@ -46,4 +46,4 @@ Par défaut, WordPress GitHub Sync exporte sous Y-m-d-nom_de_l_article</strong>.
 J'ai alors décidé de modifier le plugin de synchronisation GitHub (disponible <a href="https://github.com/dannywillems/wordpress-github-sync">ici</a>). Il exporte sous la forme souhaitée en parsant le permalien (supposé de la forme http://domaine/lang/article_name).
 J'ai ajouté une méthode get_lang dans le fichier post.php et changé la méthode github_filename.
 
-<div class="dw-quote">Le résultat peut être trouvé sur mon GitHub : <a href="http//github.com/dannywillems">dannywillems</a>, et mes articles dans <a href="https://github.com/dannywillems/blog.danny-willems.be">ce dépôt</a></div>
+<div class="dw-quote">Le résultat peut être trouvé sur mon GitHub : <a href="https://github.com/dannywillems">dannywillems</a>, et mes articles dans <a href="https://github.com/dannywillems/blog.danny-willems.be">ce dépôt</a></div>
