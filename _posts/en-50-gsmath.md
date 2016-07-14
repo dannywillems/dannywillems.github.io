@@ -1,15 +1,11 @@
 ---
 ID: 50
 post_title: GSMath
-author:
-  - 'a:1:{i:0;s:13:"Danny Willems";}'
-post_date:
-  - 'a:1:{i:0;s:19:"2015-12-09 21:32:15";}'
-post_excerpt:
-  - 'a:1:{i:0;s:0:"";}'
+author: Danny Willems
+post_date: 2015-12-09 21:32:15
+post_excerpt: ""
 layout: post
-permalink:
-  - 'a:1:{i:0;s:21:"http://bit.ly/1ZDHnQk";}'
+permalink: https://blog.danny-willems.be/en/gsmath/
 published: true
 bitly_url:
   - http://bit.ly/1OD0fXG

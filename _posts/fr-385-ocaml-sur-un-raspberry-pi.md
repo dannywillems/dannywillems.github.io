@@ -6,7 +6,7 @@ post_date: 2016-07-14 01:21:16
 post_excerpt: ""
 layout: post
 permalink: >
-  http://blog.danny-willems.be/fr/ocaml-sur-un-raspberry-pi/
+  https://blog.danny-willems.be/fr/ocaml-sur-un-raspberry-pi/
 published: true
 ---
 Aujourd'hui, j'ai voulu m'amuser avec mon Raspberry Pi qui, depuis assez longtemps, n'est pas utilisé. Après avoir téléchargé la dernière version de <a href="https://www.raspberrypi.org/downloads/raspbian/">raspbian</a> et avoir installé ce dernier avec dd (voir <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md">ici</a>), j'ai voulu écrire quelque scripts et un peu de programmation.

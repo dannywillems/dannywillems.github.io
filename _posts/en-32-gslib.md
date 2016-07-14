@@ -1,15 +1,11 @@
 ---
 ID: 32
 post_title: GSLib
-author:
-  - Danny Willems
-post_date:
-  - 2015-12-09 21:31:51
-post_excerpt:
-  - ""
+author: Danny Willems
+post_date: 2015-12-09 21:31:51
+post_excerpt: ""
 layout: post
-permalink:
-  - http://bit.ly/1OD0ge0
+permalink: https://blog.danny-willems.be/en/gslib/
 published: true
 bitly_url:
   - http://bit.ly/1OD0ge0

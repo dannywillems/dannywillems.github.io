@@ -6,7 +6,7 @@ post_date: 2016-07-14 00:38:14
 post_excerpt: ""
 layout: post
 permalink: >
-  http://blog.danny-willems.be/en/ocsigen-compile-eliom-projet-understand-compilation-process-deep/
+  https://blog.danny-willems.be/en/ocsigen-compile-eliom-projet-understand-compilation-process-deep/
 published: true
 ---
 It's time to write my first article on <a href="http//ocsigen.org">Ocsigen</a> and especially on <a href="http://ocsigen.org/eliom">Eliom</a>. I began a week ago my internship in <a href="https://besport.com">BeSport</a>, a social network centralized on sports and entirely developed in OCaml using the Ocsigen projects so I needed to learn how Ocsigen works in general.

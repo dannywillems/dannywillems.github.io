@@ -1,15 +1,12 @@
 ---
 ID: 70
 post_title: 'How to set up a mobile build server: step 1'
-author:
-  - Danny Willems
-post_date:
-  - 2015-12-31 15:20:01
-post_excerpt:
-  - ""
+author: Danny Willems
+post_date: 2015-12-31 15:20:01
+post_excerpt: ""
 layout: post
-permalink:
-  - http://bit.ly/1OD0dir
+permalink: >
+  https://blog.danny-willems.be/en/how-to-set-up-a-mobile-build-server-step-1/
 published: true
 bitly_url:
   - http://bit.ly/1OD0dir
