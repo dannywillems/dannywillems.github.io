@@ -13,7 +13,7 @@ published: true
 ---
 <h2 class="text-center">A multi-language and collaborative blog</h2>
 
-When I decided to write a blog with WordPress, I had some difficulties choosing to write in French or in English.
+When I decided to write a blog with WordPress, I had some difficulties choosing to write in French or in English and I would something collaborative.
 I decided to begin in English because I thought I would have more visitors and it would be a good writing exercise.
 
 After some days and searches about French blogs, I figured out that there were a lot of French blogs without English translations. Some argue they wanted to keep a French community and others because they don't have knowledge to write in English.
