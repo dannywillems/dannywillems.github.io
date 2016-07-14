@@ -47,4 +47,4 @@ By default, WordPress GitHub Sync exports as <strong>Y-m-d-article_name</strong>
 I decided to modify the GitHub plugins (which can be found <a href="https://github.com/dannywillems/wordpress-github-sync">here</a>). It exports as <strong>lang-article_name</strong> by parsing the permalink (supposed to be in the form http://domain/lang/article_name).
 I added a get_lang method into the post.php file and changed the github_filename method.
 
-<div class="dw-quote">The result can be found on my GitHub: <a href="http//github.com/dannywillems">dannywillems</a>, and my articles in <a href="https://github.com/dannywillems/blog.danny-willems.be">this repository</a></div>
+<div class="dw-quote">The result can be found on my GitHub: <a href="https://github.com/dannywillems">dannywillems</a>, and my articles in <a href="https://github.com/dannywillems/blog.danny-willems.be">this repository</a></div>
