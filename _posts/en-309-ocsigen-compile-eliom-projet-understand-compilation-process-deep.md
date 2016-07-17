@@ -6,7 +6,7 @@ post_date: 2016-07-14 00:38:14
 post_excerpt: ""
 layout: post
 permalink: >
-  https://blog.danny-willems.be/en/ocsigen-compile-eliom-projet-understand-compilation-process-deep/
+  http://blog.danny-willems.be/en/ocsigen-compile-eliom-projet-understand-compilation-process-deep/
 published: true
 ---
 It's time to write my first article on <a href="http//ocsigen.org">Ocsigen</a> and especially on <a href="http://ocsigen.org/eliom">Eliom</a>. I began a week ago my internship in <a href="https://besport.com">BeSport</a>, a social network centralized on sports and entirely developed in OCaml using the Ocsigen projects so I needed to learn how Ocsigen works in general.
@@ -34,7 +34,17 @@ Yes, of course. I will show a basic Eliom project and how to compile it. In othe
 
 <h2 class="text-center">How to install Eliom?</h2>
 
-The simplest way is to use <a href="https://opam.ocaml.org">OPAM</a>.
+First, switch to a stable 4.02.3 OCaml compiler with
+[code lang="bash"]
+opam switch 4.02.3
+[/code]
+or if you want to give a name to the compiler, use
+[code lang="bash"]
+opam switch eliom-build-test --alias-of 4.02.3
+[/code]
+In this way, dependencies are the same for you and me.
+
+The simplest way to install Eliom is to use <a href="https://opam.ocaml.org">OPAM</a>:
 [code lang="bash"]
 opam install eliom
 [/code]
