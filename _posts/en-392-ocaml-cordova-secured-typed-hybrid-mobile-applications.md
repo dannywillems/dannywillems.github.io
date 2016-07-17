@@ -148,7 +148,7 @@ If you want to build for Android, you need to install <a href="https://developer
 cordova platform add android
 [/code]
 <p class="dw-quote">I don't give the example for Windows because it's very hard to use OCaml on Windows and you need to be on Windows to build for Windows Phone</p>
-Now we install plugins. For this example, we will used two plugins: <a href="https://github.com/cordova-sms/cordova-sms-plugin">cordova-plugin-sms</a> to send the message and <a href="https://github.com/apache/cordova-plugin-dialogs">cordova-plugin-dialogs</a> to show a dialog. We can install these commands:
+Now we install plugins. For this example, we will used two plugins: <a href="https://github.com/cordova-sms/cordova-sms-plugin">cordova-plugin-sms</a> to send the message and <a href="https://github.com/apache/cordova-plugin-dialogs">cordova-plugin-dialogs</a> to show a dialog. We can install with these commands:
 [code lang="bash"]
 cordova plugin add cordova-plugin-sms
 cordova plugin add cordova-plugin-dialogs
@@ -159,12 +159,12 @@ We need <b class="helvetica">js_of_ocaml</b> (to compile our source file in Java
 opam install js_of_ocaml gen_js_api
 [/code]
 
-After that, we add the opam package provider listing all bindings OCaml to the Cordova plugins available <a href="https://github.com/dannywillems/ocaml-cordova-plugin-list"></a>.
+After that, we add the opam package provider listing all bindings OCaml to the Cordova plugins available.
 [code lang="bash"]
 opam repository add cordova https://github.com/dannywillems/ocaml-cordova-plugin-list.git
 [/code]
 
-As it's describe in the repository, the bindings to <b class="helvetica">cordova-plugin-sms</b> and <b class="helvetica">cordova-plugin-dialogs</b> are available in the opam package <b class="helvetica">cordova-plugin-sms</b> and <b class="helvetica">cordova-plugin-dialogs</b>. So we use:
+As described in the repository, the bindings to <b class="helvetica">cordova-plugin-sms</b> and <b class="helvetica">cordova-plugin-dialogs</b> are available in the opam package <b class="helvetica">cordova-plugin-sms</b> and <b class="helvetica">cordova-plugin-dialogs</b>. So we use:
 [code lang="bash"]
 opam install cordova-plugin-sms cordova-plugin-dialogs
 [/code]
@@ -227,7 +227,7 @@ For the design, we need two inputs and a button to send the message. We replace 
 &lt;/html&gt;
 [/code]
 
-To have the Material Icons, we need to write a css files. We also add a padding-top. Remove the entire content <b class="helvetica">css/index.css</b> insert the following code in
+To have the Material Icons, we need to write a css files. We also add a padding-top. Remove the entire content of&nbsp;<b class="helvetica">css/index.css</b>&nbsp;and insert the following code
 
 [code lang="css"]
 body
@@ -273,7 +273,7 @@ The plugin <b class="helvetica">cordova-plugin-sms</b> defines a function <b cla
 Cordova_sms.send ~num:phonenumber ~msg:message ~succ_cb:success_cb ~err_cb:~error_cb
 [/cce]
 
-Here the logic: the user writes the phonenumber he will to send the SMS to in the phonenumber input and the SMS content in the message input. When he touched the submit button, we get the contents of these inputs, calls the function <b class="helvetica">Cordova_sms.send</b> with the proper arguments.
+Here the logic: the user writes the phonenumber he wants to send the SMS to in the phonenumber input and the SMS content in the message input. When he touched the submit button, we get the contents of these input and call the function <b class="helvetica">Cordova_sms.send</b> with the right arguments.
 
 Here the OCaml code:
 [cce lang="ocaml"]
@@ -308,7 +308,7 @@ Js._false
 let _ = Cordova.Event.device_ready on_device_ready
 [/cce]
 
-Copy and paste this code in a files named <b class="helvetica">test.ml</b>
+Copy and paste this code in a file named <b class="helvetica">test.ml</b>
 <h3>Compile the OCaml code in JavaScript</h3>
 It's time to compile our code in JavaScript. For that, we use js_of_ocaml. As we use some opam package, we will use <b class="helvetica">ocamlfind</b> and the <b class="helvetica">-package</b> argument to link all packages. Js_of_ocaml needs an OCaml bytecode, so first we compile the code in bytecode. Second, we use js_of_ocaml and output the JavaScript in <b class="helvetica">js/main.js</b>.
 
