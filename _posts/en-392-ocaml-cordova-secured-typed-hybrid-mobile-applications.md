@@ -8,7 +8,7 @@ post_date: 2016-07-14 16:27:35
 post_excerpt: ""
 layout: post
 permalink: >
-  https://blog.danny-willems.be/en/ocaml-cordova-secured-typed-hybrid-mobile-applications/
+  http://blog.danny-willems.be/en/ocaml-cordova-secured-typed-hybrid-mobile-applications/
 published: true
 medium_post:
   - 'O:11:"Medium_Post":11:{s:16:"author_image_url";s:68:"https://cdn-images-1.medium.com/fit/c/200/200/0*AVih_6iBMFGPPcW8.jpg";s:10:"author_url";s:30:"https://medium.com/@dwillems42";s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";s:2:"no";s:2:"id";s:11:"fe389293d3f";s:21:"follower_notification";s:3:"yes";s:7:"license";s:14:"cc-40-by-nc-sa";s:14:"publication_id";s:2:"-1";s:6:"status";s:6:"public";s:3:"url";s:106:"https://medium.com/@dwillems42/ocaml-cordova-more-secured-typed-and-hybrid-mobile-applications-fe389293d3f";}'
@@ -192,33 +192,33 @@ For the design, we need two inputs and a button to send the message. We replace 
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-&lt;meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"&gt;
-&lt;meta name="format-detection" content="telephone=no"&gt;
-&lt;meta name="msapplication-tap-highlight" content="no"&gt;
-&lt;meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"&gt;
-&lt;link rel="stylesheet" type="text/css" href="css/index.css"&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *&quot;&gt;
+&lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot;&gt;
+&lt;meta name=&quot;msapplication-tap-highlight&quot; content=&quot;no&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/index.css&quot;&gt;
 &lt;!-- CSS setup for materialize --&gt;
-&lt;link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.min.css"&gt;
-&lt;script type="text/javascript" src="cordova.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="js/main.js"&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;node_modules/materialize-css/dist/css/materialize.min.css&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;cordova.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/main.js&quot;&gt;&lt;/script&gt;
 &lt;title&gt;OCaml Cordova Plugin: Sms&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.js"&gt;&lt;/script&gt;
-&lt;div class="row"&gt;
-&lt;form class="col s12"&gt;
-&lt;div class="row"&gt;
-&lt;div class="input-field col s12"&gt;
-&lt;input id="num" type="tel" class="validate"&gt;
-&lt;label for="num"&gt;Phone number&lt;/label&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;node_modules/materialize-css/dist/js/materialize.js&quot;&gt;&lt;/script&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;form class=&quot;col s12&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;input-field col s12&quot;&gt;
+&lt;input id=&quot;num&quot; type=&quot;tel&quot; class=&quot;validate&quot;&gt;
+&lt;label for=&quot;num&quot;&gt;Phone number&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class="input-field col s12"&gt;
-&lt;input id="msg" type="text" class="validate"&gt;
-&lt;label for="msg"&gt;Your message&lt;/label&gt;
+&lt;div class=&quot;input-field col s12&quot;&gt;
+&lt;input id=&quot;msg&quot; type=&quot;text&quot; class=&quot;validate&quot;&gt;
+&lt;label for=&quot;msg&quot;&gt;Your message&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class="input-field col s12 center"&gt;
-&lt;button class="btn waves-effect waves-light" id="submit" type="submit" name="action"&gt;Send&lt;i class="material-icons right"&gt;send&lt;/i&gt;&lt;/button&gt;
+&lt;div class=&quot;input-field col s12 center&quot;&gt;
+&lt;button class=&quot;btn waves-effect waves-light&quot; id=&quot;submit&quot; type=&quot;submit&quot; name=&quot;action&quot;&gt;Send&lt;i class=&quot;material-icons right&quot;&gt;send&lt;/i&gt;&lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/form&gt;
