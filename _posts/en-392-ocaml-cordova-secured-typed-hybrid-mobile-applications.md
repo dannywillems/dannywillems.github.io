@@ -27,6 +27,7 @@ I discovered OCaml at the university, a very awful programming language with inf
 	<li><a href="https://github.com/lexifi/gen_js_api">gen_js_api</a> aims at simplifying the creation of OCaml bindings for JavaScript libraries. It must currently be used with the js_of_ocaml compiler, although other ways to run OCaml code "against" JavaScript might be supported later with the same binding definitions (for instance, Bucklescript, or direct embedding of a JS engine in a native OCaml application).</li>
 </ul>
 All bindings are developed with gen_js_api and aims to be functional, typed and very close to the JavaScript interface.
+<!--more-->
 <h2 class="text-center">How can I use a binding?</h2>
 <b>Needs compiler &gt;= 4.03.0</b>
 
