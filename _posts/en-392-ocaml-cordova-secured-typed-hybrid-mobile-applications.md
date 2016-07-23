@@ -128,7 +128,7 @@ npm install -g cordova
 opam switch 4.03.0
 [/code]</li>
 </ul>
-Now we have a basic development. We will install all Cordova plugins we need and all opam package (included bindings to Cordova plugins).
+Now we have a basic development environment. We will install all Cordova plugins we need and all opam package (included bindings to Cordova plugins).
 <h3>Create the Cordova project and install the needed plugins</h3>
 Create a Cordova project by using
 [code lang="bash"]
