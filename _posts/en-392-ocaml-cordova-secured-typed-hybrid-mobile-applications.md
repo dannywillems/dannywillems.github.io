@@ -87,7 +87,7 @@ Cordova_camera.get_picture success_callback error_callback ~opt:options ()
 
 As the OCaml interface is very close to JavaScript interface, no OCaml documentation is done yet. Feel free to contribute.
 
-Bindings which don't have example application are not tested. Please give a feedback about it and open issues if it's the case.
+Most of bindings have an example application showing you how to use it. Bindings which don't have example application are not tested. Please give a feedback about it and open issues if it's the case.
 <p class="dw-quote">You can find more information about this project on <a href="https://github.com/dannywillems/ocaml-cordova-plugin-list">ocaml-cordova-plugin-list</a> GitHub repository.</p>
 
 <h2 class="text-center">Be careful: device_ready event</h2>
