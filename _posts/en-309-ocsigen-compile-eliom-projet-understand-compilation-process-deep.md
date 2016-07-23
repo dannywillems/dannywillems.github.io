@@ -26,6 +26,8 @@ Yeah, I agree. But Ocsigen is different in some cases. First, Ocsigen is entirel
   <li>and more... You can find all Ocsigen sub-projects <a href="http://ocsigen.org">here</a></li>
 </ul>
 
+<!-- more -->
+
 <h2 class="text-center">Oh great! Can you show me an example?</h2>
 
 Yes, of course. I will show a basic Eliom project and how to compile it. In other articles, I will give js_of_ocaml, ocsigenserver and lwt examples. The main goal of this article is to show you the entire process to build an Eliom project, from code to compilation by configuring the ocsigenserver.
