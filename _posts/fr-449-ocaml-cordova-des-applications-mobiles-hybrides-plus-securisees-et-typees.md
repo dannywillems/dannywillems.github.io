@@ -56,7 +56,7 @@ Si le plugin nécessite le binding vers la librairie standard JavaScript comme <
 
 Si vous ne voulez pas ajouter ce dépot, vous pouvez pin manuellement chaque plugin que vous avez besoin.
 
-<h2 class="text-center">What about documentation for each bindings?</h2>
+<h2 class="text-center">Qu'en est-il de la documentation ?</h2>
 
 L'interface des bindings est très proche de l'interface JavaScript initiale. Par exemple, pour <b class="helvetica">cordova-plugin-camera</b> qui vous permet de prendre une photo grâce à la fonction JavaScript <b class="helvetica">navigator.camera.getPicture</b>, vous utilisez la fonction OCaml <b class="helvetica">Cordova_camera.get_picture</b>. L'équivalent OCaml de
 
