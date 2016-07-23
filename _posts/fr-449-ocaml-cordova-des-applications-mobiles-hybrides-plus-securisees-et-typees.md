@@ -93,14 +93,14 @@ Cordova_camera.get_picture success_callback error_callback ~opt:options ()
 
 (en supposant que <b class="helvetica">Jsoo_lib.console_log</b> est le binding à la fonction <b class="helvetica">console.log</b>, voir <a href="https://github.com/dannywillems/jsoo-lib">jsoo_lib</a>). La plupart des fonctions sont implémentées en utilisant des arguments optionnels et ceux-ci se trouvant souvent à la fin, il est nécessaire d'ajouter l'argument unit.
 
-Comme l'interface OCaml est très proche de l'interface JavaScript, aucune, voire peur de documentation est donnée. N'hésitez pas à contribuer.
+Comme l'interface OCaml est très proche de l'interface JavaScript, aucune, voire peu de documentation est donnée. N'hésitez pas à contribuer.
 
-La plupart des bindings possèdent une application exemple qui vous permet de comprendre comment utiliser le binding. Les bindings qui ne possède pas d'exemple n'ont pas été testés. N'hésitez pas à reporter les problèmes s'il y en a.
+La plupart des bindings possèdent une application exemple qui vous permet de comprendre comment utiliser le binding. Les bindings qui ne possèdent pas d'exemple n'ont pas été testés. N'hésitez pas à reporter les problèmes s'il y en a.
 
-<div class="dw-quote">Vous pouvez trouver plus d'informations au niveau de ce projet sur <a href="https://github.com/dannywillems/ocaml-cordova-plugin-list">ocaml-cordova-plugin-list</a>le dépot GitHub.</div>
+<div class="dw-quote">Vous pouvez trouver plus d'informations au niveau de ce projet sur le dépot GitHub <a href="https://github.com/dannywillems/ocaml-cordova-plugin-list">ocaml-cordova-plugin-list</a>.</div>
 
 <h2 class="text-center">Faites attention à l'événement device_ready</h2>
-La plupart des plugins créent des nouveaux objets qui ne sont seulement disponibles après l'événement <b class="helvetica">deviceready</b>. Commencez toujours vos applications mobiles OCaml avec ces lignes:
+La plupart des plugins créent des nouveaux objets qui ne sont disponibles qu'après l'événement <b class="helvetica">deviceready</b>. Commencez toujours vos applications mobiles OCaml avec ces lignes:
 
 [cce lang="ocaml"]
 let on_device_ready () =
@@ -109,7 +109,7 @@ let on_device_ready () =
 let _ = Cordova.Event.device_ready on_device_ready
 [/cce]
 
-Le module <b class="helvetica">Cordova</b> vient du binding à l'objet JavaScript <b class="helvetica">cordova</b>. Ce module est fourni dans le dépot opam <b class="helvetica">cordova</b> qui peut être installé avec
+Le module <b class="helvetica">Cordova</b> vient du binding à l'objet JavaScript <b class="helvetica">cordova</b>. Ce module est fourni dans le package opam <b class="helvetica">cordova</b> qui peut être installé avec
 
 [code lang="bash"]
 opam install cordova
@@ -121,19 +121,19 @@ Bien sûr. Je vais vous montrer comment écrire une application mobile hybride q
 
 Vous pouvez trouver le code en entier dans <a href="https://github.com/dannywillems/ocaml-cordova-plugin-sms-example">ce dépot</a>.
 
-[caption width="170" id="attachment_410" align="aligncenter"]<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/Selection_002.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/Selection_002-170x300.png" alt="ocaml-cordova-plugin-sms-example" width="170" height="300" class="size-medium wp-image-410"></a>Exemple d'applications Cordova écrit en OCaml et permettant d'envoyer un SMS[/caption]
+[caption width="170" id="attachment_410" align="aligncenter"]<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/Selection_002.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/Selection_002-170x300.png" alt="ocaml-cordova-plugin-sms-example" width="170" height="300" class="size-medium wp-image-410"></a>Exemple d'application Cordova écrite en OCaml et permettant d'envoyer un SMS[/caption]
 
-D'autres exemples peuvent être trouvées <a href="https://github.com/dannywillems/ocaml-cordova-plugin-list">icie</a>. Voici d'autres captures d'écrans.
+D'autres exemples peuvent être trouvés <a href="https://github.com/dannywillems/ocaml-cordova-plugin-list">icie</a>. Voici d'autres captures d'écrans.
 
-[caption width="167" id="attachment_415" class="col-md-6" align="alignleft"]<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_android.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_android-167x300.png" alt="ocaml-cordova-plugin-toast-example-android" width="167" height="300" class="size-medium wp-image-415"></a>Application mobile en OCaml utilisant Cordova et affichant un toast[/caption]
+[caption width="167" id="attachment_415" class="col-md-6" align="alignleft"]<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_android.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_android-167x300.png" alt="ocaml-cordova-plugin-toast-example-android" width="167" height="300" class="size-medium wp-image-415"></a>Application mobile en OCaml utilisant Cordova et affichant un toast (Android)[/caption]
 
-[caption width="166" id="attachment_414" class="col-md-6" align="alignleft"]<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_ios.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_ios-166x300.png" alt="ocaml-cordova-plugin-toast-example-ios" width="166" height="300" class="size-medium wp-image-414"></a>Application mobile en OCaml utilisant Cordova et affichant un toast[/caption]
+[caption width="166" id="attachment_414" class="col-md-6" align="alignleft"]<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_ios.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_ios-166x300.png" alt="ocaml-cordova-plugin-toast-example-ios" width="166" height="300" class="size-medium wp-image-414"></a>Application mobile en OCaml utilisant Cordova et affichant un toast (iOS)[/caption]
 
 <h3>Configurer l'environnement de développement</h3>
 
 La première chose à faire est de configurer votre environnement de développement. Pour cela, vous avez besoin de:
 <ul>
-	<li><b class="helvetica">Cordova</b> qui est distributé en tant que package NodeJS. Pour installer NodeJS, je recommande d'utiliser <a href="https://github.com/creationix/nvm">nvm</a>. Lisez la documentation du dépot GitHub pour installer nvm et une version de NodeJS. Après cela, installer globalement Cordova avec
+	<li><b class="helvetica">Cordova</b> qui est distributé en tant que package NodeJS. Pour installer NodeJS, je recommande d'utiliser <a href="https://github.com/creationix/nvm">nvm</a>. Lisez la documentation du dépot GitHub pour installer nvm et une version de NodeJS. Après cela, installez globalement Cordova avec
 [code lang="bash"]
 npm install -g cordova
 [/code]</li>
@@ -143,12 +143,11 @@ opam switch 4.03.0
 [/code]</li>
 </ul>
 
-Maintenant vous avez un 
-Maintenant vous avec un environnement de développement basique. Nous allons installer les plugins Cordova que nous avons besoin ainsi que les packages contenant les bindings vers les ces plugins.
+Maintenant vous avec un environnement de développement basique. Nous allons installer les plugins Cordova que nous avons besoin ainsi que les packages opam contenant les bindings vers ces plugins.
 
 <h3>Créer le projet Cordova et installer les plugins Cordova</h3>
 
-Créer un projet Cordova en utilisant
+Créez un projet Cordova en utilisant
 [code lang="bash"]
 cordova create ocaml-cordova-plugin-sms-example
 [/code]
@@ -158,7 +157,7 @@ Un projet Cordova basique a été créé dans le dossier <b class="helvetica">oc
 cd ocaml-cordova-plugin-sms-example
 [/code]
 
-Dans ce dossier, vous trouverez un dossier <b class="helvetica">www</b> qui sera inclu dans l'archive finale installée sur le smartphone. Cela fonctionne comme <b>exactement</b> comme un site web. Il contient un fichier <b class="helvetica">index.html</b> qui sera le premier fichier exécuté (Cordova utilise une WebView dans laquelle les fichiers web sont exécutés, comme un site standard).
+Dans ce dossier, vous trouverez un dossier <b class="helvetica">www</b> qui sera inclu dans l'archive finale installée sur le smartphone. Cela fonctionne <b>exactement</b> comme un site web. Il contient un fichier <b class="helvetica">index.html</b> qui sera le premier fichier exécuté (Cordova utilise une WebView dans laquelle les fichiers web sont exécutés, comme un site standard).
 
 Nous avons besoin d'ajouter les plateformes sur lesquelles nous voulons déployer. Si vous voulez déployer sur iOS (vous avez besoin de Mac OS X avec XCode installé), utilisez
 [code lang="bash"]
@@ -196,7 +195,7 @@ Comme décrit dans le dépot, les bindings aux plugins <b class="helvetica">cord
 opam install cordova-plugin-sms cordova-plugin-dialogs
 [/code]
 
-A cause de l'événement <b class="helvetica">deviceready</b>, nous avons besoin du binding vers l'objet JavaScript Cordova (comme dit dans le dépot GitHub). Nous l'installons avec
+A cause de l'événement <b class="helvetica">deviceready</b>, nous avons besoin du binding vers l'objet JavaScript cordova (comme dit dans le dépot GitHub). Nous l'installons avec
 
 [code lang="bash"]
 opam install cordova
@@ -210,7 +209,7 @@ opam pin add jsoo_lib https://github.com/dannywillems/jsoo-lib.git
 Nous avons maintenant fini la configuration de notre environnement de développement. Passons au code !
 
 <h3>index.html et design</h3>
-Nous utilisons <a href="http://materializecss.com/">materializecss</a> comme framework CSS. Déplacez vous dans le dossier www et utilisez npm pour l'installer:
+Nous utilisons <a href="http://materializecss.com/">materializecss</a> comme framework CSS. Déplacez-vous dans le dossier www et utilisez npm pour l'installer:
 [code lang="bash"]
 cd www &amp;&amp; npm install materialize-css
 [/code]
