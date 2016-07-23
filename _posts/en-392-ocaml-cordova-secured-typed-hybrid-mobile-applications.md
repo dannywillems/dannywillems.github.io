@@ -100,7 +100,7 @@ let on_device_ready () =
 let _ = Cordova.Event.device_ready on_device_ready
 [/cce]
 
-The module <b class="helvetica">Cordova</b> comes from the bindings to the <b class="helvetica">cordova</b> object so you need to add it for each project. This module can be installed with
+The module <b class="helvetica">Cordova</b> comes from the binding to the <b class="helvetica">cordova</b> object so you need to add it for each project. This module can be installed with
 
 [code lang="bash"]
 opam install cordova
