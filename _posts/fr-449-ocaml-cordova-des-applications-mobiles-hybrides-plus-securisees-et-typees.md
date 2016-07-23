@@ -38,7 +38,7 @@ Tous les bindings sont développés avec gen_js_api et vise à être purement fo
 <h2 class="text-center">Comment je peux utiliser un binding ?</h2>
 <b>Nécessite le compilateur &gt;= 4.03.0</b>
 
-J'ai créé un dépot GitHub listant tous les bindings: <a href="https://github.com/dannywillems/ocaml-cordova-plugin-list">ocaml-cordova-plugin-list</a>. Chaque binding est un package opam et peut donc être installé avec opam. Il est recommandé d'ajouter <a href="https://github.com/dannywillems/ocaml-cordova-plugin-list">this repository</a> comme fournisseur distant de package opam avec la commande
+J'ai créé un dépot GitHub listant tous les bindings: <a href="https://github.com/dannywillems/ocaml-cordova-plugin-list">ocaml-cordova-plugin-list</a>. Chaque binding est un package opam et peut donc être installé avec opam. Il est recommandé d'ajouter ce dépot comme fournisseur distant de package opam avec la commande
 
 [code lang="bash"]
 opam repository add cordova https://github.com/dannywillems/ocaml-cordova-plugin-list.git
