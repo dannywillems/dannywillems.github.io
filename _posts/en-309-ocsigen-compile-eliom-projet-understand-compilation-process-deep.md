@@ -69,7 +69,7 @@ Eliom opam package comes with some tools (binary) you can use to build Eliom pro
 
 Eliom project uses files with extension <b class="helvetica">.eliom</b> and <b class="helvetica">.eliomi</b> (for interface). These filetypes are OCaml common filetypes (ml and mli) and contains OCaml code. It's just a way to distinguish between common OCaml code and Eliom code (Eliom build tools use these differences for some compilation rules).
 
-This is a code example which defines a website and a page containing a paragraph with «Hello, World!». Paste it in a file hello_world.eliom. We will use this filename for the rest of the article.
+This is a code example which defines a website and a page containing a paragraph with «Hello, World!». Paste it in a file <b class="helvetica">hello_world.eliom</b>. We will use this filename for the rest of the article.
 
 [cce lang="ocaml"]
 [%%shared
