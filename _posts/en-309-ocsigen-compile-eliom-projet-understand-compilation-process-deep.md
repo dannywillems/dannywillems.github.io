@@ -111,10 +111,10 @@ You can find more information about services and Eliom in the <a href="http://oc
 Even if we don't have client side code in this example, as I said, Eliom allows you to write the client and service side codes of your web applications in only one file. More information available <a href="http://ocsigen.org/tuto/5.0/manual/intro">here</a>.
 
 The first step to compile an Eliom project is to extract client and server type information. <b class="helvetica">eliomc</b> has an option (<b class="helvetica">-infer</b>) to extract these information.
-<b class="helvetica">eliomc</b> copies all compiled file in a directory called <b class="helvetica">_server</b>. This directory can be changed by modifying the variable <b class="helvetica">ELIOM_SERVER_DIR</b>. It's the
+<b class="helvetica">eliomc</b> copies all compiled files in a directory called <b class="helvetica">_server</b>. This directory can be changed by modifying the variable <b class="helvetica">ELIOM_SERVER_DIR</b>. It's the
 same thing for the client side code which are compiled in <b class="helvetica">_client</b> directory. This directory could be changed by modifying the variable <b class="helvetica">ELIOM_CLIENT_DIR</b>.
 
-In the entire document, we use the PPX syntax (<b class="helvetica">[%%shared (* code *)]</b> is an example of the PPX extension) so we need to add <b class="helvetica">-ppx</b> to each call to <b class="helvetica">eliomc</b>, <b class="helvetica">eliomopt</b> and <b class="helvetica">js_of_eliom</b>.
+In this tutorial, we use the PPX syntax (<b class="helvetica">[%%shared (* code *)]</b> is an example of the PPX extension) so we need to add <b class="helvetica">-ppx</b> to each call to <b class="helvetica">eliomc</b>, <b class="helvetica">eliomopt</b> and <b class="helvetica">js_of_eliom</b>.
 
 Extract type information with
 [code lang="bash"]
@@ -147,7 +147,7 @@ Now we have all compiled files we need for <b class="helvetica">ocsigenserver</b
 If you have already configured a HTTP server like Apache, you know the main directories are:
 <ul>
   <li><b class="helvetica">/var/www/html</b>: contains all sites in a sub-directory</li>
-  <li><b class="helvetica">/etc</b>: contains the configuration file, often in a sub-directory with the HTTP server name.</li>
+  <li><b class="helvetica">/etc</b>: contains the configuration file, often in a sub-directory with the site name.</li>
   <li><b class="helvetica">/lib</b> library files.
   <li><b class="helvetica">/var/log</b>: contains all log files. We often create a sub-directory for all sites registered in /var/www/html where we put the log files.</li>
   <li><b class="helvetica">/var/data</b>: contains all data. Often, a sub-directory for each website.</li>
