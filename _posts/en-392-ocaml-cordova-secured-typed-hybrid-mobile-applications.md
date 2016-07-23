@@ -113,9 +113,9 @@ You can find all the code in <a href="https://github.com/dannywillems/ocaml-cord
 
 Other examples can be found <a href="https://github.com/dannywillems/ocaml-cordova-plugin-list">here</a>. Here some other screenshots.
 
-[caption width="167" id="attachment_415" class="col-md-6" align="alignleft"]<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_android.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_android-167x300.png" alt="ocaml-cordova-plugin-toast-example-android" width="167" height="300" class="size-medium wp-image-415"></a> Mobile application written in OCaml using Cordova showing a toast[/caption]
+[caption width="167" id="attachment_415" class="col-md-6" align="alignleft"]<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_android.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_android-167x300.png" alt="ocaml-cordova-plugin-toast-example-android" width="167" height="300" class="size-medium wp-image-415"></a> Mobile application written in OCaml using Cordova showing a toast (Android)[/caption]
 
-[caption width="166" id="attachment_414" class="col-md-6" align="alignleft"]<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_ios.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_ios-166x300.png" alt="ocaml-cordova-plugin-toast-example-ios" width="166" height="300" class="size-medium wp-image-414"></a> Mobile application written in OCaml using Cordova showing a toast[/caption]
+[caption width="166" id="attachment_414" class="col-md-6" align="alignleft"]<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_ios.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_ios-166x300.png" alt="ocaml-cordova-plugin-toast-example-ios" width="166" height="300" class="size-medium wp-image-414"></a> Mobile application written in OCaml using Cordova showing a toast (iOS)[/caption]
 <h3>Set up the development environment</h3>
 First thing to do is to set up the development environment. What we need is:
 <ul>
