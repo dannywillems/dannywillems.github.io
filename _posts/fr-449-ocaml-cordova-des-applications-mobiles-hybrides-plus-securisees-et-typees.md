@@ -82,10 +82,10 @@ let success_callback success = Jsoo_lib.console_log success in
 let error_callback error = Jsoo_lib.console_log error in
 
 let options =
-Cordova_camera.create_options
-~quality:25
-~destination_type:Cordova_camera.Data_url
-()
+  Cordova_camera.create_options
+  ~quality:25
+  ~destination_type:Cordova_camera.Data_url
+  ()
 in
 
 Cordova_camera.get_picture success_callback error_callback ~opt:options ()
