@@ -78,7 +78,7 @@ let options =
   ~quality:25
   ~destination_type:Cordova_camera.Data_url
   ()
-  in
+in
 
 Cordova_camera.get_picture success_callback error_callback ~opt:options ()
 [/cce]
