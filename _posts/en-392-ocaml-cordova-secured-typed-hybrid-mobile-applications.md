@@ -91,7 +91,7 @@ Most of bindings have an example application showing you how to use it. Bindings
 <div class="dw-quote">You can find more information about this project on <a href="https://github.com/dannywillems/ocaml-cordova-plugin-list">ocaml-cordova-plugin-list</a> GitHub repository.</div>
 
 <h2 class="text-center">Be careful: device_ready event</h2>
-Most of bindings create new objects which are only available when the <b class="helvetica">deviceready</b> event fires. You need to have as first lines:
+Most of plugins create new objects which are only available when the <b class="helvetica">deviceready</b> event fires. You need to have as first lines:
 
 [cce lang="ocaml"]
 let on_device_ready () =
