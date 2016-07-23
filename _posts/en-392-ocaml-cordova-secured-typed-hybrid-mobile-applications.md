@@ -74,11 +74,11 @@ let success_callback success = Jsoo_lib.console_log success in
 let error_callback error = Jsoo_lib.console_log error in
 
 let options =
-Cordova_camera.create_options
-~quality:25
-~destination_type:Cordova_camera.Data_url
-()
-in
+  Cordova_camera.create_options
+  ~quality:25
+  ~destination_type:Cordova_camera.Data_url
+  ()
+  in
 
 Cordova_camera.get_picture success_callback error_callback ~opt:options ()
 [/cce]
@@ -195,39 +195,39 @@ For the design, we need two inputs and a button to send the message. We replace 
 [code lang="html"]
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-&lt;head&gt;
-&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *&quot;&gt;
-&lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot;&gt;
-&lt;meta name=&quot;msapplication-tap-highlight&quot; content=&quot;no&quot;&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width&quot;&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/index.css&quot;&gt;
-&lt;!-- CSS setup for materialize --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;node_modules/materialize-css/dist/css/materialize.min.css&quot;&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;cordova.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;js/main.js&quot;&gt;&lt;/script&gt;
-&lt;title&gt;OCaml Cordova Plugin: Sms&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;node_modules/materialize-css/dist/js/materialize.js&quot;&gt;&lt;/script&gt;
-&lt;div class=&quot;row&quot;&gt;
-&lt;form class=&quot;col s12&quot;&gt;
-&lt;div class=&quot;row&quot;&gt;
-&lt;div class=&quot;input-field col s12&quot;&gt;
-&lt;input id=&quot;num&quot; type=&quot;tel&quot; class=&quot;validate&quot;&gt;
-&lt;label for=&quot;num&quot;&gt;Phone number&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;input-field col s12&quot;&gt;
-&lt;input id=&quot;msg&quot; type=&quot;text&quot; class=&quot;validate&quot;&gt;
-&lt;label for=&quot;msg&quot;&gt;Your message&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;input-field col s12 center&quot;&gt;
-&lt;button class=&quot;btn waves-effect waves-light&quot; id=&quot;submit&quot; type=&quot;submit&quot; name=&quot;action&quot;&gt;Send&lt;i class=&quot;material-icons right&quot;&gt;send&lt;/i&gt;&lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/form&gt;
-&lt;/div&gt;
-&lt;/body&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *&quot;&gt;
+    &lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot;&gt;
+    &lt;meta name=&quot;msapplication-tap-highlight&quot; content=&quot;no&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/index.css&quot;&gt;
+    &lt;!-- CSS setup for materialize --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;node_modules/materialize-css/dist/css/materialize.min.css&quot;&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;cordova.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;js/main.js&quot;&gt;&lt;/script&gt;
+    &lt;title&gt;OCaml Cordova Plugin: Sms&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;node_modules/materialize-css/dist/js/materialize.js&quot;&gt;&lt;/script&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;form class=&quot;col s12&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;input-field col s12&quot;&gt;
+        &lt;input id=&quot;num&quot; type=&quot;tel&quot; class=&quot;validate&quot;&gt;
+        &lt;label for=&quot;num&quot;&gt;Phone number&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;input-field col s12&quot;&gt;
+        &lt;input id=&quot;msg&quot; type=&quot;text&quot; class=&quot;validate&quot;&gt;
+        &lt;label for=&quot;msg&quot;&gt;Your message&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;input-field col s12 center&quot;&gt;
+        &lt;button class=&quot;btn waves-effect waves-light&quot; id=&quot;submit&quot; type=&quot;submit&quot; name=&quot;action&quot;&gt;Send&lt;i class=&quot;material-icons right&quot;&gt;send&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
 [/code]
 
@@ -236,31 +236,31 @@ To have the Material Icons, we need to write a CSS file. We also add a padding-t
 [code lang="css"]
 body
 {
-padding-top: 25px;
+  padding-top: 25px;
 }
-
+ 
 /* fallback */
 @font-face {
-font-family: 'Material Icons';
-font-style: normal;
-font-weight: 400;
-src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/material_icons.ttf) format('ttf');
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/material_icons.ttf) format('ttf');
 }
-
+ 
 .material-icons {
-font-family: 'Material Icons';
-font-weight: normal;
-font-style: normal;
-font-size: 24px;
-line-height: 1;
-letter-spacing: normal;
-text-transform: none;
-display: inline-block;
-white-space: nowrap;
-word-wrap: normal;
-direction: ltr;
--webkit-font-feature-settings: 'liga';
--webkit-font-smoothing: antialiased;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }
 [/code]
 
@@ -281,33 +281,34 @@ Here the logic: the user writes the phonenumber he wants to send the SMS to in t
 
 Here the OCaml code:
 [cce lang="ocaml"]
+
 let on_device_ready () =
-let num_node = Jsoo_lib.get_input_by_id "num" in
-let msg_node = Jsoo_lib.get_input_by_id "msg" in
-let btn_node = Jsoo_lib.get_button_by_id "submit" in
+  let num_node = Jsoo_lib.get_input_by_id “num” in
+  let msg_node = Jsoo_lib.get_input_by_id “msg” in
+  let btn_node = Jsoo_lib.get_button_by_id “submit” in
 
-let succ () =
-Cordova_dialogs.alert "Message sent!" ~title:"It's working!" ();
-num_node##.value := (Js.string "");
-msg_node##.value := (Js.string "")
-in
-let err msg =
-Cordova_dialogs.alert msg ~title:"Something wrong =(:" ()
-in
+  let succ () =
+    Cordova_dialogs.alert “Message sent!” ~title:”It’s working!” ();
+    num_node##.value := (Js.string “”);
+    msg_node##.value := (Js.string “”)
+  in
+  let err msg =
+    Cordova_dialogs.alert msg ~title:”Something wrong =(:” ()
+   in
 
-btn_node##.onclick := Dom.handler
-(
-fun e -&gt;
-let num = Js.to_string (num_node##.value) in
-let msg = Js.to_string (msg_node##.value) in
-if num = "" then
-Cordova_dialogs.alert "Please enter a phone number." ~title:"Missing field" ()
-else if msg = "" then
-Cordova_dialogs.alert "Please enter a message." ~title:"Missing field" ()
-else
-Cordova_sms.send ~num:num ~msg:msg ~succ_cb:succ ~err_cb:err ();
-Js._false
-)
+  btn_node##.onclick := Dom.handler
+  (
+    fun e -&gt;
+      let num = Js.to_string (num_node##.value) in
+      let msg = Js.to_string (msg_node##.value) in
+      if num = “” then
+        Cordova_dialogs.alert “Please enter a phone number.” ~title:”Missing field” ()
+      else if msg = “” then
+        Cordova_dialogs.alert “Please enter a message.” ~title:”Missing field” ()
+      else
+        Cordova_sms.send ~num:num ~msg:msg ~succ_cb:succ ~err_cb:err ();
+    Js._false
+  )
 
 let _ = Cordova.Event.device_ready on_device_ready
 [/cce]
