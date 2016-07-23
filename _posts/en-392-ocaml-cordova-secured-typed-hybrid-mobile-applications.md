@@ -18,7 +18,7 @@ Since several months, I began to be interested in mobile development. I found a 
 The majority of these frameworks use JavaScript as programming language but I don't really like this language because you have no types, some weird things (equality between string and integer), parameters are sent as undefined if not passed, etc. I don't really like to develop applications with JavaScript because it's very ugly (even if I think it's OK for prototyping, but not in production).
 
 I discovered OCaml at the university, a very awful programming language with inferred static type, type checking at compilation time, an extraordinary community and... a compiler from OCaml to JavaScript! So, I wanted to use this language to develop mobile applications with Cordova: it will be my university project for a semester.
-<p class="dw-quote">The goal of my project is to be able to use native components of smartphones such like accelerometer, camera, send sms, etc in OCaml.</p>
+<div class="dw-quote">The goal of my project is to be able to use native components of smartphones such like accelerometer, camera, send sms, etc in OCaml.</div>
 
 <h2 class="text-center">What are Cordova, js_of_ocaml and gen_js_api?</h2>
 <ul>
@@ -88,7 +88,7 @@ Cordova_camera.get_picture success_callback error_callback ~opt:options ()
 As the OCaml interface is very close to JavaScript interface, no OCaml documentation is done yet. Feel free to contribute.
 
 Most of bindings have an example application showing you how to use it. Bindings which don't have example application are not tested. Please give a feedback about it and open issues if it's the case.
-<p class="dw-quote">You can find more information about this project on <a href="https://github.com/dannywillems/ocaml-cordova-plugin-list">ocaml-cordova-plugin-list</a> GitHub repository.</p>
+<div class="dw-quote">You can find more information about this project on <a href="https://github.com/dannywillems/ocaml-cordova-plugin-list">ocaml-cordova-plugin-list</a> GitHub repository.</div>
 
 <h2 class="text-center">Be careful: device_ready event</h2>
 Most of bindings create new objects which are only available when the <b class="helvetica">deviceready</b> event fires. You need to have as first lines:
