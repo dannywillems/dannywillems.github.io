@@ -31,7 +31,7 @@ Donc j'ai voulu utiliser ce langage pour développer des applications mobiles av
 	<li><a href="https://github.com/lexifi/gen_js_api">gen_js_api</a> vise à simplifier la création de bindings OCaml vers les librairies JavaScript. Il peut être utilisé avec le compilateur js_of_ocaml.</li>
 </ul>
 
-Tous les bindings sont développer avec gen_js_api et vise à être purement fonctionnel, typé et très proche de l'interface JavaScript.
+Tous les bindings sont développés avec gen_js_api et vise à être purement fonctionnels, typés et très proches de l'interface JavaScript.
 
 <div class="text-center"><!--more--></div>
 
