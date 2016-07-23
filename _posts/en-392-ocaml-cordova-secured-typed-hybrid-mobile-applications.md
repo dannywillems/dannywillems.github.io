@@ -139,7 +139,7 @@ A basic Cordova project is created in the <b class="helvetica">ocaml-cordova-plu
 [code lang="bash"]
 cd ocaml-cordova-plugin-sms-example
 [/code]
-In this directory, you find a <b class="helvetica">www</b> which will be included in the final package you will install on the smartphone. It works <b>exactly</b> like a website. It contains a <b class="helvetica">index.html</b> file which is the first executed file (Cordova uses a WebView in which web files are executed, like a standard website).
+In this directory, you find a <b class="helvetica">www</b> directory which will be included in the final package you will install on the smartphone. It works <b>exactly</b> like a website. It contains a <b class="helvetica">index.html</b> file which is the first executed file (Cordova uses a WebView in which web files are executed, like a standard website).
 
 We have to add the platform we need to build for. If you want to build for iOS (you need Mac OS X with XCode installed), use
 [code lang="bash"]
