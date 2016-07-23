@@ -149,7 +149,9 @@ If you want to build for Android, you need to install <a href="https://developer
 [code lang="bash"]
 cordova platform add android
 [/code]
-<p class="dw-quote">I don't give the example for Windows because it's very hard to use OCaml on Windows and you need to be on Windows to build for Windows Phone</p>
+
+<div class="dw-quote">I don't give the example for Windows because it's very hard to use OCaml on Windows and you need to be on Windows to build for Windows Phone. However, with <a href="http://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/">Bash on Windows</a> eveything is working like on a common Linux Distrbution.</div>
+
 Now we install plugins. For this example, we will used two plugins: <a href="https://github.com/cordova-sms/cordova-sms-plugin">cordova-plugin-sms</a> to send the message and <a href="https://github.com/apache/cordova-plugin-dialogs">cordova-plugin-dialogs</a> to show a dialog. We can install with these commands:
 [code lang="bash"]
 cordova plugin add cordova-plugin-sms
