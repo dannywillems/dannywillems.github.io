@@ -6,7 +6,7 @@ post_date: 2016-07-23 22:17:56
 post_excerpt: ""
 layout: post
 permalink: >
-  http://blog.danny-willems.be/en/ocsigen-comment-compiler-un-projet-eliom-comprendre-le-processus-de-compilation/
+  http://blog.danny-willems.be/fr/ocsigen-comment-compiler-un-projet-eliom-comprendre-le-processus-de-compilation/
 published: true
 ---
 Il est temps que j'écrive mon premier acticle sur <a href="http//ocsigen.org">Ocsigen</a> et spécialement sur <a href="http://ocsigen.org/eliom">Eliom</a>. J'ai commencé il y a une semaine mon stage chez <a href="https://besport.com">BeSport</a>, un réseau social centré sur les sports et entièrement développé en OCaml utilisant les projets d'OCsigen donc j'ai eu besoin d'apprendre comment Ocsigen fonctionne en général.
