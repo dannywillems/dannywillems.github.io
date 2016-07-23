@@ -28,7 +28,7 @@ Donc j'ai voulu utiliser ce langage pour développer des applications mobiles av
 <ul>
 	<li><a href="https://cordova.apache.org/">Cordova</a> permet de développer des applications mobiles hybrides en utilisant les techonologies du web comme l'HTML, le CSS et la JavaScript. Pour plus d'informations, visitez <a href="https://cordova.apache.org/">le site officiel</a>. Grâce aux plugins Cordova, vous pouvez avoir accès aux composants natifs du téléphone. Pour apprendre à développer des plugins Cordova, regardez <a href="https://cordova.apache.org/docs/en/latest/guide/hybrid/plugins/index.html">le tutoriel officiel</a>. Vous pouvez trouver une liste officielle des plugins Cordova <a href="https://cordova.apache.org/plugins/">ici</a>.</li>
 	<li><a href="https://ocsigen.org/js_of_ocaml">js_of_ocaml</a> fournit un compilateur OCaml vers JavaScript. Comme les applications Cordova sont développées en JavaScript, js_of_ocaml permet de développer des applications mobiles en utilisant OCaml. Pour plus d'informations, regardez <a href="http://ocsigen.org/">le projet Ocsigen</a> qui comprend js_of_ocaml.</li>
-	<li><a href="https://github.com/lexifi/gen_js_api">gen_js_api</a> vise à simplifier la création de bindings OCaml vers les libraries JavaScript. Il peut être utilisé avec le compilateur js_of_ocaml.</li>
+	<li><a href="https://github.com/lexifi/gen_js_api">gen_js_api</a> vise à simplifier la création de bindings OCaml vers les librairies JavaScript. Il peut être utilisé avec le compilateur js_of_ocaml.</li>
 </ul>
 
 Tous les bindings sont développer avec gen_js_api et vise à être purement fonctionnel, typé et très proche de l'interface JavaScript.
