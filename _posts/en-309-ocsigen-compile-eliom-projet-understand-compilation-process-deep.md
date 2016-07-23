@@ -57,17 +57,17 @@ It will install all dependencies such like lwt, js_of_ocaml, ocsigenserver and t
 
 Eliom opam package comes with some tools (binary) you can use to build Eliom projects easier. Most of them are wrappers to common OCaml build tools:
 <ul>
-  <li><b class="helvetica">eliomc</b>: wrapper to ocamlc for eliom project</li>
-  <li><b class="helvetica">eliomopt</b>: wrapper to ocamlopt for eliom project</li>
-  <li><b class="helvetica">js_of_eliom</b>: wrapper to js_of_ocaml for eliom project</li>
-  <li><b class="helvetica">eliom-distillery</b>: provides templates for eliom projects</li>
+  <li><b class="helvetica">eliomc</b>: wrapper to ocamlc for Eliom project</li>
+  <li><b class="helvetica">eliomopt</b>: wrapper to ocamlopt for Eliom project</li>
+  <li><b class="helvetica">js_of_eliom</b>: wrapper to js_of_ocaml for Eliom project</li>
+  <li><b class="helvetica">eliom-distillery</b>: provides templates for Eliom projects</li>
 </ul>
 
 <b class="helvetica">eliomc</b> compiles to bytecode and <b class="helvetica">eliomopt</b> to native code. For the rest of this article, we will use <b class="helvetica">eliomc</b>
 
 <h2 class="text-center">Small Eliom code</h2>
 
-Eliom project uses files with extension <b class="helvetica">.eliom</b> and <b class="helvetica">.eliomi</b> (for interface). These filetypes are OCaml common filetypes (ml and mli) and contains OCaml code. It's just a way to distinguish between common OCaml code and Eliom code (Eliom build tools use these differences for some compilation rules).
+An Eliom project uses files with extension <b class="helvetica">.eliom</b> and <b class="helvetica">.eliomi</b> (for interface). These filetypes are OCaml common filetypes (ml and mli) and contains OCaml code. It's just a way to distinguish between common OCaml code and Eliom code (Eliom build tools use these differences for some compilation rules).
 
 This is a code example which defines a website and a page containing a paragraph with «Hello, World!». Paste it in a file <b class="helvetica">hello_world.eliom</b>. We will use this filename for the rest of the article.
 
@@ -104,13 +104,13 @@ let main_service =
 [/cce]
 This service (<b class="helvetica">main_service</b>) returns an HTML5 page (because we use the module <b class="helvetica">Eliom_registration.Html5</b>) which has as a content <b class="helvetica">content</b>. The function <b class="helvetica">content</b> defines a <b class="helvetica">typed</b> HTML5 page: <b class="helvetica">head</b>, <b class="helvetica">body</b>, <b class="helvetica">title</b>, <b class="helvetica">pcdata</b> and <b class="helvetica">p</b> are functions defined in the module <b class="helvetica">Eliom_content.Html5.D</b>.
 
-You can find more information about services and eliom in the <a href="http://ocsigen.org/tuto/manual/">official Ocsigen tutorials</a>.
+You can find more information about services and Eliom in the <a href="http://ocsigen.org/tuto/manual/">official Ocsigen tutorials</a>.
 
 <h2 class="text-center">Extract the client and server types information</h2>
 
 Even if we don't have client side code in this example, as I said, Eliom allows you to write the client and service side codes of your web applications in only one file. More information available <a href="http://ocsigen.org/tuto/5.0/manual/intro">here</a>.
 
-The first step to compile an Eliom project is to extract client and service type information. <b class="helvetica">eliomc</b> has an option (<b class="helvetica">-infer</b>) to extract these information.
+The first step to compile an Eliom project is to extract client and server type information. <b class="helvetica">eliomc</b> has an option (<b class="helvetica">-infer</b>) to extract these information.
 <b class="helvetica">eliomc</b> copies all compiled file in a directory called <b class="helvetica">_server</b>. This directory can be changed by modifying the variable <b class="helvetica">ELIOM_SERVER_DIR</b>. It's the
 same thing for the client side code which are compiled in <b class="helvetica">_client</b> directory. This directory could be changed by modifying the variable <b class="helvetica">ELIOM_CLIENT_DIR</b>.
 
@@ -131,7 +131,7 @@ eliomc -ppx -a -o hello_world.cma _server/hello_world.cmo # build a library for 
 
 <h2 class="text-center">Compile client side code</h2>
 
-Client side code are essentially JavaScript code got from OCaml and compiled with js_of_ocaml. We use <b class="helvetica">js_of_eliom</b> to get client side code. We need the client side bytecode and use the resulting bytecode with <b class="helvetica">js_of_eliom</b> (same process with <b class="helvetica">js_of_ocaml</b>) to obtain the corresponding JavaScript. <b class="helvetica">js_of_eliom</b> extracts the client side of the eliom file and compiles it in JavaScript. The corresponding cmo file is copied in <b class="helvetica">_client</b> directory.
+Client side code are essentially JavaScript code got from OCaml and compiled with js_of_ocaml. We use <b class="helvetica">js_of_eliom</b> to get client side code. We need the client side bytecode and use the resulting bytecode with <b class="helvetica">js_of_eliom</b> (same process with <b class="helvetica">js_of_ocaml</b>) to obtain the corresponding JavaScript. <b class="helvetica">js_of_eliom</b> extracts the client side of the Eliom file and compiles it in JavaScript. The corresponding cmo file is copied in <b class="helvetica">_client</b> directory.
 
 [code lang="bash"]
 js_of_eliom -ppx -c hello_world.eliom # get bytecode
