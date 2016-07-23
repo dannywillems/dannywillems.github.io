@@ -16,12 +16,11 @@ medium_post:
 ---
 Depuis plusieurs mois, j'ai commencé à m'intéresser au développement d'applications mobiles. J'ai trouvé un job à Bruxelles en juillet 2015 où j'ai appris à développer des applications mobiles hybrides (ie un seul code = disponible sur différentes plateformes) avec Cordova et les techonologies du web. J'ai trouvé cela très intéressant et après plusieurs mois, je continue à développer des applications mobiles avec cette technologie. J'ai aussi découvert une communauté géniale au sujet du développement mobile et des frameworks excellents comme <a href="http://ionicframework.com/">Ionic</a>.
 
-La majorité de ces frameworks utilise JavaScript comme langage de programmation mais je n'aime pas trop ce langage à cause du manque de typage, des retours assez étranges (égalité entre chaines de caractères et entier), les paramètres non passés aux fonctions ont une valeur undefined, etc. Je n'aime pas développer des applications mobiles avec JavaScript parce que je trouve cela moche (bien que je pense que c'est parfait pour réaliser un prototypem mais pas de l'utiliser en production).
+La majorité de ces frameworks utilise JavaScript comme langage de programmation mais je n'aime pas trop ce langage à cause du manque de typage, des retours assez étranges (égalité entre chaines de caractères et entier), les paramètres non passés aux fonctions ont une valeur undefined, etc. Je n'aime pas développer des applications mobiles avec JavaScript parce que je trouve cela moche (bien que je pense que c'est parfait pour réaliser un prototype mais pas de l'utiliser en production).
 
 J'ai découvert OCaml à l'université, un langage impressionnant avec son typage statique inféré, son vérificateur de type au moment de la compilation, une extraordinaire communauté et... un compilateur OCaml vers JavaScript !
 Donc j'ai voulu utiliser ce langage pour développer des applications mobiles avec Cordova: ce sera un des mes projets universitaire pour un semestre.
  
-So, I wanted to use this language to develop mobile applications with Cordova: it will be my university project for a semester.
 <div class="dw-quote">Le but de mon projet était d'être capable d'utiliser les composants natives des smartphones comme l'accéléromètre, la caméra, l'envoie de sms, etc entièrement en OCaml.</div>
 
 
