@@ -44,7 +44,7 @@ J'ai créé un dépot GitHub listant tous les bindings: <a href="https://github.
 opam repository add cordova https://github.com/dannywillems/ocaml-cordova-plugin-list.git
 [/code]
 
-Chaque binding peut maintenant être installé. Par exemple, le binding vers le plugin de la caméra <b class="helvetica">cordova-plugin-camera</b>. Donc, si vous voulez installer le binding de la caméra, vous devez utiliser
+Chaque binding peut maintenant être installé. Par exemple, le binding vers le plugin de la caméra est <b class="helvetica">cordova-plugin-camera</b>. Donc, si vous voulez installer le binding de la caméra, vous devez utiliser
 
 [code lang="bash"]
 opam install cordova-plugin-camera
