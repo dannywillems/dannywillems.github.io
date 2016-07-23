@@ -62,11 +62,11 @@ L'interface des bindings est très proche de l'interface JavaScript initiale. Pa
 
 [cce lang="javascript"]
 var success_callback = function(success) {
-console.log(success);
+  console.log(success);
 }
 
 var error_callback = function(error) {
-console.log(error);
+  console.log(error);
 }
 
 var options = {quality: 25; destinationType: Camera.DestinationType.DATA_URL}
