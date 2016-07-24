@@ -19,15 +19,15 @@ Oui, oxygène est un élément chimique, mais Ocsigen est aussi un framework web
 
 Oui, je suis d'accord que ç'en est un parmis tant d'autres. Mais Ocsigen est différent sur plusieurs points.
 Premièrement, Ocsigen est entièrement écrit en OCaml: pas de PHP, pas de JavaScript, pas d'HTML.
-Secondement, Ocsigen contient des sous-projets indépendants qui, ensemble, forment un framework très élégants. Ici quelques-uns de ces sous-projets:
+Secondement, Ocsigen contient des sous-projets indépendants qui, ensemble, forment un framework très élégant. Ici quelques-uns de ces sous-projets:
 
 <ul>
-  <li><a href="http://ocsigen.org/ocsigenserver">Ocsigenserver</a>: un serveur web entièrement écrit OCaml. Il supporte HTTPS, plusieurs hosts (virtual hosts), proxy, compression de contenu, contrôle d'accès, authentification, etc. Toute ce que vous avez besoin est implémenté et est très facile à configurer. Ocsigenserver permet également de développer module pour ajouter des fonctionnalités au serveur.</li>
-  <li><a href="http://ocsigen.org/js_of_ocaml/">Js_of_ocaml</a>: un compilateur OCaml bytecode vers JavaScript. Il permet d'écrire des programmes OCaml et de les compiler en JavaScript donc d'écrire des applications web entièrement en OCaml.</li>
-  <li><a href="http://ocsigen.org/eliom">Eliom</a>: une librairie haut-niveau pour construire des applications serveur et clients. En peu de lignes de code et dans le même fichier, vous pouvez écrire des sites complexes en même temps que leur partie serveur associée. Eliom utilise le typage fort d'OCaml pour construire les routes, les pages HTML, l'échange de données entre clients et serveurs, les mécanismes de sessions, etc. Il utilise des nouveaux concepts de programmation web très intéressants et à jour avec les besoin modernes.</li>
+  <li><a href="http://ocsigen.org/ocsigenserver">Ocsigenserver</a>: un serveur web entièrement écrit OCaml. Il supporte HTTPS, plusieurs hosts (virtual hosts), proxy, compression de contenu, contrôle d'accès, authentification, etc. Toute ce que vous avez besoin est implémenté et est très facile à configurer. Ocsigenserver permet également de développer des modules pour ajouter des fonctionnalités au serveur.</li>
+  <li><a href="http://ocsigen.org/js_of_ocaml/">Js_of_ocaml</a>: un compilateur OCaml bytecode vers JavaScript. Il permet d'écrire des programmes OCaml et de les compiler en JavaScript. Par conséquent, on peut crire des applications web entièrement en OCaml.</li>
+  <li><a href="http://ocsigen.org/eliom">Eliom</a>: une librairie haut-niveau pour construire des applications serveurs et clients. En peu de lignes de code et dans le même fichier, vous pouvez écrire des sites complexes en même temps que leur partie serveur associée. Eliom utilise le typage fort d'OCaml pour construire les routes, les pages HTML, l'échange de données entre clients et serveurs, les mécanismes de sessions, etc. Il utilise des nouveaux concepts de programmation web très intéressants et à jour avec les besoin modernes.</li>
   <li><a href="http://ocsigen.org/lwt">Lwt</a>: programmation coopérative en OCaml. C'est une librairie très populaire dans la communauté OCaml même dans les projets non-web.</li>
   <li><a href="http://ocsigen.org/tyxml">TyXML</a>: écrire des arbres XML typés (en particulier HTML). 
-  <li>et bien plus encore... Vous pouvez trouver tous les sous-projets d'Ocsigen <a href="http://ocsigen.org">ic</a></li>
+  <li>et bien plus encore... Vous pouvez trouver tous les sous-projets d'Ocsigen <a href="http://ocsigen.org">ici</a>.</li>
 </ul>
 
 <div class="text-center"><!--more--></div>
