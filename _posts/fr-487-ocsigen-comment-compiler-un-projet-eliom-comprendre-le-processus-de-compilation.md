@@ -72,7 +72,7 @@ La package opam d'Eliom fournit différents outils (binaires) que vous pouvez ut
 
 <h2 class="text-center">Un peu de code Eliom</h2>
 
-Un projet Eliom utilise des fichiers avec une extension <b class="helvetica">.eliom</b> et <b class="helvetica">.eliomi</b> (pour l'interface). Ces types de fichiers sont des types communs de fichiers OCaml (ml et mli) et contiennent du code OCaml avec une extension de syntaxe ppx pour différencier les parties serveur, clientes et partagées. Ces types de fichiers différents sont juste un moyen de distinguer le code OCaml standard et Eliom (les outils de compilation d'Eliom utilisent ces différences pour les règles de compilations).
+Un projet Eliom utilise des fichiers avec une extension <b class="helvetica">.eliom</b> et <b class="helvetica">.eliomi</b> (pour l'interface). Ces types de fichiers sont des types communs de fichiers OCaml (ml et mli) et contiennent du code OCaml avec une extension de syntaxe ppx pour différencier les différentes parties serveur, client et partagées. Ces types de fichiers différents sont juste un moyen de distinguer le code OCaml standard du code utilisant Eliom (les outils de compilation d'Eliom utilisent ces différences pour les règles de compilation).
 
 Voici un exemple de code qui définit une page contenant un paragraphe avec "Hello, World!". Collez ce code dans un fichier <b class="helvetica">hello_world.eliom</b>. Nous utiliserons ce nom de fichier pour le reste de l'article.
 
