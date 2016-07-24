@@ -26,7 +26,7 @@ Yeah, I agree. But Ocsigen is different in some cases. First, Ocsigen is entirel
   <li>and more... You can find all Ocsigen sub-projects <a href="http://ocsigen.org">here</a></li>
 </ul>
 
-<!-- more -->
+<div class="text-center"><!--more--></div>
 
 <h2 class="text-center">Oh great! Can you show me an example?</h2>
 
