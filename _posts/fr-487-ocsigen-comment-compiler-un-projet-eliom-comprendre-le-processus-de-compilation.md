@@ -60,7 +60,7 @@ Cette commande va installer toutes les dépendances comme lwt, js_of_ocaml, ocsi
 <h2 class="text-center">Les outils de build</h2>
 
 La package opam d'Eliom fournit différents outils (binaires) que vous pouvez utiliser pour compiler et commencer un projet Eliom plus facilement. La plupart d'entre eux sont des wrappers aux outils OCaml usuels:
-Eliom opam package comes with some tools (binary) you can use to build Eliom projects easier. Most of them are wrappers to common OCaml build tools:
+
 <ul>
   <li><b class="helvetica">eliomc</b>: wrapper d'ocamlc pour les projets Eliom</li>
   <li><b class="helvetica">eliomopt</b>: wrapper d'ocamlopt pour les projets Eliom</li>
