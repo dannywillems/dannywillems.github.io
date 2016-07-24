@@ -2,7 +2,7 @@
 ID: 487
 post_title: 'Ocsigen: comment compiler un projet Eliom. Comprendre le processus de compilation.'
 author: Danny Willems
-post_date: 2016-07-23 22:17:56
+post_date: 2016-07-14 22:17:56
 post_excerpt: ""
 layout: post
 permalink: >
@@ -36,11 +36,11 @@ Secondement, Ocsigen contient des sous-projets indépendants qui, ensemble, form
 
 Oui bien sûr. Je vais vous montrer un projet Eliom basique et comment le compiler. Dans d'autres articles, je montrerai des exemples sur js_of_ocaml, ocsigenserver et lwt. Le but principal de cet article est de vous montrer le processus entier pour construire un projet Eliom, du code jusqu'à la compilation en passant par la configuration du serveur ocsigenserver.
 
-<div class="dw-quote">Cet article n'explique pas comment Eliom fonctionne et tous les modules Eliom en détails. C'est juste une explication, étape par étape du processus de compilation d'un projet Eliom. D'autres articles viendront sur ces autres sujets.</div>
+<div class="dw-quote">Cet article n'explique pas comment Eliom fonctionne et tous les modules Eliom en détails. C'est juste une explication, étape par étape, du processus de compilation d'un projet Eliom. D'autres articles viendront sur ces autres sujets.</div>
 
 <h2 class="text-center">Comment installer Eliom ?</h2>
 
-Première, changez vers une version 4.02.3 stable d'OCaml avec opam:
+Premièrement, changez vers une version 4.02.3 stable d'OCaml avec opam:
 [code lang="bash"]
 opam switch 4.02.3
 [/code]
