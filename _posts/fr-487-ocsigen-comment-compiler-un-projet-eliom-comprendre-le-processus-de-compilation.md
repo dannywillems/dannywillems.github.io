@@ -30,7 +30,7 @@ Secondement, Ocsigen contient des sous-projets indépendants qui, ensemble, form
   <li>et bien plus encore... Vous pouvez trouver tous les sous-projets d'Ocsigen <a href="http://ocsigen.org">ic</a></li>
 </ul>
 
-<!-- more -->
+<div class="text-center"><!--more--></div>
 
 <h2 class="text-center">Oh génial ! Peux-tu nous montrer un exemple ?</h2>
 
