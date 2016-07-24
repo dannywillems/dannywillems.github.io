@@ -123,7 +123,7 @@ Vous pouvez trouver le code en entier dans <a href="https://github.com/dannywill
 
 [caption width="170" id="attachment_410" align="aligncenter"]<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/Selection_002.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/Selection_002-170x300.png" alt="ocaml-cordova-plugin-sms-example" width="170" height="300" class="size-medium wp-image-410"></a>Exemple d'application Cordova écrite en OCaml et permettant d'envoyer un SMS[/caption]
 
-D'autres exemples peuvent être trouvés <a href="https://github.com/dannywillems/ocaml-cordova-plugin-list">icie</a>. Voici d'autres captures d'écrans.
+D'autres exemples peuvent être trouvés <a href="https://github.com/dannywillems/ocaml-cordova-plugin-list">ici</a>. Voici d'autres captures d'écrans.
 
 [caption width="167" id="attachment_415" class="col-md-6" align="alignleft"]<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_android.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_android-167x300.png" alt="ocaml-cordova-plugin-toast-example-android" width="167" height="300" class="size-medium wp-image-415"></a>Application mobile en OCaml utilisant Cordova et affichant un toast (Android)[/caption]
 
