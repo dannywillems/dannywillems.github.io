@@ -44,6 +44,19 @@ make install
 [/code]
 
 Le clonage et la configuration sont rapides. Les plus longues étapes sont l'installation des librairies externes et la compilation d'opam: cela prend quelques minutes.
+Si vous avez un Raspberry pi 3, qui est composé d'un quad core, vous pouvez utiliser [code lang="bash"]make -j 4[/code].
+Ces commandes installent la dernière version de OPAM (qui est pour l'instant 2.0) mais peut-être que vous voulez OPAM 1.2. Dans ce cas, utilisez:
+
+[code lang="bash"]
+git clone https://github.com/ocaml/opam
+cd opam
+git checkout -b 1.2 origin/1.2
+./configure
+make lib-ext
+make
+sudo make install
+[/code]
+
 Nous avons ensuite besoin de lancer <b class="helvetica">opam init</b>, ce qui prend quelques minutes. 
 
 [code lang="bash"]
