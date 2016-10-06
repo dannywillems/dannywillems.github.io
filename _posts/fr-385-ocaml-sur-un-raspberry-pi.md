@@ -1,7 +1,7 @@
 ---
 ID: 385
 post_title: OCaml sur un Raspberry Pi
-author: Danny Willems (Admin)
+author: Danny Willems
 post_date: 2016-07-14 01:21:16
 post_excerpt: ""
 layout: post
