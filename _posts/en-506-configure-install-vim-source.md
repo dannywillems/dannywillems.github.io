@@ -16,7 +16,7 @@ published: true
 git clone https://github.com/vim/vim
 cd vim
 ./configure --enable-pythoninterp --enable-python3interp
-make -j 4
+make
 sudo make install
 [/code]
 
