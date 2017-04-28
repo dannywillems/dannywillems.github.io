@@ -1,12 +1,12 @@
 ---
 ID: 514
-post_title: 'OCaml/Reason Compiler Hacking sessions. Part one&#8230;'
+post_title: 'OCaml/Reason Compiler Hacking sessions. First announcement&#8230;'
 author: Danny Willems
 post_date: 2017-04-28 17:26:50
 post_excerpt: ""
 layout: post
 permalink: >
-  https://blog.danny-willems.be/en/ocamlreason-compiler-hacking-sessions-part-one/
+  https://blog.danny-willems.be/en/ocamlreason-compiler-hacking-sessions-first-announcement/
 published: true
 ---
 It's time for me to organize my first event about OCaml (and in the same time, Reason), and more specifically something like the Compiler Hacking Sessions OCamlLabs organizes in Cambridge.
