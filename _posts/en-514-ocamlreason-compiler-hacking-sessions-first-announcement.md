@@ -9,7 +9,7 @@ permalink: >
   https://blog.danny-willems.be/en/ocamlreason-compiler-hacking-sessions-first-announcement/
 published: true
 ---
-It's time for me to organize my first event about OCaml (and in the same time, Reason), and more specifically something like the Compiler Hacking Sessions OCamlLabs organizes in Cambridge.
+It's time for me to organize my first event about OCaml (and in the same time, Reason), and more specifically something like the Compiler Hacking Sessions OCamlLabs holds in Cambridge.
 
 It would be the first week-end of July 2017 (1st and 2nd) in my apartment in the south of Belgium near Ath (the address will be given to people who will participate, I don't want to publish it on the Internet). Everyone can come, even if you don't have any knowledge about compilers or type systems.
 This week-end won't be only focused on OCaml Compilers Hacking. I mainly organize this event to meet other developers, talk about technologies, things we like, share cultures, taste beers, eat Belgian fries (not French fries, it's not the same, and fries are Belgian, not French...). But of course, code and learn will be the most important.
