@@ -14,12 +14,12 @@ published: true
 Since several months, I would always like to build software from source. It began when I would install vim 8.0 but no packages for Ubuntu were available. I wrote <a href="https://blog.danny-willems.be/en/configure-install-vim-source/">an article about it</a>.
 
 I began by building from source and install it with sudo. But, I had some issues when the package was updated because there were some conflicts.
-For these reasons, I decided to build from source and install the binaries in a separated directory in my home, called <b>$HOME/.install-compiled/</b>. When the binaries are installed in this directory, I only need to extend my PATH with the appropriate subdirectories.
+For these reasons, I decided to build from source and to install the binaries in a separated directory in my home, called <b>$HOME/.install-compiled/</b>. When the binaries are installed in this directory, I only need to extend my PATH with the appropriate subdirectories.
 
 Here some example.
 
 <h3>Git</h3>
-In Ubuntu, the version provided by packages is 2.7.4 from 2016. The current version if 2.13. All source codes I need are in a directory called <b>$HOME/.compile</b>. I use the following command to build git from source and install it locally.
+In Ubuntu, the version provided by packages is 2.7.4 from 2016. The current version if 2.13. All source codes I need are in a directory called <b>$HOME/.compile</b>. I use the following commands to build git from source and install it locally.
 [code lang="bash"]
 mkdir -p $HOME/.compile
 git clone https://github.com/git/git $HOME/.compile/git
