@@ -11,14 +11,14 @@ published: true
 ---
 Use <a href="https://github.com/ocaml-ppx/ppx_deriving_yojson">PPX Deriving JSON</a>.
 
-```
+[cce lang="ocaml"]
 type t = {
   name: string;
   age: int;
 } [@@deriving yojson]
-```
+[/cce]
 
-```
+[cce lang="ocaml"]
 (library
  ((name test)
   (public_name test)
@@ -27,4 +27,4 @@ type t = {
               ppx_deriving_yojson.runtime))
   (preprocess (pps (ppx_deriving ppx_deriving_yojson)))
 ))
-```
+[/cce]
