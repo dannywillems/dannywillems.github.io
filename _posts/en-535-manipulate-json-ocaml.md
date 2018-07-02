@@ -9,7 +9,7 @@ permalink: >
   https://blog.danny-willems.be/en/manipulate-json-ocaml/
 published: true
 ---
-Use <a href="https://github.com/ocaml-ppx/ppx_deriving_yojson">PPX Deriving JSON</a>.
+Use <a href="https://github.com/ocaml-ppx/ppx_deriving_yojson">PPX Deriving JSON</a>. PPX is a syntax extension and PPX Deriving JSON derives functions when annotating a type to convert from and to JSON.
 
 [cce lang="ocaml"]
 type t = {
