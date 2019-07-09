@@ -53,7 +53,19 @@
   <span class="n">age</span><span class="o">:</span> <span class="kt">int</span><span class="p">;</span>
 <span class="p">}</span> <span class="p">[</span><span class="o">@@</span><span class="n">deriving</span> <span class="n">yojson</span><span class="p">]</span>
 </code></pre></div></div>
+<p>will generate the functions</p>
+<div class="language-ocaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">type</span> <span class="n">t</span> <span class="o">=</span> <span class="p">{</span> <span class="n">name</span> <span class="o">:</span> <span class="kt">string</span><span class="p">;</span> <span class="n">age</span> <span class="o">:</span> <span class="kt">int</span><span class="p">;</span> <span class="p">}</span>
+<span class="k">val</span> <span class="n">to_yojson</span> <span class="o">:</span> <span class="n">t</span> <span class="o">-&gt;</span> <span class="nn">Yojson</span><span class="p">.</span><span class="nn">Safe</span><span class="p">.</span><span class="n">json</span> <span class="o">=</span> <span class="o">&lt;</span><span class="k">fun</span><span class="o">&gt;</span>
+<span class="k">val</span> <span class="n">of_yojson</span> <span class="o">:</span> <span class="nn">Yojson</span><span class="p">.</span><span class="nn">Safe</span><span class="p">.</span><span class="n">json</span> <span class="o">-&gt;</span> <span class="n">t</span> <span class="nn">Ppx_deriving_yojson_runtime</span><span class="p">.</span><span class="n">error_or</span> <span class="o">=</span> <span class="o">&lt;</span><span class="k">fun</span><span class="o">&gt;</span>
+</code></pre></div></div>
+<p>You can then play with the converters like this:</p>
+<div class="language-ocaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="n">x</span> <span class="o">:</span> <span class="n">t</span> <span class="o">=</span> <span class="p">{</span><span class="n">name</span> <span class="o">=</span> <span class="s2">"hello"</span><span class="p">;</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">15</span><span class="p">};;</span>
+<span class="c">(* val x : t = {name = "hello"; age = 15} *)</span>
+<span class="n">to_yojson</span> <span class="n">x</span><span class="p">;;</span>
+<span class="c">(* - : Yojson.Safe.json = `Assoc [("name", `String "hello"); ("age", `Int 15)] *)</span>
+</code></pre></div></div>
 
+<p>If you use dune, you’ve got to use this</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(library
  ((name test)
   (public_name test)

@@ -16,7 +16,21 @@ type t = {
   age: int;
 } [@@deriving yojson]
 ```
+will generate the functions
+```ocaml
+type t = { name : string; age : int; }
+val to_yojson : t -> Yojson.Safe.json = <fun>
+val of_yojson : Yojson.Safe.json -> t Ppx_deriving_yojson_runtime.error_or = <fun>
+```
+You can then play with the converters like this:
+```ocaml
+let x : t = {name = "hello"; age = 15};;
+(* val x : t = {name = "hello"; age = 15} *)
+to_yojson x;;
+(* - : Yojson.Safe.json = `Assoc [("name", `String "hello"); ("age", `Int 15)] *)
+```
 
+If you use dune, you've got to use this
 ```
 (library
  ((name test)
