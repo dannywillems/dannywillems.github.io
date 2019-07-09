@@ -42,3 +42,4 @@ If you use dune, you've got to use this
 ))
 ```
 
+> If the type is called `t`, the functions are `to_json` and `of_json`
