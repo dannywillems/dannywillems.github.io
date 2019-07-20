@@ -66,3 +66,10 @@ or notions I did not know/have. Here a list:
 - I've noticed the OCaml library [Zarith](https://github.com/ocaml/zarith) uses
   libgmp under the hood. Could be nice to have a look. Also, could be
   interesting to have some benchmarks.
+- libff uses intensively cpp templates, especially with non type parameters. It
+  was the first time I've been facing this syntax and [this
+  page](http://www.cplusplus.com/doc/oldtutorial/templates/) helped me to
+  understand what is going on. The part *Non-type parameters for templates* is
+  the one you'd like to have a look if you want to know how it does work.
+- [Montgomery
+  reduction](https://github.com/scipr-lab/libff/blob/master/libff/algebra/fields/fp.tcc#L166)

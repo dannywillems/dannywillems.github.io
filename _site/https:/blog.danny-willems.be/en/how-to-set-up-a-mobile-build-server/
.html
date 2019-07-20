@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=e3762d939e96b99b008a0c07533364593af96cbf">
+
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>En 62 How To Set Up A Mobile Build Server | Random notes</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="En 62 How To Set Up A Mobile Build Server" />
+<meta name="author" content="Danny Willems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Why a mobile build server ? To develop mobile applications whether for Android, iOS, Tizen or Windows Phone, we need to use the SDK for the appropriate platform. The size of these SDK is more than 1Go for the basics and it can reach around 10-15Go if we download sdk for different versions." />
+<meta property="og:description" content="Why a mobile build server ? To develop mobile applications whether for Android, iOS, Tizen or Windows Phone, we need to use the SDK for the appropriate platform. The size of these SDK is more than 1Go for the basics and it can reach around 10-15Go if we download sdk for different versions." />
+<link rel="canonical" href="http://localhost:4000/https:/blog.danny-willems.be/en/how-to-set-up-a-mobile-build-server/" />
+<meta property="og:url" content="http://localhost:4000/https:/blog.danny-willems.be/en/how-to-set-up-a-mobile-build-server/" />
+<meta property="og:site_name" content="Random notes" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-07-09T14:00:44+00:00" />
+<script type="application/ld+json">
+{"description":"Why a mobile build server ? To develop mobile applications whether for Android, iOS, Tizen or Windows Phone, we need to use the SDK for the appropriate platform. The size of these SDK is more than 1Go for the basics and it can reach around 10-15Go if we download sdk for different versions.","author":{"@type":"Person","name":"Danny Willems"},"@type":"BlogPosting","url":"http://localhost:4000/https:/blog.danny-willems.be/en/how-to-set-up-a-mobile-build-server/","headline":"En 62 How To Set Up A Mobile Build Server","dateModified":"2019-07-09T14:00:44+00:00","datePublished":"2019-07-09T14:00:44+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/https:/blog.danny-willems.be/en/how-to-set-up-a-mobile-build-server/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Random notes</h1>
+        <h2>Random notes on FP, blockchain/DLT, crypto currency, cryptography, (computational) algebra, (computational) number theory, logic, type system, maybe quantum computing</h2>
+
+        <section id="downloads">
+          
+          <a href="https://github.com/dannywillems/dannywillems.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <small>9 July 2019</small>
+<h1>En 62 How To Set Up A Mobile Build Server</h1>
+
+<p class="view">by Danny Willems</p>
+
+<h2 style="text-align: center">Why a mobile build server ?</h2>
+<p>To develop mobile applications whether for Android, iOS, Tizen or Windows Phone, we need to use the SDK for the appropriate platform. The size of these SDK is more than 1Go for the basics and it can reach around 10-15Go if we download sdk for different versions.</p>
+
+<p>Frequently, in a company, several developers works on a mobile project and it’s very annoying to download the SDK on each workstation. An other case it’s when you work with different OS or different computers: you need to download the SDK multiple times.</p>
+<h3>Centralized the SDK</h3>
+<p>A solution is to install the SDK only once on a server which will compile and build the archive for the platform. A mobile project will be in a git repository which will be on the server. The project will be compiled and the archive will be sent to the developer. It will follow this simple process:</p>
+<ol>
+	<li>Server-side: Create a git repository on the server</li>
+	<li>Client-side: Clone the repository, work on it, commit and push.</li>
+	<li>Client-side: Execute a script which will build the project on the server and copy locally the remote archive (apk, ipa, etc).</li>
+</ol>
+<p>I will present this solution for the Android SDK which is the easiest to put in place. More specifically the server will be a solution for decentralized cordova/ionic build system.</p>
+
+<p>No graphical interface is needed. This process could be used on an old server, a raspberry pi or anything else. Just need a terminal.</p>
+<h3>Wait... Other solutions like a docker container or continuous integration system exist. What's the difference ?</h3>
+<p>There’re some docker images like <a href="https://hub.docker.com/r/ahazem/android/">this</a> which does the job. Even if I like docker and use it, we must download the image, run it and it takes some place and resources (not a lot) and we don’t have always these resources.</p>
+
+<p>Generally, continuous integration system provide more than we need. And when we want to modify a behavior, we wast time to learn how it’s working. Also some continuous integration system needs some specific resources requirement.</p>
+
+<p>An other point is this method doesn’t require root privileges (for Android SDK): it could be used independantly by a user.</p>
+
+<p>Last this method works on Mac OS X server and only the build script (see below) must be changed. The Mac OS X script will also be given.</p>
+<div class="dw-quote">
+No root privileges required, no need a lot of resources, easy to install and to use, no graphical interface needed.
+</div>
+
+<div class="dw-quote">This tutorial is tested and developed for a ssh server running on Linux with git, wget and npm installed (cordova/ionic).</div>
+<h2 style="text-align: center">Now, let's go !</h2>
+<p>This “How-To” tutorial will be separated into 3 parts for the server configuration and a script for the client.</p>
+<ol>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-1/">Server-side and client-side: (Optional) Create and configure an user on the build server</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-2/">Server-side: Install and configure the Android SDK</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-3/">Server-side: Install and configure cordova/ionic</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-4/">Client-side: Automate the build process</a></li>
+</ol>
+
+<p>At the end of each part, a script to automate everything will be given.</p>
+
+<p><strong>Important</strong>: we can transform the server for another type of compilation such as C, LaTeX, etc with the same idea. We only have to change the username and the client build script.</p>
+
+<p><span class="dashicons dashicons-arrow-right-alt"></span><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-part-1/">Go to the first part</a></p>
+
+
+
+  <small>tags: <em></em></small>
+
+
+      </section>
+    </div>
+
+    
+  </body>
+</html>
+
+

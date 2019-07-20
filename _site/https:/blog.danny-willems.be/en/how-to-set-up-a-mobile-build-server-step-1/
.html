@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=e3762d939e96b99b008a0c07533364593af96cbf">
+
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>En 70 How To Set Up A Mobile Build Server Step 1 | Random notes</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="En 70 How To Set Up A Mobile Build Server Step 1" />
+<meta name="author" content="Danny Willems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Introduction Server-side and client-side: (Optional) Create and configure an user on the build server Server-side: Install and configure the Android SDK Server-side: Install and configure cordova/ionic Client-side: Automate the build process" />
+<meta property="og:description" content="Introduction Server-side and client-side: (Optional) Create and configure an user on the build server Server-side: Install and configure the Android SDK Server-side: Install and configure cordova/ionic Client-side: Automate the build process" />
+<link rel="canonical" href="http://localhost:4000/https:/blog.danny-willems.be/en/how-to-set-up-a-mobile-build-server-step-1/" />
+<meta property="og:url" content="http://localhost:4000/https:/blog.danny-willems.be/en/how-to-set-up-a-mobile-build-server-step-1/" />
+<meta property="og:site_name" content="Random notes" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-07-09T14:00:44+00:00" />
+<script type="application/ld+json">
+{"description":"Introduction Server-side and client-side: (Optional) Create and configure an user on the build server Server-side: Install and configure the Android SDK Server-side: Install and configure cordova/ionic Client-side: Automate the build process","author":{"@type":"Person","name":"Danny Willems"},"@type":"BlogPosting","url":"http://localhost:4000/https:/blog.danny-willems.be/en/how-to-set-up-a-mobile-build-server-step-1/","headline":"En 70 How To Set Up A Mobile Build Server Step 1","dateModified":"2019-07-09T14:00:44+00:00","datePublished":"2019-07-09T14:00:44+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/https:/blog.danny-willems.be/en/how-to-set-up-a-mobile-build-server-step-1/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Random notes</h1>
+        <h2>Random notes on FP, blockchain/DLT, crypto currency, cryptography, (computational) algebra, (computational) number theory, logic, type system, maybe quantum computing</h2>
+
+        <section id="downloads">
+          
+          <a href="https://github.com/dannywillems/dannywillems.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <small>9 July 2019</small>
+<h1>En 70 How To Set Up A Mobile Build Server Step 1</h1>
+
+<p class="view">by Danny Willems</p>
+
+<ol>
+        <li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server/">Introduction</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-1/">Server-side and client-side: (Optional) Create and configure an user on the build server</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-2/">Server-side: Install and configure the Android SDK</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-3/">Server-side: Install and configure cordova/ionic</a></li>
+	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-4/">Client-side: Automate the build process</a></li>
+</ol>
+
+<h2 style="text-align: center">Server-side and client-side: (Optional) Create and configure an user on the build server</h2>
+
+<p>In this part, we will create a new user and configure ssh access. It’s an optional part because you can use an existing user.
+I chose to separate the user because I think an user on a server must create for only one thing.
+On top of that, as I said <a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server/">in the introduction</a>, this method can be used for a C, LaTeX (or anything else) build server. An user for each build method is better in this case.</p>
+
+<p>The user will be called <span style="font-weight: bold">android-sdk</span>.</p>
+<div class="dw-quote">It's the only part of this tutorial you need root access to create the user</div>
+<h3>Server-side: Create the user</h3>
+<p>Connect to the server and create a new user:
+[code lang=”bash”]
+adduser android-sdk
+[/code]
+You’ll be prompted for some informations such as a name, full name, and a password.</p>
+<h3>Client-side: create a ssh key and add it to the server</h3>
+<p>To avoid having to type the password each time we push, we create a ssh key and add it to the android-sdk’s authorized keys.
+[code lang=”bash”]
+ssh-keygen -t rsa -f ~/.ssh/android-sdk
+ssh-copy-id -i ~/.ssh/android-sdk android-sdk@[your-server]
+[/code]</p>
+<div class="dw-quote">Replace [your-server] by your server ip/alias/domain name. If you're on Mac OS X, install ssh-copy-id with brew (brew install ssh-copy-id).</div>
+<div class="dw-quote">It's recommended to have different ssh keys for each ssh user that is for github.com, bitbucket.com or other users on your server.</div>
+<h3>Client-side: add a rule in the ssh config</h3>
+<p>If you followed the previous command, you must add a rule in the ~/.ssh/config file to match the appropriate ssh key file.
+Open with your favorite text editor (<a href="http://blog.danny-willems.be/vim-ide/">vim</a> of course :D) and add these lines</p>
+
+<p>[code lang=”bash”]
+Host build-server
+Hostname [your-server-adress/ip/alias]
+IdentityFile ~/.ssh/android-sdk
+User android-sdk
+[/code]</p>
+<div class="dw-quote">See <a href="http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/">this excellent tutorial</a> for more informations about the ssh config file. Don't forget to change the user if you're using another user. Same for the ssh key file.</div>
+<p>The host will be used when you’ll clone the repository. You will use somethink like
+[code lang=”bash”]
+git clone android-sdk@build-server:~/my_amazing_project.git
+[/code]</p>
+
+<h2 style="text-align: center">Scripts</h2>
+<p>As promised, I give you scripts to automate the configuration. There’re two scripts: one for the server and one on the client machine.</p>
+<h3>Server</h3>
+<p>We only need to create the user. I only add a variable to let you choose your user name.</p>
+
+<p>[code lang=”bash”]</p>
+<h2 id="change-it-if-you-want-another-username">Change it if you want another username.</h2>
+<h2 id="dont-forget-to-change-in-the-client-script-too">Don’t forget to change in the client script too.</h2>
+<p>USERNAME = android-sdk</p>
+
+<h2 id="dont-edit-these-following-lines">DON’T EDIT THESE FOLLOWING LINES</h2>
+<p>adduser $USERNAME
+##
+[/code]</p>
+<h3>Client</h3>
+<p>We need to create a ssh key, add the ssh key to the server and modify the ssh config file. If you changed the username in the script server.</p>
+
+<p>[code lang=”bash”]</p>
+<h5 id="change-it-if-you-want-another-username-1">Change it if you want another username.</h5>
+<h2 id="dont-forget-to-change-in-the-server-script-too">Don’t forget to change in the server script too.</h2>
+<h2 id="default--android-sdk">[default = android-sdk]</h2>
+<p>USERNAME = android-sdk</p>
+
+<h2 id="your-server-ip-adress-or-alias">Your server IP adress or alias</h2>
+<p>HOSTNAME = danny-willems.be</p>
+
+<h2 id="the-host-name-you-want-to-use-when-youll-clone">The host name you want to use when you’ll clone</h2>
+<h2 id="default--build-server">[default = build-server]</h2>
+<p>HOST = build-server</p>
+
+<h2 id="ssh-key-name">SSH key name</h2>
+<h2 id="default--android-sdk-1">[default = android-sdk]</h2>
+<p>SSH_KEY_NAME = android-sdk</p>
+
+<h2 id="dont-edit-these-following-lines-1">DON’T EDIT THESE FOLLOWING LINES</h2>
+<h2 id="create-ssh-keys">Create SSH keys</h2>
+<p>ssh-keygen -t rsa -f ~/.ssh/$SSH_KEY_NAME</p>
+
+<h2 id="copy-to-the-server">Copy to the server</h2>
+<p>ssh-copy-id -i ~/.ssh/$SSH_KEY_NAME $USERNAME@$HOSTNAME</p>
+
+<h2 id="modify-the-ssh-config-file">Modify the ssh config file</h2>
+<p>echo ‘Host $HOSTn Hostname $HOSTNAMEn IdentityFile ~/.ssh/$SSH_KEY_NAMEn User $USERNAME’ &gt;&gt; ~/.ssh/config
+[/code]</p>
+
+<h2 style="text-align: center">And now ?</h2>
+
+<p>OK, user configured. Now, let’s download and install the Android SDK in our new user environment.</p>
+
+<p><span class="dashicons dashicons-arrow-right-alt"></span><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-2/">Go to the second part</a></p>
+
+
+
+  <small>tags: <em></em></small>
+
+
+      </section>
+    </div>
+
+    
+  </body>
+</html>
+
+
