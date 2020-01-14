@@ -9,5 +9,6 @@ gem install bundler:2.0.2 jekyll
 
 - build and serve the website:
 ```
+bundle install
 bundle exec jekyll serve
 ```
