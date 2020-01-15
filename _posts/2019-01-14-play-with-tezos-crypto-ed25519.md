@@ -98,14 +98,14 @@ Tezos_crypto.Ed25519.check ed_pk signature (Bytes.of_string "Hello, World!");;
 ```
 It is worth to mention, thanks to the type system, we cannot use a public key to sign a message:
 ```ocaml
-let encrypted_message = Tezos_crypto.Ed25519.sign ed_pk (Bytes.of_string "Hello, World!");;
+let signature = Tezos_crypto.Ed25519.sign ed_pk (Bytes.of_string "Hello, World!");;
 (* Error: This expression has type Tezos_crypto.Ed25519.Public_key.t
        but an expression was expected of type Tezos_crypto.Ed25519.Secret_key.t
 *)
 ```
 and we cannot use a secret key to verify a signature:
 ```ocaml
-Tezos_crypto.Ed25519.check ed_sk encrypted_message;;
+Tezos_crypto.Ed25519.check ed_sk signature;;
 (* Error: This expression has type Tezos_crypto.Ed25519.Secret_key.t
        but an expression was expected of type Tezos_crypto.Ed25519.Public_key.t
 *)

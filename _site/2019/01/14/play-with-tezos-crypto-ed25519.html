@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/style.css?v=78aa7300fd52118e0672e3be37b58df9fb354c4f">
+    <link rel="stylesheet" href="/assets/css/style.css?v=6285e52325302206140c514b771f8324b23f428e">
 
 
     <script type="text/x-mathjax-config">
@@ -138,13 +138,13 @@ functions.</p>
 
 </code></pre></div></div>
 <p>It is worth to mention, thanks to the type system, we cannot use a public key to sign a message:</p>
-<div class="language-ocaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="n">encrypted_message</span> <span class="o">=</span> <span class="nn">Tezos_crypto</span><span class="p">.</span><span class="nn">Ed25519</span><span class="p">.</span><span class="n">sign</span> <span class="n">ed_pk</span> <span class="p">(</span><span class="nn">Bytes</span><span class="p">.</span><span class="n">of_string</span> <span class="s2">"Hello, World!"</span><span class="p">);;</span>
+<div class="language-ocaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="n">signature</span> <span class="o">=</span> <span class="nn">Tezos_crypto</span><span class="p">.</span><span class="nn">Ed25519</span><span class="p">.</span><span class="n">sign</span> <span class="n">ed_pk</span> <span class="p">(</span><span class="nn">Bytes</span><span class="p">.</span><span class="n">of_string</span> <span class="s2">"Hello, World!"</span><span class="p">);;</span>
 <span class="c">(* Error: This expression has type Tezos_crypto.Ed25519.Public_key.t
        but an expression was expected of type Tezos_crypto.Ed25519.Secret_key.t
 *)</span>
 </code></pre></div></div>
 <p>and we cannot use a secret key to verify a signature:</p>
-<div class="language-ocaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">Tezos_crypto</span><span class="p">.</span><span class="nn">Ed25519</span><span class="p">.</span><span class="n">check</span> <span class="n">ed_sk</span> <span class="n">encrypted_message</span><span class="p">;;</span>
+<div class="language-ocaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">Tezos_crypto</span><span class="p">.</span><span class="nn">Ed25519</span><span class="p">.</span><span class="n">check</span> <span class="n">ed_sk</span> <span class="n">signature</span><span class="p">;;</span>
 <span class="c">(* Error: This expression has type Tezos_crypto.Ed25519.Secret_key.t
        but an expression was expected of type Tezos_crypto.Ed25519.Public_key.t
 *)</span>
