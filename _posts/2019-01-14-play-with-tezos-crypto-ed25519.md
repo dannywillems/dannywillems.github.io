@@ -40,7 +40,7 @@ the public keys to encode the keys. You can check the prefixes
 The relevant OCaml module in `lib_crypto` to play with Ed25519 is
 [ed25519.ml](https://gitlab.com/tezos/tezos/blob/master/src/lib_crypto/ed25519.ml).
 
-Let's take one Ed25519 private key, encoded in baes58 using the Tezos prefix:
+Let's take one Ed25519 private key, encoded in base58 using the Tezos prefix:
 `edsk31vznjHSSpGExDMHYASz45VZqXN4DPxvsa4hAyY8dHM28cZzp6`. That's the one
 generated for you when you create a [Tezos sandbox
 environment](https://tezos.gitlab.io/user/sandbox.html).
