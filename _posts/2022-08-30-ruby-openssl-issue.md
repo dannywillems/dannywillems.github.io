@@ -1,10 +1,8 @@
 ---
-title: Compile ruby with a different version of openssl
-author: Danny Willems
-post_date: 2022-08-30 17:26:38
-post_excerpt: ""
 layout: post
-published: true
+title: Compile ruby with a different version of openssl
+date: 2022-08-30 17:26:38 +0200
+author: Danny Willems
 tags: [ruby, rvm, openssl]
 ---
 

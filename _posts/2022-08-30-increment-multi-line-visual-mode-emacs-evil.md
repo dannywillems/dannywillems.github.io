@@ -1,12 +1,23 @@
 ---
+layout: post
 title: Increment numbers in visual mode with Emacs and the multi-column feature
+date: 2022-08-30 17:16:00 +0200
 author: Danny Willems
-post_date:2022-08-30 17:16:00
+tags: [evil, emacs, visualmode, increment numbers]
+---
+
+---
+ID: 546
+title: Compile libxml2 on MacOS
+author: Danny Willems
+post_date: 2019-02-23 16:13:06
 post_excerpt: ""
 layout: post
 published: true
-tags: [evil, emacs, visualmode, increment numbers]
+tags: [MacOS, libxml2]
 ---
+
+
 
 It often happens you must use the multi column feature in Emacs/vim to modify
 multiple lines at the same time on the same column. You may also need to increase on each line a number.
