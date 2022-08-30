@@ -1,6 +1,5 @@
 ---
-ID: 548
-title: Compile libxml2 on MacOS
+title: Increment numbers in visual mode with Emacs and the multi-column feature
 author: Danny Willems
 post_date:2022-08-30 17:16:00
 post_excerpt: ""
