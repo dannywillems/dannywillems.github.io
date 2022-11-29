@@ -53,7 +53,8 @@
        Advanced cryptographic protocols such as Zero-knowledge (ZK) proofs of
        knowledge, widely used in cryptocurrency applications such as Zcash, Monero,
        Filecoin, demand new cryptographic hash functions that are efficient not only
-       over the binary field $\mathbb{F}_{2}$, but also over large fields of prime characteristic $\mathbb{F}_{p}.
+       over the binary field $\mathbb{F}_{2}$, but also over large fields of
+       prime characteristic $\mathbb{F}_{p}$.
        This need has been acknowledged by the wider community and new so-called
        Arithmetization-Oriented (AO) hash functions have been proposed, e.g. MiMC-Hash,
        Rescue–Prime, Poseidon, Reinforced Concrete and Griffin to name a few.
