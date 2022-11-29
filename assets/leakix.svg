@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="45mm"
+   height="45mm"
+   viewBox="0 0 45 45"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (eb90963e84, 2021-10-02)"
+   sodipodi:docname="leakix-icon-low-path.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.5554293"
+     inkscape:cx="281.91574"
+     inkscape:cy="128.26041"
+     inkscape:window-width="2560"
+     inkscape:window-height="1320"
+     inkscape:window-x="1920"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g24" />
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="fill_between_many"
+       method="originald"
+       linkedpaths="#path16,0,1"
+       id="path-effect17521"
+       is_visible="true"
+       lpeversion="0"
+       join="true"
+       close="true"
+       autoreverse="true"
+       applied="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-5.8695954,-8.7535458)">
+    <g
+       transform="translate(8.3420512,-27.00292)"
+       fill="#b5e853"
+       id="g24">
+      <g
+         transform="translate(-28.28621,-91.665404)"
+         id="g22">
+        <path
+           style="fill:#b5e853;fill-opacity:1;stroke-width:0.0210639"
+           d="m 53.061582,162.85327 c 1.136231,0.005 2.320072,0.0249 3.436437,-0.18027 1.721316,-0.1415 0.204742,-3.34468 1.835511,-2.21717 2.522213,0.14323 4.965142,-0.77537 7.217316,-1.83123 1.884991,-0.69133 3.754851,-2.29664 3.622515,-4.4797 0.548193,-1.45769 -2.771769,-1.92382 -0.814059,-2.62357 1.494242,-0.95367 1.263397,-3.0551 0.94308,-4.56022 -0.816692,-2.92928 -4.154453,-3.99066 -6.893378,-3.95746 -0.411156,-1.34166 -0.275732,-3.43163 -1.607494,-4.55933 -1.293984,-1.41408 -3.469326,-1.10383 -4.842298,-0.002 -1.23974,0.21408 -0.978132,2.62517 -2.030987,2.13725 -0.978027,-1.88294 -2.665973,-3.3801 -4.700313,-4.01852 -1.566467,-0.54246 -3.238913,-0.52936 -4.879973,-0.16265 -1.626853,0.62295 -3.52703,1.25562 -4.480892,2.81795 0.05802,0.96263 -0.340385,1.88375 -1.53286,0.98033 -2.235692,-0.89781 -5.479464,0.41959 -5.663134,3.04652 0.71423,1.9842 -1.450207,0.8649 -2.520305,1.45881 -2.122021,0.53147 -3.176962,2.92573 -2.723355,4.95201 -0.18151,1.31696 2.046288,2.32146 1.643114,3.10344 -1.75049,0.90117 -1.13298,3.73624 -0.143609,5.06716 1.044701,1.52033 2.661438,2.29681 4.425941,2.61535 1.270863,0.0234 2.792464,0.34138 4.213417,-0.33267 1.188229,0.13477 2.804446,-3.1434 3.269876,-1.2618 0.864812,1.51509 3.176007,1.92895 4.625953,0.97617 1.326591,-1.7014 1.026368,0.77922 1.67503,1.49849 1.799933,0.99003 3.885241,1.40734 5.924467,1.53296 z m -4.782714,-8.1571 c -0.774476,0.18884 -1.526401,-4e-4 -2.072451,-0.44739 -0.715724,-1.12733 -0.01942,-3.06358 1.488998,-2.91018 0.502484,-0.93808 -0.265087,-0.40035 -1.064147,-0.55315 0.741255,-0.47102 -0.594827,-2.90506 -0.257843,-3.0791 -0.181002,-1.2782 -0.665449,-2.82702 -0.516225,-3.74462 -0.0317,-2.07667 3.401562,-2.23881 3.404762,-0.0652 0.236182,1.07125 -0.370408,2.85659 -0.574579,4.16137 -0.388259,1.3572 0.0077,2.6506 -0.500576,3.27881 0.585187,-1.58485 -0.689827,-0.0103 -0.0079,0.25302 1.276398,0.4558 1.504418,2.61301 0.09998,3.10643 z"
+           id="path17425"
+           sodipodi:nodetypes="sssssscssccssssscsssssssssscssssssssssc" />
+      </g>
+    </g>
+  </g>
+</svg>
