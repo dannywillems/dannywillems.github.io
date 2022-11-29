@@ -4,20 +4,27 @@
         <img class="portrait" src="{{ 'assets/me.jpg'}}" />
     </div>
     <p class="center">
-      Currently Cryptography Engineer and LeakIX contributor
+      Currently:
+      <br />
+      Cryptography Engineer @ Nomadic Labs
+      <br />
+      CEO @ LeakIX
     </p>
     <div class="center">
        <a href="https://twitter.com/dwillems42" class="logo-link">
          <img class="logo" src="{{ 'assets/twitter.svg' }}">
        </a>
        <a href="https://github.com/dannywillems" class="logo-link">
-         <img class="logo" src="{{ 'assets/github.svg' }}" />
+         <img class="logo" src="{{ 'assets/github.svg' }}" >
        </a>
        <a href="https://gitlab.com/dannywillems" class="logo-link">
-         <img class="logo" src="{{ 'assets/gitlab.svg' }}" />
+         <img class="logo" src="{{ 'assets/gitlab.svg' }}" >
        </a>
-       <a href="https://linkedin.com/in/bedannywillems">
+       <a href="https://linkedin.com/in/bedannywillems" class="logo-link">
          <img class="logo" src="{{ 'assets/linkedin.svg' }}">
+       </a>
+       <a href="https://leakix.net" class="logo-link">
+         <img class="logo" src="{{ 'assets/leakix.svg' }}">
        </a>
     </div>
   </div>
@@ -26,9 +33,9 @@
     "Cryptography Engineer" or a "hacker".
     I try to use my developer and mathematical skills to build softwares,
     libraries and companies to reach a better society according to my values. My
-    values include, but are not restricted to, privacy and egalitarianism. I am
-    convinced knowledge should be free to access and will help reaching my
-    goals. When possible, my work is released publicly in open-source and for
+    values include, but are not restricted to, privacy, egalitarianism,
+    (effective) altruism and more recently veganism.
+    When possible, my work is released publicly in open-source and for
     free.
   </div>
 </div>
