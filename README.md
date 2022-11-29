@@ -1,7 +1,7 @@
 ## Run locally
 
 ```
-sudo apt-get install gnupg2
+sudo apt-get install gnupg2 ruby-dev
 ```
 
 - Use rvm and install jekyll and builder 2.0.2:
