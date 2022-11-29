@@ -1,3 +1,5 @@
 theme: jekyll-theme-hacker
-title: Danny Willems - Random notes
-description: Random notes on FP, blockchain/DLT, cryptography, (computational) algebra, (computational) number theory, logic, type system, entrepreneuship, maybe quantum computing. In French and in English.
+title: Danny Willems
+author:
+  name: Danny Willems
+description: Fighting to follow my values. Integrity is key. Reputation is Key. Fighting for privacy.
