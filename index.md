@@ -37,6 +37,11 @@
     (effective) altruism and more recently veganism.
     When possible, my work is released publicly in open-source and for
     free.
+    <br />
+    My current interests are research works on
+    arithmetization-oriented cryptographic primitives efficient in
+    zero-knowledge protocols and in standard CPU architectures, and
+    cybersecurity.
   </div>
 </div>
 
