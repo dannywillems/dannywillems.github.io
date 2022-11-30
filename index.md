@@ -509,3 +509,31 @@
     </div>
   </div>
 </div>
+
+## Quotes
+
+<blockquote>
+Le savoir est une arme, mais personne braque pour acheter des livres -- Kery James
+</blockquote>
+
+<blockquote>
+A mathematician who is not also something of a poet will never be a complete mathematician. -- Karl Weierstrass
+
+</blockquote>
+
+<blockquote>
+Arguing that you don't care about the right to privacy because you have nothing
+to hide is no different than saying you don't care about free speech because you
+have nothing to say -- Edward Snowden
+</blockquote>
+
+## Must read
+
+<ul>
+  <li>A Cypherpunk's Manifesto - Eric Hughes - https://www.activism.net/cypherpunk/manifesto.html</li>
+</ul>
+
+## Recent scientific readings
+
+Here will come my notes on scientific papers/article I read. Mostly to keep a
+personal historic but also to share it publicly.
