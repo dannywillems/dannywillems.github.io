@@ -28,7 +28,7 @@
        </a>
     </div>
   </div>
-  <div class="col-6 justify">
+  <div class="col-6">
     I am Danny Willems. People describe me as a "Software Engineer", a
     "Cryptography Engineer" or a "hacker".
     I try to use my developer and mathematical skills to build softwares,
