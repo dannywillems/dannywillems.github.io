@@ -485,7 +485,10 @@
   </div>
 
   <div class="publication-item">
-    <p class="publication-title">B2C2 - Blockchain lead & Software Engineer --- 2017 - 2020</p>
+    <p class="publication-title">
+      B2C2 - Blockchain lead & Software Engineer ---
+      March 2017 - January 2020
+    </p>
     <p class="publication-description">
     Lead developer/engineer on the accounting system (partially the risk system),
     including a real time crypto/FIAT transaction detection across multiple
