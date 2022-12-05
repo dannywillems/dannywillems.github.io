@@ -31,7 +31,7 @@
   <div class="col-6">
     I am Danny Willems. People describe me as a "Software Engineer", a
     "Cryptography Engineer" or a "hacker".
-    I try to use my developer and mathematical skills to build softwares,
+    I try to use my developer and mathematician skills to build softwares,
     libraries and companies to reach a better society according to my values. My
     values include, but are not restricted to, privacy, egalitarianism,
     (effective) altruism and more recently veganism.
@@ -40,8 +40,10 @@
     <br />
     My current interests are research works on
     arithmetization-oriented cryptographic primitives efficient in
-    zero-knowledge protocols and in standard CPU architectures, and
-    cybersecurity.
+    zero-knowledge protocols and in standard CPU architectures,
+    cybersecurity and low-level code optimisations.
+    <br />
+    Like getting my hands dirty coding in C, OCaml and Rust.
   </div>
 </div>
 
@@ -63,7 +65,6 @@
        This need has been acknowledged by the wider community and new so-called
        Arithmetization-Oriented (AO) hash functions have been proposed, e.g. MiMC-Hash,
        Rescue–Prime, Poseidon, Reinforced Concrete and Griffin to name a few.
-       [...]
     </p>
     <p class="publication-authors">
       Clémence Bouvier and Pierre Briaud and Pyrros Chaidos and Léo Perrin and
@@ -126,7 +127,8 @@
       subtyping algorithm.
     </p>
     <p class="publication-authors">
-      Danny Willems
+      Danny Willems, master thesis directed by <a
+      href=""https://pauillac.inria.fr/~fpottier/>François Pottier</a>
     </p>
     <div class="publication-links">
       <a class="publication-link" href="https://github.com/dannywillems/master-thesis/">
