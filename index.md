@@ -535,7 +535,7 @@ have nothing to say -- Edward Snowden
   <li>A Cypherpunk's Manifesto - Eric Hughes - https://www.activism.net/cypherpunk/manifesto.html</li>
 </ul>
 
-## Recent scientific readings
+<!-- ## Recent scientific readings -->
 
-Here will come my notes on scientific papers/article I read. Mostly to keep a
-personal historic but also to share it publicly.
+<!-- Here will come my notes on scientific papers/article I read. Mostly to keep a -->
+<!-- personal historic but also to share it publicly. -->
