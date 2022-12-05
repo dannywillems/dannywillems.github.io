@@ -515,7 +515,32 @@
   </div>
 
   <div class="publication-item">
-    <p class="publication-title">Selfpharma - Cordova mobile applicaiton engineer --- 2015 - 2016</p>
+    <p class="publication-title">Be Sport - Intern --- July 2016 - November 2016</p>
+    <p class="publication-description">
+    Social network around sports.
+    <br />
+    The platform is built using OCaml and the Ocsigen technology. During the
+    internship, I was responsible to improve the framework Ocsigen Start, which
+    consists of a template to bootstrap a complete standard applications require
+    users management, displaying tips, sending notifications to the users. The
+    template allows to build the server and the client services, and can
+    generate mobile applications using Cordova.
+    </p>
+    <div class="publication-links">
+      <a class="publication-link" href="https://besport.com">
+        Be Sport
+      </a>
+      <a class="publication-link" href="https://ocsigen.com">
+        Ocsigen
+      </a>
+      <a class="publication-link" href="https://github.com/ocsigen/ocsigen-start">
+        Ocsigen Start
+      </a>
+    </div>
+  </div>
+
+  <div class="publication-item">
+    <p class="publication-title">Selfpharma - Cordova mobile applicaiton engineer --- August 2015 - February 2016</p>
     <p class="publication-description">
     Online pharmacy shop based in Brussels, Belgium, built using Prestashop.
     Leading the iOS and Android mobile applications development, written in
