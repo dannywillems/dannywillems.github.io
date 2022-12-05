@@ -510,7 +510,30 @@
       </a>
     </div>
   </div>
+
+  <div class="publication-item">
+    <p class="publication-title">Selfpharma - Cordova mobile applicaiton engineer --- 2015 - 2016</p>
+    <p class="publication-description">
+    Online pharmacy shop based in Brussels, Belgium, built using Prestashop.
+    Leading the iOS and Android mobile applications development, written in
+    Cordova.
+    <br />
+    </p>
+    <div class="publication-links">
+      <a class="publication-link" href="https://selfpharma.com">
+        Website
+      </a>
+      <a class="publication-link" href="https://play.google.com/store/apps/details?id=com.selfpharma.selfpharma&hl=fr">
+        Play Store
+      </a>
+      <a class="publication-link" href="https://apps.apple.com/be/app/selfpharma/id1007247480">
+        Apple Store
+      </a>
+    </div>
+  </div>
+
 </div>
+
 
 ## Quotes
 
