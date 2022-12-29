@@ -170,7 +170,7 @@
 <div class="publications">
   <div class="publication-item">
     <p class="publication-title">
-      Octez: an OCaml implementation of the Tezos protocol
+      Octez: an OCaml implementation of the Tezos protocol (Dec 2019 - Present)
     </p>
     <p class="publication-description">
     Tezos is a blockchain that offers both consensus and meta-consensus, by which we
@@ -186,7 +186,7 @@
   </div>
 
   <div class="publication-item">
-    <p class="publication-title">ocaml-bls12-381: an efficient OCaml implementation of the pairing-friendly curve BLS12-381</p>
+    <p class="publication-title">ocaml-bls12-381: an efficient OCaml implementation of the pairing-friendly curve BLS12-381 (January 2020 - Present)</p>
     <p class="publication-description">
       This library provides a fast implementation of operations over the scalar field,
       including (i)FFT, operations over the groups G1 and G2, including EC-FFT,
@@ -210,7 +210,7 @@
   </div>
 
   <div class="publication-item">
-    <p class="publication-title">ocaml-bls12-381-hash: efficient C and OCaml implementation of hash functions over the scalar field of BLS12-381</p>
+    <p class="publication-title">ocaml-bls12-381-hash: efficient C and OCaml implementation of hash functions over the scalar field of BLS12-381 (Aug. 2022 - Present)</p>
     <p class="publication-description">
       This library provides efficient C and OCaml factory implementations of
       hash functions like <a href="https://eprint.iacr.org/2022/840">Anemoi</a>, <a href="https://eprint.iacr.org/2019/458">Poseidon</a>, <a
@@ -230,7 +230,7 @@
   </div>
 
   <div class="publication-item">
-    <p class="publication-title">ocaml-bls12-381-signature: OCaml implementation of BLS signature for BLS12-381</p>
+    <p class="publication-title">ocaml-bls12-381-signature: OCaml implementation of BLS signature for BLS12-381 (June 2021 - Present)</p>
     <p class="publication-description">
        The library provides BLS signatures for the pairing friendly curve
        BLS12-381. The code follows the specification available <a
@@ -250,7 +250,7 @@
 
   <div class="publication-item">
     <p class="publication-title">Plompiler: a monadic Domain Specific Language
-    embedded in OCaml than can be used to build circuits for aPlonK</p>
+    embedded in OCaml than can be used to build circuits for aPlonK (2021 - Present)</p>
     <p class="publication-description">
       Programs written in Plompiler are typed to increase safety and can be
       compiled to their circuit representations or interpreted directly in
@@ -264,6 +264,9 @@
       and guide the optimization of each primitives.
       The library also features a highly performant set of primitives for
       hashing (Poseidon and Anemoi) and signing.
+      My contribution are sporadic, e.g. when a new primitive has to be
+      implemented or when peer-coding with the cryptography team at Nomadic
+      Labs.
     </p>
     <div class="publication-links">
       <a class="publication-link" href="https://gitlab.com/nomadic-labs/cryptography/privacy-team/-/tree/master/plompiler">
@@ -276,7 +279,7 @@
   </div>
 
   <div class="publication-item">
-    <p class="publication-title">Mec: Modular Experimental Cryptography library in OCaml</p>
+    <p class="publication-title">Mec: Modular Experimental Cryptography library in OCaml (April 2020 - Present)</p>
     <p class="publication-description">
       Mec provides modular implementations of (prime) finite field and elliptic
       curve cryptographic primitives like hash functions and signature schemes.
@@ -295,7 +298,7 @@
     </div>
   </div>
   <div class="publication-item">
-    <p class="publication-title">ocaml-ff: Finite Field library in OCaml</p>
+    <p class="publication-title">ocaml-ff: Finite Field library in OCaml (April 2020 - Present)</p>
     <p class="publication-description">
       Ff provides module types to describe (prime) finite fields
       $\mathbb{F}_{p^n}$ and provides functors to easily instantiate
@@ -312,7 +315,8 @@
   </div>
 
   <div class="publication-item">
-    <p class="publication-title">ocaml-polynomial: polynomial over finite fields in OCaml</p>
+    <p class="publication-title">ocaml-polynomial: polynomial over finite fields
+    in OCaml (April 2020 - Present)</p>
     <p class="publication-description">
       The library provides implementations of polynomials over finite fields,
       including routines like (i)FFT.
@@ -328,7 +332,8 @@
   </div>
 
   <div class="publication-item">
-    <p class="publication-title">ocaml-chia-vdf: OCaml wrapper for Chia's class group based VDF</p>
+    <p class="publication-title">ocaml-chia-vdf: OCaml wrapper for Chia's class
+    group based VDF (May 2022)</p>
     <p class="publication-description">
     OCaml wrapper for <a href="https://github.com/Chia-Network/chiavdf">Chia's class group based VDF project</a>.
     <br />
@@ -348,7 +353,7 @@
   </div>
 
   <div class="publication-item">
-    <p class="publication-title">ocaml-carray: contiguous C arrays in OCaml</p>
+    <p class="publication-title">ocaml-carray: contiguous C arrays in OCaml (May 2022 - Present)</p>
     <p class="publication-description">
       OCaml arrays are not always contiguous piece of memory, requiring accessing
       different chunks of memory when accessing individual elements. When requiring a
@@ -376,7 +381,7 @@
 
   <div class="publication-item">
     <p class="publication-title">
-        Seum: OCaml DSL and tool to write and compare programs in assembly, in a typed and "safe" fashion way
+        Seum: OCaml DSL and tool to write and compare programs in assembly, in a typed and "safe" fashion way (June 2022 - Present)
     </p>
     <p class="publication-description">
         Writing performant applications might require to write low level assembly code
@@ -407,7 +412,7 @@
   </div>
 
   <div class="publication-item">
-    <p class="publication-title">ocaml-arkworks: OCaml binding to Rust library arkworks</p>
+    <p class="publication-title">ocaml-arkworks: OCaml binding to Rust library arkworks (Dec 2022 - Present)</p>
     <p class="publication-description">
     WIP (Dec. 2022) - Optimised OCaml binding to the library <a
     href="https://github.com/arkworks">arkworks</a>. Investigating the
@@ -425,7 +430,7 @@
 
 
   <div class="publication-item">
-    <p class="publication-title">Ocsigen - Ocsigen Start</p>
+    <p class="publication-title">Ocsigen - Ocsigen Start (July 2016 - Dec 2016)</p>
     <p class="publication-description">
       Ocsigen Start is a set of higher-level libraries for building
       client-server web applications with Ocsigen (<a
