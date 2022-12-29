@@ -128,7 +128,7 @@
     </p>
     <p class="publication-authors">
       Danny Willems, master thesis directed by <a
-      href=""https://pauillac.inria.fr/~fpottier/>François Pottier</a>
+      href="https://pauillac.inria.fr/~fpottier/">François Pottier</a>
     </p>
     <div class="publication-links">
       <a class="publication-link" href="https://github.com/dannywillems/master-thesis/">
