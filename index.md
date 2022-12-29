@@ -496,7 +496,13 @@
       Nomadic Labs are Tezos blockchain experts. Working on the core
       development, evolution and adoption of the Tezos protocol in BENELUX.
       <br />
-      Working in the cryptography team.
+      Working in the cryptography team, focusing on the development on
+      zero-knowledge protocols, mainly the project Epoxy, a validity rollup for
+      the Tezos protocol. See <a href="#open-source-software-contributions">my
+      open source contributions</a> for a (non-exhaustive) list of work
+      contributiosn. Check <a href="https://gitlab.com/dannywillems/">my
+      GitLab</a> and <a href="https://github.com/dannywillems">my GitHub</a> for
+      my coding activity.
     </p>
     <div class="publication-links">
       <a class="publication-link" href="https://research-development.nomadic-labs.com/files/cryptography.html">
