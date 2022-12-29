@@ -43,7 +43,8 @@
     zero-knowledge protocols and in standard CPU architectures,
     cybersecurity and low-level code optimisations.
     <br />
-    Like getting my hands dirty coding in C, OCaml and Rust.
+    Nowasays, I like getting my hands dirty coding in C, OCaml and Rust. Constantly
+    requiring to be in an intellectually stimulating environment.
   </div>
 </div>
 
