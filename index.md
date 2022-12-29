@@ -407,6 +407,24 @@
   </div>
 
   <div class="publication-item">
+    <p class="publication-title">ocaml-arkworks: OCaml binding to Rust library arkworks</p>
+    <p class="publication-description">
+    WIP (Dec. 2022) - Optimised OCaml binding to the library <a
+    href="https://github.com/arkworks">arkworks</a>. Investigating the
+    replacement of the low level library used by <a
+    href="https://research-development.nomadic-labs.com/files/cryptography.html">Epoxy</a>,
+    the validity rollup framework built for the Tezos protocol.
+    More info to come.
+    </p>
+    <div class="publication-links">
+      <a class="publication-link" href="https://gitlab.com/dannywillems/ocaml-arkworks/">
+        GitLab
+      </a>
+    </div>
+  </div>
+
+
+  <div class="publication-item">
     <p class="publication-title">Ocsigen - Ocsigen Start</p>
     <p class="publication-description">
       Ocsigen Start is a set of higher-level libraries for building
