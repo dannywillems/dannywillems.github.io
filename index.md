@@ -206,6 +206,9 @@
       <a class="publication-link" href="https://opam.ocaml.org/packages/bls12-381/">
         OPAM
       </a>
+      <a class="publication-link" href="https://discuss.ocaml.org/t/ann-bls12-381-3-0-0/9438">
+        First release announcement
+      </a>
     </div>
   </div>
 
