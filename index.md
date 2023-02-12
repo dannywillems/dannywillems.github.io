@@ -610,6 +610,10 @@ to hide is no different than saying you don't care about free speech because you
 have nothing to say -- Edward Snowden
 </blockquote>
 
+<blockquote>
+Never attribute to malice that which is adequately explained by stupidity
+</blockquote>
+
 ## Must read
 
 <ul>
