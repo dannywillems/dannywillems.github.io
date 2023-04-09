@@ -617,6 +617,10 @@ have nothing to say -- Edward Snowden
 Never attribute to malice that which is adequately explained by stupidity
 </blockquote>
 
+<blockquote>
+Je préfère l'eau potable pour tous que le champagne pour quelques potes -- Médine
+</blockquote>
+
 ## Must read
 
 <ul>
