@@ -26,11 +26,14 @@
        <a href="https://leakix.net" class="logo-link">
          <img class="logo" src="{{ 'assets/leakix.svg' }}">
        </a>
+       <a href='http://www.catb.org/hacker-emblem/'>
+         <img src="{{ 'assets/Glider.svg' }}" alt='hacker emblem' class="logo" />
+       </a>
     </div>
   </div>
   <div class="col-6">
-    I am Danny Willems. People describe me as a "Software Engineer", a
-    "Cryptography Engineer" or a <a href="http://www.catb.org/hacker-emblem/">"hacker"*</a>.
+    I am Danny Willems. People describe me as a "Software Engineer" or a
+    "Cryptography Engineer".
     I try to use my developer and mathematician skills to build softwares,
     libraries and companies to reach a better society according to my values. My
     values include, but are not restricted to, privacy, egalitarianism,
@@ -45,8 +48,6 @@
     <br />
     Nowadays, I like getting my hands dirty coding in C, OCaml and Rust. Constantly
     requiring to be in an intellectually stimulating environment.
-    <br />
-    <h6>*If you used this adjective to describe me, it is an honor.</h6>
   </div>
 </div>
 
@@ -627,7 +628,10 @@ Je préfère l'eau potable pour tous que le champagne pour quelques potes -- Mé
 
 <ul>
   <li>A Cypherpunk's Manifesto - Eric Hughes - https://www.activism.net/cypherpunk/manifesto.html</li>
+  <li> How To Become A Hacker - Eric Steven Raymond - http://www.catb.org/~esr/faqs/hacker-howto.html
+</li>
 </ul>
+
 
 <!-- ## Recent scientific readings -->
 
