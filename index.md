@@ -30,7 +30,7 @@
   </div>
   <div class="col-6">
     I am Danny Willems. People describe me as a "Software Engineer", a
-    "Cryptography Engineer" or a "hacker".
+    "Cryptography Engineer" or a <a href="http://www.catb.org/hacker-emblem/">"hacker"*</a>.
     I try to use my developer and mathematician skills to build softwares,
     libraries and companies to reach a better society according to my values. My
     values include, but are not restricted to, privacy, egalitarianism,
@@ -45,6 +45,8 @@
     <br />
     Nowadays, I like getting my hands dirty coding in C, OCaml and Rust. Constantly
     requiring to be in an intellectually stimulating environment.
+    <br />
+    <h6>*If you used this adjective to describe me, it is an honor.</h6>
   </div>
 </div>
 
