@@ -6,7 +6,7 @@
     <p class="center">
       Currently:
       <br />
-      Cryptography Engineer @ Nomadic Labs
+      Cryptography Engineer
       <br />
       CEO @ LeakIX
     </p>
