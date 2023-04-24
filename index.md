@@ -471,6 +471,21 @@
 
 <div class="publications">
   <div class="publication-item">
+    <p class="publication-title">
+      O1 Labs - Cryptography Engineer --- 2023 - Present
+    </p>
+    <p class="publication-description">
+    O(1) Labs is a global and remote company that incubated the Mina Protocol. Our
+    team operates on the cutting edge of Web3 and zero-knowledge-proofs.
+    </p>
+    <div class="publication-links">
+      <a class="publication-link" href="https://o1labs.org">
+        O1 Labs
+      </a>
+    </div>
+  </div>
+
+  <div class="publication-item">
     <p class="publication-title">LeakIX - CEO --- 2021 - Present</p>
     <p class="publication-description">
       LeakIX is the first platform combining a search engine indexing public
@@ -496,7 +511,7 @@
 
   <div class="publication-item">
     <p class="publication-title">
-      Nomadic Labs - Cryptography Engineer --- 2020 - Present
+      Nomadic Labs - Cryptography Engineer --- 2020 - 2023
     </p>
     <p class="publication-description">
       Nomadic Labs are Tezos blockchain experts. Working on the core
