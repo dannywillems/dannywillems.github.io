@@ -1,10 +1,11 @@
 ---
 layout: post
 title: ProtonVPN - DNS issue
-date:2023-04-24 13:02:36
+date:2023-04-24 13:02:36 +0200
 author: Danny Willems
 tags: [protonvpn, dns, ipv6, leak protection, Linux, cli]
 ---
+
 
 You may encounter issues while using protonvpn on Ubuntu.
 I ended up multiple times without any way to reach servers.
