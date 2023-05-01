@@ -47,8 +47,7 @@
     cybersecurity and low-level code optimisations.
     <br />
     Nowadays, I like getting my hands dirty coding in C, OCaml and Rust. Constantly
-    requiring to be in an intellectually stimulating environment. I
-    honestly enjoy people proving me I am wrong and teaching me new things.
+    requiring to be in an intellectually stimulating environment.
     <br />
     Regarding my personality, I qualify myself as a social introvert, even though
     people think I am an extrovert. I enjoy being surrounded by self-minded
