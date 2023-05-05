@@ -643,6 +643,10 @@ Never attribute to malice that which is adequately explained by stupidity
 Je préfère l'eau potable pour tous que le champagne pour quelques potes -- Médine
 </blockquote>
 
+<blockquote>
+Celui qui se contente de peu ne manque de rien
+</blockquote>
+
 ## Must read
 
 <ul>
