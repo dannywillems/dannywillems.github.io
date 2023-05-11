@@ -647,6 +647,15 @@ Je préfère l'eau potable pour tous que le champagne pour quelques potes -- Mé
 Celui qui se contente de peu ne manque de rien
 </blockquote>
 
+<blockquote>
+On est condamné à réussir, à franchir des barrières, construire des carrières.
+Regarde ce qu'on accomplit nos parents, ce qu'ils ont subi pour qu'on accède à
+l'éducation. Où serait-on sans leurs sacrifices ? Bien sûr que le travail a du
+mérite. O combien j'admire nos pères. Peut-être manutentionnaires mais fiers. Si
+on gâche tout où est le respect ? Si on échoue où est le progrès ? Chaque fils
+de pauvre doit avoir de l'ambition.
+</blockquote>
+
 ## Must read
 
 <ul>
