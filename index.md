@@ -6,9 +6,20 @@
     <p class="center">
       Currently:
       <br />
-      Cryptography Engineer @ O(1) Labs
+      Cryptography Engineer @ O(1) Labs/Mina
       <br />
       CEO @ LeakIX
+    </p>
+    <p class="center">
+      Previously:
+      <br />
+      Cryptography engineer @ Nomadic Labs/Tezos
+      <br />
+      Software engineer @ B2C2
+      <br />
+      Software engineer @ Be Sport
+      <br />
+      Gallium team @ INRIA Paris
     </p>
     <div class="center">
        <a href="https://twitter.com/dwillems42" class="logo-link">
