@@ -656,6 +656,11 @@ on gâche tout où est le respect ? Si on échoue où est le progrès ? Chaque f
 de pauvre doit avoir de l'ambition.
 </blockquote>
 
+## Recommended softwares
+
+- [KeepassXC](https://keepassxc.org/): see [my
+  thread](https://twitter.com/dwillems42/status/1665316530035347457) on Twitter.
+
 ## Must read
 
 <ul>
