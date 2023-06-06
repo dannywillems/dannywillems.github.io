@@ -61,7 +61,7 @@
     Constantly requiring to be in an intellectually stimulating environment.
     <br />
     Regarding my personality, I am a curious person, I appreciate debating
-    respectfully and I am often wrong. I qualify myself as a
+    respectfully. I am often wrong and make a lot of mistakes. I qualify myself as a
     social introvert, even though people think I am an extrovert. I enjoy being
     surrounded by self-minded and respectful people, but I need to be in my
     world more than the average.
