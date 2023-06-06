@@ -647,7 +647,7 @@ have nothing to say -- Edward Snowden
 </blockquote>
 
 <blockquote>
-Never attribute to malice that which is adequately explained by stupidity
+Never attribute to malice that which is adequately explained by stupidity -- <a href="https://en.wikipedia.org/wiki/Hanlon%27s_razor">Hanlon's razor</a>
 </blockquote>
 
 <blockquote>
