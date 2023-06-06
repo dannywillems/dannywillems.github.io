@@ -57,12 +57,15 @@
     zero-knowledge protocols and in standard CPU architectures,
     cybersecurity and low-level code optimisations.
     <br />
-    Nowadays, I like getting my hands dirty coding in C, OCaml and Rust. Constantly
-    requiring to be in an intellectually stimulating environment.
+    Nowadays, I like getting my hands dirty coding in C, OCaml and Rust.
+    Constantly requiring to be in an intellectually stimulating environment.
     <br />
-    Regarding my personality, I qualify myself as a social introvert, even though
-    people think I am an extrovert. I enjoy being surrounded by self-minded
-    and respectful people, but I need to be in my world more than the average.
+    Regarding my personality, I am a curious person, I appreciate debating
+    respectfully and I am often wrong. I qualify myself as a
+    social introvert, even though people think I am an extrovert. I enjoy being
+    surrounded by self-minded and respectful people, but I need to be in my
+    world more than the average.
+    <br />
   </div>
 </div>
 
