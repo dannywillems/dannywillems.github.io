@@ -3,7 +3,7 @@ title: OCaml on Raspberry Pi
 author: Danny Willems
 post_date: 2016-06-22 11:40:19
 layout: post
-tags: [OCaml, FP, Raspberry Pi]
+tags: [OCaml, FP, Raspberry Pi, RSS]
 ---
 This morning, I wanted to play with my Raspberry Pi which is, since a long time, not used. After downloading the last <a href="https://www.raspberrypi.org/downloads/raspbian/">raspbian image</a> and installing it with dd (see <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md">here</a>), I wanted to make some scripts, to do some programming. I read some articles like <a href="https://blogs.janestreet.com/bootstrapping-ocamlasync-on-the-raspberry-pi/">this one from Jane Street</a> installing OCaml on a Raspberry Pi and doing some coding stuff with Async. So, I had my morning project: install OCaml and OPAM on my Raspberry Pi 1 model B+ along with OPAM packages.
 

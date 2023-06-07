@@ -8,7 +8,7 @@ post_date: 2017-05-17 05:29:38
 post_excerpt: ""
 layout: post
 published: true
-tags: [Tips]
+tags: [Tips, RSS]
 ---
 Since several months, I would always like to build software from source. It began when I would install vim 8.0 but no packages for Ubuntu were available. I wrote <a href="https://blog.danny-willems.be/en/configure-install-vim-source/">an article about it</a>.
 

@@ -3,7 +3,7 @@ layout: post
 title: Compile ruby with a different version of openssl
 date: 2022-08-30 17:26:38 +0200
 author: Danny Willems
-tags: [ruby, rvm, openssl]
+tags: [ruby, rvm, openssl, RSS]
 ---
 
 You may need to compile and install a ruby version using rvm with a different version of openssl.

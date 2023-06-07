@@ -6,7 +6,7 @@ post_date: 2019-01-14 16:13:06
 post_excerpt: ""
 layout: post
 published: true
-tags: [OCaml, Tezos, Cryptography, ED25519, Elliptic Curve, EC]
+tags: [OCaml, Tezos, Cryptography, ED25519, Elliptic Curve, EC, RSS]
 ---
 
 Let's play today with some submodules of [Tezos_crypto](https://gitlab.com/tezos/tezos/tree/master/src/lib_crypto).

@@ -8,7 +8,7 @@ post_date: 2016-07-14 16:27:35
 post_excerpt: ""
 layout: post
 published: true
-tags: [Mobile application, Cordova, OCaml, FP]
+tags: [Mobile application, Cordova, OCaml, FP, RSS]
 ---
 Since several months, I began to be interested in mobile development. I found a job in Brussels in July 2015 where I learned how to develop hybrid mobile applications (one code = available for multiple mobile platforms) with Cordova and web technologies. I found it very interesting and after several month I continue to develop applications with this technology. I discovered a very great community about mobile development and some awesome frameworks like <a href="http://ionicframework.com/">Ionic</a>.
 

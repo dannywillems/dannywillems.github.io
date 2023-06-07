@@ -6,7 +6,7 @@ post_date: 2019-02-23 16:13:06
 post_excerpt: ""
 layout: post
 published: true
-tags: [MacOS, libxml2]
+tags: [MacOS, libxml2, RSS]
 ---
 
 As I have been facing some issues building [libxml2](http://xmlsoft.org/) from source recently on my Mac, here some instructions that may help some of you.

@@ -3,7 +3,7 @@ layout: post
 title: Fix -fPIC OCaml compilation error
 date: 2023-03-10 17:26:38 +0200
 author: Danny Willems
-tags: [ocaml, fpic, dune]
+tags: [ocaml, fpic, dune, RSS]
 ---
 
 When compiling C stubs, you may encounter the following issue

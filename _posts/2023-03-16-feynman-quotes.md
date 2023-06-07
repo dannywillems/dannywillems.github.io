@@ -3,7 +3,7 @@ layout: post
 title: Richard Feynman's quotes
 date: 2023-03-15 17:26:38 +0200
 author: Danny Willems
-tags: [quotes, feynman, curiosity]
+tags: [quotes, feynman, curiosity, RSS]
 ---
 
 

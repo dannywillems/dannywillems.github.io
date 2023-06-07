@@ -3,7 +3,7 @@ layout: post
 title:  Etre freelancer/indépendant/en société en Belgique - Comment gérer sa comptabilité - TVA intracommunautaire
 date:   2020-04-25 10:51:26 +0200
 author: Danny Willems
-tags:   [Freelancer, indépendant, société, Belgique, comptabilité, gestion, TVA, intracommunautaire, déclaration périodique TVA]
+tags:   [Freelancer, indépendant, société, Belgique, comptabilité, gestion, TVA, intracommunautaire, déclaration périodique TVA, RSS]
 ---
 
 

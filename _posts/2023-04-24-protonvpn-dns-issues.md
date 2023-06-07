@@ -3,7 +3,7 @@ layout: post
 title: ProtonVPN - DNS issue
 date: 2023-04-24 13:02:36 +0200
 author: Danny Willems
-tags: [protonvpn, dns, ipv6, leak protection, Linux, cli]
+tags: [protonvpn, dns, ipv6, leak protection, Linux, cli, RSS]
 ---
 
 

@@ -6,7 +6,7 @@ post_date: 2018-07-02 23:13:06
 post_excerpt: ""
 layout: post
 published: true
-tags: [OCaml, JSON, PPX]
+tags: [OCaml, JSON, PPX, RSS]
 ---
 Use <a href="https://github.com/ocaml-ppx/ppx_deriving_yojson">PPX Deriving JSON</a>. PPX is a syntax extension and PPX Deriving JSON derives functions when annotating a type to convert from and to JSON.
 
