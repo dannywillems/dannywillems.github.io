@@ -43,8 +43,7 @@
     </div>
   </div>
   <div class="col-6">
-    I am Danny Willems. People describe me as a "Software Engineer" or a
-    "Cryptography Engineer".
+    Hi! I am Danny Willems.
     I try to use my developer and mathematician skills to build softwares,
     libraries and companies to reach a better society according to my values. My
     values include, but are not restricted to, privacy, egalitarianism,
