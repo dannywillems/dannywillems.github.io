@@ -1,12 +1,10 @@
 ---
 layout: post
-title: Ethical Practices in Cybersecurity: The Impact of Authentic Social Media Engagement
-date: 2023-06-07 07:02:36 +0200
+title: Ethical Practices in Cybersecurity - The Impact of Authentic Social Media Engagement
+date: 2023-07-17 07:02:36 +0200
 author: Danny Willems
 tags: [Cybersecurity, Ethical Practices, Social Media, Authentic Engagement, Digital Ethics, Trust, Unethical Behavior, Fair Competition, Account Blocking, Digital Deception, Red Teaming, InfoSec, Online Trust, Reporting Suspicious Activity]
 ---
-
-# Ethical Practices in Cybersecurity: The Impact of Authentic Social Media Engagement
 
 ## Introduction
 
