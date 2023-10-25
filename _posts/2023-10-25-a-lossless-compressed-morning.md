@@ -14,8 +14,11 @@ are [flate2](https://crates.io/crates/flate2) and [libflate](https://github.com/
 Oh, wait. What is zlib? What are these libraries?
 Ok. Let's learn about compression. I've never been into the theory of it,
 neither implement any compression algorithm.
+Also, I ran into an error while trying to use flate2, and I did not know what
+was happening. And I don't like when I don't understand.
 
-Therefore, I woke up the next working, and while I was waiting for my first coffee, I started YouTube-ing: `zlib compression`.
+Therefore, I woke up the next day (today...), and while I was waiting for my first
+coffee, I started YouTube-ing: `zlib compression`.
 Ok, found [Elegant Compression in Text (The LZ 77 Method) - Computerphile](https://www.youtube.com/watch?v=goOa3DGezUA).
 Nice introduction, better than the sum of all naturals are -1/12... Anyway.
 Coffee is now ready.
