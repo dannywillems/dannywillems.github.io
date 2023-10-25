@@ -44,6 +44,8 @@ What about zip, gzip, etc?
 reading is [the wikipedia article](https://en.wikipedia.org/wiki/Gzip). The filename extension is `gz`
 - zip is another file format. Good reading is the [wikipedia article](https://en.wikipedia.org/wiki/ZIP_(file_format).
 
+After quickly reading this, came the question of archiving formats, like tar.
+So, tar means Tape Archive. Interesting... Sounds like something that can go on [savoir-inutile](https://savoir-inutile.com/).
 
 Therefore, for a structured, in-order, first crash course on compression:
 
@@ -52,3 +54,4 @@ Therefore, for a structured, in-order, first crash course on compression:
 - [DEFLATE algorithm](https://en.wikipedia.org/wiki/Deflate) and the [corresponding RFC 1951](https://datatracker.ietf.org/doc/html/rfc1951).
 - [zlib](https://en.wikipedia.org/wiki/Zlib), the most used implementation of DEFLATE
 - File formats: [gzip](https://en.wikipedia.org/wiki/Gzip), [zip](https://en.wikipedia.org/wiki/ZIP_(file_format)).
+- [Archive formats and other compression formats](https://en.wikipedia.org/wiki/List_of_archive_formats).
