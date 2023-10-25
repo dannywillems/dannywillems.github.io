@@ -10,7 +10,7 @@ While working on the zkVM project for Optimism with O(1) Labs, I noticed that zl
 I opened a PR to decode the state.json that Cannon load-elf command produces,
 and I was a bit lost in the different library in Rust implementing `zlib`
 (called zeta-lib!). There
-is [flate2](https://crates.io/crates/flate2) and [libflate](https://github.com/sile/libflate).
+are [flate2](https://crates.io/crates/flate2) and [libflate](https://github.com/sile/libflate).
 Oh, wait. What is zlib? What are these libraries?
 Ok. Let's learn about compression. I've never been into the theory of it,
 neither implement any compression algorithm.
@@ -33,10 +33,22 @@ Lempel-Ziv 77 algorithm is a good reading, starting with the [Wikipedia article]
 It drives me to the DEFLATE algorithm. Ah, nice! I know where `flate` comes from now. Ok.
 Flate is sometimes used to call the DEFLATE algorithm.
 
+It seems to be the basics of compression.
+
+Ok, but what about zlib now?
+zlib is an implementation of the DEFLATE algorithm, and it is used in a lot of different softwares.
+The [wikipedia article](https://en.wikipedia.org/wiki/Zlib) mentions a bunch of them.
+
+What about zip, gzip, etc?
+- gzip (GNU zip) is a file format, and also the related software implementing it. Good
+reading is [the wikipedia article](https://en.wikipedia.org/wiki/Gzip). The filename extension is `gz`
+- zip is another file format. Good reading is the [wikipedia article](https://en.wikipedia.org/wiki/ZIP_(file_format).
+
+
 Therefore, for a structured, in-order, first crash course on compression:
 
 - [Huffman coding](https://en.wikipedia.org/wiki/Huffman_coding)
 - [LZ-77 & LZ-78](https://en.wikipedia.org/wiki/LZ77_and_LZ78)
-- [DEFLATE algorithm](https://en.wikipedia.org/wiki/Deflate) and the [corresponding RFC 1951](https://datatracker.ietf.org/doc/html/rfc1951). For some implementations:
-  - [zlib]
-  - [7-zip]
+- [DEFLATE algorithm](https://en.wikipedia.org/wiki/Deflate) and the [corresponding RFC 1951](https://datatracker.ietf.org/doc/html/rfc1951).
+- [zlib](https://en.wikipedia.org/wiki/Zlib), the most used implementation of DEFLATE
+- File formats: [gzip](https://en.wikipedia.org/wiki/Gzip), [zip](https://en.wikipedia.org/wiki/ZIP_(file_format)).
