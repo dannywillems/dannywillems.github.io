@@ -14,3 +14,4 @@ publication.
 - Plookup: https://eprint.iacr.org/2020/315.pdf
 - HyperPlonk: https://eprint.iacr.org/2022/1355
 - MVLookup: https://github.com/Orbis-Tertius/MVlookups/blob/main/MVlookup.pdf
+- cq: https://eprint.iacr.org/2022/1763
