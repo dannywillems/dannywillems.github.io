@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A recap of lookup arguments
-date: 2023-11-01 00:02:36 +0000
+date: 2023-10-31 00:02:36 +0000
 author: Danny Willems
 tags: [SNARK, lookup, arguments]
 ---
