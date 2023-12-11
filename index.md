@@ -174,6 +174,27 @@
 
 <div class="publications">
   <div class="publication-item">
+    <p class="publication-title">A zkVM for the MIPs architecture and OP fault proofs</p>
+    <p class="publication-description">
+      Invite from <a href="https://www.7xvc.com/">SevenX Venture</a> to talk
+      about the recent work about the zkVM we have been working on at O(1) Labs
+    </p>
+    <p class="publication-authors">
+      Danny Willems
+    </p>
+    <div class="publication-links">
+      <a class="publication-link" href="https://www.youtube.com/watch?v=hR1lwvc3LBg">
+        YouTube
+      </a>
+      <a class="publication-link" href="https://lu.ma/ResearchDay">
+        Event
+      </a>
+      <a class="publication-link" href="https://twitter.com/yuxiao_deng/status/1732762740727660929">
+        Twitter thread
+      </a>
+    </div>
+  </div>
+  <div class="publication-item">
     <p class="publication-title">ZKProof5 - Anemoi & Jive: New Arithmetization-Oriented tools for Plonk app</p>
     <p class="publication-description">
       Invitation to give a talk during ZKProof5 in Tel Aviv to present the work on Anemoi & Jive, available
