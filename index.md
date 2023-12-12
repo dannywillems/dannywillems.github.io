@@ -518,7 +518,7 @@
 <div class="publications">
   <div class="publication-item">
     <p class="publication-title">
-      O1 Labs - Cryptography Engineer --- 2023 - Present
+      O(1) Labs - Cryptography Engineer --- 2023 - Present
     </p>
     <p class="publication-description">
     O(1) Labs is a global and remote company that incubated the Mina Protocol. Our
@@ -526,7 +526,7 @@
     </p>
     <div class="publication-links">
       <a class="publication-link" href="https://o1labs.org">
-        O1 Labs
+        O(1) Labs
       </a>
     </div>
   </div>
