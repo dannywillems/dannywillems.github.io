@@ -659,6 +659,43 @@
 
 </div>
 
+## Education
+
+<div class="publications">
+  <div class="publication-item">
+    <p class="publication-title">
+      Master's Degree Mathematics and Computer Sciences - University of Mons (2012 -- 2017)
+    </p>
+    <p class="publication-description">
+      Grade: Summa Cum Laude
+      <br />
+      Bachelor degree: minor in Physics.
+      Awarded with the price of the Mathematics Department.
+    </p>
+    <div class="publication-links">
+      <a class="publication-link" href="https://math.umons.ac.be/en/">
+        UMONS - Mathematics Department
+      </a>
+      <a class="publication-link" href="https://github.com/dannywillems/RML">
+        Master Thesis
+      </a>
+    </div>
+  </div>
+
+  <div class="publication-item">
+    <p class="publication-title">42 - Paris (2014)</p>
+    <p class="publication-description">
+      Pischine C in July 2014, joined in 2015. Stopped 1 year after to focus on
+      master degree in mathematics at UMONS.
+    </p>
+    <div class="publication-links">
+      <a class="publication-link" href="https://42.fr/en/homepage/">
+        Website
+      </a>
+    </div>
+  </div>
+</div>
+
 
 ## Quotes
 
