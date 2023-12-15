@@ -6,7 +6,7 @@
     <p class="center">
       Currently:
       <br />
-      Cryptography Engineer @ O(1) Labs/Mina
+      Cryptography Engineer & Researcher @ O(1) Labs/Mina
       <br />
       CEO @ LeakIX
     </p>
