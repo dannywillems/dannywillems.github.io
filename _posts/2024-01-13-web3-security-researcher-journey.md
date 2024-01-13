@@ -20,8 +20,8 @@ This article will over the years describe my web3 security researcher journey.
 
 First, I started running an Ethereum full node for mainnet. I use geth and lighthouse.
 
-It all starts with learning Solidity.
-I am following the Cyfrin courses available [here](https://github.com/Cyfrin/security-and-auditing-full-course-s23).
+I am following the Cyfrin course about security and auditing available [here](https://github.com/Cyfrin/security-and-auditing-full-course-s23).
+I should have started with the Solidity one, available [here](https://www.youtube.com/watch?v=GWLxIYAIMqQ&list=PL2-Nvp2Kn0FPH2xU3IbKrrkae-VVXs1vk), but I will first finish the Security and auditing.
 I have deployed some basic smart contracts in Solidity, an ERC20 and an incremental counter contracts.
 The incremental counter is pretty simple:
 ```solidity
