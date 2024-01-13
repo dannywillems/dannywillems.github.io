@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Web3 security researcher journey
+title: My Web3 security researcher journey (WIP)
 date: 2024-01-13 11:02:36 +0000
 author: Danny Willems
 tags: [smart contracts, ethereum, solidity]
