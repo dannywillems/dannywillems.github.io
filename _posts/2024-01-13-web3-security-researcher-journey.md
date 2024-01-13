@@ -54,3 +54,9 @@ happen.
 Have a look at [Simple Security toolkit](https://github.com/nascentxyz/simple-security-toolkit).
 
 Static analyzer tool for Solidity and Vyper: https://github.com/crytic/slither
+
+On January 13th, I finished the first two sections, precisely the section
+regarding the `Review` and `What is a smart contract audit`.
+I signed up for rekt.news and some other blogs.
+Going through the different GitHub repositories take time. I had also a look at
+some reports.
