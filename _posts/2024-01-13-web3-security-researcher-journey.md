@@ -15,6 +15,9 @@ Time for security.
 
 Besides my engineering and ("traditional") researcher work, I have always been fascinated by security research.
 This article will over the years describe my web3 security researcher journey.
+Digging into the security industry makes me a better engineer and traditional
+researcher as I learn how to bypass some security flaws that might be present in
+my code.
 
 ## January 2024
 
