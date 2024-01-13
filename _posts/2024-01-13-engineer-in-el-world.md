@@ -26,7 +26,7 @@ For this, I use:
 ```
 (copilot :location (recipe :fetcher github :repo "dannywillems/copilot.el" :branch "dw/main" :files ("*.el" "dist")))
 ```
-It is essentially main branch with all PRs merged.
+It is essentially the main branch with all PRs merged.
 
 Results of the day regarding el engineering:
 - trying to use, again, VSCode. I learnt how to use CTRL+SHIFT+P to access the configuration list. Switched to WINDOWS-X as in Spacemacs.
