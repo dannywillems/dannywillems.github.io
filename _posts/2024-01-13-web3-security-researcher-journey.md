@@ -43,3 +43,7 @@ contract Counter {
 You have a storage containing a number, and one setter and one method to increment the storage. Nothing more.
 The journey starts by playing with [Foundry](https://github.com/foundry-rs/foundry).
 Learning `forge test`, `forge build`, `forge create`, `forge test --gas-report`.
+
+[Section 2.1](https://updraft.cyfrin.io/courses/security/audit/what-is-an-audit)
+contains an interesting overview on how a security audit/security review should
+happen.
