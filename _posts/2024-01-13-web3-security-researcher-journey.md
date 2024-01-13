@@ -50,3 +50,5 @@ Learning `forge test`, `forge build`, `forge create`, `forge test --gas-report`.
 [Section 2.1](https://updraft.cyfrin.io/courses/security/audit/what-is-an-audit)
 contains an interesting overview on how a security audit/security review should
 happen.
+
+Have a look at [Simple Security toolkit](https://github.com/nascentxyz/simple-security-toolkit).
