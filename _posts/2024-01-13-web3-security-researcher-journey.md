@@ -52,3 +52,5 @@ contains an interesting overview on how a security audit/security review should
 happen.
 
 Have a look at [Simple Security toolkit](https://github.com/nascentxyz/simple-security-toolkit).
+
+Static analyzer tool for Solidity and Vyper: https://github.com/crytic/slither
