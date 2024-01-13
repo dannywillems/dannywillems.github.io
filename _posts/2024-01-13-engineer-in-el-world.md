@@ -37,7 +37,8 @@ Results of the day regarding el engineering:
   https://github.com/copilot-emacs/copilot.el/pull/235,
   https://github.com/copilot-emacs/copilot.el/pull/236,
   https://github.com/copilot-emacs/copilot.el/pull/237,
-  https://github.com/copilot-emacs/copilot.el/pull/238
+  https://github.com/copilot-emacs/copilot.el/pull/238,
+  https://github.com/copilot-emacs/copilot.el/pull/239
 
 
 This article might be updated in the future.
