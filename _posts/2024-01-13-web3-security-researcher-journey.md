@@ -143,4 +143,13 @@ Come after an interesting interview with [The Tincho](https://twitter.com/tincho
 A tool he uses is
 [solidity-metrics](https://github.com/Consensys/solidity-metrics) from
 Consensys. I did not know [VSCodium](https://vscodium.com/), good to take too.
+An important remark from The Tincho is that good security review comes with
+experiences. You remember patterns. You remember attacks that happened on other
+protocols. I do agree with that. Always learn. Always read code. It is how you learn.
+My additional remark is that spending time in Pull Requests opened by talented
+engineers helped me to see patterns.
+
+Reading the description of a project can give ideas on attack vectors. When you
+read a code, always think "how can I break it?", "Does it look like something I
+have seen in the past?".
 
