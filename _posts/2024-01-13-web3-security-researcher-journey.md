@@ -108,7 +108,7 @@ proper engineering.
 
 As a reminder, as a security reviewer, your role is also to guide the team to
 get good practices, and it is also your role to train them and inform them.
-A security review is not only reviewing the code.
+A security review is not only reviewing the code. Your job is also to be an *educator*.
 The second video, [Scoping:
 Etherscan](https://updraft.cyfrin.io/courses/security/first-audit/etherscan?lesson_format=video)
 is worth watching!
