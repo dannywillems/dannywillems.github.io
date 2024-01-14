@@ -78,3 +78,18 @@ some reports.
 Tomorrow I will spend time on the Section 3 and hopefully Section 4. The section
 3 is `Your first Audit | PasswordStore`. The section 4 is `Puppe raffle`. See
 you later!
+
+## January 14th
+
+Starting the day with a
+[tweet](https://twitter.com/dwillems42/status/1746480016307703978) to thank
+great content creators.
+
+Back to Solidity, my journey will have to include a Solidity course as the language evolves since inception.
+[This video](https://www.youtube.com/watch?v=umepbfKp5rI&t=1s) might be a good
+starting point. I'll give a better opinion later.
+Today is focusing on the plan sketched yesterday.
+
+A good thing about Cyfrin is that it also contains good additional content on
+the GitHub. Reading it while watching the videos is good.
+
