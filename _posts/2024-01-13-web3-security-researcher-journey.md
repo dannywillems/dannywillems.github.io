@@ -56,8 +56,9 @@ Have a look at [Simple Security toolkit](https://github.com/nascentxyz/simple-se
 Static analyzer tool for Solidity and Vyper: https://github.com/crytic/slither
 
 About Solidity development, it seems that Emacs does not integrate it well.
-There is no standard lsp at the moment in the Solidity community. There is one
-from [NomicFoundation](https://github.com/NomicFoundation/hardhat-vscode/), but
+There is no standard lsp implementation at the moment in the Solidity community.
+There is one from
+[NomicFoundation](https://github.com/NomicFoundation/hardhat-vscode/), but
 it is for VSCode.
 However, the industry changed a lot since my first day in the Ethereum community
 circa 2017. I have seen the first versions of Solidity, and played a bit that
@@ -66,7 +67,7 @@ time. Honestly, I forgot most of it as I did not practice.
 I think I will need to spend some time going into VSCode and get used to it.
 I also spent a bit of time going into Copilot to see if it could help, and the
 answer is no at the moment. Nothing serious coming out of the AI coding
-assitant.
+assistant.
 
 On January 13th, I finished the first two sections, precisely the section
 regarding the `Review` and `What is a smart contract audit`.
