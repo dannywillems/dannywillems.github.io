@@ -135,3 +135,6 @@ is available
 with some extensions
 [here](https://github.com/Cyfrin/security-and-auditing-full-course-s23/blob/main/extensive-onboarding-questions.md).
 Going through it is worth reading.
+
+If you want to play with Decentralized Finance:
+https://www.damnvulnerabledefi.xyz/
