@@ -153,3 +153,11 @@ Reading the description of a project can give ideas on attack vectors. When you
 read a code, always think "how can I break it?", "Does it look like something I
 have seen in the past?".
 
+It is end of the afternoon, I finished the whole section 3.
+I did not create any repository listing the audits as suggested, I will certainly do it later.
+I will certainly take the same template to start listing my findings, in a
+private repository for bug bounties.
+
+I will now go through some popular platforms and see the kind of skills I need to learn.
+Scroll is on my list as I found it on Immunefi and I feel that it is where my
+skills can help more.
