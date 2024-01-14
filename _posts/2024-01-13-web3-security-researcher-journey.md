@@ -138,3 +138,9 @@ Going through it is worth reading.
 
 If you want to play with Decentralized Finance:
 https://www.damnvulnerabledefi.xyz/
+
+Come after an interesting interview with [The Tincho](https://twitter.com/tinchoabbate).
+A tool he uses is
+[solidity-metrics](https://github.com/Consensys/solidity-metrics) from
+Consensys. I did not know [VSCodium](https://vscodium.com/), good to take too.
+
