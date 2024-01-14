@@ -93,3 +93,45 @@ Today is focusing on the plan sketched yesterday.
 A good thing about Cyfrin is that it also contains good additional content on
 the GitHub. Reading it while watching the videos is good.
 
+The course starts with an audit of an on-chain password store, with [this
+repo](https://github.com/Cyfrin/3-passwordstore-audit/tree/audit-data).
+
+### Scoping
+
+Important: a team requesting a security review might only send you an Etherscan link.
+There is a "verified" checkbox on Etherscan. But it doesn't mean that the code is secured.
+When we do a review, we want to know the health of the code. It means we want to
+know the degree of engineering they have given in the development process.
+It includes CI, CD, engineering roles, test coverage, test suite, versions of
+the library used and many other aspects that should not be avoided when doing
+proper engineering.
+
+As a reminder, as a security reviewer, your role is also to guide the team to
+get good practices, and it is also your role to train them and inform them.
+A security review is not only reviewing the code.
+The second video, [Scoping:
+Etherscan](https://updraft.cyfrin.io/courses/security/first-audit/etherscan?lesson_format=video)
+is worth watching!
+
+Worth reading is [the rekt
+test](https://blog.trailofbits.com/2023/08/14/can-you-pass-the-rekt-test/).
+Spent time reading and digesting it.
+
+In particular, [this
+article](https://www.theblock.co/post/156038/how-a-fake-job-offer-took-down-the-worlds-most-popular-crypto-game)
+about Axie Infinity is an interesting showcase of how smart threat actors can
+be.
+
+Regarding testing, [Echidna, a fast smart contract
+fuzzer](https://github.com/crytic/echidna) is a good tool to be added to the
+stack. Even though `forge` already provides some fuzzing in the testing
+framework, the fuzzing tactics can be different from one tool to another and
+using more than one tools can help to find new cases. Echidna will be a tool to
+add to my test suites.
+
+The onboarding/scoping process is important, a summary of good questions to ask
+is available
+[here](https://github.com/Cyfrin/security-and-auditing-full-course-s23/blob/main/minimal-onboarding-questions.md)
+with some extensions
+[here](https://github.com/Cyfrin/security-and-auditing-full-course-s23/blob/main/extensive-onboarding-questions.md).
+Going through it is worth reading.
