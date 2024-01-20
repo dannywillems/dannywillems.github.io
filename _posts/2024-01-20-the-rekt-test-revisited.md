@@ -41,16 +41,28 @@ developments](https://dannywillems.github.io/2023/12/08/you-said-bugs.html).
   if the hosting platform goes offline.
 
 - When updating a dependency, a careful analysis of the changes in the
-  dependency must be conducted.
-
+  dependency must be conducted. The analysis consist of going through each
+  release between the the two versions, and check that no critical changes have
+  been discovered. If any, it must be fixed.
+- Use a security advisory tool for the dependencies. In Rust, `cargo audit` can
+  be used. It must not be made public or executed in a public CI as attackers
+  would also be alerted (even if they could do the check automatically and
+  periodically on their machine).
 - When adding a new dependency, we must check the version we are using and
   determine if there have been any bugs in that version. Additionally, we must
   verify if the dependency is actively being developed.
-
 - If git merge is used to backport changes from one branch to another, the pull
   request executing it should only contain the changes related to the git merge.
   If additional changes are needed to address conflicts, they should be in a
   separate commit. The reviewer must be able to reproduce the process.
+- Integration tests help in detecting bugs when calling external dependencies
+  and other related modules.
+- There should be at least 2 reviewers per change.
+- At least 2 individuals should have a good understanding of the code being modified.
+- Reviewers should adopt an adversarial mindset, asking: "How can I break the
+  code?" Reviews should not solely verify that the changes "make sense." As a
+  reviewer, you should explain your review process, outline the scenarii you
+  considered, and specify the exact elements you reviewed.
 
 ## Other related documents
 
