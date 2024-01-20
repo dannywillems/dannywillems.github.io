@@ -15,33 +15,42 @@ developments](https://dannywillems.github.io/2023/12/08/you-said-bugs.html).
 
 ## Code related
 
-- Each engineer must sign each commit.
-  - See https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key
-  - See https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
-  - Enough security must be set for the key. Ed25519 is a personal taste at the
-    moment. It must follow the latest recommendations in terms of key size.
-  - The GPG key used to sign must be protected by a strong enough password.
-- The Vigilan mode available [on GitHub](https://github.com/settings/keys) must
-  be activated. It will flag unverified commit with `unverified` in yello (at the time of writing).
-- A hash of each dependency must be defined in the repository. The package
-  manager must verify the hash corresponds to the actual tarball downloaded.
-- Changes must be as small as possible. Commits must be self-explained. The
-  first 80 characters of the commit must contain a brief description of the
-  changes, followed by an empty line, and the next lines can contain a deeper
-  explanation. Note that on GitHub, the first line of the commit will be
-  automatically used as a title for a pull request and the rest of the commit
-  message will be used as the pull request description.
-  Keeping pull request description in the git history allows to keep
-  explanations even if the hosting platform goes offline.
-- When we update a dependency, we should carefully analyze what the dependency
-  changes are.
-- When we add a new dependency, we must check the version we use, and if there
-  have been bugs in the versions. We must also check if it is actively
-developped.
-- If `git merge` is used to backport changes from one branch to another, the
-  pull request executing it must only contain the changes regarding the `git merge`.
-  If changes must be added to fix conflicts, it must be in a separated commit.
-  It must be possible for the reviewer to reproduce the process.
+- Each engineer must sign every commit.
+  - See [GitHub's
+    documentation](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key)
+    for guidance on signing commits.
+  - See [GitHub's
+    guide](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
+    on generating a new GPG key.
+  - Ensure the key adheres to the latest recommendations, with Ed25519 being a
+    current personal preference. The key should follow the latest
+    recommendations for key size, and the GPG key used for signing must be
+    protected by a robust password.
+- Activate Vigilan mode on GitHub, accessible
+  [here](https://github.com/settings/keys). This mode flags unverified commits
+  with `unverified` in yellow (as of the current writing).
+- Define a hash for each dependency in the repository. The package manager
+  should verify that the hash corresponds to the actual tarball downloaded.
+- Changes should be as minimal as possible. Commits must be self-explanatory.
+  The first 80 characters of the commit should provide a brief description of
+  the changes, followed by an empty line. Subsequent lines can contain a more
+  in-depth explanation. Note that on GitHub, the first line of the commit will
+  automatically be used as the title for a pull request, and the rest of the
+  commit message will serve as the pull request description. Keeping the pull
+  request description in the git history allows us to retain explanations even
+  if the hosting platform goes offline.
+
+- When updating a dependency, a careful analysis of the changes in the
+  dependency must be conducted.
+
+- When adding a new dependency, we must check the version we are using and
+  determine if there have been any bugs in that version. Additionally, we must
+  verify if the dependency is actively being developed.
+
+- If git merge is used to backport changes from one branch to another, the pull
+  request executing it should only contain the changes related to the git merge.
+  If additional changes are needed to address conflicts, they should be in a
+  separate commit. The reviewer must be able to reproduce the process.
 
 ## Other related documents
 
