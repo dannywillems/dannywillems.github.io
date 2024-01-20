@@ -3,7 +3,7 @@ layout: post
 title: The Rekt test, revisited
 date: 2024-01-20 11:02:36 +0000
 author: Danny Willems
-tags: [security, offset]
+tags: [security, offsec, rekt test]
 ---
 
 This document will evolve over the years.
