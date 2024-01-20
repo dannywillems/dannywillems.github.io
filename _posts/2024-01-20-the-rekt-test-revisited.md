@@ -9,7 +9,9 @@ tags: [security, offsec, rekt test]
 This document will evolve over the years.
 It will describe security practices that I would recommend to use in company
 projects.
-
+This article will also complete the previous one [You said bugs? Key points I
+have learned over the years in FOSS
+developments](https://dannywillems.github.io/2023/12/08/you-said-bugs.html).
 
 ## Code related
 
@@ -31,6 +33,15 @@ projects.
   message will be used as the pull request description.
   Keeping pull request description in the git history allows to keep
   explanations even if the hosting platform goes offline.
+- When we update a dependency, we should carefully analyze what the dependency
+  changes are.
+- When we add a new dependency, we must check the version we use, and if there
+  have been bugs in the versions. We must also check if it is actively
+developped.
+- If `git merge` is used to backport changes from one branch to another, the
+  pull request executing it must only contain the changes regarding the `git merge`.
+  If changes must be added to fix conflicts, it must be in a separated commit.
+  It must be possible for the reviewer to reproduce the process.
 
 ## Other related documents
 
