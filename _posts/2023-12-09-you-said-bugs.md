@@ -21,7 +21,7 @@ developped.
 - End-to-end tests, i.e. scenarii, are very good tests as they include changes
   the in whole stack, including dependencies, not only at the library level.
 - Integration tests help detecting bugs when calling external dependencies and
-  other related modules. 
+  other related modules.
 - At least 2 reviewers per changes.
 - At least 2 persons should know well the code that is being modified.
 
