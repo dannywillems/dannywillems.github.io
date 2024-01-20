@@ -31,3 +31,7 @@ projects.
   message will be used as the pull request description.
   Keeping pull request description in the git history allows to keep
   explanations even if the hosting platform goes offline.
+
+## Other related documents
+
+- [The Rekt test](https://blog.trailofbits.com/2023/08/14/can-you-pass-the-rekt-test/)
