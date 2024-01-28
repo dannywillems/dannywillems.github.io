@@ -37,3 +37,10 @@ baloo and Caulk
 ### Vocabulary
 
 - query: request to prove that a value is in the table.
+
+### Questions
+
+Let $\mathbb{V} < G$ and $\mathbb{H} < G$, with $\|V\| = N$ and $\|H\| = n$, with $n < N$.
+Our table is the evaluations of a polynomial $T: V \rightarrow K$, and the value
+we look up are evaluations of a function $f: H \rightarrow G$.
+Can we have some nice properties if $f$ is a morphism?
