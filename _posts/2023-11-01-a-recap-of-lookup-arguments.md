@@ -22,5 +22,5 @@ publication.
 
 A lookup argument is an argument to prove that the values of a commited
 polynomial $P(X) \in \mathbb{K}^{<n}[X]$ is contained in a table $t \in
-\mathbb{K}^N$. It is used to avoid computation that would be expensive to
-constrain.
+\mathbb{K}^N$, where $t$ is a precomputable table of values. It is used to avoid
+computations that would be expensive to constrain otherwise.
