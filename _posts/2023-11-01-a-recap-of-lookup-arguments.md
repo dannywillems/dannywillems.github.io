@@ -26,3 +26,13 @@ A lookup argument is an argument to prove that the values of a commited
 polynomial $P(X) \in \mathbb{K}^{<n}[X]$ is contained in a table $t \in
 \mathbb{K}^N$, where $t$ is a precomputed table of values. It is used to avoid
 computations that would be expensive to constrain otherwise.
+
+### Homomorphic commitments
+
+Useful to prove *simultaneously* (i.e with a single query) that $a_{i}$ and
+$b_{i}$ are in $T_{1}$ and $T_{2}$ by proving that $a_{i} + r b_{i}$ is in
+$T_{1} + r T_{2}$. We save one query. Example: baloo and Caulk
+
+### Vocabulary
+
+- query: request to prove that a value is in the table.
