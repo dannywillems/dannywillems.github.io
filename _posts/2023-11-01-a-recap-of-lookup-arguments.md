@@ -16,3 +16,11 @@ publication.
 - MVLookup: https://github.com/Orbis-Tertius/MVlookups/blob/main/MVlookup.pdf
   - some interesting proofs about lookup derivative. Easy to read the lemmas, well-explained.
 - cq: https://eprint.iacr.org/2022/1763
+
+
+## Introduction
+
+A lookup argument is an argument to prove that the values of a commited
+polynomial $P(X) \in \mathbb{K}^{<n}[X]$ is contained in a table $t \in
+\mathbb{K}^N$. It is used to avoid computation that would be expensive to
+constrain.
