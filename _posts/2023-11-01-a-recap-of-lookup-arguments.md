@@ -10,6 +10,8 @@ This is only a draft, and at the moment, it will be simply a list of papers to
 recap the different existing lookup arguments. I try to keep it in the order of
 publication.
 
+- https://sci-hub.ru/10.1007/bf01185212
+- https://eprint.iacr.org/2023/1555.pdf - Permem and gcq
 - Nearly Linear-Time Zero-Knowledge Proofs for Correct Program Execution: https://eprint.iacr.org/2018/380
 - Plookup: https://eprint.iacr.org/2020/315.pdf
 - HyperPlonk: https://eprint.iacr.org/2022/1355
