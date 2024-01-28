@@ -31,7 +31,8 @@ computations that would be expensive to constrain otherwise.
 
 Useful to prove *simultaneously* (i.e with a single query) that $a_{i}$ and
 $b_{i}$ are in $T_{1}$ and $T_{2}$ by proving that $a_{i} + r b_{i}$ is in
-$T_{1} + r T_{2}$. We save one query. Example: baloo and Caulk
+$T_{1} + r T_{2}$. We save one query. This is called a *vector lookup*. Example:
+baloo and Caulk
 
 ### Vocabulary
 
