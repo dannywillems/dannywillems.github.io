@@ -28,6 +28,37 @@ polynomial $P(X) \in \mathbb{K}^{<n}[X]$ is contained in a table $t \in
 computations that would be expensive to constrain otherwise. In other terms,
 lookup arguments are used for relations of high algebraic complexities.
 
+In terms of polynomials, a lookup argument aims to prove that the evaluations
+over a group $H$ of a polynomial $P(X)$ are equals to the evaluations of another
+polynomial $T$. If $H = <\omega^{i}>$, then the prover must convince that for each $\omega^{j}$,
+$P(\omega^{j}) = T(\omega^{k})$, for a certain $k$. $P(X)$ is part of the
+witness, where $T$ is public. You can note that with this notation, if $P$ and
+$T$ are of the same degree, a lookup argument is exactly proving that the evaluations of $P$ is a
+permutation of the evaluations of $T$, i.e. it is a permutation argument. That
+explains the statement that a permutation argument is a lookup argument.
+
+An important note is that $P$ and $T$ can be the same polynomials. In the case
+of memory access, the same polynomials can be used to show which read/write
+operations, and with which values, the execution trace performs at each row. In the case of
+R/W operations, the order of the access must also be performed, it can be done
+by keeping track of the last time the values has been read/written and verify
+that the difference with the current instruction counter is in a predefined range.
+
+Let's take an example. Let's the difference with the current instruction counters
+are of size $16 = 2^4$, i.e. we have an execution trace of 16 operations (very small program).
+The program fetches the memory at the instruction counter $IC$ 10. By checking
+that $16 - 10$ is in the range $0, ..., 16$ and by keeping a column (i.e. a
+polynomial) that will contain the current instruction counter for the last
+fetch, we will keep track of the memory access at the instruction $10$, and that
+it happened during the execution of the program. If we later fetch the same
+address (e.g. instruction counter = $12$), we prove the property that it is after
+the next instruction by checking that the difference with it is still in the
+range $0, ..., 16$, i.e. that $12 - 10$ is in the range. If the prover lies, and
+try to have the value before the instruction 10, the difference will be outside
+of the range if we suppoes the field is at least twice larger than the table
+size.
+
+
 ## MVLookup
 
 MVLookup are described in https://eprint.iacr.org/2022/1530.pdf.
