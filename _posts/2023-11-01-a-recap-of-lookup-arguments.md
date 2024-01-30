@@ -28,6 +28,11 @@ polynomial $P(X) \in \mathbb{K}^{<n}[X]$ is contained in a table $t \in
 computations that would be expensive to constrain otherwise. In other terms,
 lookup arguments are used for relations of high algebraic complexities.
 
+## MVLookup
+
+MVLookup are described in https://eprint.iacr.org/2022/1530.pdf.
+It is based on the sumcheck protocol.
+
 ### Homomorphic commitments
 
 Useful to prove *simultaneously* (i.e with a single query) that $a_{i}$ and
