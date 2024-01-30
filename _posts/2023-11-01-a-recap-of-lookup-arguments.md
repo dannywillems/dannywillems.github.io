@@ -33,6 +33,15 @@ lookup arguments are used for relations of high algebraic complexities.
 MVLookup are described in https://eprint.iacr.org/2022/1530.pdf.
 It is based on the sumcheck protocol.
 
+The terms to remember in the paper:
+- cached quotients -> we use some pre-computed quotients to speed up some computations
+- batch column lookups -> on the same row, multiple columns query the same table.
+- the main change in MVLookup is to use the mathetical objects called `rational functions`. Rational functions are well-defined mathematical objects, which are fractions of polynomials, i.e. $\frac{P(X)}{Q(X)}$.
+- the notion of the `logarithm derivative` of a polynomial $P(X)$, defined as the rational function $\frac{P'(X)}{P(X)}$. We will use the term **logup** to talk about the logarithmic derivative of a polynomial $P(X)$, and we will use the notation $logup(P(X))$
+- a property used in the lookup argument is the following. If a polynomial
+  $P(X)$ can be decomposed in $\prod_{i = 1}^{n} (X + z_{i}$, then $logup(P(X))
+  = \sum_{i = 1}^{n} \frac{1}{X + z_{i}}$.
+
 ### Homomorphic commitments
 
 Useful to prove *simultaneously* (i.e with a single query) that $a_{i}$ and
