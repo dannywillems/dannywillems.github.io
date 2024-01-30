@@ -39,7 +39,7 @@ The terms to remember in the paper:
 - the main change in MVLookup is to use the mathetical objects called `rational functions`. Rational functions are well-defined mathematical objects, which are fractions of polynomials, i.e. $\frac{P(X)}{Q(X)}$.
 - the notion of the `logarithm derivative` of a polynomial $P(X)$, defined as the rational function $\frac{P'(X)}{P(X)}$. We will use the term **logup** to talk about the logarithmic derivative of a polynomial $P(X)$, and we will use the notation $logup(P(X))$
 - a property used in the lookup argument is the following. If a polynomial
-  $P(X)$ can be decomposed in $\prod_{i = 1}^{n} (X + z_{i}$, then $logup(P(X))
+  $P(X)$ can be decomposed in $\prod_{i = 1}^{n} (X + z_{i})$, then $logup(P(X))
   = \sum_{i = 1}^{n} \frac{1}{X + z_{i}}$.
 
 ### Homomorphic commitments
