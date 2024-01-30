@@ -25,7 +25,8 @@ publication.
 A lookup argument is an argument to prove that the values of a commited
 polynomial $P(X) \in \mathbb{K}^{<n}[X]$ is contained in a table $t \in
 \mathbb{K}^N$, where $t$ is a precomputed table of values. It is used to avoid
-computations that would be expensive to constrain otherwise.
+computations that would be expensive to constrain otherwise. In other terms,
+lookup arguments are used for relations of high algebraic complexities.
 
 ### Homomorphic commitments
 
