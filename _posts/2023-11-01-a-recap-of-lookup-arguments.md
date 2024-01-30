@@ -64,7 +64,7 @@ size.
 MVLookup are described in https://eprint.iacr.org/2022/1530.pdf.
 It is based on the sumcheck protocol.
 
-The terms to remember in the paper:
+What to remember from the paper:
 - cached quotients -> we use some pre-computed quotients to speed up some computations
 - batch column lookups -> on the same row, multiple columns query the same table.
 - the main change in MVLookup is to use the mathetical objects called `rational functions`. Rational functions are well-defined mathematical objects, which are fractions of polynomials, i.e. $\frac{P(X)}{Q(X)}$.
@@ -72,6 +72,14 @@ The terms to remember in the paper:
 - a property used in the lookup argument is the following. If a polynomial
   $P(X)$ can be decomposed in $\prod_{i = 1}^{n} (X + z_{i})$, then $logup(P(X))
   = \sum_{i = 1}^{n} \frac{1}{X + z_{i}}$.
+- $\prod_{i = 1}^{n} (X + a_{i}) = \prod_{i = 1}^{n} (X + b_{i})$ iff $\sum_{i = 1}^{n}\frac{1}{(X + a_{i})} = \sum_{i = 1}^{n}\frac{1}{(X + b_{i})}$
+- The multiplicity of a root of a polynomial can be captured in its logup. More
+  concretely, if $P(X) = \prod_{i = 1}^{n}(X + a_{i})^{m_{i}}$, where $m_{i}$ is
+  the multiplicity of the root $a_{i}$, we have $logup(P(X)) = \sum_{i =
+  1}^{n}\frac{m_{i}}{(X + a_{i})}$
+- If we represent $m_{i}$ as the evaluation of a polynomial over $H$ (for
+  $a \in H$, $m(a) = 0$ if $a$ is a not root of $P(X)$ and $m_{i}$ if $a$ is a
+  root), we can represent the logup using $logup(P(X)) = \sum_{a \in H}\frac{m(a)}{(X + a)}$
 
 ### Homomorphic commitments
 
