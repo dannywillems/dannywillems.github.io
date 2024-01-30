@@ -77,9 +77,9 @@ What to remember from the paper:
   concretely, if $P(X) = \prod_{i = 1}^{n}(X + a_{i})^{m_{i}}$, where $m_{i}$ is
   the multiplicity of the root $a_{i}$, we have $logup(P(X)) = \sum_{i =
   1}^{n}\frac{m_{i}}{(X + a_{i})}$
-- If we represent $m_{i}$ as the evaluation of a polynomial over $H$ (for
-  $a \in H$, $m(a) = 0$ if $a$ is a not root of $P(X)$ and $m_{i}$ if $a$ is a
-  root), we can represent the logup using $logup(P(X)) = \sum_{a \in H}\frac{m(a)}{(X + a)}$
+- If we represent $m_{i}$ as the evaluation of a polynomial over $\mathbb{K}$ (for
+  $a \in \mathbb{K}$, $m(a) = 0$ if $a$ is a not root of $P(X)$ and $m_{i}$ if $a$ is a
+  root), we can represent the logup using $logup(P(X)) = \sum_{a \in \mathbb{K}}\frac{m(a)}{(X + a)}$
 
 ### Homomorphic commitments
 
