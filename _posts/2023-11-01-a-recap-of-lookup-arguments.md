@@ -65,6 +65,8 @@ MVLookup are described in https://eprint.iacr.org/2022/1530.pdf.
 It is based on the sumcheck protocol.
 
 What to remember from the paper:
+- there are conditions using the characteristic of $p$. In the case of SNARK, we
+  use a large $p$, therefore we can ignore it.
 - cached quotients -> we use some pre-computed quotients to speed up some computations
 - batch column lookups -> on the same row, multiple columns query the same table.
 - the main change in MVLookup is to use the mathetical objects called `rational functions`. Rational functions are well-defined mathematical objects, which are fractions of polynomials, i.e. $\frac{P(X)}{Q(X)}$.
@@ -80,6 +82,7 @@ What to remember from the paper:
 - If we represent $m_{i}$ as the evaluation of a polynomial over $\mathbb{K}$ (for
   $a \in \mathbb{K}$, $m(a) = 0$ if $a$ is a not root of $P(X)$ and $m_{i}$ if $a$ is a
   root), we can represent the logup using $logup(P(X)) = \sum_{a \in \mathbb{K}}\frac{m(a)}{(X + a)}$
+- A corollary of the above gives us a good foundation for lookup arguments (as a reminder, we want to prove subset inclusion). More concretely, we have: if $f_{i}$ is a subset of $t_{j}$, then there exists a sequence $m_{i}$ such that $\sum_{i = 1}^{m}\frac{m_{i}}{(X + a_{i})} = \sum_{j = 1}^{n}\frac{1}{(X + b_{i})}$
 
 ### Homomorphic commitments
 
