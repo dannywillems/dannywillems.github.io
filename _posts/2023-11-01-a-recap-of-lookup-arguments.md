@@ -83,6 +83,11 @@ What to remember from the paper:
   $a \in \mathbb{K}$, $m(a) = 0$ if $a$ is a not root of $P(X)$ and $m_{i}$ if $a$ is a
   root), we can represent the logup using $logup(P(X)) = \sum_{a \in \mathbb{K}}\frac{m(a)}{(X + a)}$
 - A corollary of the above gives us a good foundation for lookup arguments (as a reminder, we want to prove subset inclusion). More concretely, we have: if $f_{i}$ is a subset of $t_{j}$, then there exists a sequence $m_{i}$ such that $\sum_{i = 1}^{m}\frac{m_{i}}{(X + a_{i})} = \sum_{j = 1}^{n}\frac{1}{(X + b_{i})}$
+- The concept of **Lagrange Interactive Oracle Proofs (Lagrange IOP)** is
+  introduced. It can be used when the polynomial commitment scheme can be
+  changed to not require the polynomial coefficients, neither when computing the
+  commitment nor in an opening proof.
+- Same for the concept of **Lagrange commitment scheme**. A Lagrange commitment scheme is a commitment scheme for functions over the boolean hypercube H that comes with an evaluation proof for Lagrange queries.
 
 ### Homomorphic commitments
 
