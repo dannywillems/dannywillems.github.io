@@ -99,6 +99,8 @@ baloo and Caulk
 ### Vocabulary
 
 - query: request to prove that a value is in the table.
+- random folding procedure: when we have two elements $a$, $b$, a *random
+  folding procedure* is computing $a + r * b$, with $r$ random.
 
 ### Questions
 
