@@ -26,3 +26,8 @@ So. Starting with the new terms in the CSS ecosystem.
 It seems people came with some names to classify classes.
 I started reading [SMACCS](http://smacss.com/book/). I recommend. No summary to
 make. Pretty straightforward.
+
+Another interesting page I read was about the different units to express
+lengths. Sure, we might think it is straightforward, but it is not! We cannot
+say "One size (unit) to rule them all".
+This [page](https://www.w3.org/Style/Examples/007/units.en.html) is interesting.
