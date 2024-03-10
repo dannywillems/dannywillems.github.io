@@ -1,7 +1,7 @@
 ---
 layout: post
 title: You said webdev, in 2024?
-date: 2024-02-01, 09:02:36 +0000
+date: 2024-03-09, 09:02:36 +0000
 author: Danny Willems
 tags: [2024, webdev]
 ---
