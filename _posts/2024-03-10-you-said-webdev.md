@@ -31,3 +31,8 @@ Another interesting page I read was about the different units to express
 lengths. Sure, we might think it is straightforward, but it is not! We cannot
 say "One size (unit) to rule them all".
 This [page](https://www.w3.org/Style/Examples/007/units.en.html) is interesting.
+
+What I would remember from this link:
+```
+But for font sizes it is even better to use em. The idea is (1) to not set the font size of the BODY element (in HTML), but use the default size of the device, because that is a size that the reader can comfortably read; and (2) express font sizes of other elements in em: H1 {font-size: 2.5em} to make the H1 2½ times as big as the normal, body font.
+```
