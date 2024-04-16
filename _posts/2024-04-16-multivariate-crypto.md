@@ -15,3 +15,7 @@ Describe a multivariate polynomial commitment scheme based on some observations 
 
 I like the multiset representation of a multivariate polynomial, section 2.4.
 Also, good description of KZG, see 1.3.
+
+Good reminder to see the verification of a SNARK as a "public key" and the proof
+as a "signature". The toxic waste can therefore be seen as a private key that we
+must not keep.
