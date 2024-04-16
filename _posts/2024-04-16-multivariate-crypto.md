@@ -22,3 +22,4 @@ must not keep.
 
 Maybe the idea of using derivate evaluations $(f(x) - f'(a) x/(x - a)^2)$ is
 something to dig into.
+Wondering if the paper can be used for lookup arguments with large tables, using the decomposition of a polynomial $P(X) - P(a) \in \mathbb{F}[X_{1}, ..., X_{N}]$ in $\sum_{i = 1}^{N} (X_{i} - a_{i}) q_{i}(X)$
