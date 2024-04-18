@@ -6,9 +6,9 @@
     <p class="center">
       Currently:
       <br />
-      Cryptography Engineer & Researcher @ O(1) Labs/Mina
+      Cryptography Engineer & Researcher @ <a href="https://o1labs.org">O(1) Labs</a>/Mina
       <br />
-      CEO @ LeakIX
+      CEO @ <a href="https://leakix.net">LeakIX</a>
     </p>
     <p class="center">
       Previously:
@@ -53,7 +53,7 @@
     <br />
     I spend most of my time <b>trying</b> to provide a better Internet for
     everyone.
-    With this mission in mind, I co-founded LeakIX with Gregory Boddin and we
+    With this mission in mind, I co-founded <a href="https://leakix.net>LeakIX</a> with Gregory Boddin and we
     aim to be the Internet red team. I am also a cryptography engineer at O(1)
     Labs, a
     company catalyzing a new generation of applications powered by
