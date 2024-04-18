@@ -8,7 +8,7 @@
       <br />
       Cryptography Engineer & Researcher @ <a href="https://o1labs.org">O(1) Labs</a>/Mina
       <br />
-      CEO @ <a href="https://leakix.net">LeakIX</a>
+      Co-founder @ <a href="https://leakix.net">LeakIX</a>
     </p>
     <p class="center">
       Previously:
