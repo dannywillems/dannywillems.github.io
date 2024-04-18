@@ -53,7 +53,8 @@
     <br />
     I spend most of my time <b>trying</b> to provide a better Internet for
     everyone.
-    With this mission in mind, I co-founded <a href="https://leakix.net>LeakIX</a> with Gregory Boddin and we
+    With this mission in mind, I co-founded <a
+    href="https://leakix.net">LeakIX</a> with Gregory Boddin and we
     aim to be the Internet red team. I am also a cryptography engineer at O(1)
     Labs, a
     company catalyzing a new generation of applications powered by
