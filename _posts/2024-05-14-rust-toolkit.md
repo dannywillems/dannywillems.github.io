@@ -42,7 +42,8 @@ and spacetime, the type "reference to the structure S" can be seen as a
 description of the value that lives in the dimension "space" and the type `'a`
 can be seen as a description of the region in the dimension "time". The "time"
 can be seen as a linear space. Each value has a default "time" type to describe the
-part of the program it will live in.
+part of the program it will live in. The lifetime is simply an additional
+information describing the value, and help to reason about it.
 The lifetime types describe only a way to detect at compile time "time access
 management bugs". At runtime, Rust will take care, with a "specialised
 allocator", to free/allocate the values into the real-world.
