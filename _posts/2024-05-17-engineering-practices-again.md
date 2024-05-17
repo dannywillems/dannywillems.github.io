@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cryptography/R&D engineering practices
-date: 2024-05-10 10:02:36 +0000
+date: 2024-05-16 10:02:36 +0000
 author: Danny Willems
 tags: [engineering, testing, documentation]
 ---
