@@ -10,7 +10,7 @@ I like this [post-mortem](https://github.com/ethereum-optimism/optimism/blob/mas
 
 - PRs must be very small.
 - Commits must be small, specific to the PR. Commit messages must be clear
-  about the changes. 
+  about the changes.
 - When we update a dependency, we should carefully analyze what the dependency
   changes are.
 - When we add a new dependency, we must check the version we use, and if there

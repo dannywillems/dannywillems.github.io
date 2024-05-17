@@ -70,7 +70,10 @@ What to remember from the paper:
 - cached quotients -> we use some pre-computed quotients to speed up some computations
 - batch column lookups -> on the same row, multiple columns query the same table.
 - the main change in MVLookup is to use the mathetical objects called `rational functions`. Rational functions are well-defined mathematical objects, which are fractions of polynomials, i.e. $\frac{P(X)}{Q(X)}$.
-- the notion of the `logarithm derivative` of a polynomial $P(X)$, defined as the rational function $\frac{P'(X)}{P(X)}$. We will use the term **logup** to talk about the logarithmic derivative of a polynomial $P(X)$, and we will use the notation $logup(P(X))$
+- the notion of the `logarithm derivative` of a polynomial $P(X)$, defined as
+  the rational function $\frac{P'(X)}{P(X)}$. We will use the term **logup** to
+  talk about the logarithmic derivative of a polynomial $P(X)$, and we will use
+  the notation $logup(P(X))$
 - a property used in the lookup argument is the following. If a polynomial
   $P(X)$ can be decomposed in $\prod_{i = 1}^{n} (X + z_{i})$, then $logup(P(X))
   = \sum_{i = 1}^{n} \frac{1}{X + z_{i}}$.
@@ -82,12 +85,18 @@ What to remember from the paper:
 - If we represent $m_{i}$ as the evaluation of a polynomial over $\mathbb{K}$ (for
   $a \in \mathbb{K}$, $m(a) = 0$ if $a$ is a not root of $P(X)$ and $m_{i}$ if $a$ is a
   root), we can represent the logup using $logup(P(X)) = \sum_{a \in \mathbb{K}}\frac{m(a)}{(X + a)}$
-- A corollary of the above gives us a good foundation for lookup arguments (as a reminder, we want to prove subset inclusion). More concretely, we have: if $f_{i}$ is a subset of $t_{j}$, then there exists a sequence $m_{i}$ such that $\sum_{i = 1}^{m}\frac{m_{i}}{(X + a_{i})} = \sum_{j = 1}^{n}\frac{1}{(X + b_{i})}$
+- A corollary of the above gives us a good foundation for lookup arguments (as a
+  reminder, we want to prove subset inclusion). More concretely, we have: if
+  $f_{i}$ is a subset of $t_{j}$, then there exists a sequence $m_{i}$ such that
+  $\sum_{i = 1}^{m}\frac{m_{i}}{(X + a_{i})} = \sum_{j = 1}^{n}\frac{1}{(X +
+  b_{i})}$
 - The concept of **Lagrange Interactive Oracle Proofs (Lagrange IOP)** is
   introduced. It can be used when the polynomial commitment scheme can be
   changed to not require the polynomial coefficients, neither when computing the
   commitment nor in an opening proof.
-- Same for the concept of **Lagrange commitment scheme**. A Lagrange commitment scheme is a commitment scheme for functions over the boolean hypercube H that comes with an evaluation proof for Lagrange queries.
+- Same for the concept of **Lagrange commitment scheme**. A Lagrange commitment
+  scheme is a commitment scheme for functions over the boolean hypercube H that
+  comes with an evaluation proof for Lagrange queries.
 
 ### Homomorphic commitments
 
