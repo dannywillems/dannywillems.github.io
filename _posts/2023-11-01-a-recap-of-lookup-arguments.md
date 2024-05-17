@@ -62,7 +62,8 @@ size.
 ## MVLookup
 
 MVLookup are described in https://eprint.iacr.org/2022/1530.pdf.
-It is based on the sumcheck protocol.
+It is based on the sumcheck protocol. Note that the sumcheck protocol is simply
+another way to verify polynomial identities.
 
 What to remember from the paper:
 - there are conditions using the characteristic of $p$. In the case of SNARK, we
