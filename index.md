@@ -736,6 +736,10 @@ on gâche tout où est le respect ? Si on échoue où est le progrès ? Chaque f
 de pauvre doit avoir de l'ambition.
 </blockquote>
 
+<blockquote>
+Hardly anybody actually understands money - <a href="http://unenumerated.blogspot.com/2011/05/bitcoin-what-took-ye-so-long.html">Nick Szabo</a>
+</blockquote>
+
 ## Recommended softwares
 
 - [KeepassXC](https://keepassxc.org/): see [my
