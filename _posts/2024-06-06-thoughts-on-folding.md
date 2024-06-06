@@ -31,3 +31,11 @@ Folding schemes allow to only focus on making a proof of the computation of
 `P(X' + r X, Y' + r Y, Z' + r Z)` which englobes the computation of `P(r X, r Y,
 r Z)` and `P(X', Y', Z')`, plus an additional error term we "ignore", defined by
 a polynomial `E(X, Y, Z, r X', r Y', r Z')`.
+
+When we take rX, rY, rZ, if Z is the "u" in Nova, we take a certain point (a, b,
+c) from the class representing the value (x, y).
+
+Links:
+- [Higher geometry; an introduction to advanced methods in analytic geometry](https://archive.org/details/highergeometryin00wooduoft/page/vi/mode/2up)
+- [Duality (projective
+  geometry)](https://en.wikipedia.org/wiki/Duality_(projective_geometry)
