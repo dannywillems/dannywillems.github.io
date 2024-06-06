@@ -43,7 +43,10 @@ description of the value that lives in the dimension "space" and the type `'a`
 can be seen as a description of the region in the dimension "time". The "time"
 can be seen as a linear space. Each value has a default "time" type to describe the
 part of the program it will live in. The lifetime is simply an additional
-information describing the value, and help to reason about it.
+information describing the value, and help to reason about it. For instance, if
+you have a lambda term `λy ((λx t) y)`, you want to type the fact that x
+"lives only inside the expression `λx t`.
+
 The lifetime types describe only a way to detect at compile time "time access
 management bugs". At runtime, Rust will take care, with a "specialised
 allocator", to free/allocate the values into the real-world.
