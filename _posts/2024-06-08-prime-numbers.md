@@ -42,3 +42,5 @@ Some interesting facts:
 - Interesting video from [Terrence
   Tao](https://www.youtube.com/watch?v=pp06oGD4m00).
   - infinite prime numbers separated by 2.
+- Mersenne primes (2^n - 1) are good for multiplications in decimal
+  representation on computers, because it is implemented as bitshifts.
