@@ -32,6 +32,9 @@ From there, you can have: if s1 has all its letters in s2, then p(s1) divides
 p(s2).
 This problem on strings can be optimised using assembly instructions directly
 and only a few number of registers.
+Use Mersenne primes to optimise the computation of the function `p` when there
+are not that many characters (see [the list of Mersenne
+primes](https://www.mersenne.org/primes/))
 
 Some interesting facts:
 
