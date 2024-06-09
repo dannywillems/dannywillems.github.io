@@ -47,3 +47,8 @@ Some interesting facts:
   - infinite prime numbers separated by 2.
 - Mersenne primes (2^n - 1) are good for multiplications in decimal
   representation on computers, because it is implemented as bitshifts.
+- The gap between two prime numbers can be arbitraly large. For instance, if you
+  take `n! + 2`, `n! + 3`, ..., `n! + n`, there are no prime numbers between
+  `n! + 2` and `n! + n` because they are all divisible by `i`. For instance,
+  between `120` and `124` there are no prime because `120 = 5!`.
+  Therefore, you can have arbitraly distance between two prime numbers
