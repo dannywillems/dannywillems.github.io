@@ -60,18 +60,19 @@
     everyone.
     With this mission in mind, I co-founded <a
     href="https://leakix.net">LeakIX</a> with Gregory Boddin and we
-    aim to be the Internet red team. I am also a cryptography engineer at O(1)
-    Labs, a
-    company catalyzing a new generation of applications powered by
-    zero-knowledge cryptography.
+    aim to be the Internet red team. I am also a cryptography engineer at <a
+    href="https://o1labs.org">o1Labs</a>, a company catalyzing a new generation
+    of applications powered by zero-knowledge cryptography.
     <br />
-    My current interests are research works on
-    arithmetization-oriented cryptographic primitives efficient in
-    zero-knowledge protocols and in standard CPU architectures,
-    cybersecurity and low-level code optimisations.
+    My current interests in cryptography are incrementally verifiable
+    computation. I have been also interested in arithmetization-oriented
+    cryptographic primitives. On my free-time I read about cybersecurity,
+    low-level code optimisations, formal verification and mathametics applied in
+    physics. I also enjoy doing recreative mathematics.
     <br />
-    Nowadays, I like getting my hands dirty coding in C, OCaml and Rust.
-    Constantly requiring to be in an intellectually stimulating environment.
+    Nowadays, I like getting my hands dirty coding in C, OCaml, Rust and read
+    assembly code. Constantly requiring to be in an intellectually stimulating
+    environment.
     <br />
     Regarding my personality, I am a curious person, I appreciate debating
     respectfully. I enjoy being surrounded by self-minded and respectful people,
