@@ -34,11 +34,16 @@
        <a href="https://linkedin.com/in/bedannywillems" class="logo-link">
          <img class="logo" src="{{ 'assets/linkedin.svg' }}">
        </a>
+    </div>
+    <div class="center">
        <a href="https://leakix.net" class="logo-link">
          <img class="logo" src="{{ 'assets/leakix.svg' }}">
        </a>
        <a href='http://www.catb.org/hacker-emblem/'>
          <img src="{{ 'assets/Glider.svg' }}" alt='hacker emblem' class="logo" />
+       </a>
+       <a href='https://www.iacr.org/cryptodb/data/author.php?authorkey=12524'>
+         <img src="{{ 'assets/iacrlogo_small.png' }}" alt='iacr_logo' class="logo" />
        </a>
     </div>
   </div>
