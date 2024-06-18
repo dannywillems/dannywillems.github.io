@@ -64,7 +64,7 @@
     href="https://o1labs.org">o1Labs</a>, a company catalyzing a new generation
     of applications powered by zero-knowledge cryptography.
     <br />
-    My current interests in cryptography are incrementally verifiable
+    My current interest in cryptography is incrementally verifiable
     computation. I have been also interested in arithmetization-oriented
     cryptographic primitives. On my free-time I read about cybersecurity,
     low-level code optimisations, formal verification and mathametics applied in
