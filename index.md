@@ -64,11 +64,11 @@
     href="https://o1labs.org">o1Labs</a>, a company catalyzing a new generation
     of applications powered by zero-knowledge cryptography.
     <br />
-    My current interest in cryptography is incrementally verifiable
-    computation. I have been also interested in arithmetization-oriented
-    cryptographic primitives. On my free-time I read about cybersecurity,
-    low-level code optimisations, formal verification and mathametics applied in
-    physics. I also enjoy doing recreative mathematics.
+    My current interest in cryptography is incrementally verifiable computation. I
+    have also been interested in arithmetization-oriented cryptographic primitives.
+    On my free-time I read about cybersecurity, low-level code optimizations, formal
+    verification and mathematics applied to physics. I also enjoy doing recreational
+    mathematics.
     <br />
     Nowadays, I like getting my hands dirty coding in C, OCaml, Rust and read
     assembly code. Constantly requiring to be in an intellectually stimulating
