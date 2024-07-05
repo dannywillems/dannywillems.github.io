@@ -2,6 +2,6 @@ theme: jekyll-theme-hacker
 title: Danny Willems
 author:
   name: Danny Willems
-description: Fighting to follow my values. Integrity is key. Reputation is key. Fighting for privacy and security on the Internet. Being respectful is your first duty.
+description: A mathematician fighting for privacy and security on the Internet, while dreaming about describing the Universe with equations and symbols.
 plugins:
   - jekyll-feed
