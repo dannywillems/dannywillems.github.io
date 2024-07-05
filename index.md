@@ -6,20 +6,20 @@
     <p class="center">
       Currently:
       <br />
-      Cryptography Engineer & Researcher @ <a href="https://o1labs.org">O(1) Labs</a>/Mina
+      Senior Cryptography Engineer & Researcher @ <a href="https://o1labs.org">o1Labs</a>/Mina
       <br />
       Co-founder @ <a href="https://leakix.net">LeakIX</a>
     </p>
     <p class="center">
       Previously:
       <br />
-      Cryptography engineer @ Nomadic Labs/Tezos
+      Cryptography engineer @ <a href="https://nomadic-labs.com">Nomadic Labs</a>/<a href="https://tezos.com">Tezos</a>
       <br />
-      Software engineer @ B2C2
+      First Software engineer @ <a href="https://www.b2c2.com/">B2C2</a>
       <br />
-      Software engineer @ Be Sport
+      Software engineer @ Be Sport (Intern)
       <br />
-      Gallium team @ INRIA Paris
+      Intern researcher - Gallium team @ INRIA Paris
     </p>
     <div class="center">
        <a href="https://twitter.com/dwillems42" class="logo-link">
@@ -48,19 +48,14 @@
     </div>
   </div>
   <div class="col-6">
-    Hi! I am Danny Willems.
-    I try to use my developer and mathematician skills to build softwares,
-    libraries and companies to reach a better society according to my values. My
-    values include, but are not restricted to, privacy, egalitarianism
-    and more recently veganism.
-    When possible, my work is released publicly in open-source and for
-    free.
+    Hi! I am Danny Willems. I am a mathematician with multiple interests, mostly
+    related to computer sciences and theoretical physics.
     <br />
     I spend most of my time <b>trying</b> to provide a better Internet for
     everyone.
     With this mission in mind, I co-founded <a
-    href="https://leakix.net">LeakIX</a> with Gregory Boddin and we
-    aim to be the Internet red team. I am also a cryptography engineer at <a
+    href="https://leakix.net">LeakIX</a> in 2021 with Gregory Boddin and we
+    aim to be the Internet red team. I am also a senior cryptography engineer at <a
     href="https://o1labs.org">o1Labs</a>, a company catalyzing a new generation
     of applications powered by zero-knowledge cryptography.
     <br />
@@ -180,6 +175,32 @@
 ## Public talks
 
 <div class="publications">
+  <div class="publication-item">
+    <p class="publication-title">ZK11: o1VM: Building a Real-World zkVM for MIPS</p>
+    <p class="publication-description">
+      Invited talks on main stage to talk about o1VM: a zkVM we are building at o1Labs.
+      In this talk, we will present o1vm, a general-purpose zkVM which can be used to
+      prove the correct execution of MIPS programs. Learn about the ISA
+      specifics supported by this zkVM, as well as an encoding technique for
+      bitwise operations that was used to efficiently implement standard hash
+      functions with high algebraic complexities like Keccak. I also dive into
+      the implementation of a folding scheme and RAMLookups,
+      our distinctive take on "additive lookups", and how they were leveraged to
+      handle long execution traces and to efficiently represent random-memory access,
+      an expensive component of zkVMs.
+    </p>
+    <p class="publication-authors">
+      Danny Willems
+    </p>
+    <div class="publication-links">
+      <a class="publication-link" href="https://www.youtube.com/watch?v=HDH2KXRAxAc">
+        YouTube
+      </a>
+      <a class="publication-link" href="https://www.zksummit.com/">
+        Event
+      </a>
+    </div>
+  </div>
   <div class="publication-item">
     <p class="publication-title">A zkVM for the MIPs architecture and OP fault proofs</p>
     <p class="publication-description">
