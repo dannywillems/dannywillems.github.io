@@ -203,61 +203,61 @@ Other projects have followed a similar approach:
 - Chrome and Firefox users can resolve `.eth` domains using extensions like
   **MetaMask** or by appending `.link` (e.g., `vitalik.eth.link`).
 
-## Implications for a zkSNARK-Based Domain System
+<!-- ## Implications for a zkSNARK-Based Domain System -->
 
-Following a similar path, a zero-knowledge domain system could integrate
-with browsers by:
+<!-- Following a similar path, a zero-knowledge domain system could integrate -->
+<!-- with browsers by: -->
 
-- Providing a simple, lightweight **resolver library** (in JavaScript, Rust, or
-  C++) for zk-proofs.
-- Using a small (or constant-sized blockchain) to validate domain proofs
-  without heavy infrastructure.
-- Setting standards for domain discovery (e.g., `.zkd` TLD)
-- Collaborating with privacy-focused browsers like **Brave** to offer native
-  zk-domain resolution.
+<!-- - Providing a simple, lightweight **resolver library** (in JavaScript, Rust, or -->
+<!--   C++) for zk-proofs. -->
+<!-- - Using a small (or constant-sized blockchain) to validate domain proofs -->
+<!--   without heavy infrastructure. -->
+<!-- - Setting standards for domain discovery (e.g., `.zkd` TLD) -->
+<!-- - Collaborating with privacy-focused browsers like **Brave** to offer native -->
+<!--   zk-domain resolution. -->
 
-Given the successful example of ENS, it is clear that **browser-level
-integration** for decentralized and even **privacy-preserving domain names** is
-a realistic, achievable goal.
+<!-- Given the successful example of ENS, it is clear that **browser-level -->
+<!-- integration** for decentralized and even **privacy-preserving domain names** is -->
+<!-- a realistic, achievable goal. -->
 
-## Towards Private Decentralized Domain Registration with Mina and zk-SNARKs
+<!-- ## Towards Private Decentralized Domain Registration with Mina and zk-SNARKs -->
 
-Mina Protocol, with its lightweight blockchain and built-in zero-knowledge proof
-system, offers a unique opportunity: **registering and proving ownership of a
-domain name without revealing your identity or address publicly.**
+<!-- Mina Protocol, with its lightweight blockchain and built-in zero-knowledge proof -->
+<!-- system, offers a unique opportunity: **registering and proving ownership of a -->
+<!-- domain name without revealing your identity or address publicly.** -->
 
-A zk-SNARK-based domain system on Mina could:
-- Allow a user to **prove** they have the right to register a domain (e.g., by
-  paying a fee) **without exposing their address**.
-- **Separate the proof** of ownership from the actual account.
-- Enable **anonymous or pseudonymous** domain ownership.
-- Make domain ownership **portable** and **privacy-preserving**.
+<!-- A zk-SNARK-based domain system on Mina could: -->
+<!-- - Allow a user to **prove** they have the right to register a domain (e.g., by -->
+<!--   paying a fee) **without exposing their address**. -->
+<!-- - **Separate the proof** of ownership from the actual account. -->
+<!-- - Enable **anonymous or pseudonymous** domain ownership. -->
+<!-- - Make domain ownership **portable** and **privacy-preserving**. -->
 
-In short, you could imagine **"zero-knowledge domain registrations"**:
-- You submit a zk-proof to a smart contract that says "I paid" or "I am entitled
-  to register this domain" — without revealing your wallet.
-- Validators verify the proof without ever learning your identity.
-- The domain itself is recorded and resolved using a decentralized system
-  (off-chain or using lightweight ledger proofs).
+<!-- In short, you could imagine **"zero-knowledge domain registrations"**: -->
+<!-- - You submit a zk-proof to a smart contract that says "I paid" or "I am entitled -->
+<!--   to register this domain" — without revealing your wallet. -->
+<!-- - Validators verify the proof without ever learning your identity. -->
+<!-- - The domain itself is recorded and resolved using a decentralized system -->
+<!--   (off-chain or using lightweight ledger proofs). -->
 
-## Why is Mina the Best Fit?
+<!-- ## Why is Mina the Best Fit? -->
 
-- **Ultra-lightweight blockchain**: Mina's whole blockchain is a constant ~22
-  KB, easy to embed in browsers and IoT devices.
-- **Native zk-SNARKs**: Mina is built from the ground up to verify proofs
-  efficiently.
-- **Programmable zero-knowledge applications (zkApps)**: Developers can easily
-  create smart contracts that require proofs without exposing on-chain data.
-- **Focus on privacy**: Unlike most blockchains that treat transparency as
-  default, Mina treats **privacy as a first-class citizen**.
+<!-- - **Ultra-lightweight blockchain**: Mina's whole blockchain is a constant ~22 -->
+<!--   KB, easy to embed in browsers and IoT devices. -->
+<!-- - **Native zk-SNARKs**: Mina is built from the ground up to verify proofs -->
+<!--   efficiently. -->
+<!-- - **Programmable zero-knowledge applications (zkApps)**: Developers can easily -->
+<!--   create smart contracts that require proofs without exposing on-chain data. -->
+<!-- - **Focus on privacy**: Unlike most blockchains that treat transparency as -->
+<!--   default, Mina treats **privacy as a first-class citizen**. -->
 
-## Conclusion
+<!-- ## Conclusion -->
 
-Decentralizing domain name registration is not enough — true **private
-decentralized domain ownership** is the next step.
-By leveraging zero-knowledge proofs and a lightweight decentralized network like
-Mina, it becomes possible to create a new domain system: one that ensures
-**freedom**, **privacy**, and **censorship resistance** for everyone.
+<!-- Decentralizing domain name registration is not enough — true **private -->
+<!-- decentralized domain ownership** is the next step. -->
+<!-- By leveraging zero-knowledge proofs and a lightweight decentralized network like -->
+<!-- Mina, it becomes possible to create a new domain system: one that ensures -->
+<!-- **freedom**, **privacy**, and **censorship resistance** for everyone. -->
 
 ## Sources
 
