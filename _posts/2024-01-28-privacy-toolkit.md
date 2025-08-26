@@ -6,7 +6,7 @@ author: Danny Willems
 tags: [privacy, toolkit]
 ---
 
-
 The list will evolve:
+
 - https://www.privacytools.io/
 - https://privacy.sexy/

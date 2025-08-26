@@ -1,8 +1,16 @@
 ---
 post_date: 2020-11-04
 author: Danny Willems
-post_title: 'Toolbox for a practical OCaml engineer'
-tags: [OCaml, Toolbox, Continuous Integration, Continuous Deployment, Testing, Property based testing]
+post_title: "Toolbox for a practical OCaml engineer"
+tags:
+  [
+    OCaml,
+    Toolbox,
+    Continuous Integration,
+    Continuous Deployment,
+    Testing,
+    Property based testing,
+  ]
 ---
 
 ## Build tools
@@ -28,15 +36,15 @@ tags: [OCaml, Toolbox, Continuous Integration, Continuous Deployment, Testing, P
 
 ## Property based testing
 
-- crowbar 
+- crowbar
 - qcheck
 
 ## Mutation testing
 
-Unfortunately, there is no mutation testing libraries. That would be a nice thing to have for the OCaml community.
+Unfortunately, there is no mutation testing libraries. That would be a nice
+thing to have for the OCaml community.
 
 ## Benchmarking
-
 
 ## Continuous integration
 

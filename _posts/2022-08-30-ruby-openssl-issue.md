@@ -6,8 +6,9 @@ author: Danny Willems
 tags: [ruby, rvm, openssl, RSS]
 ---
 
-You may need to compile and install a ruby version using rvm with a different version of openssl.
-On Ubuntu 22.04, openssl 3.0 is now used, and you will face build issues if you try to install ruby with rvm. Here a temporary fix.
+You may need to compile and install a ruby version using rvm with a different
+version of openssl. On Ubuntu 22.04, openssl 3.0 is now used, and you will face
+build issues if you try to install ruby with rvm. Here a temporary fix.
 
 1. Install rvm
 2. `rvm pkg install openssl` to install `openssl-1.0.1i`

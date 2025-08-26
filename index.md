@@ -508,7 +508,6 @@
     </div>
   </div>
 
-
   <div class="publication-item">
     <p class="publication-title">Ocsigen - Ocsigen Start (July 2016 - Dec 2016)</p>
     <p class="publication-description">
@@ -526,7 +525,6 @@
       </a>
     </div>
   </div>
-
 
   <div class="publication-item">
     <p class="publication-title">ocaml-cordova: build mobile applications using OCaml and Cordova</p>
@@ -724,7 +722,6 @@
   </div>
 </div>
 
-
 ## Quotes
 
 <blockquote>
@@ -769,8 +766,9 @@ Hardly anybody actually understands money - <a href="http://unenumerated.blogspo
 
 ## Recommended softwares
 
-- [KeepassXC](https://keepassxc.org/): see [my
-  thread](https://twitter.com/dwillems42/status/1665316530035347457) on Twitter.
+- [KeepassXC](https://keepassxc.org/): see
+  [my thread](https://twitter.com/dwillems42/status/1665316530035347457) on
+  Twitter.
 
 ## Must read
 
@@ -779,7 +777,6 @@ Hardly anybody actually understands money - <a href="http://unenumerated.blogspo
   <li> How To Become A Hacker - Eric Steven Raymond - http://www.catb.org/~esr/faqs/hacker-howto.html
 </li>
 </ul>
-
 
 <!-- ## Recent scientific readings -->
 

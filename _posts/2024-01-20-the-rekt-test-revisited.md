@@ -6,21 +6,19 @@ author: Danny Willems
 tags: [security, offsec, rekt test]
 ---
 
-This document will evolve over the years.
-It will describe security practices that I would recommend to use in company
-projects.
-This article will also complete the previous one [You said bugs? Key points I
-have learned over the years in FOSS
-developments](https://dannywillems.github.io/2023/12/08/you-said-bugs.html).
+This document will evolve over the years. It will describe security practices
+that I would recommend to use in company projects. This article will also
+complete the previous one
+[You said bugs? Key points I have learned over the years in FOSS developments](https://dannywillems.github.io/2023/12/08/you-said-bugs.html).
 
 ## Code related
 
 - Each engineer must sign every commit.
-  - See [GitHub's
-    documentation](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key)
+  - See
+    [GitHub's documentation](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key)
     for guidance on signing commits.
-  - See [GitHub's
-    guide](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
+  - See
+    [GitHub's guide](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
     on generating a new GPG key.
   - Ensure the key adheres to the latest recommendations, with Ed25519 being a
     current personal preference. The key should follow the latest
@@ -58,7 +56,8 @@ developments](https://dannywillems.github.io/2023/12/08/you-said-bugs.html).
 - Integration tests help in detecting bugs when calling external dependencies
   and other related modules.
 - There should be at least 2 reviewers per change.
-- At least 2 individuals should have a good understanding of the code being modified.
+- At least 2 individuals should have a good understanding of the code being
+  modified.
 - Reviewers should adopt an adversarial mindset, asking: "How can I break the
   code?" Reviews should not solely verify that the changes "make sense." As a
   reviewer, you should explain your review process, outline the scenarii you

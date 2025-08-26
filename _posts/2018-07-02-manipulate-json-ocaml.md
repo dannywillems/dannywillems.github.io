@@ -8,7 +8,10 @@ layout: post
 published: true
 tags: [OCaml, JSON, PPX, RSS]
 ---
-Use <a href="https://github.com/ocaml-ppx/ppx_deriving_yojson">PPX Deriving JSON</a>. PPX is a syntax extension and PPX Deriving JSON derives functions when annotating a type to convert from and to JSON.
+
+Use <a href="https://github.com/ocaml-ppx/ppx_deriving_yojson">PPX Deriving
+JSON</a>. PPX is a syntax extension and PPX Deriving JSON derives functions when
+annotating a type to convert from and to JSON.
 
 ```ocaml
 type person = {
@@ -16,13 +19,17 @@ type person = {
   age: int;
 } [@@deriving yojson]
 ```
+
 will generate the functions
+
 ```ocaml
 type person = { name : string; age : int; }
 val person_to_yojson : person -> Yojson.Safe.json = <fun>
 val person_of_yojson : Yojson.Safe.json -> person Ppx_deriving_yojson_runtime.error_or = <fun>
 ```
+
 You can then play with the converters like this:
+
 ```ocaml
 let x : person = {name = "hello"; age = 15};;
 (* val x : person = {name = "hello"; age = 15} *)
@@ -31,6 +38,7 @@ person_to_yojson x;;
 ```
 
 If you use dune, you've got to use this
+
 ```
 (library
  ((name test)

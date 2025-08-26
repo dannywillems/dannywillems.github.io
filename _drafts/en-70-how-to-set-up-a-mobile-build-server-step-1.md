@@ -1,6 +1,6 @@
 ---
 ID: 70
-post_title: 'How to set up a mobile build server: step 1'
+post_title: "How to set up a mobile build server: step 1"
 author: Danny Willems
 post_date: 2015-12-31 15:20:01
 post_excerpt: ""
@@ -16,6 +16,7 @@ bitly_long_url:
   - >
     http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-1/
 ---
+
 <ol>
         <li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server/">Introduction</a></li>
 	<li><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-1/">Server-side and client-side: (Optional) Create and configure an user on the build server</a></li>
@@ -26,11 +27,16 @@ bitly_long_url:
 
 <h2 style="text-align: center">Server-side and client-side: (Optional) Create and configure an user on the build server</h2>
 
-In this part, we will create a new user and configure ssh access. It's an optional part because you can use an existing user.
-I chose to separate the user because I think an user on a server must create for only one thing.
-On top of that, as I said <a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server/">in the introduction</a>, this method can be used for a C, LaTeX (or anything else) build server. An user for each build method is better in this case.
+In this part, we will create a new user and configure ssh access. It's an
+optional part because you can use an existing user. I chose to separate the user
+because I think an user on a server must create for only one thing. On top of
+that, as I said
+<a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server/">in
+the introduction</a>, this method can be used for a C, LaTeX (or anything else)
+build server. An user for each build method is better in this case.
 
 The user will be called <span style="font-weight: bold">android-sdk</span>.
+
 <div class="dw-quote">It's the only part of this tutorial you need root access to create the user</div>
 <h3>Server-side: Create the user</h3>
 Connect to the server and create a new user:
@@ -50,12 +56,9 @@ ssh-copy-id -i ~/.ssh/android-sdk android-sdk@[your-server]
 If you followed the previous command, you must add a rule in the ~/.ssh/config file to match the appropriate ssh key file.
 Open with your favorite text editor (<a href="http://blog.danny-willems.be/vim-ide/">vim</a> of course :D) and add these lines
 
-[code lang="bash"]
-Host build-server
-Hostname [your-server-adress/ip/alias]
-IdentityFile ~/.ssh/android-sdk
-User android-sdk
-[/code]
+[code lang="bash"] Host build-server Hostname [your-server-adress/ip/alias]
+IdentityFile ~/.ssh/android-sdk User android-sdk [/code]
+
 <div class="dw-quote">See <a href="http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/">this excellent tutorial</a> for more informations about the ssh config file. Don't forget to change the user if you're using another user. Same for the ssh key file.</div>
 The host will be used when you'll clone the repository. You will use somethink like
 [code lang="bash"]
@@ -68,47 +71,69 @@ As promised, I give you scripts to automate the configuration. There're two scri
 We only need to create the user. I only add a variable to let you choose your user name.
 
 [code lang="bash"]
+
 ## Change it if you want another username.
+
 ## Don't forget to change in the client script too.
+
 USERNAME = android-sdk
 
 ## DON'T EDIT THESE FOLLOWING LINES
+
 adduser $USERNAME
+
 ##
+
 [/code]
+
 <h3>Client</h3>
 We need to create a ssh key, add the ssh key to the server and modify the ssh config file. If you changed the username in the script server.
 
 [code lang="bash"]
+
 ##### Change it if you want another username.
+
 ## Don't forget to change in the server script too.
+
 ## [default = android-sdk]
+
 USERNAME = android-sdk
 
 ## Your server IP adress or alias
+
 HOSTNAME = danny-willems.be
 
 ## The host name you want to use when you'll clone
+
 ## [default = build-server]
+
 HOST = build-server
 
 ## SSH key name
+
 ## [default = android-sdk]
+
 SSH_KEY_NAME = android-sdk
 
 ## DON'T EDIT THESE FOLLOWING LINES
+
 ## Create SSH keys
+
 ssh-keygen -t rsa -f ~/.ssh/$SSH_KEY_NAME
 
 ## Copy to the server
+
 ssh-copy-id -i ~/.ssh/$SSH_KEY_NAME $USERNAME@$HOSTNAME
 
 ## Modify the ssh config file
-echo 'Host $HOSTn Hostname $HOSTNAMEn IdentityFile ~/.ssh/$SSH_KEY_NAMEn User $USERNAME' &gt;&gt; ~/.ssh/config
-[/code]
+
+echo 'Host $HOSTn Hostname $HOSTNAMEn IdentityFile ~/.ssh/$SSH_KEY_NAMEn User
+$USERNAME' &gt;&gt; ~/.ssh/config [/code]
 
 <h2 style="text-align: center">And now ?</h2>
 
-OK, user configured. Now, let's download and install the Android SDK in our new user environment.
+OK, user configured. Now, let's download and install the Android SDK in our new
+user environment.
 
-<span class="dashicons dashicons-arrow-right-alt"></span><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-2/">Go to the second part</a>
+<span class="dashicons dashicons-arrow-right-alt"></span><a href="http://blog.danny-willems.be/how-to-set-up-a-mobile-build-server-step-2/">Go
+to the second part</a>

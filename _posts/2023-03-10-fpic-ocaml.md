@@ -13,8 +13,9 @@ warning: relocation against `Caml_state' in read-only section `.text'
 relocation R_X86_64_PC32 against undefined symbol `Caml_state' can not be used when making a shared object; recompile with -fPIC
 ```
 
-Check if the default C flags of `ocamlopt` are given. In the field foreign_stubs, check if you give `:standard` as flags.
-It will include the default flags given by `ocamlc -config`. For 4.14.1, the default values are:
+Check if the default C flags of `ocamlopt` are given. In the field
+foreign_stubs, check if you give `:standard` as flags. It will include the
+default flags given by `ocamlc -config`. For 4.14.1, the default values are:
 
 ```
 $ ocamlc -config

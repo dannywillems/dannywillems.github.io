@@ -9,14 +9,15 @@ tags: [folding, cryptography, homogeneous, multivariate polynomials]
 Morning thoughts while talking to some friends.
 
 The "relaxation" process in folding schemes are mostly about transforming
-polynomials into an homogeneous form of a certain degree, see [o1Labs
-documentation](https://o1-labs.github.io/proof-systems/rustdoc/folding/expressions/index.html).
-For instance, Nova introduced the concept of relaxation for degree 2 polynomials.
+polynomials into an homogeneous form of a certain degree, see
+[o1Labs documentation](https://o1-labs.github.io/proof-systems/rustdoc/folding/expressions/index.html).
+For instance, Nova introduced the concept of relaxation for degree 2
+polynomials.
 
 On the other side, jacobian coordinates and projective coordinates of elliptic
 curves (as a reminder, elliptic curves points are zeroes of multivariate
-polynomials - for instance `P(X, Y) = X^3 + a X + b - Y^2)` are homogeneous forms
-of the polynomial equations describing the curve. For instance, projective
+polynomials - for instance `P(X, Y) = X^3 + a X + b - Y^2)` are homogeneous
+forms of the polynomial equations describing the curve. For instance, projective
 coordinates transform `P(X, Y) = X^3 + a X + b - Y^2` into a polynomial
 `P(X, Y, Z) = X^3 + a Z^2 X + b Z^3 - Z Y^2`.
 
@@ -28,14 +29,15 @@ here, but I'm wondering if we can make a link between both. And also if there
 are some optimisations possible for the IVC verifier.
 
 Folding schemes allow to only focus on making a proof of the computation of
-`P(X' + r X, Y' + r Y, Z' + r Z)` which englobes the computation of `P(r X, r Y,
-r Z)` and `P(X', Y', Z')`, plus an additional error term we "ignore", defined by
-a polynomial `E(X, Y, Z, r X', r Y', r Z')`.
+`P(X' + r X, Y' + r Y, Z' + r Z)` which englobes the computation of
+`P(r X, r Y, r Z)` and `P(X', Y', Z')`, plus an additional error term we
+"ignore", defined by a polynomial `E(X, Y, Z, r X', r Y', r Z')`.
 
 When we take rX, rY, rZ, if Z is the "u" in Nova, we take a certain point (a, b,
 c) from the class representing the value (x, y).
 
 Links:
+
 - [Higher geometry; an introduction to advanced methods in analytic geometry](https://archive.org/details/highergeometryin00wooduoft/page/vi/mode/2up)
 - [Duality (projective
   geometry)](https://en.wikipedia.org/wiki/Duality_(projective_geometry)

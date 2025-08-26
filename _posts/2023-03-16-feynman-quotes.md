@@ -6,7 +6,6 @@ author: Danny Willems
 tags: [quotes, feynman, curiosity, RSS]
 ---
 
-
 You ask me if an ordinary person—by studying hard—would get to be able to
 imagine these things like I imagine. Of course. I was an ordinary person who
 studied hard. There's no miracle people. It just happens they got interested in
@@ -19,5 +18,5 @@ then he's become a scientist.
 
 [...]
 
-Fun to Imagine: https://www.youtube.com/watch?v=P1ww1IXRfTA
-Would be nice to have a full transcript.
+Fun to Imagine: https://www.youtube.com/watch?v=P1ww1IXRfTA Would be nice to
+have a full transcript.
