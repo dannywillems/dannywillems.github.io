@@ -1,7 +1,7 @@
 ---
 title: ZFS Crash Course
 author: Danny Willems
-post_date: 2025-08-26 21:45:00
+post_date: 2025-08-26 00:00:00
 layout: post
 tags: [ZFS, Filesystem, Storage, Linux]
 ---
