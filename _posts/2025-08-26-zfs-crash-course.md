@@ -1,7 +1,7 @@
 ---
 title: ZFS Crash Course
 author: Danny Willems
-post_date: 2025-08-26 00:00:00
+post_date: 2025-08-26 21:45:00
 layout: post
 tags: [ZFS, Filesystem, Storage, Linux]
 ---
@@ -14,6 +14,10 @@ replication, and more, all in one place.
 
 This crash course is designed for people who just installed ZFS and want to get
 productive fast.
+
+At LeakIX, we rely on ZFS for our own datasets, where we manage tens of
+terabytes of security scan data. The reliability and snapshotting features are
+critical for handling that scale safely.
 
 ## Why ZFS?
 
@@ -161,3 +165,10 @@ robust choices for anyone who cares about their data.
 If you’ve just set it up on your server, spend some time learning its
 philosophy: pools, datasets, snapshots. With that foundation, you’ll have a
 rock-solid storage system that grows with your needs.
+
+## References and Further Reading
+
+- [OpenZFS Documentation](https://openzfs.github.io/openzfs-docs/)
+- [ZFS on Linux Wiki](https://github.com/openzfs/zfs/wiki)
+- [Grafana Dashboards for ZFS](https://grafana.com/grafana/dashboards/?search=zfs)
+- [LeakIX](https://leakix.net)
