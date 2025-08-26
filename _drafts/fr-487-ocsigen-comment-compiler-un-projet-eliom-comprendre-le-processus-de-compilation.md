@@ -110,9 +110,9 @@ let main_service = Eliom_registration.Html5.register_service ~path:[]
 ~get_params:Eliom_parameter.unit content [/cce]
 
 Eliom fonctionne en terme de <b class="helvetica">services</b> et non en terme
-de page ou d'URL. Le service est défini par [cce lang="ocaml"] let main_service
+de page ou d'URL. Le service est défini par [cce lang="ocaml"] let main*service
 = Eliom_registration.Html5.register_service ~path:[]
-~get_params:Eliom_parameter.unit (_ content _) [/cce]
+~get_params:Eliom_parameter.unit (* content \_) [/cce]
 
 Le service <b class="helvetica">main_service</b> retourne une page HTML5 (parce
 que nous utilisons le module <b class="helvetica">Eliom_registration.Html5</b>)

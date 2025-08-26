@@ -129,8 +129,8 @@ a.
 <h2 class="text-center">Faites attention à l'événement device_ready</h2>
 La plupart des plugins créent des nouveaux objets qui ne sont disponibles qu'après l'événement <b class="helvetica">deviceready</b>. Commencez toujours vos applications mobiles OCaml avec ces lignes:
 
-[cce lang="ocaml"] let on_device_ready () = (_ Votre code utilisant les plugins
-ici _)
+[cce lang="ocaml"] let on*device_ready () = (* Votre code utilisant les plugins
+ici \_)
 
 let \_ = Cordova.Event.device_ready on_device_ready [/cce]
 
