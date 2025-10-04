@@ -14,7 +14,7 @@ tags: [attachement, couples, trauma, haut-potentiel]
 <p><strong>Méthodologie :</strong> Cette synthèse de recherche a été générée par <strong>Claude Sonnet 4.5</strong> (Anthropic) à partir d'une revue exhaustive de la littérature scientifique en psychologie de l'attachement, incluant des études longitudinales, des méta-analyses et des recherches cliniques.</p>
 <p><strong>Sources :</strong> Toutes les affirmations sont appuyées par des références scientifiques numérotées [N] et détaillées en fin d'article.</p>
 
-<p>Je (Danny Willems) n'ai pas vérifié toutes les sources; et l'article sera probablement revu au fur et à mesure des prochains mois en fonction de la relecture de l'article et des sources. Cet article de blog me permet de garder une trace historique de recherche faite pour l'étude d'un cas dans mon entourage. Je ne déclare aucune expertise dans le domaine au moment d'écrire ces lignes.</p>
+<p>Je (Danny Willems) n'ai pas vérifié toutes les sources; et l'article sera probablement revu au fur et à mesure des prochains mois en fonction de la relecture de l'article et des sources. Cet article de blog me permet de garder une trace historique de recherche faite pour l'étude d'un cas dans mon entourage. Je ne déclare aucune expertise dans le domaine au moment d'écrire ces lignes, et je ne prétends pas que cela reflète une étude scientifique effectuée par des experts du domaine.</p>
 </div>
 
 ## Introduction
