@@ -44,6 +44,55 @@ l'habitus d'origine. La revanche sociale peut catalyser l'accomplissement à
 court terme, mais elle prolonge paradoxalement la douleur de l'offense initiale
 plutôt que d'apporter la satisfaction escomptée[[3](#ref-3)].
 
+## Clarifications terminologiques : les classes sociales
+
+Avant d'entrer dans l'analyse, il convient de définir les termes "classe
+supérieure", "classe moyenne" et "classe ouvrière/populaire" tels qu'utilisés
+dans la littérature sociologique citée dans cet article.
+
+### Classes sociales : définitions opérationnelles
+
+**La classe supérieure (upper class)** se caractérise par des revenus élevés
+(top 10-20% de la distribution), un patrimoine significatif et l'exercice de
+professions prestigieuses (cadres dirigeants, professions libérales,
+entrepreneurs). Au-delà des critères économiques, elle se distingue par la
+détention de capital culturel institutionnalisé (diplômes des grandes écoles) et
+de réseaux sociaux étendus. Selon Pierre Bourdieu, la classe supérieure cumule
+capital économique, culturel et social à leur niveau
+maximal[[4](#ref-4)][[7](#ref-7)].
+
+**La classe moyenne (middle class)** regroupe les individus aux revenus moyens à
+moyens-supérieurs, souvent propriétaires de leur logement, exerçant des
+professions intermédiaires (cadres moyens, enseignants, infirmiers, employés
+qualifiés). Cette classe valorise particulièrement l'éducation comme vecteur de
+mobilité sociale et adhère à un style de vie "respectable" ancré dans la culture
+légitime[[5](#ref-5)].
+
+**La classe ouvrière ou classe populaire (working class / lower class)** se
+définit par des revenus modestes, l'absence ou la faiblesse du patrimoine, et
+l'exercice de métiers manuels ou de service peu qualifiés. Le terme "classe
+ouvrière" (working class) est préféré en contexte anglo-saxon car moins
+stigmatisant que "lower class". En France, on parle de "classes populaires" pour
+éviter les connotations négatives[[53](#ref-53)]. Ces populations ont un accès
+limité au capital culturel légitime et peuvent vivre une forme de précarité
+économique.
+
+**Note terminologique importante** : La frontière entre ces classes n'est pas
+rigide mais graduée. Les sociologues contemporains insistent sur le fait que la
+majorité des mobilités sociales sont des "petites mobilités" entre positions
+adjacentes (ouvrier qualifié → employé ; employé → cadre moyen) plutôt que de
+"grandes traversées" de l'espace social[[12](#ref-12)][[13](#ref-13)].
+
+Dans le cas d'étude présenté ici, le profil analysé provient d'un milieu "très
+modeste" de la classe populaire (ressources minimales : logement et nourriture
+de base) et a accédé à une position "assez bien placée" avec des revenus "plus
+élevés que tout le monde autour" - ce qui représente une mobilité ascendante
+substantielle, probablement vers la classe moyenne-supérieure ou supérieure.
+Cette "grande traversée" de l'espace social (estimée à 2-4 quintiles de revenu
+selon les études citées) constitue une exception statistique porteuse de coûts
+psychologiques et physiologiques spécifiques que cet article explore en
+profondeur.
+
 ---
 
 ## Le transfuge de classe : concept français d'une identité clivée
