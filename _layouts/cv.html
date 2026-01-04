@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/cv.css' | relative_url }}">
+    {% seo %}
+  </head>
+
+  <body>
+    <div class="cv-container">
+      <div class="cv-actions no-print">
+        <button onclick="window.print()" class="print-btn">Print / Export PDF</button>
+        <a href="/" class="back-link">Back to website</a>
+      </div>
+
+      {{ content }}
+    </div>
+  </body>
+</html>
