@@ -455,94 +455,124 @@ body {
   }
 }
 
-/* === GITHUB ACTIVITY === */
-.github-activity {
+/* === GITHUB CONTRIBUTIONS === */
+.contributions {
   margin-bottom: 2rem;
 }
 
-.github-activity-intro {
+.contributions-updated {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.contributions-summary h3,
+.contributions-repos h3 {
+  color: #b5e853;
   margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.contributions-totals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contributions-period {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.contributions-period h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
   color: #ccc;
 }
 
-.github-activity-note {
-  font-size: 0.85rem;
-  color: #666;
-}
-
-.github-activity-list {
-  border-left: 2px solid #444;
-  padding-left: 1rem;
-}
-
-.github-activity-item {
+.contributions-stats {
   display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #333;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.github-activity-item:last-child {
-  border-bottom: none;
-}
-
-.github-activity-icon {
-  flex-shrink: 0;
-  color: #b5e853;
-  margin-top: 0.15rem;
-}
-
-.github-activity-icon svg {
-  width: 16px;
-  height: 16px;
-}
-
-.github-activity-content {
-  flex: 1;
-  min-width: 0;
-}
-
-.github-activity-desc {
-  display: block;
-  color: #eee;
-}
-
-.github-activity-repo {
+.contributions-stats .stat {
   font-size: 0.85rem;
   color: #888;
 }
 
-.github-activity-repo a {
+.contributions-stats .stat strong {
+  color: #b5e853;
+  font-size: 1.1rem;
+}
+
+.contributions-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.contributions-table th,
+.contributions-table td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.contributions-table th {
+  color: #b5e853;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.contributions-table .repo-name a {
+  color: #ccc;
+}
+
+.contributions-table .repo-name a:hover {
   color: #b5e853;
 }
 
-.github-activity-message {
-  display: block;
-  font-size: 0.85rem;
-  color: #666;
-  font-style: italic;
-  margin-top: 0.25rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.contributions-table .repo-stat {
+  text-align: center;
 }
 
-.github-activity-date {
-  flex-shrink: 0;
-  font-size: 0.8rem;
+.contributions-table .repo-stat .total {
+  display: block;
+  font-weight: 600;
+  color: #eee;
+}
+
+.contributions-table .repo-stat .breakdown {
+  display: block;
+  font-size: 0.75rem;
   color: #666;
-  white-space: nowrap;
+}
+
+.contributions-table .repo-stat .zero {
+  color: #444;
+}
+
+.contributions-note {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #666;
 }
 
 @media only screen and (max-width: 45em) {
-  .github-activity-item {
-    flex-wrap: wrap;
+  .contributions-table {
+    font-size: 0.8rem;
   }
 
-  .github-activity-date {
-    width: 100%;
-    margin-top: 0.25rem;
-    margin-left: 1.75rem;
+  .contributions-table th,
+  .contributions-table td {
+    padding: 0.35rem;
+  }
+
+  .contributions-table .repo-stat .breakdown {
+    display: none;
   }
 }

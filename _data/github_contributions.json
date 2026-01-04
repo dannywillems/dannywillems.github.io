@@ -1,0 +1,163 @@
+{
+  "updated_at": "2026-01-04T23:13:01.926620Z",
+  "totals": {
+    "week": {
+      "commits": 0,
+      "prs": 68,
+      "issues": 70,
+      "reviews": 0,
+      "total": 138
+    },
+    "month": {
+      "commits": 0,
+      "prs": 68,
+      "issues": 70,
+      "reviews": 0,
+      "total": 138
+    },
+    "quarter": {
+      "commits": 0,
+      "prs": 68,
+      "issues": 70,
+      "reviews": 0,
+      "total": 138
+    },
+    "year": {
+      "commits": 0,
+      "prs": 68,
+      "issues": 70,
+      "reviews": 0,
+      "total": 138
+    }
+  },
+  "repositories": [
+    {
+      "name": "dannywillems/dannywillems.github.io",
+      "url": "https://github.com/dannywillems/dannywillems.github.io",
+      "week": {
+        "commits": 0,
+        "prs": 41,
+        "issues": 23,
+        "reviews": 0,
+        "total": 64
+      },
+      "month": {
+        "commits": 0,
+        "prs": 41,
+        "issues": 23,
+        "reviews": 0,
+        "total": 64
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 41,
+        "issues": 23,
+        "reviews": 0,
+        "total": 64
+      },
+      "year": {
+        "commits": 0,
+        "prs": 41,
+        "issues": 23,
+        "reviews": 0,
+        "total": 64
+      }
+    },
+    {
+      "name": "LeakIX/zcash-web-wallet",
+      "url": "https://github.com/LeakIX/zcash-web-wallet",
+      "week": {
+        "commits": 0,
+        "prs": 21,
+        "issues": 34,
+        "reviews": 0,
+        "total": 55
+      },
+      "month": {
+        "commits": 0,
+        "prs": 21,
+        "issues": 34,
+        "reviews": 0,
+        "total": 55
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 21,
+        "issues": 34,
+        "reviews": 0,
+        "total": 55
+      },
+      "year": {
+        "commits": 0,
+        "prs": 21,
+        "issues": 34,
+        "reviews": 0,
+        "total": 55
+      }
+    },
+    {
+      "name": "LeakIX/zcash-infra",
+      "url": "https://github.com/LeakIX/zcash-infra",
+      "week": {
+        "commits": 0,
+        "prs": 6,
+        "issues": 6,
+        "reviews": 0,
+        "total": 12
+      },
+      "month": {
+        "commits": 0,
+        "prs": 6,
+        "issues": 6,
+        "reviews": 0,
+        "total": 12
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 6,
+        "issues": 6,
+        "reviews": 0,
+        "total": 12
+      },
+      "year": {
+        "commits": 0,
+        "prs": 6,
+        "issues": 6,
+        "reviews": 0,
+        "total": 12
+      }
+    },
+    {
+      "name": "LeakIX/sponsor",
+      "url": "https://github.com/LeakIX/sponsor",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "issues": 7,
+        "reviews": 0,
+        "total": 7
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "issues": 7,
+        "reviews": 0,
+        "total": 7
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "issues": 7,
+        "reviews": 0,
+        "total": 7
+      },
+      "year": {
+        "commits": 0,
+        "prs": 0,
+        "issues": 7,
+        "reviews": 0,
+        "total": 7
+      }
+    }
+  ]
+}
