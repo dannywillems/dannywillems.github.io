@@ -16,6 +16,12 @@
   links:
     - label: O(1) Labs
       url: https://o1labs.org
+    - label: Rust Node
+      url: https://github.com/o1-labs/mina-rust
+    - label: Proof Systems
+      url: https://github.com/o1-labs/proof-systems
+    - label: OCaml Node
+      url: https://github.com/MinaProtocol/mina
 
 - employer: LeakIX
   url: https://leakix.net
