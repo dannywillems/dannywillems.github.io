@@ -6,7 +6,7 @@
     <p class="center">
       Currently:
       <br />
-      Senior Cryptography Engineer & Researcher @ <a href="https://o1labs.org">o1Labs</a>/Mina
+      Head of Cryptography (Architect) & Rust Node Team Lead @ <a href="https://o1labs.org">o1Labs</a>/Mina
       <br />
       Co-founder @ <a href="https://leakix.net">LeakIX</a>
     </p>
@@ -90,7 +90,7 @@
 
 {% include opensource.html %}
 
-## CV
+## Experience
 
 {% include cv-jobs.html %}
 
