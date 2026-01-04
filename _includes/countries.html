@@ -15,6 +15,34 @@
     </div>
   </div>
 
+  <div class="countries-map-container">
+    <style>
+      /* Default: all countries gray */
+      .countries-map svg path,
+      .countries-map svg g {
+        fill: #333;
+        stroke: #1a1a1a;
+        stroke-width: 0.5;
+        transition: fill 0.2s ease;
+      }
+      /* Visited countries: green */
+      {% for country in countries %}
+      .countries-map svg #{{ country.code | downcase }},
+      .countries-map svg #{{ country.code | downcase }} path,
+      .countries-map svg #{{ country.code | downcase }} .mainland {
+        fill: #b5e853;
+      }
+      {% endfor %}
+    </style>
+    <div class="countries-map">
+      {% include world-map.svg %}
+    </div>
+    <p class="map-legend">
+      <span class="legend-visited"></span> Visited
+      <span class="legend-not-visited"></span> Not visited
+    </p>
+  </div>
+
   <div class="countries-by-continent">
     {% for continent in continents %}
     <div class="countries-continent">

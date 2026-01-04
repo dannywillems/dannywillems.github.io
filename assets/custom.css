@@ -693,6 +693,51 @@ body {
   font-style: italic;
 }
 
+.countries-map-container {
+  margin: 2rem 0;
+}
+
+.countries-map {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.countries-map svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.map-legend {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.legend-visited,
+.legend-not-visited {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.legend-visited {
+  background: #b5e853;
+}
+
+.legend-not-visited {
+  background: #333;
+}
+
 @media only screen and (max-width: 45em) {
   .countries-stats {
     flex-direction: column;

@@ -31,6 +31,30 @@
   name: Norway
   continent: Europe
 
+- code: PT
+  name: Portugal
+  continent: Europe
+
+- code: IT
+  name: Italy
+  continent: Europe
+
+- code: GR
+  name: Greece
+  continent: Europe
+
+- code: TR
+  name: Turkey
+  continent: Europe
+
+- code: RO
+  name: Romania
+  continent: Europe
+
+- code: IE
+  name: Ireland
+  continent: Europe
+
 # North America
 - code: US
   name: United States
@@ -57,3 +81,8 @@
 - code: MY
   name: Malaysia
   continent: Asia
+
+# Africa
+- code: EG
+  name: Egypt
+  continent: Africa
