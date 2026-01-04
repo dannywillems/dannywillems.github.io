@@ -4,9 +4,12 @@
 - employer: O(1) Labs
   url: https://o1labs.org
   positions:
-    - title: Cryptography Engineer
-      start: 2023
+    - title: Head of Cryptography (Architect) & Rust Node Team Lead
+      start: May 2025
       end: Present
+    - title: Senior Cryptography Engineer
+      start: April 2023
+      end: May 2025
   description: |
     O(1) Labs is a global and remote company that incubated the Mina Protocol.
     Our team operates on the cutting edge of Web3 and zero-knowledge-proofs.
