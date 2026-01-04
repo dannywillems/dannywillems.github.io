@@ -1,0 +1,15 @@
+# Cities visited
+# Coordinates are approximate positions on the SVG map
+# SVG viewBox: 30.767 241.591 784.077 458.627
+# x: 30-815 (left to right), y: 242-700 (top to bottom)
+
+# USA
+- name: Las Vegas
+  country: US
+  x: 138
+  y: 410
+
+- name: San Francisco
+  country: US
+  x: 122
+  y: 400

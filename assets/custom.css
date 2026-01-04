@@ -698,6 +698,7 @@ body {
 }
 
 .countries-map {
+  position: relative;
   background: #111;
   border: 1px solid #333;
   border-radius: 4px;
@@ -709,6 +710,15 @@ body {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.countries-map .city-overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  pointer-events: none;
 }
 
 .map-legend {
@@ -736,6 +746,30 @@ body {
 
 .legend-not-visited {
   background: #333;
+}
+
+.legend-city {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff6b6b;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* City markers on map */
+.city-markers .city-marker circle {
+  fill: #ff6b6b;
+  stroke: #fff;
+  stroke-width: 1;
+}
+
+.city-markers .city-marker text {
+  fill: #fff;
+  font-size: 8px;
+  font-family: sans-serif;
+  pointer-events: none;
 }
 
 @media only screen and (max-width: 45em) {

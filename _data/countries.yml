@@ -86,6 +86,10 @@
   name: Malaysia
   continent: Asia
 
+- code: IL
+  name: Israel
+  continent: Asia
+
 # Africa
 - code: EG
   name: Egypt
