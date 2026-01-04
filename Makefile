@@ -1,3 +1,10 @@
+# Use bash and source rvm if available
+SHELL := /bin/bash
+RVM_SCRIPT := $(HOME)/.rvm/scripts/rvm
+ifneq ($(wildcard $(RVM_SCRIPT)),)
+    SHELL := /bin/bash --login
+endif
+
 .PHONY: help
 help: ## Ask for help!
 	@grep -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
@@ -46,3 +53,36 @@ format: ## Format markdown files with prettier
 	else \
 		echo "prettier not installed. Install with: npm install -g prettier"; \
 	fi
+
+RUBY_VERSION := $(shell cat .ruby-version 2>/dev/null || echo "3.2.2")
+
+.PHONY: check-ruby
+check-ruby: ## Check if Ruby is installed
+	@if command -v ruby >/dev/null 2>&1; then \
+		echo "Ruby is installed: $$(ruby --version)"; \
+		echo "Ruby path: $$(which ruby)"; \
+	else \
+		echo "Ruby is not installed"; \
+		exit 1; \
+	fi
+
+.PHONY: install-rvm
+install-rvm: ## Install rvm (Ruby Version Manager)
+	@if command -v rvm >/dev/null 2>&1; then \
+		echo "rvm is already installed"; \
+	else \
+		echo "Installing rvm..."; \
+		curl -sSL https://get.rvm.io | bash -s stable; \
+		echo ""; \
+		echo "Please restart your shell or run: source ~/.rvm/scripts/rvm"; \
+	fi
+
+.PHONY: install-ruby
+install-ruby: ## Install Ruby via rvm
+	@if ! command -v rvm >/dev/null 2>&1; then \
+		echo "rvm is not installed. Run 'make install-rvm' first."; \
+		exit 1; \
+	fi; \
+	echo "Installing Ruby $(RUBY_VERSION) via rvm..."; \
+	rvm install $(RUBY_VERSION); \
+	rvm use $(RUBY_VERSION) --default
