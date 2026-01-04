@@ -495,8 +495,8 @@ body {
 
 .contributions-stats {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .contributions-stats .stat {
