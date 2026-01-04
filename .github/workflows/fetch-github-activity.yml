@@ -3,7 +3,7 @@ name: Fetch GitHub Contributions
 on:
   schedule:
     # Run daily at 6 AM UTC
-    - cron: '0 6 * * *'
+    - cron: "0 6 * * *"
   workflow_dispatch: # Allow manual trigger
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Fetch and aggregate GitHub contributions
         env:
