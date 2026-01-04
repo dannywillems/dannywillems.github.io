@@ -1,0 +1,32 @@
+<div class="cv-education">
+{% for edu in site.data.education %}
+  <div class="cv-edu">
+    <div class="cv-institution">
+      {% if edu.url %}
+        <a href="{{ edu.url }}">{{ edu.institution }}</a>
+      {% else %}
+        {{ edu.institution }}
+      {% endif %}
+    </div>
+
+    <div class="cv-degree">
+      <span class="cv-title">{{ edu.degree }}</span>
+      <span class="cv-dates">{{ edu.start }} - {{ edu.end }}</span>
+    </div>
+
+    {% if edu.description %}
+      <div class="cv-description">
+        {{ edu.description | markdownify }}
+      </div>
+    {% endif %}
+
+    {% if edu.links %}
+      <div class="cv-links">
+        {% for link in edu.links %}
+          <a class="publication-link" href="{{ link.url }}">{{ link.label }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+{% endfor %}
+</div>

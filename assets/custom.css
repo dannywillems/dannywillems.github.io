@@ -323,3 +323,45 @@ body {
     font-size: 0.85rem;
   }
 }
+
+/* === CV / EDUCATION === */
+.cv-education {
+  margin-bottom: 2rem;
+}
+
+.cv-edu {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid #444;
+}
+
+.cv-institution {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.cv-institution a {
+  color: #b5e853;
+  text-decoration: none;
+}
+
+.cv-institution a:hover {
+  text-decoration: underline;
+}
+
+.cv-degree {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 45em) {
+  .cv-degree {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}

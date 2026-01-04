@@ -1,0 +1,29 @@
+# Education history
+
+- institution: University of Mons
+  url: https://math.umons.ac.be/en/
+  degree: Master's Degree Mathematics and Computer Sciences
+  start: 2012
+  end: 2017
+  description: |
+    Grade: Summa Cum Laude
+
+    Bachelor degree: minor in Physics.
+    Awarded with the price of the Mathematics Department.
+  links:
+    - label: UMONS - Mathematics Department
+      url: https://math.umons.ac.be/en/
+    - label: Master Thesis
+      url: https://github.com/dannywillems/RML
+
+- institution: 42
+  url: https://42.fr/en/homepage/
+  degree: Piscine C
+  start: 2014
+  end: 2015
+  description: |
+    Piscine C in July 2014, joined in 2015. Stopped 1 year after to focus on
+    master degree in mathematics at UMONS.
+  links:
+    - label: Website
+      url: https://42.fr/en/homepage/
