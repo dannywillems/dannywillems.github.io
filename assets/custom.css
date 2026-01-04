@@ -454,3 +454,125 @@ body {
     gap: 1.5rem;
   }
 }
+
+/* === GITHUB CONTRIBUTIONS === */
+.contributions {
+  margin-bottom: 2rem;
+}
+
+.contributions-updated {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.contributions-summary h3,
+.contributions-repos h3 {
+  color: #b5e853;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.contributions-totals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contributions-period {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.contributions-period h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.contributions-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contributions-stats .stat {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.contributions-stats .stat strong {
+  color: #b5e853;
+  font-size: 1.1rem;
+}
+
+.contributions-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.contributions-table th,
+.contributions-table td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.contributions-table th {
+  color: #b5e853;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.contributions-table .repo-name a {
+  color: #ccc;
+}
+
+.contributions-table .repo-name a:hover {
+  color: #b5e853;
+}
+
+.contributions-table .repo-stat {
+  text-align: center;
+}
+
+.contributions-table .repo-stat .total {
+  display: block;
+  font-weight: 600;
+  color: #eee;
+}
+
+.contributions-table .repo-stat .breakdown {
+  display: block;
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.contributions-table .repo-stat .zero {
+  color: #444;
+}
+
+.contributions-note {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+@media only screen and (max-width: 45em) {
+  .contributions-table {
+    font-size: 0.8rem;
+  }
+
+  .contributions-table th,
+  .contributions-table td {
+    padding: 0.35rem;
+  }
+
+  .contributions-table .repo-stat .breakdown {
+    display: none;
+  }
+}
