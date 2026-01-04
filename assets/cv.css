@@ -189,29 +189,6 @@ a:hover {
   color: #666;
 }
 
-/* === SKILLS === */
-.cv-skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.cv-skill-category {
-  flex: 1 1 45%;
-  min-width: 200px;
-}
-
-.cv-skill-category h3 {
-  font-size: 10pt;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-}
-
-.cv-skill-category p {
-  font-size: 10pt;
-  color: #444;
-}
-
 /* === PRINT STYLES === */
 @media print {
   body {
