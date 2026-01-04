@@ -38,6 +38,9 @@
               {{ site.description | default: site.github.project_tagline }}
           </h2>
         <div>
+          <a href="/contributions/" class="btn">
+              Contributions
+          </a>
           <a href="/#research-publications" class="btn">
               Research Publications
           </a>
@@ -50,26 +53,14 @@
           <a href="/#experience" class="btn">
               Experience
           </a>
-          <a href="/cv/" class="btn">
-              Export CV (PDF)
-          </a>
           <a href="/#education" class="btn">
               Education
           </a>
           <a href="/blog" class="btn">
               Blog
           </a>
-          <a href="/gpg.txt" class="btn">
-              PGP public key
-          </a>
           <a href="/#recommended-softwares" class="btn">
               Recommended softwares
-          </a>
-          <a href="email:danny@badaas.be" class="btn">
-              Contact
-          </a>
-          <a href="https://calendar.proton.me/api/calendar/v1/url/_PcWOch1XAT052J3Gm1jCsXGTkk5D21mrpdxzSbJ2nb9e1il3kdR7bqImJfCiq1p2ZeOoyqMUSJ_7Ty-xOKUzQ==/calendar.ics?CacheKey=6xofIq2gYr6jqO2LIdpD-w%3D%3D&PassphraseKey=vQiLZ7-0ysCxqbKAWCNLPc3Y8K2r89gXveo8DxLTvWw%3D" class="btn">
-              Proton calendar for cryptography and cybersecurity events
           </a>
         </div>
       </div>
@@ -80,6 +71,34 @@
         {{ content }}
       </section>
     </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <a href="mailto:danny@badaas.be">danny@badaas.be</a>
+          </div>
+          <div class="footer-social">
+            <h3>Links</h3>
+            <div class="footer-social-links">
+              <a href="https://github.com/dannywillems" title="GitHub">GitHub</a>
+              <a href="https://gitlab.com/dannywillems" title="GitLab">GitLab</a>
+              <a href="https://linkedin.com/in/bedannywillems" title="LinkedIn">LinkedIn</a>
+              <a href="https://twitter.com/dwillems42" title="Twitter">Twitter</a>
+            </div>
+          </div>
+          <div class="footer-quick">
+            <h3>Quick Links</h3>
+            <a href="/cv/">Export CV (PDF)</a>
+            <a href="/gpg.txt">PGP Public Key</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; {{ 'now' | date: "%Y" }} Danny Willems</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
 
