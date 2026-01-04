@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-6">
     <div class="center">
-        <img class="portrait" src="{{ 'assets/me.jpg'}}" />
+        <img class="portrait" src="{{ 'assets/me.jpg'}}" alt="Danny Willems portrait" loading="lazy" />
     </div>
     <p class="center">
       Currently:
@@ -23,21 +23,21 @@
     </p>
     <div class="center">
        <a href="https://twitter.com/dwillems42" class="logo-link">
-         <img class="logo" src="{{ 'assets/twitter.svg' }}">
+         <img class="logo" src="{{ 'assets/twitter.svg' }}" alt="Twitter">
        </a>
        <a href="https://github.com/dannywillems" class="logo-link">
-         <img class="logo" src="{{ 'assets/github.svg' }}" >
+         <img class="logo" src="{{ 'assets/github.svg' }}" alt="GitHub">
        </a>
        <a href="https://gitlab.com/dannywillems" class="logo-link">
-         <img class="logo" src="{{ 'assets/gitlab.svg' }}" >
+         <img class="logo" src="{{ 'assets/gitlab.svg' }}" alt="GitLab">
        </a>
        <a href="https://linkedin.com/in/bedannywillems" class="logo-link">
-         <img class="logo" src="{{ 'assets/linkedin.svg' }}">
+         <img class="logo" src="{{ 'assets/linkedin.svg' }}" alt="LinkedIn">
        </a>
     </div>
     <div class="center">
        <a href="https://leakix.net" class="logo-link">
-         <img class="logo" src="{{ 'assets/leakix.svg' }}">
+         <img class="logo" src="{{ 'assets/leakix.svg' }}" alt="LeakIX">
        </a>
        <a href='http://www.catb.org/hacker-emblem/'>
          <img src="{{ 'assets/Glider.svg' }}" alt='hacker emblem' class="logo" />
