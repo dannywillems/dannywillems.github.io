@@ -67,18 +67,42 @@ body {
   width: 96%;
 }
 
-.col-1-sm { width: 4.33%; }
-.col-2-sm { width: 12.66%; }
-.col-3-sm { width: 21%; }
-.col-4-sm { width: 29.33%; }
-.col-5-sm { width: 37.66%; }
-.col-6-sm { width: 46%; }
-.col-7-sm { width: 54.33%; }
-.col-8-sm { width: 62.66%; }
-.col-9-sm { width: 71%; }
-.col-10-sm { width: 79.33%; }
-.col-11-sm { width: 87.66%; }
-.col-12-sm { width: 96%; }
+.col-1-sm {
+  width: 4.33%;
+}
+.col-2-sm {
+  width: 12.66%;
+}
+.col-3-sm {
+  width: 21%;
+}
+.col-4-sm {
+  width: 29.33%;
+}
+.col-5-sm {
+  width: 37.66%;
+}
+.col-6-sm {
+  width: 46%;
+}
+.col-7-sm {
+  width: 54.33%;
+}
+.col-8-sm {
+  width: 62.66%;
+}
+.col-9-sm {
+  width: 71%;
+}
+.col-10-sm {
+  width: 79.33%;
+}
+.col-11-sm {
+  width: 87.66%;
+}
+.col-12-sm {
+  width: 96%;
+}
 
 .row::after {
   content: "";
@@ -97,18 +121,42 @@ body {
 }
 
 @media only screen and (min-width: 45em) {
-  .col-1 { width: 4.33%; }
-  .col-2 { width: 12.66%; }
-  .col-3 { width: 21%; }
-  .col-4 { width: 29.33%; }
-  .col-5 { width: 37.66%; }
-  .col-6 { width: 46%; }
-  .col-7 { width: 54.33%; }
-  .col-8 { width: 62.66%; }
-  .col-9 { width: 71%; }
-  .col-10 { width: 79.33%; }
-  .col-11 { width: 87.66%; }
-  .col-12 { width: 96%; }
+  .col-1 {
+    width: 4.33%;
+  }
+  .col-2 {
+    width: 12.66%;
+  }
+  .col-3 {
+    width: 21%;
+  }
+  .col-4 {
+    width: 29.33%;
+  }
+  .col-5 {
+    width: 37.66%;
+  }
+  .col-6 {
+    width: 46%;
+  }
+  .col-7 {
+    width: 54.33%;
+  }
+  .col-8 {
+    width: 62.66%;
+  }
+  .col-9 {
+    width: 71%;
+  }
+  .col-10 {
+    width: 79.33%;
+  }
+  .col-11 {
+    width: 87.66%;
+  }
+  .col-12 {
+    width: 96%;
+  }
 
   .hidden-sm {
     display: block;
@@ -178,10 +226,14 @@ body {
   user-select: none;
   background-color: transparent;
   border: 1px solid #b5e853;
-  padding: .375rem .75rem;
+  padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  border-radius: 0.25rem;
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
   padding-left: 10px;
 }
 

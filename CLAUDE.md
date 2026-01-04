@@ -20,8 +20,10 @@ make build          # Build the site
 
 - `master`: Production branch, protected. No direct pushes allowed.
 - `develop`: Development branch. All PRs should target this branch.
-- Never push directly to `master` or `develop`. Always create a feature branch and submit a PR.
-- Feature branches should be named descriptively (e.g., `fix/dark-mode-seed-display`, `feat/qr-codes`)
+- Never push directly to `master` or `develop`. Always create a feature branch
+  and submit a PR.
+- Feature branches should be named descriptively (e.g.,
+  `fix/dark-mode-seed-display`, `feat/qr-codes`)
 
 ### Commit Standards
 
@@ -29,7 +31,8 @@ make build          # Build the site
 - Do not add Claude as co-author
 - Wrap commit message titles at 72 characters
 - Wrap commit message body at 80 characters
-- Use conventional commit prefixes: `feat:`, `fix:`, `docs:`, `chore:`, `refactor:`, `test:`
+- Use conventional commit prefixes: `feat:`, `fix:`, `docs:`, `chore:`,
+  `refactor:`, `test:`
 
 ## Ruby Version
 
