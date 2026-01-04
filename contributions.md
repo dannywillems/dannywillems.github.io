@@ -6,6 +6,6 @@ permalink: /contributions/
 
 ## GitHub Contributions
 
-Overview of my public contributions across repositories.
+A snapshot of my open source activity on GitHub, including commits, pull requests, issues, and code reviews across various projects. Data is fetched daily via the GitHub GraphQL API and covers contributions from the past week, month, quarter, and year.
 
 {% include contributions.html %}
