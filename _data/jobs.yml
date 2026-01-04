@@ -1,7 +1,7 @@
 # Employment history
 # Supports multiple positions per employer via 'positions' array
 
-- employer: O(1) Labs
+- employer: o1Labs
   url: https://o1labs.org
   positions:
     - title: Head of Cryptography (Architect) & Rust Node Team Lead
@@ -11,10 +11,10 @@
       start: April 2023
       end: May 2025
   description: |
-    O(1) Labs is a global and remote company that incubated the Mina Protocol.
+    o1Labs is a global and remote company that incubated the Mina Protocol.
     Our team operates on the cutting edge of Web3 and zero-knowledge-proofs.
   links:
-    - label: O(1) Labs
+    - label: o1Labs
       url: https://o1labs.org
     - label: Rust Node
       url: https://github.com/o1-labs/mina-rust
