@@ -1,0 +1,25 @@
+# Countries visited
+# Add your visited countries here
+#
+# code: ISO 3166-1 alpha-2 country code (used for map highlighting)
+# name: Country name
+# continent: Africa, Asia, Europe, North America, South America, Oceania, Antarctica
+# first_visit: Year of first visit
+# visits: Number of times visited (optional)
+# favorite: true/false (optional, for highlighting favorites)
+# notes: Short note about the country (optional)
+
+- code: BE
+  name: Belgium
+  continent: Europe
+  first_visit: 1992
+  notes: Home country
+
+# Example entries (remove or modify):
+# - code: JP
+#   name: Japan
+#   continent: Asia
+#   first_visit: 2024
+#   visits: 1
+#   favorite: true
+#   notes: Amazing food and culture
