@@ -90,7 +90,7 @@
 
 {% include opensource.html %}
 
-## CV
+## Experience
 
 {% include cv-jobs.html %}
 
