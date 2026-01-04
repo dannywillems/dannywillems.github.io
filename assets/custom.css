@@ -454,3 +454,95 @@ body {
     gap: 1.5rem;
   }
 }
+
+/* === GITHUB ACTIVITY === */
+.github-activity {
+  margin-bottom: 2rem;
+}
+
+.github-activity-intro {
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.github-activity-note {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.github-activity-list {
+  border-left: 2px solid #444;
+  padding-left: 1rem;
+}
+
+.github-activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #333;
+}
+
+.github-activity-item:last-child {
+  border-bottom: none;
+}
+
+.github-activity-icon {
+  flex-shrink: 0;
+  color: #b5e853;
+  margin-top: 0.15rem;
+}
+
+.github-activity-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.github-activity-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.github-activity-desc {
+  display: block;
+  color: #eee;
+}
+
+.github-activity-repo {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.github-activity-repo a {
+  color: #b5e853;
+}
+
+.github-activity-message {
+  display: block;
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.github-activity-date {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  color: #666;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 45em) {
+  .github-activity-item {
+    flex-wrap: wrap;
+  }
+
+  .github-activity-date {
+    width: 100%;
+    margin-top: 0.25rem;
+    margin-left: 1.75rem;
+  }
+}
