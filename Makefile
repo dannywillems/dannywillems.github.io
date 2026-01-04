@@ -47,11 +47,21 @@ lint: ## Lint markdown files
 	fi
 
 .PHONY: format
-format: ## Format markdown files with prettier
+format: ## Format files with prettier
 	@if command -v prettier >/dev/null 2>&1; then \
-		prettier --write _posts/*.md _drafts/*.md *.md; \
+		prettier --write "**/*.css" "*.md" "_posts/*.md"; \
 	else \
 		echo "prettier not installed. Install with: npm install -g prettier"; \
+		exit 1; \
+	fi
+
+.PHONY: check-format
+check-format: ## Check formatting with prettier
+	@if command -v prettier >/dev/null 2>&1; then \
+		prettier --check "**/*.css" "*.md" "_posts/*.md"; \
+	else \
+		echo "prettier not installed. Install with: npm install -g prettier"; \
+		exit 1; \
 	fi
 
 RUBY_VERSION := $(shell cat .ruby-version 2>/dev/null || echo "3.2.2")
