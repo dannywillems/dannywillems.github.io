@@ -29,6 +29,7 @@ make build          # Build the site
 
 - No emojis in commit messages
 - Do not add Claude as co-author
+- Do not add "Generated with" lines in commit messages
 - Wrap commit message titles at 72 characters
 - Wrap commit message body at 80 characters
 - Use conventional commit prefixes: `feat:`, `fix:`, `docs:`, `chore:`,
