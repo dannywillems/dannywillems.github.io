@@ -129,6 +129,16 @@ a:hover {
   page-break-inside: avoid;
 }
 
+.cv-entry-employer {
+  font-weight: 700;
+  font-size: 11pt;
+  margin-bottom: 0.25rem;
+}
+
+.cv-entry-employer a {
+  color: #222;
+}
+
 .cv-entry-header {
   display: flex;
   justify-content: space-between;
