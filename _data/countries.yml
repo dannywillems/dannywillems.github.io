@@ -55,6 +55,10 @@
   name: Ireland
   continent: Europe
 
+- code: CH
+  name: Switzerland
+  continent: Europe
+
 # North America
 - code: US
   name: United States
