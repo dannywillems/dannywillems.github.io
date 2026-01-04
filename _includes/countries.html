@@ -36,21 +36,10 @@
     </style>
     <div class="countries-map">
       {% include world-map.svg %}
-      <svg class="city-overlay" viewBox="30.767 241.591 784.077 458.627" preserveAspectRatio="xMidYMid meet">
-        <g class="city-markers">
-          {% for city in site.data.cities %}
-          <g class="city-marker" transform="translate({{ city.x }}, {{ city.y }})">
-            <circle r="4" />
-            <text x="6" y="4">{{ city.name }}</text>
-          </g>
-          {% endfor %}
-        </g>
-      </svg>
     </div>
     <p class="map-legend">
-      <span class="legend-visited"></span> Visited country
+      <span class="legend-visited"></span> Visited
       <span class="legend-not-visited"></span> Not visited
-      <span class="legend-city"></span> City
     </p>
   </div>
 
