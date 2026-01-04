@@ -1,0 +1,66 @@
+# Research publications
+
+- title: |
+    New Design Techniques for Efficient
+    Arithmetization-Oriented Hash Functions: Anemoi Permutations and Jive
+    Compression Mode
+  description: |
+    Advanced cryptographic protocols such as Zero-knowledge (ZK) proofs of
+    knowledge, widely used in cryptocurrency applications such as Zcash, Monero,
+    Filecoin, demand new cryptographic hash functions that are efficient not only
+    over the binary field $\mathbb{F}_{2}$, but also over large fields of
+    prime characteristic $\mathbb{F}_{p}$.
+    This need has been acknowledged by the wider community and new so-called
+    Arithmetization-Oriented (AO) hash functions have been proposed, e.g. MiMC-Hash,
+    Rescue–Prime, Poseidon, Reinforced Concrete and Griffin to name a few.
+  authors: |
+    Clémence Bouvier and Pierre Briaud and Pyrros Chaidos and Léo Perrin and
+    Robin Salen and Vesselin Velichkov and Danny Willems
+  links:
+    - label: PDF
+      url: https://eprint.iacr.org/2022/840
+    - label: Website
+      url: https://anemoi-hash.github.io
+
+- title: |
+    New optimization techniques for PlonK's
+    arithmetization
+  description: |
+    PlonK is a universal and updatable zk-SNARK for general circuit satisfiability
+    that allows a verifier to check the validity of a certain NP statement very
+    efficiently, optionally in zero-knowledge. PlonK requires that the NP relation
+    of interest be expressed as a system of so-called PlonK constraints. Such
+    conversion is complex and can be implemented in various ways, having a great
+    impact on the prover complexity (which is typically linearithmic in the number
+    of PlonK constraints).
+
+    We propose several general results for simplifying PlonK constraint systems,
+    which produce more compact but equivalent systems and can lead to significant
+    performance improvements. We also develop an automated optimizer of constraints,
+    based on our techniques, that can be used to construct very compact and less
+    error-prone constraint systems, favoring a more auditable circuit design.
+  authors: Miguel Ambrona, Anne-Laure Schmitt, Raphael R. Toledo, and Danny Willems
+  links:
+    - label: PDF
+      url: https://eprint.iacr.org/2022/462
+
+- title: To a typed language for modular programming
+  description: |
+    Modular programming consists of splitting programs in components called modules.
+    In the functional programming language OCaml, the core and the module
+    language are ruled by different typing systems.
+    In this work, based on the calculus DOT, we develop a typing system and a
+    subtyping algorithm for a language where the core and module languages
+    are indistinguishable. For instance, functions and functors have the same
+    types and records and modules are not different objects.
+    We also describe a surface language "à la ML" making it easy to write programs. In
+    addition to that, we provide an OCaml implementation of the typing and
+    subtyping algorithm.
+  authors: |
+    Danny Willems, master thesis directed by <a
+    href="https://pauillac.inria.fr/~fpottier/">François Pottier</a>
+  links:
+    - label: PDF
+      url: https://github.com/dannywillems/master-thesis/
+    - label: Implementation
+      url: https://github.com/dannywillems/RML/

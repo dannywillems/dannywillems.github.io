@@ -1,0 +1,20 @@
+<div class="publications">
+{% for talk in site.data.talks %}
+  <div class="publication-item">
+    <p class="publication-title">{{ talk.title }}</p>
+    {% if talk.description %}
+      <p class="publication-description">{{ talk.description | markdownify }}</p>
+    {% endif %}
+    {% if talk.authors %}
+      <p class="publication-authors">{{ talk.authors }}</p>
+    {% endif %}
+    {% if talk.links %}
+      <div class="publication-links">
+        {% for link in talk.links %}
+          <a class="publication-link" href="{{ link.url }}">{{ link.label }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+{% endfor %}
+</div>

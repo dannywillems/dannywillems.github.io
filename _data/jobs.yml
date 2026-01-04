@@ -1,0 +1,116 @@
+# Employment history
+# Supports multiple positions per employer via 'positions' array
+
+- employer: O(1) Labs
+  url: https://o1labs.org
+  positions:
+    - title: Cryptography Engineer
+      start: 2023
+      end: Present
+  description: |
+    O(1) Labs is a global and remote company that incubated the Mina Protocol.
+    Our team operates on the cutting edge of Web3 and zero-knowledge-proofs.
+  links:
+    - label: O(1) Labs
+      url: https://o1labs.org
+
+- employer: LeakIX
+  url: https://leakix.net
+  positions:
+    - title: CEO
+      start: 2021
+      end: Present
+  description: |
+    LeakIX is the first platform combining a search engine indexing public
+    information by scanning Internet and an open reporting platform linked to the results.
+    We intent to provide a preemptive solution by trusting individual researchers
+    and security companies on the most sensible data we index by delivering a clear
+    report on the incidents, we also help to identify what information has/could be
+    affected and how to resolve the issue.
+    Our first goal is one of prevention, all the voluntary reports are free
+    and no sales attempts are made on LeakIX's side.
+    We ban sales attempt that would take advantage of the issue to sell shady security services.
+  links:
+    - label: Website
+      url: https://leakix.net
+
+- employer: Nomadic Labs
+  url: https://nomadic-labs.com
+  positions:
+    - title: Cryptography Engineer
+      start: 2020
+      end: 2023
+  description: |
+    Nomadic Labs are Tezos blockchain experts. Working on the core development,
+    evolution and adoption of the Tezos protocol in BENELUX.
+    Working in the cryptography team, focusing on the development on zero-knowledge
+    protocols, mainly the project Epoxy, a validity rollup for the Tezos protocol.
+  links:
+    - label: Cryptography team website
+      url: https://research-development.nomadic-labs.com/files/cryptography.html
+    - label: Nomadic Labs
+      url: https://nomadic-labs.com
+
+- employer: B2C2
+  url: https://www.b2c2.com
+  positions:
+    - title: Blockchain Lead & Software Engineer
+      start: March 2017
+      end: January 2020
+  description: |
+    Lead developer/engineer on the accounting system (partially the risk system),
+    including a real time crypto/FIAT transaction detection across multiple blockchains.
+    Managing the infrastructure, the development, the release and the new features
+    around the blockchain and accounting projects.
+    Working on some parts of the trading system too. In general, participating
+    in the main developer tasks.
+    B2C2 is a leading cryptocurrency marketmaker.
+    Brokers, exchanges, hedge funds and family offices around the world trust us
+    to deliver seamless execution in the major cryptocurrencies and fiat currency pairs.
+  links:
+    - label: Website
+      url: https://b2c2.com
+
+- employer: Be Sport
+  positions:
+    - title: Intern
+      start: July 2016
+      end: November 2016
+  description: |
+    Social network around sports. The platform is built using OCaml and the Ocsigen
+    technology. During the internship, I was responsible to improve the framework
+    Ocsigen Start, which consists of a template to bootstrap a complete standard
+    applications require users management, displaying tips, sending notifications
+    to the users.
+  links:
+    - label: Be Sport
+      url: https://besport.com
+    - label: Ocsigen
+      url: https://ocsigen.com
+    - label: Ocsigen Start
+      url: https://github.com/ocsigen/ocsigen-start
+
+- employer: Selfpharma
+  positions:
+    - title: Cordova Mobile Application Engineer
+      start: August 2015
+      end: February 2016
+  description: |
+    Online pharmacy shop based in Brussels, Belgium, built using Prestashop.
+    Leading the iOS and Android mobile applications development, written in Cordova.
+  links:
+    - label: Website
+      url: https://selfpharma.com
+    - label: Play Store
+      url: https://play.google.com/store/apps/details?id=com.selfpharma.selfpharma&hl=fr
+    - label: Apple Store
+      url: https://apps.apple.com/be/app/selfpharma/id1007247480
+
+- employer: INRIA Paris
+  positions:
+    - title: Research Intern - Gallium Team
+      start: February 2016
+      end: June 2016
+  description: |
+    Research internship in the Gallium team, focusing on module systems in functional
+    programming languages.
