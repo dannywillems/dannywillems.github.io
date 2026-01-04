@@ -19,6 +19,8 @@ jobs:
           python-version: '3.x'
 
       - name: Fetch and aggregate GitHub contributions
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 .github/scripts/fetch_contributions.py > _data/github_contributions.json
 
       - name: Commit and push if changed
