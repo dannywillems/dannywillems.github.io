@@ -1,6 +1,7 @@
 <div class="contributions">
   <p class="contributions-updated">
-    Last updated: {{ site.data.github_contributions.updated_at | date: "%Y-%m-%d %H:%M UTC" }}
+    Last updated: {{ site.data.github_contributions.updated_at | date: "%Y-%m-%d
+    %H:%M UTC" }}
   </p>
 
   <div class="contributions-summary">
@@ -9,41 +10,93 @@
       <div class="contributions-period">
         <h4>This Week</h4>
         <div class="contributions-stats">
-          <div class="stat stat-total"><strong>{{ site.data.github_contributions.totals.week.total }}</strong> total</div>
-          <div class="stat">{{ site.data.github_contributions.totals.week.commits }} commits</div>
-          <div class="stat">{{ site.data.github_contributions.totals.week.prs }} PRs</div>
-          <div class="stat">{{ site.data.github_contributions.totals.week.issues }} issues</div>
-          <div class="stat">{{ site.data.github_contributions.totals.week.reviews }} reviews</div>
+          <div class="stat stat-total">
+            <strong
+              >{{ site.data.github_contributions.totals.week.total }}</strong
+            >
+            total
+          </div>
+          <div class="stat">
+            {{ site.data.github_contributions.totals.week.commits }} commits
+          </div>
+          <div class="stat">
+            {{ site.data.github_contributions.totals.week.prs }} PRs
+          </div>
+          <div class="stat">
+            {{ site.data.github_contributions.totals.week.issues }} issues
+          </div>
+          <div class="stat">
+            {{ site.data.github_contributions.totals.week.reviews }} reviews
+          </div>
         </div>
       </div>
       <div class="contributions-period">
         <h4>This Month</h4>
         <div class="contributions-stats">
-          <div class="stat stat-total"><strong>{{ site.data.github_contributions.totals.month.total }}</strong> total</div>
-          <div class="stat">{{ site.data.github_contributions.totals.month.commits }} commits</div>
-          <div class="stat">{{ site.data.github_contributions.totals.month.prs }} PRs</div>
-          <div class="stat">{{ site.data.github_contributions.totals.month.issues }} issues</div>
-          <div class="stat">{{ site.data.github_contributions.totals.month.reviews }} reviews</div>
+          <div class="stat stat-total">
+            <strong
+              >{{ site.data.github_contributions.totals.month.total }}</strong
+            >
+            total
+          </div>
+          <div class="stat">
+            {{ site.data.github_contributions.totals.month.commits }} commits
+          </div>
+          <div class="stat">
+            {{ site.data.github_contributions.totals.month.prs }} PRs
+          </div>
+          <div class="stat">
+            {{ site.data.github_contributions.totals.month.issues }} issues
+          </div>
+          <div class="stat">
+            {{ site.data.github_contributions.totals.month.reviews }} reviews
+          </div>
         </div>
       </div>
       <div class="contributions-period">
         <h4>This Quarter</h4>
         <div class="contributions-stats">
-          <div class="stat stat-total"><strong>{{ site.data.github_contributions.totals.quarter.total }}</strong> total</div>
-          <div class="stat">{{ site.data.github_contributions.totals.quarter.commits }} commits</div>
-          <div class="stat">{{ site.data.github_contributions.totals.quarter.prs }} PRs</div>
-          <div class="stat">{{ site.data.github_contributions.totals.quarter.issues }} issues</div>
-          <div class="stat">{{ site.data.github_contributions.totals.quarter.reviews }} reviews</div>
+          <div class="stat stat-total">
+            <strong
+              >{{ site.data.github_contributions.totals.quarter.total }}</strong
+            >
+            total
+          </div>
+          <div class="stat">
+            {{ site.data.github_contributions.totals.quarter.commits }} commits
+          </div>
+          <div class="stat">
+            {{ site.data.github_contributions.totals.quarter.prs }} PRs
+          </div>
+          <div class="stat">
+            {{ site.data.github_contributions.totals.quarter.issues }} issues
+          </div>
+          <div class="stat">
+            {{ site.data.github_contributions.totals.quarter.reviews }} reviews
+          </div>
         </div>
       </div>
       <div class="contributions-period">
         <h4>This Year</h4>
         <div class="contributions-stats">
-          <div class="stat stat-total"><strong>{{ site.data.github_contributions.totals.year.total }}</strong> total</div>
-          <div class="stat">{{ site.data.github_contributions.totals.year.commits }} commits</div>
-          <div class="stat">{{ site.data.github_contributions.totals.year.prs }} PRs</div>
-          <div class="stat">{{ site.data.github_contributions.totals.year.issues }} issues</div>
-          <div class="stat">{{ site.data.github_contributions.totals.year.reviews }} reviews</div>
+          <div class="stat stat-total">
+            <strong
+              >{{ site.data.github_contributions.totals.year.total }}</strong
+            >
+            total
+          </div>
+          <div class="stat">
+            {{ site.data.github_contributions.totals.year.commits }} commits
+          </div>
+          <div class="stat">
+            {{ site.data.github_contributions.totals.year.prs }} PRs
+          </div>
+          <div class="stat">
+            {{ site.data.github_contributions.totals.year.issues }} issues
+          </div>
+          <div class="stat">
+            {{ site.data.github_contributions.totals.year.reviews }} reviews
+          </div>
         </div>
       </div>
     </div>
@@ -62,53 +115,64 @@
         </tr>
       </thead>
       <tbody>
-        {% for repo in site.data.github_contributions.repositories %}
-        {% if repo.year.total > 0 %}
+        {% for repo in site.data.github_contributions.repositories %} {% if
+        repo.year.total > 0 %}
         <tr>
           <td class="repo-name">
             <a href="{{ repo.url }}">{{ repo.name }}</a>
           </td>
           <td class="repo-stat">
             {% if repo.week.total > 0 %}
-              <span class="total">{{ repo.week.total }}</span>
-              <span class="breakdown">{{ repo.week.commits }}c / {{ repo.week.prs }}pr / {{ repo.week.issues }}i</span>
+            <span class="total">{{ repo.week.total }}</span>
+            <span class="breakdown"
+              >{{ repo.week.commits }}c / {{ repo.week.prs }}pr / {{
+              repo.week.issues }}i</span
+            >
             {% else %}
-              <span class="zero">-</span>
+            <span class="zero">-</span>
             {% endif %}
           </td>
           <td class="repo-stat">
             {% if repo.month.total > 0 %}
-              <span class="total">{{ repo.month.total }}</span>
-              <span class="breakdown">{{ repo.month.commits }}c / {{ repo.month.prs }}pr / {{ repo.month.issues }}i</span>
+            <span class="total">{{ repo.month.total }}</span>
+            <span class="breakdown"
+              >{{ repo.month.commits }}c / {{ repo.month.prs }}pr / {{
+              repo.month.issues }}i</span
+            >
             {% else %}
-              <span class="zero">-</span>
+            <span class="zero">-</span>
             {% endif %}
           </td>
           <td class="repo-stat">
             {% if repo.quarter.total > 0 %}
-              <span class="total">{{ repo.quarter.total }}</span>
-              <span class="breakdown">{{ repo.quarter.commits }}c / {{ repo.quarter.prs }}pr / {{ repo.quarter.issues }}i</span>
+            <span class="total">{{ repo.quarter.total }}</span>
+            <span class="breakdown"
+              >{{ repo.quarter.commits }}c / {{ repo.quarter.prs }}pr / {{
+              repo.quarter.issues }}i</span
+            >
             {% else %}
-              <span class="zero">-</span>
+            <span class="zero">-</span>
             {% endif %}
           </td>
           <td class="repo-stat">
             {% if repo.year.total > 0 %}
-              <span class="total">{{ repo.year.total }}</span>
-              <span class="breakdown">{{ repo.year.commits }}c / {{ repo.year.prs }}pr / {{ repo.year.issues }}i</span>
+            <span class="total">{{ repo.year.total }}</span>
+            <span class="breakdown"
+              >{{ repo.year.commits }}c / {{ repo.year.prs }}pr / {{
+              repo.year.issues }}i</span
+            >
             {% else %}
-              <span class="zero">-</span>
+            <span class="zero">-</span>
             {% endif %}
           </td>
         </tr>
-        {% endif %}
-        {% endfor %}
+        {% endif %} {% endfor %}
       </tbody>
     </table>
   </div>
 
   <p class="contributions-note">
-    Data sourced from <a href="https://github.com/dannywillems">GitHub</a> via GraphQL API.
-    Updated daily.
+    Data sourced from <a href="https://github.com/dannywillems">GitHub</a> via
+    GraphQL API. Updated daily.
   </p>
 </div>
