@@ -1,0 +1,138 @@
+---
+layout: cv
+title: CV - Danny Willems
+permalink: /cv/
+---
+
+<header class="cv-header">
+  <h1>Danny Willems</h1>
+  <p class="cv-title">Cryptography Engineer & Researcher</p>
+  <div class="cv-contact">
+    <span><a href="mailto:danny@badaas.be">danny@badaas.be</a></span>
+    <span><a href="https://dannywillems.github.io">dannywillems.github.io</a></span>
+    <span><a href="https://github.com/dannywillems">github.com/dannywillems</a></span>
+    <span><a href="https://linkedin.com/in/bedannywillems">LinkedIn</a></span>
+  </div>
+</header>
+
+<section class="cv-section">
+  <h2>Professional Experience</h2>
+  {% for job in site.data.jobs %}
+  <div class="cv-entry">
+    <div class="cv-entry-header">
+      <div>
+        <span class="cv-entry-title">
+          {% for position in job.positions %}
+            {{ position.title }}{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </span>
+        <span class="cv-entry-org">
+          @ {% if job.url %}<a href="{{ job.url }}">{{ job.employer }}</a>{% else %}{{ job.employer }}{% endif %}
+        </span>
+      </div>
+      <span class="cv-entry-dates">
+        {{ job.positions.first.start }} - {{ job.positions.first.end }}
+      </span>
+    </div>
+    {% if job.description %}
+    <div class="cv-entry-description">
+      {{ job.description | markdownify }}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</section>
+
+<section class="cv-section">
+  <h2>Education</h2>
+  {% for edu in site.data.education %}
+  <div class="cv-entry">
+    <div class="cv-entry-header">
+      <div>
+        <span class="cv-entry-title">{{ edu.degree }}</span>
+        <span class="cv-entry-org">
+          @ {% if edu.url %}<a href="{{ edu.url }}">{{ edu.institution }}</a>{% else %}{{ edu.institution }}{% endif %}
+        </span>
+      </div>
+      <span class="cv-entry-dates">{{ edu.start }} - {{ edu.end }}</span>
+    </div>
+    {% if edu.description %}
+    <div class="cv-entry-description">
+      {{ edu.description | markdownify }}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</section>
+
+<section class="cv-section">
+  <h2>Research Publications</h2>
+  {% for pub in site.data.publications %}
+  <div class="cv-pub">
+    <div class="cv-pub-title">{{ pub.title | strip_newlines | strip }}</div>
+    <div class="cv-pub-authors">{{ pub.authors | strip_newlines | strip }}</div>
+    {% if pub.links %}
+    <div class="cv-pub-venue">
+      {% for link in pub.links %}
+        <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} | {% endunless %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</section>
+
+<section class="cv-section">
+  <h2>Public Talks</h2>
+  {% for talk in site.data.talks %}
+  <div class="cv-pub">
+    <div class="cv-pub-title">{{ talk.title }}</div>
+    <div class="cv-pub-authors">{{ talk.authors }}</div>
+    {% if talk.links %}
+    <div class="cv-pub-venue">
+      {% for link in talk.links %}
+        <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} | {% endunless %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</section>
+
+<section class="cv-section">
+  <h2>Skills & Technologies</h2>
+  <div class="cv-skills">
+    <div class="cv-skill-category">
+      <h3>Programming Languages</h3>
+      <p>OCaml, Rust, C, Python, JavaScript/TypeScript</p>
+    </div>
+    <div class="cv-skill-category">
+      <h3>Cryptography</h3>
+      <p>Zero-knowledge proofs, SNARKs/STARKs, Elliptic curves, Hash functions, Digital signatures</p>
+    </div>
+    <div class="cv-skill-category">
+      <h3>Blockchain</h3>
+      <p>Mina Protocol, Tezos, Rollups, Smart contracts</p>
+    </div>
+    <div class="cv-skill-category">
+      <h3>Tools & Practices</h3>
+      <p>Git, CI/CD, Formal verification, Performance optimization</p>
+    </div>
+  </div>
+</section>
+
+<section class="cv-section">
+  <h2>Notable Open Source Contributions</h2>
+  {% for project in site.data.opensource limit:5 %}
+  <div class="cv-pub">
+    <div class="cv-pub-title">{{ project.title }}</div>
+    {% if project.links %}
+    <div class="cv-pub-venue">
+      {% for link in project.links %}
+        <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} | {% endunless %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</section>
