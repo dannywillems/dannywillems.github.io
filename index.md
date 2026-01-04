@@ -10,17 +10,6 @@
       <br />
       Co-founder @ <a href="https://leakix.net">LeakIX</a>
     </p>
-    <p class="center">
-      Previously:
-      <br />
-      Cryptography engineer @ <a href="https://nomadic-labs.com">Nomadic Labs</a>/<a href="https://tezos.com">Tezos</a>
-      <br />
-      First Software engineer @ <a href="https://www.b2c2.com/">B2C2</a>
-      <br />
-      Software engineer @ Be Sport (Intern)
-      <br />
-      Intern researcher - Gallium team @ INRIA Paris
-    </p>
     <div class="center">
        <a href="https://twitter.com/dwillems42" class="logo-link">
          <img class="logo" src="{{ 'assets/twitter.svg' }}" alt="Twitter">
