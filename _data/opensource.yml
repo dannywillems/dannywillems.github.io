@@ -1,0 +1,208 @@
+# Open source software contributions
+
+- title: "Octez: an OCaml implementation of the Tezos protocol (Dec 2019 - Present)"
+  description: |
+    Tezos is a blockchain that offers both consensus and meta-consensus, by which we
+    mean that Tezos comes to consensus both about the state of its ledger, and also
+    about how the protocol and the nodes should adapt and upgrade.
+    For more information about the project, see <a href="https://tezos.com">https://tezos.com</a>.
+  links:
+    - label: GitLab
+      url: https://gitlab.com/tezos/tezos/
+
+- title: "ocaml-bls12-381: an efficient OCaml implementation of the pairing-friendly curve BLS12-381 (January 2020 - Present)"
+  description: |
+    This library provides a fast implementation of operations over the scalar field,
+    including (i)FFT, operations over the groups G1 and G2, including EC-FFT,
+    hash_to_curve as described in <a
+    href="https://datatracker.ietf.org/doc/draft-irtf-cfrg-hash-to-curve/">this
+    specification</a> and the pippenger algorithm for
+    fast multi scalar exponentiation, operations over the target group of the
+    pairing (GT), written additively, and pairing from $G1 x G2 to GT$.
+    Notable users include Octez, an OCaml implementation of the Tezos
+    protocol to allow arithmetic operations over BLS12-381 in the smart
+    contract language Michelson.
+  links:
+    - label: GitLab
+      url: https://gitlab.com/dannywillems/ocaml-bls12-381/
+    - label: OPAM
+      url: https://opam.ocaml.org/packages/bls12-381/
+    - label: First release announcement
+      url: https://discuss.ocaml.org/t/ann-bls12-381-3-0-0/9438
+
+- title: "ocaml-bls12-381-hash: efficient C and OCaml implementation of hash functions over the scalar field of BLS12-381 (Aug. 2022 - Present)"
+  description: |
+    This library provides efficient C and OCaml factory implementations of
+    hash functions like <a href="https://eprint.iacr.org/2022/840">Anemoi</a>, <a href="https://eprint.iacr.org/2019/458">Poseidon</a>, <a
+    href="https://eprint.iacr.org/2019/426">Rescue</a> or <a href="https://eprint.iacr.org/2022/403">Griffin</a> over the scalar field of
+    BLS12-381.
+    Notable users include Plompiler, a monadic Domain Specific Language
+    embedded in OCaml that can be used to build circuits for aPlonK.
+  links:
+    - label: GitLab
+      url: https://gitlab.com/dannywillems/ocaml-bls12-381-hash/
+    - label: OPAM
+      url: https://opam.ocaml.org/packages/bls12-381-hash/
+
+- title: "ocaml-bls12-381-signature: OCaml implementation of BLS signature for BLS12-381 (June 2021 - Present)"
+  description: |
+    The library provides BLS signatures for the pairing friendly curve
+    BLS12-381. The code follows the specification available <a
+    href="https://datatracker.ietf.org/doc/pdf/draft-irtf-cfrg-bls-signature-04.pdf">here</a>.
+    Notable users include Transactionnal Rollups (TORU) and Smart Contract Rollups (SCORU), scaling solutions implemented in
+    Octez, an OCaml implementation of the Tezos protocol.
+  links:
+    - label: GitLab
+      url: https://gitlab.com/dannywillems/ocaml-bls12-381-signature/
+    - label: OPAM
+      url: https://opam.ocaml.org/packages/bls12-381-signature/
+
+- title: "Plompiler: a monadic Domain Specific Language embedded in OCaml than can be used to build circuits for aPlonK (2021 - Present)"
+  description: |
+    Programs written in Plompiler are typed to increase safety and can be
+    compiled to their circuit representations or interpreted directly in
+    OCaml for testing.
+    Together with the circuit, Plompiler also returns an efficient
+    one-pass solver that given an input finds a valid assignment for the
+    wires of the circuit.
+    Additionally, Plompiler contains a generic optimizer capable of
+    significantly reducing the size of commonly developed circuits.
+    Flamegraphs can be generated to inspect the generated circuits
+    and guide the optimization of each primitives.
+    The library also features a highly performant set of primitives for
+    hashing (Poseidon and Anemoi) and signing.
+    My contribution are sporadic, e.g. when a new primitive has to be
+    implemented or when peer-coding with the cryptography team at Nomadic
+    Labs.
+  links:
+    - label: GitLab
+      url: https://gitlab.com/nomadic-labs/cryptography/privacy-team/-/tree/master/plompiler
+    - label: OPAM
+      url: https://opam.ocaml.org/packages/tezos-plompiler
+
+- title: "Mec: Modular Experimental Cryptography library in OCaml (April 2020 - Present)"
+  description: |
+    Mec provides modular implementations of (prime) finite field and elliptic
+    curve cryptographic primitives like hash functions and signature schemes.
+    The library aims to ease the development of (modular) experimental
+    protocols in OCaml and does not aim to be used in a production environment.
+    Notable users include Epoxy, an implementation of validity rollups
+    integrated as a first class citizen in the Tezos protocol, for testing purposes.
+  links:
+    - label: GitLab
+      url: https://gitlab.com/nomadic-labs/cryptography/ocaml-ec/
+    - label: OPAM
+      url: https://opam.ocaml.org/packages/mec/
+
+- title: "ocaml-ff: Finite Field library in OCaml (April 2020 - Present)"
+  description: |
+    Ff provides module types to describe (prime) finite fields
+    $\mathbb{F}_{p^n}$ and provides functors to easily instantiate
+    implementations.
+  links:
+    - label: GitLab
+      url: https://gitlab.com/nomadic-labs/cryptography/ocaml-ff/
+    - label: OPAM
+      url: https://opam.ocaml.org/packages/ff/
+
+- title: "ocaml-polynomial: polynomial over finite fields in OCaml (April 2020 - Present)"
+  description: |
+    The library provides implementations of polynomials over finite fields,
+    including routines like (i)FFT.
+  links:
+    - label: GitLab
+      url: https://gitlab.com/nomadic-labs/cryptography/ocaml-polynomial/
+    - label: OPAM
+      url: https://opam.ocaml.org/packages/polynomial/
+
+- title: "ocaml-chia-vdf: OCaml wrapper for Chia's class group based VDF (May 2022)"
+  description: |
+    OCaml wrapper for <a href="https://github.com/Chia-Network/chiavdf">Chia's class group based VDF project</a>.
+
+    Notable users include the Tezos' protocol Kathmandu to improve the randomness generation.
+
+    My contribution has been mostly at the beginning of the project, consisting
+    of writing the OCaml bindings to the C++ codebase.
+  links:
+    - label: GitLab
+      url: https://gitlab.com/nomadic-labs/cryptography/ocaml-chia-vdf/
+    - label: OPAM
+      url: https://opam.ocaml.org/packages/class_group_vdf/
+
+- title: "ocaml-carray: contiguous C arrays in OCaml (May 2022 - Present)"
+  description: |
+    OCaml arrays are not always contiguous piece of memory, requiring accessing
+    different chunks of memory when accessing individual elements. When requiring a
+    value in memory, the CPU will fetch the RAM and load not only the particular
+    value but a memory page (a contiguous piece of memory) and add it to its cache.
+    The CPU will use its cache to load the values in its registers. It is not
+    efficient with large OCaml arrays as the CPU will constantly fetch the RAM to
+    load different memory pages in its cache.
+    Also, when using the C FFI, the user must know the memory representation of an
+    array and use the non user-friendly low-level interface macro Field.
+
+    This library provides a polymorphic interface mocking a subset of the Array
+    interface to work with contiguous piece of memory. Using the library should be
+    as easy as adding module Array = Carray.
+  links:
+    - label: GitLab
+      url: https://gitlab.com/dannywillems/ocaml-carray/
+    - label: OPAM
+      url: https://opam.ocaml.org/packages/carray/
+
+- title: "Seum: OCaml DSL and tool to write and compare programs in assembly, in a typed and \"safe\" fashion way (June 2022 - Present)"
+  description: |
+    Writing performant applications might require to write low level assembly code
+    following a specific assembler syntax like GAS or NASM and when the code is
+    written, OCaml developers must write boilerplate code in C and in OCaml to bind
+    the hand-written assembly routines to expose it into a library.
+    Also, comparing two routines implementing the same algorithm in
+    assembly is hard because they might be implemented in different assembler, might
+    use different ISA or request access a different number of time the memory.
+
+    Seum aims to embed a syntax close to the NASM syntax in OCaml to write typed
+    assembly program. Parsers for different assemblers are provided to be able to
+    compare programs using the internal Seum representation. A cost model is
+    implemented counting the number of CPU cycle each instruction requires in
+    addition to counting the number of memory accesses and registers used, providing
+    more precise comparisons of algorithm implementations.
+    Additionnally, using the embedded syntax, OCaml bindings to the assembly code can be
+    automatically generated. Calling the assembly code directly from OCaml like any
+    other function should also be possible and straightforward. The OCaml developer
+    has never to write assembly in a different file and can threat assembly code
+    like pure OCaml functions.
+  links:
+    - label: GitLab
+      url: https://gitlab.com/dannywillems/seum/
+
+- title: "ocaml-arkworks: OCaml binding to Rust library arkworks (Dec 2022 - Present)"
+  description: |
+    WIP (Dec. 2022) - Optimised OCaml binding to the library <a
+    href="https://github.com/arkworks">arkworks</a>. Investigating the
+    replacement of the low level library used by <a
+    href="https://research-development.nomadic-labs.com/files/cryptography.html">Epoxy</a>,
+    the validity rollup framework built for the Tezos protocol.
+    More info to come.
+  links:
+    - label: GitLab
+      url: https://gitlab.com/dannywillems/ocaml-arkworks/
+
+- title: Ocsigen - Ocsigen Start (July 2016 - Dec 2016)
+  description: |
+    Ocsigen Start is a set of higher-level libraries for building
+    client-server web applications with Ocsigen (<a
+    href="https://github.com/ocsigen/js_of_ocaml/">Js_of_ocaml</a> and <a
+    href="https://github.com/ocsigen/eliom">Eliom</a>).
+    It provides modules for user managements (session management,
+    registration, action — e.g., activation — keys, ...), managing groups of
+    users, displaying tips, and easily sending notifications to the users.
+  links:
+    - label: GitLab
+      url: https://github.com/ocsigen/ocsigen-start
+
+- title: "ocaml-cordova: build mobile applications using OCaml and Cordova"
+  description: |
+    A list of OCaml bindings to build mobile applications in OCaml using the web framework Cordova.
+  links:
+    - label: GitHub
+      url: https://github.com/dannywillems/ocaml-cordova-plugin-list

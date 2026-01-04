@@ -1,0 +1,20 @@
+<div class="publications">
+{% for pub in site.data.publications %}
+  <div class="publication-item">
+    <p class="publication-title">{{ pub.title | strip_newlines | strip }}</p>
+    {% if pub.description %}
+      <p class="publication-description">{{ pub.description | markdownify }}</p>
+    {% endif %}
+    {% if pub.authors %}
+      <p class="publication-authors">{{ pub.authors | strip_newlines | strip }}</p>
+    {% endif %}
+    {% if pub.links %}
+      <div class="publication-links">
+        {% for link in pub.links %}
+          <a class="publication-link" href="{{ link.url }}">{{ link.label }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+{% endfor %}
+</div>

@@ -1,0 +1,44 @@
+# Public talks
+
+- title: "ZK11: o1VM: Building a Real-World zkVM for MIPS"
+  description: |
+    Invited talks on main stage to talk about o1VM: a zkVM we are building at o1Labs.
+    In this talk, we will present o1vm, a general-purpose zkVM which can be used to
+    prove the correct execution of MIPS programs. Learn about the ISA
+    specifics supported by this zkVM, as well as an encoding technique for
+    bitwise operations that was used to efficiently implement standard hash
+    functions with high algebraic complexities like Keccak. I also dive into
+    the implementation of a folding scheme and RAMLookups,
+    our distinctive take on "additive lookups", and how they were leveraged to
+    handle long execution traces and to efficiently represent random-memory access,
+    an expensive component of zkVMs.
+  authors: Danny Willems
+  links:
+    - label: YouTube
+      url: https://www.youtube.com/watch?v=HDH2KXRAxAc
+    - label: Event
+      url: https://www.zksummit.com/
+
+- title: A zkVM for the MIPs architecture and OP fault proofs
+  description: |
+    Invite from <a href="https://www.7xvc.com/">SevenX Venture</a> to talk
+    about the recent work about the zkVM we have been working on at O(1) Labs
+  authors: Danny Willems
+  links:
+    - label: YouTube
+      url: https://www.youtube.com/watch?v=hR1lwvc3LBg
+    - label: Event
+      url: https://lu.ma/ResearchDay
+    - label: Twitter thread
+      url: https://twitter.com/yuxiao_deng/status/1732762740727660929
+
+- title: "ZKProof5 - Anemoi & Jive: New Arithmetization-Oriented tools for Plonk app"
+  description: |
+    Invitation to give a talk during ZKProof5 in Tel Aviv to present the work on Anemoi & Jive, available
+    <a href="https://eprint.iacr.org/2022/840">here</a>.
+  authors: Clémence Bouvier and Danny Willems
+  links:
+    - label: YouTube
+      url: https://www.youtube.com/watch?v=3EdbLiClFPI
+    - label: Conference
+      url: https://zkproof.org/events/workshop5/
