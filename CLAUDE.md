@@ -33,4 +33,4 @@ make build          # Build the site
 
 ## Ruby Version
 
-Ruby version is specified in `.ruby-version` (currently 3.1.4).
+Ruby version is specified in `.ruby-version` (currently 3.3.10).
