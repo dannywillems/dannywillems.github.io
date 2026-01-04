@@ -1,4 +1,4 @@
-name: Fetch GitHub Activity
+name: Fetch GitHub Contributions
 
 on:
   schedule:
@@ -7,103 +7,24 @@ on:
   workflow_dispatch: # Allow manual trigger
 
 jobs:
-  fetch-activity:
+  fetch-contributions:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Fetch GitHub activity
-        run: |
-          curl -s "https://api.github.com/users/dannywillems/events/public?per_page=30" | \
-          python3 << 'EOF' > _data/github_activity.json
-          import json
-          import sys
-          from datetime import datetime
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
 
-          events = json.load(sys.stdin)
-          activity = []
-
-          for event in events:
-              item = {
-                  "type": event["type"],
-                  "repo": event["repo"]["name"],
-                  "repo_url": f"https://github.com/{event['repo']['name']}",
-                  "created_at": event["created_at"],
-                  "date": datetime.fromisoformat(event["created_at"].replace("Z", "+00:00")).strftime("%Y-%m-%d"),
-              }
-
-              if event["type"] == "PushEvent":
-                  payload = event.get("payload", {})
-                  commits = payload.get("commits", [])
-                  item["action"] = "pushed"
-                  item["count"] = len(commits)
-                  item["description"] = f"{len(commits)} commit{'s' if len(commits) != 1 else ''}"
-                  if commits:
-                      item["message"] = commits[-1].get("message", "").split("\n")[0][:80]
-
-              elif event["type"] == "PullRequestEvent":
-                  payload = event.get("payload", {})
-                  pr = payload.get("pull_request", {})
-                  item["action"] = payload.get("action", "opened")
-                  item["title"] = pr.get("title", "")[:80]
-                  item["url"] = pr.get("html_url", "")
-                  item["description"] = f"PR {item['action']}: {item['title']}"
-
-              elif event["type"] == "IssuesEvent":
-                  payload = event.get("payload", {})
-                  issue = payload.get("issue", {})
-                  item["action"] = payload.get("action", "opened")
-                  item["title"] = issue.get("title", "")[:80]
-                  item["url"] = issue.get("html_url", "")
-                  item["description"] = f"Issue {item['action']}: {item['title']}"
-
-              elif event["type"] == "CreateEvent":
-                  payload = event.get("payload", {})
-                  ref_type = payload.get("ref_type", "")
-                  ref = payload.get("ref", "")
-                  item["action"] = "created"
-                  item["ref_type"] = ref_type
-                  item["ref"] = ref
-                  item["description"] = f"Created {ref_type}" + (f" {ref}" if ref else "")
-
-              elif event["type"] == "WatchEvent":
-                  item["action"] = "starred"
-                  item["description"] = "Starred repository"
-
-              elif event["type"] == "ForkEvent":
-                  item["action"] = "forked"
-                  item["description"] = "Forked repository"
-
-              elif event["type"] == "PullRequestReviewEvent":
-                  payload = event.get("payload", {})
-                  pr = payload.get("pull_request", {})
-                  item["action"] = "reviewed"
-                  item["title"] = pr.get("title", "")[:80]
-                  item["url"] = pr.get("html_url", "")
-                  item["description"] = f"Reviewed PR: {item['title']}"
-
-              elif event["type"] == "IssueCommentEvent":
-                  payload = event.get("payload", {})
-                  issue = payload.get("issue", {})
-                  item["action"] = "commented"
-                  item["title"] = issue.get("title", "")[:80]
-                  item["url"] = payload.get("comment", {}).get("html_url", "")
-                  item["description"] = f"Commented on: {item['title']}"
-
-              else:
-                  item["description"] = event["type"].replace("Event", "")
-
-              activity.append(item)
-
-          # Output as JSON
-          print(json.dumps(activity, indent=2))
-          EOF
+      - name: Fetch and aggregate GitHub contributions
+        run: python3 .github/scripts/fetch_contributions.py > _data/github_contributions.json
 
       - name: Commit and push if changed
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add _data/github_activity.json
-          git diff --quiet --cached || git commit -m "chore: update GitHub activity data"
+          git add _data/github_contributions.json
+          git diff --quiet --cached || git commit -m "chore: update GitHub contributions data"
           git push

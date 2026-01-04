@@ -78,10 +78,6 @@
   </div>
 </div>
 
-## Recent GitHub Activity
-
-{% include github-activity.html %}
-
 ## Research publications
 
 {% include publications.html %}
