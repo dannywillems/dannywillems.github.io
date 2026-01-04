@@ -16,7 +16,15 @@ make build          # Build the site
 
 ## Git Workflow
 
-- Always create pull requests against `develop`, not `master`
+### Branching Strategy
+
+- `master`: Production branch, protected. No direct pushes allowed.
+- `develop`: Development branch. All PRs should target this branch.
+- Never push directly to `master` or `develop`. Always create a feature branch and submit a PR.
+- Feature branches should be named descriptively (e.g., `fix/dark-mode-seed-display`, `feat/qr-codes`)
+
+### Commit Standards
+
 - Use conventional commit prefixes: `feat:`, `fix:`, `docs:`, `chore:`, `refactor:`, `test:`
 
 ## Ruby Version
