@@ -173,15 +173,15 @@ code in
 <a href="https://github.com/dannywillems/ocaml-cordova-plugin-sms-example">this
 repository</a>
 
-<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/Selection_002.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/Selection_002-170x300.png" alt="ocaml-cordova-plugin-sms-example" width="170" height="300" class="size-medium wp-image-410"></a>
+<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/Selection_002.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/Selection_002-170x300.png" alt="ocaml-cordova-plugin-sms-example" width="170" height="300" class="size-medium wp-image-410" loading="lazy"></a>
 
 Other examples can be found
 <a href="https://github.com/dannywillems/ocaml-cordova-plugin-list">here</a>.
 Here some other screenshots.
 
-<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_android.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_android-167x300.png" alt="ocaml-cordova-plugin-toast-example-android" width="167" height="300" class="size-medium wp-image-415"></a>
+<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_android.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_android-167x300.png" alt="ocaml-cordova-plugin-toast-example-android" width="167" height="300" class="size-medium wp-image-415" loading="lazy"></a>
 
-<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_ios.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_ios-166x300.png" alt="ocaml-cordova-plugin-toast-example-ios" width="166" height="300" class="size-medium wp-image-414"></a>
+<a href="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_ios.png"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/07/screenshot_ios-166x300.png" alt="ocaml-cordova-plugin-toast-example-ios" width="166" height="300" class="size-medium wp-image-414" loading="lazy"></a>
 
 ### Set up the development environment
 

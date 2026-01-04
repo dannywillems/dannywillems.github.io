@@ -35,7 +35,7 @@ sudo apt-get install ocaml
 The installation takes a few minutes but after that, we can use OCaml without
 problem.
 
-<a href="http://blog.danny-willems.be/wp-content/uploads/2016/06/Selection_003.png" rel="attachment wp-att-287"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/06/Selection_003.png" alt="OCaml on Raspberry Pi" width="553" height="110" class="size-full wp-image-287" /></a>
+<a href="http://blog.danny-willems.be/wp-content/uploads/2016/06/Selection_003.png" rel="attachment wp-att-287"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/06/Selection_003.png" alt="OCaml on Raspberry Pi" width="553" height="110" class="size-full wp-image-287" loading="lazy" /></a>
 
 ## Clone, compile and install OPAM
 
@@ -89,12 +89,12 @@ It takes a very long time because the Raspberry Pi needs to compile OCaml. CPU
 is always at 100% but it doesn't take too much RAM, the entire system taking 200
 MB max. You will be stuck at this step for a long time.
 
-<a href="http://blog.danny-willems.be/wp-content/uploads/2016/06/Selection_004.png" rel="attachment wp-att-293"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/06/Selection_004.png" alt="OPAM switch 4.03.0 stuck" width="651" height="154" class="size-full wp-image-293" /></a>
+<a href="http://blog.danny-willems.be/wp-content/uploads/2016/06/Selection_004.png" rel="attachment wp-att-293"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/06/Selection_004.png" alt="OPAM switch 4.03.0 stuck" width="651" height="154" class="size-full wp-image-293" loading="lazy" /></a>
 
 And after around 1 hour, we have an fresh OCaml 4.03.0 installation on our
 Raspberry Pi:
 
-<a href="http://blog.danny-willems.be/wp-content/uploads/2016/06/Selection_001.png" rel="attachment wp-att-295"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/06/Selection_001.png" alt="ocaml 4.03.0" width="308" height="64" class="size-full wp-image-295" /></a>
+<a href="http://blog.danny-willems.be/wp-content/uploads/2016/06/Selection_001.png" rel="attachment wp-att-295"><img src="http://blog.danny-willems.be/wp-content/uploads/2016/06/Selection_001.png" alt="ocaml 4.03.0" width="308" height="64" class="size-full wp-image-295" loading="lazy" /></a>
 
 ## Install an OPAM package: js_of_ocaml
 
