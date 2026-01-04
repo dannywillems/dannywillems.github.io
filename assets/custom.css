@@ -237,6 +237,18 @@ body {
   padding-left: 10px;
 }
 
+.publication-link:hover {
+  color: #1a1a1a;
+  background-color: #b5e853;
+  border-color: #b5e853;
+}
+
+.publication-link:active {
+  color: #1a1a1a;
+  background-color: #9ccc3d;
+  border-color: #9ccc3d;
+}
+
 .icon {
   height: 40px;
   width: 40px;
