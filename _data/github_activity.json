@@ -1,0 +1,320 @@
+[
+  {
+    "type": "PullRequestEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:06:18Z",
+    "date": "2026-01-04",
+    "action": "merged",
+    "title": "",
+    "url": "",
+    "description": "PR merged: "
+  },
+  {
+    "type": "PushEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:06:20Z",
+    "date": "2026-01-04",
+    "action": "pushed",
+    "count": 0,
+    "description": "0 commits"
+  },
+  {
+    "type": "PullRequestEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:05:40Z",
+    "date": "2026-01-04",
+    "action": "opened",
+    "title": "",
+    "url": "",
+    "description": "PR opened: "
+  },
+  {
+    "type": "CreateEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:05:30Z",
+    "date": "2026-01-04",
+    "action": "created",
+    "ref_type": "branch",
+    "ref": "feat/add-footer",
+    "description": "Created branch feat/add-footer"
+  },
+  {
+    "type": "PullRequestEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:04:02Z",
+    "date": "2026-01-04",
+    "action": "merged",
+    "title": "",
+    "url": "",
+    "description": "PR merged: "
+  },
+  {
+    "type": "IssuesEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:04:04Z",
+    "date": "2026-01-04",
+    "action": "closed",
+    "title": "Add padding at the bottom of the website",
+    "url": "https://github.com/dannywillems/dannywillems.github.io/issues/50",
+    "description": "Issue closed: Add padding at the bottom of the website"
+  },
+  {
+    "type": "PushEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:04:03Z",
+    "date": "2026-01-04",
+    "action": "pushed",
+    "count": 0,
+    "description": "0 commits"
+  },
+  {
+    "type": "IssuesEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:03:44Z",
+    "date": "2026-01-04",
+    "action": "opened",
+    "title": "Add footer with contact information and key links",
+    "url": "https://github.com/dannywillems/dannywillems.github.io/issues/58",
+    "description": "Issue opened: Add footer with contact information and key links"
+  },
+  {
+    "type": "PullRequestEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:02:50Z",
+    "date": "2026-01-04",
+    "action": "opened",
+    "title": "",
+    "url": "",
+    "description": "PR opened: "
+  },
+  {
+    "type": "PushEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:02:31Z",
+    "date": "2026-01-04",
+    "action": "pushed",
+    "count": 0,
+    "description": "0 commits"
+  },
+  {
+    "type": "PullRequestEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:02:30Z",
+    "date": "2026-01-04",
+    "action": "merged",
+    "title": "",
+    "url": "",
+    "description": "PR merged: "
+  },
+  {
+    "type": "PullRequestEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:01:44Z",
+    "date": "2026-01-04",
+    "action": "opened",
+    "title": "",
+    "url": "",
+    "description": "PR opened: "
+  },
+  {
+    "type": "CreateEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:01:37Z",
+    "date": "2026-01-04",
+    "action": "created",
+    "ref_type": "branch",
+    "ref": "fix/bottom-padding",
+    "description": "Created branch fix/bottom-padding"
+  },
+  {
+    "type": "IssuesEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:00:41Z",
+    "date": "2026-01-04",
+    "action": "opened",
+    "title": "Embed GitHub contribution calendar",
+    "url": "https://github.com/dannywillems/dannywillems.github.io/issues/55",
+    "description": "Issue opened: Embed GitHub contribution calendar"
+  },
+  {
+    "type": "IssuesEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:00:41Z",
+    "date": "2026-01-04",
+    "action": "opened",
+    "title": "Display GitHub activity using client-side JavaScript widget",
+    "url": "https://github.com/dannywillems/dannywillems.github.io/issues/53",
+    "description": "Issue opened: Display GitHub activity using client-side JavaScript widget"
+  },
+  {
+    "type": "IssuesEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:00:41Z",
+    "date": "2026-01-04",
+    "action": "opened",
+    "title": "Display GitHub activity using GitHub Actions + Jekyll Data",
+    "url": "https://github.com/dannywillems/dannywillems.github.io/issues/54",
+    "description": "Issue opened: Display GitHub activity using GitHub Actions + Jekyll Data"
+  },
+  {
+    "type": "IssuesEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:00:40Z",
+    "date": "2026-01-04",
+    "action": "opened",
+    "title": "Add GitHub README Stats contribution graphs",
+    "url": "https://github.com/dannywillems/dannywillems.github.io/issues/52",
+    "description": "Issue opened: Add GitHub README Stats contribution graphs"
+  },
+  {
+    "type": "IssuesEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T23:00:40Z",
+    "date": "2026-01-04",
+    "action": "opened",
+    "title": "Display GitHub activity via RSS/Atom feed",
+    "url": "https://github.com/dannywillems/dannywillems.github.io/issues/51",
+    "description": "Issue opened: Display GitHub activity via RSS/Atom feed"
+  },
+  {
+    "type": "IssuesEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T22:57:31Z",
+    "date": "2026-01-04",
+    "action": "opened",
+    "title": "Add padding at the bottom of the website",
+    "url": "https://github.com/dannywillems/dannywillems.github.io/issues/50",
+    "description": "Issue opened: Add padding at the bottom of the website"
+  },
+  {
+    "type": "PushEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T22:56:48Z",
+    "date": "2026-01-04",
+    "action": "pushed",
+    "count": 0,
+    "description": "0 commits"
+  },
+  {
+    "type": "PullRequestEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T22:56:47Z",
+    "date": "2026-01-04",
+    "action": "merged",
+    "title": "",
+    "url": "",
+    "description": "PR merged: "
+  },
+  {
+    "type": "PullRequestEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T22:56:39Z",
+    "date": "2026-01-04",
+    "action": "opened",
+    "title": "",
+    "url": "",
+    "description": "PR opened: "
+  },
+  {
+    "type": "DeleteEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T22:54:09Z",
+    "date": "2026-01-04",
+    "description": "Delete"
+  },
+  {
+    "type": "PushEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T22:54:07Z",
+    "date": "2026-01-04",
+    "action": "pushed",
+    "count": 0,
+    "description": "0 commits"
+  },
+  {
+    "type": "PullRequestEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T22:54:06Z",
+    "date": "2026-01-04",
+    "action": "merged",
+    "title": "",
+    "url": "",
+    "description": "PR merged: "
+  },
+  {
+    "type": "PushEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T22:53:15Z",
+    "date": "2026-01-04",
+    "action": "pushed",
+    "count": 0,
+    "description": "0 commits"
+  },
+  {
+    "type": "PushEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T22:52:25Z",
+    "date": "2026-01-04",
+    "action": "pushed",
+    "count": 0,
+    "description": "0 commits"
+  },
+  {
+    "type": "PullRequestEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T22:51:41Z",
+    "date": "2026-01-04",
+    "action": "opened",
+    "title": "",
+    "url": "",
+    "description": "PR opened: "
+  },
+  {
+    "type": "PushEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T22:51:08Z",
+    "date": "2026-01-04",
+    "action": "pushed",
+    "count": 0,
+    "description": "0 commits"
+  },
+  {
+    "type": "PushEvent",
+    "repo": "dannywillems/dannywillems.github.io",
+    "repo_url": "https://github.com/dannywillems/dannywillems.github.io",
+    "created_at": "2026-01-04T22:50:10Z",
+    "date": "2026-01-04",
+    "action": "pushed",
+    "count": 0,
+    "description": "0 commits"
+  }
+]
