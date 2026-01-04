@@ -1,5 +1,5 @@
-<div class="row">
-  <div class="col-6">
+<div class="row profile-row">
+  <div class="col-6 profile-left">
     <div class="center">
         <img class="portrait" src="{{ 'assets/me.jpg'}}" alt="Danny Willems portrait" loading="lazy" />
     </div>
