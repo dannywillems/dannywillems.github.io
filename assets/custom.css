@@ -378,3 +378,79 @@ body {
     gap: 0.25rem;
   }
 }
+
+/* === FOOTER === */
+.site-footer {
+  background-color: #1a1a1a;
+  border-top: 1px solid #333;
+  padding: 2rem 0 1rem;
+  margin-top: 3rem;
+}
+
+.site-footer .container {
+  padding-bottom: 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-contact,
+.footer-social,
+.footer-quick {
+  flex: 1;
+  min-width: 150px;
+}
+
+.site-footer h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.75rem;
+  color: #b5e853;
+}
+
+.site-footer a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.15s ease-in-out;
+}
+
+.site-footer a:hover {
+  color: #b5e853;
+}
+
+.footer-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.footer-social-links a {
+  display: inline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #666;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+@media only screen and (max-width: 45em) {
+  .footer-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
