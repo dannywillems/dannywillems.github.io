@@ -576,3 +576,21 @@ body {
     display: none;
   }
 }
+
+/* === PROFILE SECTION === */
+@media only screen and (min-width: 45em) {
+  .profile-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-row .col-6 {
+    float: none;
+  }
+
+  .profile-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

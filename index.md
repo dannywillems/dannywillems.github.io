@@ -1,5 +1,5 @@
-<div class="row">
-  <div class="col-6">
+<div class="row profile-row">
+  <div class="col-6 profile-left">
     <div class="center">
         <img class="portrait" src="{{ 'assets/me.jpg'}}" alt="Danny Willems portrait" loading="lazy" />
     </div>
@@ -9,17 +9,6 @@
       Head of Cryptography (Architect) & Rust Node Team Lead @ <a href="https://o1labs.org">o1Labs</a>/Mina
       <br />
       Co-founder @ <a href="https://leakix.net">LeakIX</a>
-    </p>
-    <p class="center">
-      Previously:
-      <br />
-      Cryptography engineer @ <a href="https://nomadic-labs.com">Nomadic Labs</a>/<a href="https://tezos.com">Tezos</a>
-      <br />
-      First Software engineer @ <a href="https://www.b2c2.com/">B2C2</a>
-      <br />
-      Software engineer @ Be Sport (Intern)
-      <br />
-      Intern researcher - Gallium team @ INRIA Paris
     </p>
     <div class="center">
        <a href="https://twitter.com/dwillems42" class="logo-link">
