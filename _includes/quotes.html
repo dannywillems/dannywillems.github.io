@@ -1,0 +1,15 @@
+<div class="quotes">
+{% for quote in site.data.quotes %}
+  <blockquote>
+    {{ quote.text | strip }}
+    {% if quote.author %}
+      --
+      {% if quote.author_url %}
+        <a href="{{ quote.author_url }}">{{ quote.author }}</a>
+      {% else %}
+        {{ quote.author }}
+      {% endif %}
+    {% endif %}
+  </blockquote>
+{% endfor %}
+</div>

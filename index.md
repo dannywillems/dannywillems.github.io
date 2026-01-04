@@ -100,45 +100,7 @@
 
 ## Quotes
 
-<blockquote>
-Le savoir est une arme, mais personne braque pour acheter des livres -- Kery James
-</blockquote>
-
-<blockquote>
-A mathematician who is not also something of a poet will never be a complete mathematician. -- Karl Weierstrass
-
-</blockquote>
-
-<blockquote>
-Arguing that you don't care about the right to privacy because you have nothing
-to hide is no different than saying you don't care about free speech because you
-have nothing to say -- Edward Snowden
-</blockquote>
-
-<blockquote>
-Never attribute to malice that which is adequately explained by stupidity -- <a href="https://en.wikipedia.org/wiki/Hanlon%27s_razor">Hanlon's razor</a>
-</blockquote>
-
-<blockquote>
-Je préfère l'eau potable pour tous que le champagne pour quelques potes -- Médine
-</blockquote>
-
-<blockquote>
-Celui qui se contente de peu ne manque de rien
-</blockquote>
-
-<blockquote>
-On est condamné à réussir, à franchir des barrières, construire des carrières.
-Regarde ce qu'on accomplit nos parents, ce qu'ils ont subi pour qu'on accède à
-l'éducation. Où serait-on sans leurs sacrifices ? Bien sûr que le travail a du
-mérite. O combien j'admire nos pères. Peut-être manutentionnaires mais fiers. Si
-on gâche tout où est le respect ? Si on échoue où est le progrès ? Chaque fils
-de pauvre doit avoir de l'ambition.
-</blockquote>
-
-<blockquote>
-Hardly anybody actually understands money - <a href="http://unenumerated.blogspot.com/2011/05/bitcoin-what-took-ye-so-long.html">Nick Szabo</a>
-</blockquote>
+{% include quotes.html %}
 
 ## Recommended softwares
 
