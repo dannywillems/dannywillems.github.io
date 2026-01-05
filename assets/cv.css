@@ -206,7 +206,8 @@ a:hover {
 }
 
 @media print {
-  html, body {
+  html,
+  body {
     width: 210mm;
     height: 297mm;
   }
