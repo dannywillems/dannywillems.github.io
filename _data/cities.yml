@@ -38,6 +38,13 @@
   visited:
   notes:
 
+- name: Rio de Janeiro
+  country: BR
+  lat: -22.9068
+  lng: -43.1729
+  visited: July 2022
+  notes:
+
 # Belgium
 - name: Brussels
   country: BE
