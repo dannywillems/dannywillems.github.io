@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: develop
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -27,10 +29,28 @@ jobs:
           python3 .github/scripts/fetch_contributions.py > "_data/contributions/${DATE}.json"
           cp "_data/contributions/${DATE}.json" _data/github_contributions.json
 
-      - name: Commit and push if changed
+      - name: Create PR if changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          DATE=$(date -u +%Y-%m-%d)
+          BRANCH="chore/contributions-${DATE}"
+
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add _data/contributions/ _data/github_contributions.json
-          git diff --quiet --cached || git commit -m "chore: update GitHub contributions data ($(date -u +%Y-%m-%d))"
-          git push
+
+          if git diff --quiet --cached; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git checkout -b "${BRANCH}"
+          git commit -m "chore: update GitHub contributions data (${DATE})"
+          git push -u origin "${BRANCH}"
+
+          gh pr create \
+            --title "chore: update GitHub contributions data (${DATE})" \
+            --body "Automated daily update of GitHub contributions data." \
+            --base develop \
+            --head "${BRANCH}"
