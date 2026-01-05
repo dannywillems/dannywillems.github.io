@@ -200,16 +200,28 @@ a:hover {
 }
 
 /* === PRINT STYLES === */
+@page {
+  size: A4;
+  margin: 10mm 15mm;
+}
+
 @media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+  }
+
   body {
     background: #fff;
     font-size: 10pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .cv-container {
     max-width: 100%;
     margin: 0;
-    padding: 10mm;
+    padding: 0;
     box-shadow: none;
   }
 
@@ -247,11 +259,7 @@ a:hover {
     margin-bottom: 0.5rem;
   }
 
-  /* Page break controls */
-  .cv-section {
-    page-break-inside: avoid;
-  }
-
+  /* Page break controls - only avoid breaks within individual entries */
   h2 {
     page-break-after: avoid;
   }
