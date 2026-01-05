@@ -1,53 +1,78 @@
 # Cities visited
 # lat/lng can be found at: https://www.latlong.net/
+#
+# Fields:
+#   name: City name (required)
+#   country: ISO country code (required)
+#   lat/lng: Coordinates (required)
+#   visited: When you visited (optional) - e.g., "2024-03", "Summer 2023", "2020-2022"
+#   notes: Why you went, memories, etc. (optional)
 
 # USA
 - name: Las Vegas
   country: US
   lat: 36.1699
   lng: -115.1398
+  visited:
+  notes:
 
 - name: San Francisco
   country: US
   lat: 37.7749
   lng: -122.4194
+  visited:
+  notes:
 
 - name: San Diego
   country: US
   lat: 32.7157
   lng: -117.1611
+  visited:
+  notes:
 
 # Brazil
 - name: Pipa
   country: BR
   lat: -6.2286
   lng: -35.0568
+  visited:
+  notes:
 
 # Belgium
 - name: Brussels
   country: BE
   lat: 50.8503
   lng: 4.3517
+  visited:
+  notes:
 
 # Spain
 - name: Madrid
   country: ES
   lat: 40.4168
   lng: -3.7038
+  visited:
+  notes:
 
 - name: Barcelona
   country: ES
   lat: 41.3851
   lng: 2.1734
+  visited:
+  notes:
 
 # Egypt
 - name: Cairo
   country: EG
   lat: 30.0444
   lng: 31.2357
+  visited:
+  notes:
 
 # Argentina
 - name: Buenos Aires
   country: AR
   lat: -34.6037
   lng: -58.3816
+  visited:
+  notes:
