@@ -1,0 +1,96 @@
+# Countries visited
+
+# Europe
+- code: BE
+  name: Belgium
+  continent: Europe
+  first_visit: 1994
+  notes: Home country
+
+- code: FR
+  name: France
+  continent: Europe
+
+- code: DE
+  name: Germany
+  continent: Europe
+
+- code: ES
+  name: Spain
+  continent: Europe
+
+- code: LU
+  name: Luxembourg
+  continent: Europe
+
+- code: GB
+  name: United Kingdom
+  continent: Europe
+
+- code: "NO"
+  name: Norway
+  continent: Europe
+
+- code: PT
+  name: Portugal
+  continent: Europe
+
+- code: IT
+  name: Italy
+  continent: Europe
+
+- code: GR
+  name: Greece
+  continent: Europe
+
+- code: TR
+  name: Turkey
+  continent: Europe
+
+- code: RO
+  name: Romania
+  continent: Europe
+
+- code: IE
+  name: Ireland
+  continent: Europe
+
+- code: CH
+  name: Switzerland
+  continent: Europe
+
+# North America
+- code: US
+  name: United States
+  continent: North America
+
+- code: MX
+  name: Mexico
+  continent: North America
+
+# South America
+- code: BR
+  name: Brazil
+  continent: South America
+
+- code: AR
+  name: Argentina
+  continent: South America
+
+# Asia
+- code: TH
+  name: Thailand
+  continent: Asia
+
+- code: MY
+  name: Malaysia
+  continent: Asia
+
+- code: IL
+  name: Israel
+  continent: Asia
+
+# Africa
+- code: EG
+  name: Egypt
+  continent: Africa

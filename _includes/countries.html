@@ -1,0 +1,67 @@
+<div class="countries">
+  {% assign countries = site.data.countries %} {% assign total = countries |
+  size %} {% assign continents = countries | map: "continent" | uniq | sort %}
+  {% assign continent_count = continents | size %}
+
+  <div class="countries-stats">
+    <div class="countries-stat">
+      <span class="stat-number">{{ total }}</span>
+      <span class="stat-label">countries visited</span>
+    </div>
+    <div class="countries-stat">
+      <span class="stat-number">{{ continent_count }}</span>
+      <span class="stat-label">continents explored</span>
+    </div>
+  </div>
+
+  <div class="countries-map-container">
+    <style>
+      /* Default: all countries gray */
+      .countries-map svg path,
+      .countries-map svg g {
+        fill: #333;
+        stroke: #1a1a1a;
+        stroke-width: 0.5;
+        transition: fill 0.2s ease;
+      }
+      /* Visited countries: green */
+      {% for country in countries %}
+      .countries-map svg #{{ country.code | downcase }},
+      .countries-map svg #{{ country.code | downcase }} path,
+      .countries-map svg #{{ country.code | downcase }} .mainland {
+        fill: #b5e853;
+      }
+      {% endfor %}
+    </style>
+    <div class="countries-map">{% include world-map.svg %}</div>
+    <p class="map-legend">
+      <span class="legend-visited"></span> Visited
+      <span class="legend-not-visited"></span> Not visited
+    </p>
+  </div>
+
+  <div class="countries-by-continent">
+    {% for continent in continents %}
+    <div class="countries-continent">
+      <h3>{{ continent }}</h3>
+      {% assign continent_countries = countries | where: "continent", continent
+      | sort: "name" %}
+      <div class="countries-grid">
+        {% for country in continent_countries %}
+        <div class="country-card{% if country.favorite %} favorite{% endif %}">
+          <div class="country-header">
+            <span class="country-name">{{ country.name }}</span>
+            <span class="country-year">{{ country.first_visit }}</span>
+          </div>
+          {% if country.visits and country.visits > 1 %}
+          <div class="country-visits">{{ country.visits }} visits</div>
+          {% endif %} {% if country.notes %}
+          <div class="country-notes">{{ country.notes }}</div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
