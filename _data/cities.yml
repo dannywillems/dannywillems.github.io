@@ -12,6 +12,11 @@
   lat: 37.7749
   lng: -122.4194
 
+- name: San Diego
+  country: US
+  lat: 32.7157
+  lng: -117.1611
+
 # Brazil
 - name: Pipa
   country: BR
