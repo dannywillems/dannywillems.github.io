@@ -52,13 +52,13 @@ npm install -g markdownlint-cli prettier
 Edit `_data/countries.yml` to add countries you've visited:
 
 ```yaml
-- code: JP          # ISO 3166-1 alpha-2 code (required for map highlighting)
-  name: Japan       # Country name
-  continent: Asia   # Africa, Asia, Europe, North America, South America, Oceania
+- code: JP # ISO 3166-1 alpha-2 code (required for map highlighting)
+  name: Japan # Country name
+  continent: Asia # Africa, Asia, Europe, North America, South America, Oceania
   first_visit: 2024 # Year of first visit (optional)
-  visits: 2         # Number of visits (optional)
-  favorite: true    # Highlight as favorite (optional)
-  notes: Amazing!   # Short note (optional)
+  visits: 2 # Number of visits (optional)
+  favorite: true # Highlight as favorite (optional)
+  notes: Amazing! # Short note (optional)
 ```
 
 Country codes: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
