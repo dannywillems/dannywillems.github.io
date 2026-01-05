@@ -1,0 +1,13 @@
+# Cities visited
+# lat/lng can be found at: https://www.latlong.net/
+
+# USA
+- name: Las Vegas
+  country: US
+  lat: 36.1699
+  lng: -115.1398
+
+- name: San Francisco
+  country: US
+  lat: 37.7749
+  lng: -122.4194
