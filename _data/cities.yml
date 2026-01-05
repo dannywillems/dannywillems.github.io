@@ -11,3 +11,32 @@
   country: US
   lat: 37.7749
   lng: -122.4194
+
+# Brazil
+- name: Pipa
+  country: BR
+  lat: -6.2286
+  lng: -35.0568
+
+# Belgium
+- name: Brussels
+  country: BE
+  lat: 50.8503
+  lng: 4.3517
+
+# Spain
+- name: Madrid
+  country: ES
+  lat: 40.4168
+  lng: -3.7038
+
+- name: Barcelona
+  country: ES
+  lat: 41.3851
+  lng: 2.1734
+
+# Egypt
+- name: Cairo
+  country: EG
+  lat: 30.0444
+  lng: 31.2357
