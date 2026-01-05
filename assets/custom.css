@@ -786,3 +786,89 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* === CITIES MAP === */
+.cities {
+  margin-bottom: 2rem;
+}
+
+.cities-stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cities-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.cities-stat .stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #b5e853;
+}
+
+.cities-stat .stat-label {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.cities-map-container {
+  height: 500px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.cities-list {
+  margin-top: 2rem;
+}
+
+.cities-list h3 {
+  color: #b5e853;
+  margin-bottom: 1rem;
+}
+
+.cities-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cities-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #333;
+}
+
+.city-country {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.city-date {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.city-notes {
+  color: #aaa;
+  font-size: 0.85rem;
+  font-style: italic;
+  margin: 0.25rem 0 0 0;
+}
+
+@media only screen and (max-width: 45em) {
+  .cities-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cities-map-container {
+    height: 350px;
+  }
+}

@@ -59,6 +59,14 @@
   name: Switzerland
   continent: Europe
 
+- code: NL
+  name: Netherlands
+  continent: Europe
+
+- code: HR
+  name: Croatia
+  continent: Europe
+
 # North America
 - code: US
   name: United States
