@@ -1,5 +1,5 @@
 /**
- * Find unassigned article issues and add a comment prompting Copilot assignment.
+ * Find unassigned article issues and assign Copilot to write the article.
  *
  * This script is used by the daily-claude-code-article.yml workflow.
  *
@@ -32,16 +32,25 @@ module.exports = async ({ github, context }) => {
     `Found unassigned article issue: #${issue.number} - ${issue.title}`
   );
 
-  // Add a comment with instructions
-  await github.rest.issues.createComment({
-    owner: context.repo.owner,
-    repo: context.repo.repo,
-    issue_number: issue.number,
-    body: `This issue is ready for Copilot to work on.
+  // Assign Copilot to the issue
+  try {
+    await github.rest.issues.addAssignees({
+      owner: context.repo.owner,
+      repo: context.repo.repo,
+      issue_number: issue.number,
+      assignees: ["Copilot"],
+    });
+    console.log(`Assigned Copilot to issue #${issue.number}`);
+  } catch (error) {
+    console.log(`Failed to assign Copilot: ${error.message}`);
+    // Add a comment as fallback
+    await github.rest.issues.createComment({
+      owner: context.repo.owner,
+      repo: context.repo.repo,
+      issue_number: issue.number,
+      body: `Failed to auto-assign Copilot. Please assign manually from the GitHub UI.`,
+    });
+  }
 
-To assign Copilot, open this issue in the GitHub UI and assign "Copilot" from the assignee dropdown.`,
-  });
-
-  console.log(`Added comment to issue #${issue.number}`);
   console.log(`URL: ${issue.html_url}`);
 };
