@@ -7,6 +7,9 @@
  * @param {Object} context - GitHub Actions context
  */
 module.exports = async ({ github, context }) => {
+  // Copilot's bot ID (obtained from an issue where Copilot was manually assigned)
+  const COPILOT_BOT_ID = "BOT_kgDOC9w8XQ";
+
   // Find open issues that are article tasks (start with "Article:")
   const issues = await github.rest.issues.listForRepo({
     owner: context.repo.owner,
@@ -15,74 +18,46 @@ module.exports = async ({ github, context }) => {
     per_page: 100,
   });
 
-  // Filter for article issues without assignees
+  // Filter for article issues without Copilot assigned
   const articleIssues = issues.data.filter(
     (issue) =>
-      issue.title.startsWith("Article:") && issue.assignees.length === 0
+      issue.title.startsWith("Article:") &&
+      !issue.assignees.some((a) => a.login === "Copilot")
   );
 
   if (articleIssues.length === 0) {
-    console.log("No unassigned article issues found.");
+    console.log("No article issues without Copilot assigned.");
     return;
   }
 
   // Pick the first unassigned article issue
   const issue = articleIssues[0];
   console.log(
-    `Found unassigned article issue: #${issue.number} - ${issue.title}`
+    `Found article issue without Copilot: #${issue.number} - ${issue.title}`
   );
 
-  // Get Copilot's actor ID and assign using GraphQL
-  // See: https://github.blog/changelog/2025-12-03-assign-issues-to-copilot-using-the-api/
-  try {
-    // Query for assignable users including Copilot
-    const actorQuery = `
-      query($owner: String!, $repo: String!, $issueNumber: Int!) {
-        repository(owner: $owner, name: $repo) {
-          issue(number: $issueNumber) {
-            id
-          }
-          assignableUsers(first: 20, query: "copilot") {
-            nodes {
-              id
-              login
-            }
-          }
+  // Get the issue's node ID
+  const issueQuery = `
+    query($owner: String!, $repo: String!, $issueNumber: Int!) {
+      repository(owner: $owner, name: $repo) {
+        issue(number: $issueNumber) {
+          id
         }
       }
-    `;
+    }
+  `;
 
-    const actorResult = await github.graphql(actorQuery, {
+  try {
+    const issueResult = await github.graphql(issueQuery, {
       owner: context.repo.owner,
       repo: context.repo.repo,
       issueNumber: issue.number,
-      headers: {
-        "GraphQL-Features": "issues_copilot_assignment_api_support",
-      },
     });
 
-    console.log(`Query result: ${JSON.stringify(actorResult)}`);
+    const issueId = issueResult.repository.issue.id;
+    console.log(`Issue node ID: ${issueId}`);
 
-    const issueId = actorResult.repository.issue.id;
-    const users = actorResult.repository.assignableUsers.nodes;
-
-    console.log(
-      `Assignable users matching 'copilot': ${JSON.stringify(users)}`
-    );
-
-    // Find copilot (case-insensitive)
-    const copilot = users.find(
-      (u) => u.login && u.login.toLowerCase() === "copilot"
-    );
-
-    if (!copilot) {
-      console.log("Copilot not found in assignable users.");
-      throw new Error("Copilot not available as assignee for this repository");
-    }
-
-    console.log(`Found Copilot: ${copilot.login} (${copilot.id})`);
-
-    // Assign Copilot using the actor ID
+    // Assign Copilot using its bot ID
     const assignMutation = `
       mutation($issueId: ID!, $actorIds: [ID!]!) {
         addAssigneesToAssignable(input: {
@@ -100,7 +75,7 @@ module.exports = async ({ github, context }) => {
 
     const assignResult = await github.graphql(assignMutation, {
       issueId: issueId,
-      actorIds: [copilot.id],
+      actorIds: [COPILOT_BOT_ID],
       headers: {
         "GraphQL-Features": "issues_copilot_assignment_api_support",
       },
