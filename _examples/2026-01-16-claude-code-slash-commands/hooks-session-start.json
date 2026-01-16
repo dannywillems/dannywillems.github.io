@@ -1,0 +1,6 @@
+{
+  "hooks": {
+    "enabled": true,
+    "SessionStart": "git fetch origin && echo 'Ready to code!'"
+  }
+}
