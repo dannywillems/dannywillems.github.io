@@ -32,19 +32,20 @@ module.exports = async ({ github, context }) => {
     `Found unassigned article issue: #${issue.number} - ${issue.title}`
   );
 
-  // Step 1: Get Copilot's actor ID using suggestedActors query
-  // See: https://github.com/orgs/community/discussions/164267
+  // Get Copilot's actor ID and assign using GraphQL
+  // See: https://github.blog/changelog/2025-12-03-assign-issues-to-copilot-using-the-api/
   try {
+    // Query for assignable users including Copilot
     const actorQuery = `
       query($owner: String!, $repo: String!, $issueNumber: Int!) {
         repository(owner: $owner, name: $repo) {
           issue(number: $issueNumber) {
             id
-            suggestedActors(first: 10, capabilities: [CAN_BE_ASSIGNED]) {
-              nodes {
-                id
-                login
-              }
+          }
+          assignableUsers(first: 20, query: "copilot") {
+            nodes {
+              id
+              login
             }
           }
         }
@@ -60,23 +61,28 @@ module.exports = async ({ github, context }) => {
       },
     });
 
-    console.log(`Suggested actors: ${JSON.stringify(actorResult)}`);
+    console.log(`Query result: ${JSON.stringify(actorResult)}`);
 
     const issueId = actorResult.repository.issue.id;
-    const actors = actorResult.repository.issue.suggestedActors.nodes;
-    const copilot = actors.find(
-      (a) => a.login && a.login.toLowerCase() === "copilot"
+    const users = actorResult.repository.assignableUsers.nodes;
+
+    console.log(
+      `Assignable users matching 'copilot': ${JSON.stringify(users)}`
+    );
+
+    // Find copilot (case-insensitive)
+    const copilot = users.find(
+      (u) => u.login && u.login.toLowerCase() === "copilot"
     );
 
     if (!copilot) {
-      console.log("Copilot not found in suggested actors. Available actors:");
-      actors.forEach((a) => console.log(`  - ${a.login} (${a.id})`));
-      throw new Error("Copilot not available as assignee");
+      console.log("Copilot not found in assignable users.");
+      throw new Error("Copilot not available as assignee for this repository");
     }
 
-    console.log(`Found Copilot actor ID: ${copilot.id}`);
+    console.log(`Found Copilot: ${copilot.login} (${copilot.id})`);
 
-    // Step 2: Assign Copilot using the actor ID
+    // Assign Copilot using the actor ID
     const assignMutation = `
       mutation($issueId: ID!, $actorIds: [ID!]!) {
         addAssigneesToAssignable(input: {
@@ -86,11 +92,6 @@ module.exports = async ({ github, context }) => {
           assignable {
             ... on Issue {
               id
-              assignees(first: 5) {
-                nodes {
-                  login
-                }
-              }
             }
           }
         }
