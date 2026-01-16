@@ -490,45 +490,6 @@ permalink: /tools/claude-code-cheatsheet/
   color: #4a90d9;
 }
 
-/* ===== PRINT STYLES ===== */
-@media print {
-  /* Hide everything except cheatsheet */
-  body > *:not(.page-content),
-  .theme-switcher,
-  header, footer, nav,
-  .site-header, .site-footer, .site-nav {
-    display: none !important;
-  }
-
-  /* Reset cheatsheet for print */
-  .cheatsheet {
-    box-shadow: none !important;
-    border: 1px solid #333 !important;
-    margin: 0 !important;
-    padding: 1rem !important;
-  }
-
-  /* Ensure links are visible in print */
-  a[href]::after {
-    content: " (" attr(href) ")";
-    font-size: 0.8em;
-    opacity: 0.7;
-  }
-
-  /* Don't show URL for internal anchor links */
-  a[href^="#"]::after {
-    content: "";
-  }
-
-  /* Page breaks */
-  .cheatsheet-section {
-    page-break-inside: avoid;
-  }
-
-  h2 {
-    page-break-after: avoid;
-  }
-}
 </style>
 
 <div class="theme-switcher">
@@ -536,8 +497,7 @@ permalink: /tools/claude-code-cheatsheet/
   <button class="theme-btn" onclick="setTheme('amber')">Amber</button>
   <button class="theme-btn" onclick="setTheme('cyberpunk')">Cyberpunk</button>
   <button class="theme-btn" onclick="setTheme('blueprint')">Blueprint</button>
-  <button class="theme-btn" onclick="setTheme('paper')">Paper (Print)</button>
-  <button class="theme-btn" onclick="window.print()" style="background: #2a4a2a; border-color: #4a8a4a;">Print / Save PDF</button>
+  <button class="theme-btn" onclick="setTheme('paper')">Paper</button>
 </div>
 
 <div id="cheatsheet" class="cheatsheet theme-retro-green">
