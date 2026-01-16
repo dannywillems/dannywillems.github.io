@@ -1,0 +1,25 @@
+name: Daily Claude Code Article
+
+on:
+  schedule:
+    # Run daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  assign-copilot-to-article:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Find and assign article issue to Copilot
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const script = require('./.github/scripts/find-unassigned-article.js');
+            await script({ github, context });
