@@ -32,27 +32,47 @@ module.exports = async ({ github, context }) => {
     `Found unassigned article issue: #${issue.number} - ${issue.title}`
   );
 
-  // Assign Copilot to the issue using the Copilot assignment API
+  // Assign Copilot to the issue using GraphQL API with Copilot assignment support
   // See: https://github.blog/changelog/2025-12-03-assign-issues-to-copilot-using-the-api/
   try {
-    await github.request("POST /repos/{owner}/{repo}/issues/{issue_number}/assignees", {
-      owner: context.repo.owner,
-      repo: context.repo.repo,
-      issue_number: issue.number,
-      assignees: ["copilot"],
+    const mutation = `
+      mutation($issueId: ID!) {
+        addAssigneesToAssignable(input: {
+          assignableId: $issueId,
+          assigneeIds: ["copilot"]
+        }) {
+          assignable {
+            ... on Issue {
+              id
+              assignees(first: 5) {
+                nodes {
+                  login
+                }
+              }
+            }
+          }
+        }
+      }
+    `;
+
+    const result = await github.graphql(mutation, {
+      issueId: issue.node_id,
       headers: {
-        "X-GitHub-Api-Version": "2022-11-28",
+        "GraphQL-Features": "issues_copilot_assignment_api_support",
       },
     });
+
     console.log(`Assigned Copilot to issue #${issue.number}`);
+    console.log(`Result: ${JSON.stringify(result)}`);
   } catch (error) {
-    console.log(`Failed to assign Copilot: ${error.message}`);
-    // Add a comment as fallback
+    console.log(`Failed to assign Copilot via GraphQL: ${error.message}`);
+
+    // Fallback: add a comment
     await github.rest.issues.createComment({
       owner: context.repo.owner,
       repo: context.repo.repo,
       issue_number: issue.number,
-      body: `Failed to auto-assign Copilot. Please assign manually from the GitHub UI.`,
+      body: `@copilot Please write an article for this issue.\n\nFailed to auto-assign. Please assign Copilot manually from the GitHub UI.`,
     });
   }
 
