@@ -32,14 +32,56 @@ module.exports = async ({ github, context }) => {
     `Found unassigned article issue: #${issue.number} - ${issue.title}`
   );
 
-  // Assign Copilot to the issue using GraphQL API with Copilot assignment support
-  // See: https://github.blog/changelog/2025-12-03-assign-issues-to-copilot-using-the-api/
+  // Step 1: Get Copilot's actor ID using suggestedActors query
+  // See: https://github.com/orgs/community/discussions/164267
   try {
-    const mutation = `
-      mutation($issueId: ID!) {
+    const actorQuery = `
+      query($owner: String!, $repo: String!, $issueNumber: Int!) {
+        repository(owner: $owner, name: $repo) {
+          issue(number: $issueNumber) {
+            id
+            suggestedActors(first: 10, capabilities: [CAN_BE_ASSIGNED]) {
+              nodes {
+                id
+                login
+              }
+            }
+          }
+        }
+      }
+    `;
+
+    const actorResult = await github.graphql(actorQuery, {
+      owner: context.repo.owner,
+      repo: context.repo.repo,
+      issueNumber: issue.number,
+      headers: {
+        "GraphQL-Features": "issues_copilot_assignment_api_support",
+      },
+    });
+
+    console.log(`Suggested actors: ${JSON.stringify(actorResult)}`);
+
+    const issueId = actorResult.repository.issue.id;
+    const actors = actorResult.repository.issue.suggestedActors.nodes;
+    const copilot = actors.find(
+      (a) => a.login && a.login.toLowerCase() === "copilot"
+    );
+
+    if (!copilot) {
+      console.log("Copilot not found in suggested actors. Available actors:");
+      actors.forEach((a) => console.log(`  - ${a.login} (${a.id})`));
+      throw new Error("Copilot not available as assignee");
+    }
+
+    console.log(`Found Copilot actor ID: ${copilot.id}`);
+
+    // Step 2: Assign Copilot using the actor ID
+    const assignMutation = `
+      mutation($issueId: ID!, $actorIds: [ID!]!) {
         addAssigneesToAssignable(input: {
           assignableId: $issueId,
-          assigneeIds: ["copilot"]
+          assigneeIds: $actorIds
         }) {
           assignable {
             ... on Issue {
@@ -55,24 +97,25 @@ module.exports = async ({ github, context }) => {
       }
     `;
 
-    const result = await github.graphql(mutation, {
-      issueId: issue.node_id,
+    const assignResult = await github.graphql(assignMutation, {
+      issueId: issueId,
+      actorIds: [copilot.id],
       headers: {
         "GraphQL-Features": "issues_copilot_assignment_api_support",
       },
     });
 
     console.log(`Assigned Copilot to issue #${issue.number}`);
-    console.log(`Result: ${JSON.stringify(result)}`);
+    console.log(`Result: ${JSON.stringify(assignResult)}`);
   } catch (error) {
-    console.log(`Failed to assign Copilot via GraphQL: ${error.message}`);
+    console.log(`Failed to assign Copilot: ${error.message}`);
 
     // Fallback: add a comment
     await github.rest.issues.createComment({
       owner: context.repo.owner,
       repo: context.repo.repo,
       issue_number: issue.number,
-      body: `@copilot Please write an article for this issue.\n\nFailed to auto-assign. Please assign Copilot manually from the GitHub UI.`,
+      body: `Failed to auto-assign Copilot. Please assign Copilot manually from the GitHub UI.`,
     });
   }
 
