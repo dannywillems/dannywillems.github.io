@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Claude Code shortcuts
 export CLAUDE_CODE_PATH="$HOME/.claude/bin"
