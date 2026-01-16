@@ -1,0 +1,166 @@
+// =============================================================================
+// CHEATSHEET THEMES
+// Generates theme classes from $themes map
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// Theme Application Mixin
+// Takes a theme map and applies all color properties
+// -----------------------------------------------------------------------------
+
+@mixin apply-theme($theme) {
+  $bg: map-get($theme, bg);
+  $bg-gradient: map-get($theme, bg-gradient);
+  $text: map-get($theme, text);
+  $border: map-get($theme, border);
+  $glow: map-get($theme, glow);
+  $box-shadow: map-get($theme, box-shadow);
+  $inset-glow: map-get($theme, inset-glow);
+  $heading: map-get($theme, heading);
+  $heading-glow: map-get($theme, heading-glow);
+  $code-bg: map-get($theme, code-bg);
+  $code-text: map-get($theme, code-text);
+  $code-glow: map-get($theme, code-glow);
+  $pre-bg: map-get($theme, pre-bg);
+  $pre-border: map-get($theme, pre-border);
+  $pre-text: map-get($theme, pre-text);
+  $section-bg: map-get($theme, section-bg);
+  $section-border: map-get($theme, section-border);
+  $link: map-get($theme, link);
+  $link-glow: map-get($theme, link-glow);
+  $table-border: map-get($theme, table-border);
+  $table-header-bg: map-get($theme, table-header-bg);
+  $table-header-text: map-get($theme, table-header-text);
+  $table-hover: map-get($theme, table-hover);
+  $tip-bg: map-get($theme, tip-bg);
+  $tip-border: map-get($theme, tip-border);
+  $tip-text: map-get($theme, tip-text);
+  $strong: map-get($theme, strong);
+  $ascii: map-get($theme, ascii);
+  $ascii-glow: map-get($theme, ascii-glow);
+
+  // Background
+  @if $bg-gradient {
+    background: $bg-gradient;
+  } @else {
+    background: $bg;
+  }
+
+  color: $text;
+  border: 2px solid $border;
+
+  // Box shadow (glow effect or custom)
+  @if $box-shadow {
+    box-shadow: $box-shadow;
+  } @else if $glow and $glow != none {
+    @if $inset-glow {
+      box-shadow: 0 0 20px $glow, inset 0 0 60px $inset-glow;
+    } @else {
+      box-shadow: 0 0 20px $glow;
+    }
+  }
+
+  // Headings
+  h1, h2, h3 {
+    color: $heading !important;
+    @if $heading-glow and $heading-glow != none {
+      text-shadow: 0 0 10px $heading-glow;
+    } @else {
+      text-shadow: none;
+    }
+  }
+
+  h1 {
+    @if $bg-gradient {
+      border-bottom: 2px solid $border;
+    } @else {
+      border-bottom: 2px double $border;
+    }
+  }
+
+  h2 {
+    border-left: 4px solid $border;
+  }
+
+  // Sections
+  .cheatsheet-section {
+    background: $section-bg;
+    border: 1px solid $section-border;
+  }
+
+  // Code
+  code {
+    background: $code-bg !important;
+    color: $code-text !important;
+    @if $code-glow {
+      text-shadow: 0 0 5px $code-glow;
+    }
+  }
+
+  pre {
+    background: $pre-bg !important;
+    border: 1px solid $pre-border;
+  }
+
+  pre code {
+    background: transparent !important;
+    color: $pre-text !important;
+  }
+
+  // Links
+  a {
+    color: $link !important;
+    @if $link-glow {
+      text-shadow: 0 0 5px $link-glow;
+    }
+  }
+
+  // Tables
+  th, td {
+    border: 1px solid $table-border;
+  }
+
+  th {
+    background: $table-header-bg;
+    color: $table-header-text;
+  }
+
+  tr:hover {
+    background: $table-hover;
+  }
+
+  // Tips
+  .tip {
+    background: $tip-bg;
+    border-left-color: $tip-border;
+    color: $tip-text;
+  }
+
+  // Text elements
+  p, li {
+    color: $text;
+  }
+
+  strong {
+    color: $strong;
+  }
+
+  // ASCII header
+  .ascii-header {
+    color: $ascii;
+    @if $ascii-glow {
+      text-shadow: 0 0 10px $ascii-glow;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Generate Theme Classes
+// Loops through $themes map and creates .theme-{name} classes
+// -----------------------------------------------------------------------------
+
+@each $name, $theme in $themes {
+  .theme-#{$name} {
+    @include apply-theme($theme);
+  }
+}

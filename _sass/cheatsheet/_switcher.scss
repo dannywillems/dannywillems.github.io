@@ -1,0 +1,33 @@
+// =============================================================================
+// THEME SWITCHER STYLES
+// Buttons for switching between themes
+// =============================================================================
+
+.theme-switcher {
+  display: flex;
+  gap: $spacing-sm;
+  justify-content: center;
+  margin-bottom: $spacing-md;
+  flex-wrap: wrap;
+}
+
+.theme-btn {
+  padding: $spacing-sm $spacing-md;
+  border: 2px solid $switcher-border;
+  background: $switcher-bg;
+  color: $switcher-text;
+  cursor: pointer;
+  border-radius: $radius-md;
+  font-family: $font-mono;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+
+  &:hover {
+    border-color: $switcher-border-hover;
+  }
+
+  &.active {
+    border-color: $switcher-active-border;
+    color: $switcher-active-text;
+  }
+}

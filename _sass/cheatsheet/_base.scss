@@ -1,0 +1,90 @@
+// =============================================================================
+// CHEATSHEET BASE STYLES
+// Theme-agnostic structural styles
+// =============================================================================
+
+.cheatsheet {
+  font-family: $font-mono;
+  padding: $spacing-xl;
+  border-radius: $radius-lg;
+  transition: all 0.3s ease;
+
+  // Headings
+  h1, h2, h3 {
+    font-family: $font-mono;
+  }
+
+  h1 {
+    text-align: center;
+    padding-bottom: $spacing-md;
+    margin-bottom: $spacing-xl;
+  }
+
+  h2 {
+    padding-left: $spacing-md;
+    margin-top: $spacing-xl;
+  }
+
+  // Sections
+  &-section {
+    padding: $spacing-md;
+    margin: $spacing-md 0;
+    border-radius: $radius-md;
+  }
+
+  // Tables
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: $spacing-md 0;
+  }
+
+  th, td {
+    padding: $spacing-sm $spacing-md;
+    text-align: left;
+  }
+
+  // Code
+  pre {
+    padding: $spacing-md;
+    overflow-x: auto;
+    border-radius: $radius-md;
+  }
+
+  code {
+    padding: $spacing-xs $spacing-sm;
+    border-radius: $radius-sm;
+  }
+
+  pre code {
+    padding: 0;
+    background: transparent !important;
+  }
+
+  // Tips
+  .tip {
+    padding: $spacing-sm $spacing-md;
+    margin: $spacing-md 0;
+    border-left-width: 4px;
+    border-left-style: solid;
+  }
+
+  // ASCII Header
+  .ascii-header {
+    text-align: center;
+    white-space: pre;
+    font-size: 0.45em;
+    line-height: 1.1;
+    margin-bottom: $spacing-md;
+    overflow-x: auto;
+  }
+
+  // Lists
+  ul, ol {
+    padding-left: $spacing-lg;
+  }
+
+  li {
+    margin: $spacing-xs 0;
+  }
+}

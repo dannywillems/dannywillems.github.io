@@ -1,0 +1,13 @@
+---
+# Front matter required for Jekyll to process SCSS
+---
+
+// =============================================================================
+// CLAUDE CODE CHEATSHEET STYLES
+// Main entry point - imports all partials
+// =============================================================================
+
+@import "cheatsheet/variables";
+@import "cheatsheet/switcher";
+@import "cheatsheet/base";
+@import "cheatsheet/themes";
