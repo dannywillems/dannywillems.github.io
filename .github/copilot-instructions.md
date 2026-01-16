@@ -41,17 +41,41 @@ Article content in markdown...
 - Add links to external resources and documentation
 - NO emojis unless explicitly requested
 
-### Code Blocks
-Use fenced code blocks with language hints:
-```markdown
-\`\`\`bash
-command here
-\`\`\`
+### Code Examples
 
-\`\`\`yaml
-config: here
-\`\`\`
-```
+**IMPORTANT**: All code examples MUST be in separate files, not inline in the article.
+This allows us to run linters, formatters, and compilers on the code.
+
+1. **Create code files** in a directory matching the article:
+   ```
+   _examples/YYYY-MM-DD-article-slug/
+   ├── example1.sh
+   ├── config.yaml
+   └── script.js
+   ```
+
+2. **Include in the article** using Jekyll's include or by referencing the file:
+   ```markdown
+   See the example in `_examples/2026-01-16-article-slug/example1.sh`:
+
+   \`\`\`bash
+   {% raw %}{% include_relative ../_examples/2026-01-16-article-slug/example1.sh %}{% endraw %}
+   \`\`\`
+   ```
+
+   Or for simple cases, copy the content but always keep the source file:
+   ```markdown
+   \`\`\`bash
+   # From _examples/2026-01-16-article-slug/example1.sh
+   command here
+   \`\`\`
+   ```
+
+3. **File requirements**:
+   - All code must be syntactically valid and runnable
+   - Use appropriate file extensions (.sh, .js, .yaml, .json, etc.)
+   - Include shebang for shell scripts (#!/bin/bash)
+   - Code will be checked by linters and formatters
 
 ## Claude Code Articles Specifically
 
