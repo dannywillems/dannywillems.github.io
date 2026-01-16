@@ -32,13 +32,17 @@ module.exports = async ({ github, context }) => {
     `Found unassigned article issue: #${issue.number} - ${issue.title}`
   );
 
-  // Assign Copilot to the issue
+  // Assign Copilot to the issue using the Copilot assignment API
+  // See: https://github.blog/changelog/2025-12-03-assign-issues-to-copilot-using-the-api/
   try {
-    await github.rest.issues.addAssignees({
+    await github.request("POST /repos/{owner}/{repo}/issues/{issue_number}/assignees", {
       owner: context.repo.owner,
       repo: context.repo.repo,
       issue_number: issue.number,
-      assignees: ["Copilot"],
+      assignees: ["copilot"],
+      headers: {
+        "X-GitHub-Api-Version": "2022-11-28",
+      },
     });
     console.log(`Assigned Copilot to issue #${issue.number}`);
   } catch (error) {
