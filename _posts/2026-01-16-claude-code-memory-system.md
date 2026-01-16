@@ -60,11 +60,11 @@ At minimum, your `CLAUDE.md` should include:
 ```markdown
 ## Development
 
-\`\`\`bash
+```bash
 npm install # Install dependencies
 npm run dev # Start development server
 npm test # Run tests
-\`\`\`
+```
 ```
 
 **Project Structure**: Key directories and their purpose
@@ -231,10 +231,10 @@ Write:
 ```markdown
 ## Testing
 
-\`\`\`bash
+```bash
 npm test # Run all tests
 npm test pattern # Run specific tests
-\`\`\`
+```
 ```
 
 **Use Code Blocks**: Command examples are clearer and more compact in code
@@ -254,9 +254,9 @@ See [Architecture Guide](docs/architecture.md) for detailed design decisions.
 ```markdown
 ## Error Handling
 
-\`\`\`typescript
+```typescript
 throw new ApiError(StatusCodes.BAD_REQUEST, "Invalid input");
-\`\`\`
+```
 
 All error types are in `src/errors/`.
 ```
@@ -390,9 +390,9 @@ Include workarounds for known issues:
 
 ### Port Already in Use
 
-\`\`\`bash
+```bash
 lsof -ti:3000 | xargs kill -9
-\`\`\`
+```
 
 ### Redis Connection Failed
 
@@ -478,9 +478,7 @@ messages for task-specific details.
 ## Resources
 
 - [Claude Code Cheat Sheet](/tools/claude-code-cheatsheet/) - Quick reference
-  for commands and features
-- [Understanding the /context Command](/2026/01/16/claude-code-context-command.html) -
-  Deep dive into context management
+  for commands and features including context management
 - Official Documentation - https://code.claude.com/docs/en/memory (when
   available)
 
