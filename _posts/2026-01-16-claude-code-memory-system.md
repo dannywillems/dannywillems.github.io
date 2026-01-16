@@ -8,8 +8,8 @@ tags: [claude-code, ai, memory, productivity, documentation]
 
 One of Claude Code's most powerful features is its memory system, built around
 `CLAUDE.md` files. These files act as persistent context that helps Claude
-understand your project's conventions, build commands, and workflows without
-you having to repeat yourself in every conversation.
+understand your project's conventions, build commands, and workflows without you
+having to repeat yourself in every conversation.
 
 Think of `CLAUDE.md` as a README specifically for AI assistants—a way to encode
 the knowledge an experienced developer would have about your codebase.
@@ -57,7 +57,7 @@ At minimum, your `CLAUDE.md` should include:
 
 **Build Commands**: How to install dependencies, build, and test
 
-```markdown
+````markdown
 ## Development
 
 ```bash
@@ -65,7 +65,9 @@ npm install # Install dependencies
 npm run dev # Start development server
 npm test # Run tests
 ```
-```
+````
+
+````
 
 **Project Structure**: Key directories and their purpose
 
@@ -76,7 +78,7 @@ npm test # Run tests
 - `tests/` - Test files
 - `docs/` - Documentation
 - `scripts/` - Build scripts
-```
+````
 
 **Code Conventions**: Style guides and patterns to follow
 
@@ -153,10 +155,9 @@ Shared repository containing multiple services and libraries.
 
 ## Workspace Setup
 
-pnpm install      # Install all dependencies
-pnpm run build    # Build all packages
-pnpm run test     # Run tests across all packages
-pnpm --filter api-gateway dev  # Run specific service
+pnpm install # Install all dependencies pnpm run build # Build all packages pnpm
+run test # Run tests across all packages pnpm --filter api-gateway dev # Run
+specific service
 
 ## Shared Conventions
 
@@ -177,9 +178,8 @@ Part of MyCompany monorepo. See root CLAUDE.md for general conventions.
 
 ## Local Development
 
-docker-compose up -d redis  # Start dependencies
-pnpm dev                    # Start with hot reload
-pnpm test:coverage          # Run tests with coverage
+docker-compose up -d redis # Start dependencies pnpm dev # Start with hot reload
+pnpm test:coverage # Run tests with coverage
 
 ## Service-Specific Conventions
 
@@ -228,14 +228,16 @@ test suite. You can also run specific tests by passing a pattern.
 
 Write:
 
-```markdown
+````markdown
 ## Testing
 
 ```bash
 npm test # Run all tests
 npm test pattern # Run specific tests
 ```
-```
+````
+
+````
 
 **Use Code Blocks**: Command examples are clearer and more compact in code
 blocks.
@@ -247,19 +249,21 @@ duplicate:
 ## Architecture
 
 See [Architecture Guide](docs/architecture.md) for detailed design decisions.
-```
+````
 
 **Keep Examples Minimal**: Show the pattern, not every variation:
 
-```markdown
+````markdown
 ## Error Handling
 
 ```typescript
 throw new ApiError(StatusCodes.BAD_REQUEST, "Invalid input");
 ```
+````
 
 All error types are in `src/errors/`.
-```
+
+````
 
 ## Examples of Effective CLAUDE.md Files
 
@@ -285,7 +289,7 @@ npm test         # Run tests
 - Follow ESLint configuration (run npm run lint)
 - Write tests for all new features
 - Use async/await instead of callbacks
-```
+````
 
 See full example in:
 `_examples/2026-01-16-claude-code-memory-system/basic-project-CLAUDE.md`
@@ -302,26 +306,24 @@ Full-stack application with React frontend and Django backend.
 ## Build Commands
 
 # Backend (Django)
-cd backend
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
+
+cd backend python -m venv venv source venv/bin/activate pip install -r
+requirements.txt python manage.py migrate python manage.py runserver
 
 # Frontend (React)
-cd frontend
-npm install
-npm start
+
+cd frontend npm install npm start
 
 ## Code Conventions
 
 ### Python (Backend)
+
 - Follow PEP 8 style guide
 - Use type hints for all function signatures
 - Run black . and flake8 before committing
 
 ### JavaScript/TypeScript (Frontend)
+
 - Use TypeScript for all new code
 - Prefer functional components with hooks
 - File naming: PascalCase for components, camelCase for utilities
@@ -385,7 +387,7 @@ to `CLAUDE.md`:
 
 Include workarounds for known issues:
 
-```markdown
+````markdown
 ## Common Issues
 
 ### Port Already in Use
@@ -393,10 +395,12 @@ Include workarounds for known issues:
 ```bash
 lsof -ti:3000 | xargs kill -9
 ```
+````
 
 ### Redis Connection Failed
 
 Ensure Docker is running: `docker-compose up -d redis`
+
 ```
 
 ### Keep Security in Mind
@@ -419,7 +423,9 @@ Do include:
 Use `/context` regularly to check memory file usage:
 
 ```
+
 Memory files: 4,231 tokens (2.1%)
+
 ```
 
 If memory files consume more than 5-10% of your context:
@@ -479,8 +485,8 @@ messages for task-specific details.
 
 - [Claude Code Cheat Sheet](/tools/claude-code-cheatsheet/) - Quick reference
   for commands and features including context management
-- Official Documentation - https://code.claude.com/docs/en/memory (when
-  available)
+- [Official Claude Code Documentation](https://code.claude.com/docs/en/overview) -
+  Anthropic's official documentation
 
 ## Conclusion
 
@@ -496,3 +502,4 @@ valuable and expand your memory files accordingly.
 The goal isn't to document everything—it's to capture the knowledge that makes
 collaboration more efficient and helps Claude provide better, more contextually
 aware assistance.
+```
