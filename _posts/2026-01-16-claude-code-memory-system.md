@@ -1,7 +1,7 @@
 ---
 title: "Claude Code Memory System: CLAUDE.md Files Explained"
 author: Danny Willems
-post_date: 2026-01-16 00:00:00
+date: 2026-01-16 00:00:00 +0000
 layout: post
 tags: [claude-code, ai, memory, productivity, documentation]
 ---
