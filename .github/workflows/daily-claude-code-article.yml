@@ -238,7 +238,7 @@ When assigned to this issue, please:
    - Practical tips and best practices
    - Links to official documentation
 5. **Update** the cheat sheet at \`tools/claude-code-cheatsheet.md\` with relevant additions
-6. **Create** a PR targeting the \`master\` branch
+6. **Create** a PR targeting the \`develop\` branch
 
 ## Article Format
 

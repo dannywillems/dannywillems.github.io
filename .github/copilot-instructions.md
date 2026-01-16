@@ -83,7 +83,7 @@ When writing articles about Claude Code features:
   - `chore:` for maintenance
 - Do NOT include Claude/Copilot as co-author
 - Do NOT add "Generated with" lines
-- Target `master` branch for PRs
+- Target `develop` branch for PRs (never push directly to master)
 
 ## PR Format
 
