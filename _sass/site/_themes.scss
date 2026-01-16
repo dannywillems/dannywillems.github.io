@@ -1,0 +1,35 @@
+// =============================================================================
+// SITE THEMES
+// Generates theme classes from $themes map using CSS custom properties
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// Theme Application Mixin
+// Outputs CSS custom properties for a given theme
+// -----------------------------------------------------------------------------
+
+@mixin apply-theme($theme) {
+  --bg-primary: #{map-get($theme, bg-primary)};
+  --bg-secondary: #{map-get($theme, bg-secondary)};
+  --bg-tertiary: #{map-get($theme, bg-tertiary)};
+  --text-primary: #{map-get($theme, text-primary)};
+  --text-secondary: #{map-get($theme, text-secondary)};
+  --text-tertiary: #{map-get($theme, text-tertiary)};
+  --accent: #{map-get($theme, accent)};
+  --accent-hover: #{map-get($theme, accent-hover)};
+  --accent-alt: #{map-get($theme, accent-alt)};
+  --border: #{map-get($theme, border)};
+  --border-light: #{map-get($theme, border-light)};
+  --shadow: #{map-get($theme, shadow)};
+}
+
+// -----------------------------------------------------------------------------
+// Generate Theme Classes
+// Creates .theme-{name} classes on html element
+// -----------------------------------------------------------------------------
+
+@each $name, $theme in $themes {
+  .theme-#{$name} {
+    @include apply-theme($theme);
+  }
+}

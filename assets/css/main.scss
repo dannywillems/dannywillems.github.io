@@ -1,0 +1,25 @@
+---
+---
+
+// =============================================================================
+// MAIN STYLESHEET
+// Entry point that imports all partials
+// =============================================================================
+
+// Variables must come first (defines $themes, spacing, typography, etc.)
+@import "site/variables";
+
+// Theme classes (generates .theme-* classes with CSS custom properties)
+@import "site/themes";
+
+// Base styles (reset, typography, links)
+@import "site/base";
+
+// Layout (grid, header, footer)
+@import "site/layout";
+
+// Components (publications, CV, contributions, etc.)
+@import "site/components";
+
+// Theme switcher dropdown
+@import "site/switcher";
