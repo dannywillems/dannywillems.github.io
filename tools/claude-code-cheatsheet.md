@@ -77,6 +77,8 @@ Last updated: January 2026
 <tr><td><code>/vim</code></td><td>Enable vim-style editing</td></tr>
 </table>
 
+<p><a href="/2026/01/16/claude-code-slash-commands.html">Read more: Comprehensive slash commands guide</a></p>
+
 <div class="tip">
 Tip: Use /context regularly to monitor token usage and avoid context exhaustion.
 </div>
