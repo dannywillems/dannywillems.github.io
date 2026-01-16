@@ -144,22 +144,51 @@ my-monorepo/
         └── CLAUDE.md            # Service-specific context
 ```
 
-The root `CLAUDE.md` might contain:
-
-See example in
-`_examples/2026-01-16-claude-code-memory-system/monorepo-root-CLAUDE.md`:
+**Root CLAUDE.md** (repository-wide context):
 
 ```markdown
-{% include_relative ../_examples/2026-01-16-claude-code-memory-system/monorepo-root-CLAUDE.md %}
+# MyCompany Monorepo
+
+Shared repository containing multiple services and libraries.
+
+## Workspace Setup
+
+pnpm install      # Install all dependencies
+pnpm run build    # Build all packages
+pnpm run test     # Run tests across all packages
+pnpm --filter api-gateway dev  # Run specific service
+
+## Shared Conventions
+
+- Follow conventional commits: feat(scope):, fix(scope):
+- All PRs require 2 approvals
+- Minimum test coverage: 80%
+
+See full example in:
+`_examples/2026-01-16-claude-code-memory-system/monorepo-root-CLAUDE.md`
 ```
 
-A service-specific `CLAUDE.md` would add service-level details:
-
-See example in
-`_examples/2026-01-16-claude-code-memory-system/subdirectory-CLAUDE.md`:
+**Service-specific CLAUDE.md** (adds service-level details):
 
 ```markdown
-{% include_relative ../_examples/2026-01-16-claude-code-memory-system/subdirectory-CLAUDE.md %}
+# API Gateway Service
+
+Part of MyCompany monorepo. See root CLAUDE.md for general conventions.
+
+## Local Development
+
+docker-compose up -d redis  # Start dependencies
+pnpm dev                    # Start with hot reload
+pnpm test:coverage          # Run tests with coverage
+
+## Service-Specific Conventions
+
+- Use Winston logger from src/utils/logger.ts
+- All endpoints include rate limiting
+- Mock external service calls in tests
+
+See full example in:
+`_examples/2026-01-16-claude-code-memory-system/subdirectory-CLAUDE.md`
 ```
 
 When working in `services/api-gateway/`, Claude loads both the root and
@@ -238,23 +267,68 @@ All error types are in `src/errors/`.
 
 For a simple web application:
 
-See example in
-`_examples/2026-01-16-claude-code-memory-system/basic-project-CLAUDE.md`:
-
 ```markdown
-{% include_relative ../_examples/2026-01-16-claude-code-memory-system/basic-project-CLAUDE.md %}
+# Project Overview
+
+Simple web application built with Express.js and PostgreSQL.
+
+## Development
+
+npm install      # Install dependencies
+npm run dev      # Start development server (port 3000)
+npm run build    # Build for production
+npm test         # Run tests
+
+## Code Conventions
+
+- Use TypeScript for all new code
+- Follow ESLint configuration (run npm run lint)
+- Write tests for all new features
+- Use async/await instead of callbacks
 ```
+
+See full example in:
+`_examples/2026-01-16-claude-code-memory-system/basic-project-CLAUDE.md`
 
 ### Comprehensive Configuration
 
-For a larger full-stack application:
-
-See example in
-`_examples/2026-01-16-claude-code-memory-system/comprehensive-CLAUDE.md`:
+For a larger full-stack application with multiple build environments:
 
 ```markdown
-{% include_relative ../_examples/2026-01-16-claude-code-memory-system/comprehensive-CLAUDE.md %}
+# MyApp Project
+
+Full-stack application with React frontend and Django backend.
+
+## Build Commands
+
+# Backend (Django)
+cd backend
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+
+# Frontend (React)
+cd frontend
+npm install
+npm start
+
+## Code Conventions
+
+### Python (Backend)
+- Follow PEP 8 style guide
+- Use type hints for all function signatures
+- Run black . and flake8 before committing
+
+### JavaScript/TypeScript (Frontend)
+- Use TypeScript for all new code
+- Prefer functional components with hooks
+- File naming: PascalCase for components, camelCase for utilities
 ```
+
+See full example in:
+`_examples/2026-01-16-claude-code-memory-system/comprehensive-CLAUDE.md`
 
 This example shows how to document:
 
