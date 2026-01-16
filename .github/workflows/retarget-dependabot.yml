@@ -1,0 +1,23 @@
+name: Retarget Dependabot PRs
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  retarget:
+    if: github.actor == 'dependabot[bot]' && github.base_ref == 'master'
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Change base branch to develop
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const script = require('./.github/scripts/retarget-pr.js');
+            await script({ github, context });
