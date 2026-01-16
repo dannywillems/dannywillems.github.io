@@ -90,10 +90,12 @@ Tip: Use /context regularly to monitor token usage and avoid context exhaustion.
 <tr><td>User settings</td><td>All projects</td><td><code>~/.claude/settings.json</code></td></tr>
 <tr><td>Project settings</td><td>Team (git tracked)</td><td><code>.claude/settings.json</code></td></tr>
 <tr><td>Local settings</td><td>Personal (git ignored)</td><td><code>.claude/settings.local.json</code></td></tr>
-<tr><td>Memory file</td><td>Project context</td><td><code>CLAUDE.md</code> (repo root)</td></tr>
+<tr><td>Memory file</td><td>Project context</td><td><code>CLAUDE.md</code> (hierarchical)</td></tr>
 <tr><td>Custom agents</td><td>Subagent definitions</td><td><code>.claude/agents/</code></td></tr>
 <tr><td>Custom commands</td><td>Slash commands</td><td><code>.claude/commands/</code></td></tr>
 </table>
+
+<p><a href="/2026/01/16/claude-code-memory-system.html">Read more: CLAUDE.md memory system explained</a></p>
 </div>
 
 <h2 id="context">Context Categories</h2>
@@ -211,7 +213,7 @@ Warning: MCP tools can consume significant context (40%+). Disable unused server
 
 <div class="cheatsheet-section">
 <ol>
-<li><strong>Use CLAUDE.md</strong> - Encode project conventions, build commands, standards</li>
+<li><strong>Use CLAUDE.md</strong> - Encode project conventions, build commands, standards (<a href="/2026/01/16/claude-code-memory-system.html">guide</a>)</li>
 <li><strong>Start focused sessions</strong> - New conversations for distinct tasks</li>
 <li><strong>Be specific</strong> - Target file reads, specific grep patterns</li>
 <li><strong>Use Task tool</strong> - Let Claude spawn subagents for exploration</li>
