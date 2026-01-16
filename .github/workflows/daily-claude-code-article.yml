@@ -1,0 +1,280 @@
+name: Daily Claude Code Article Issue
+
+on:
+  schedule:
+    # Run daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      topic_index:
+        description: 'Topic index to use (0-based, leave empty for next in queue)'
+        required: false
+        type: number
+
+jobs:
+  create-article-issue:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Read topics and create issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Claude Code topics to document
+            const topics = [
+              {
+                name: "Slash Commands Overview",
+                slug: "slash-commands",
+                description: "Complete guide to all slash commands in Claude Code",
+                topics: [
+                  "List of all available slash commands",
+                  "When to use each command",
+                  "Command parameters and options",
+                  "Examples and use cases"
+                ],
+                resources: [
+                  "https://code.claude.com/docs/en/slash-commands"
+                ]
+              },
+              {
+                name: "Memory System and CLAUDE.md",
+                slug: "memory-claude-md",
+                description: "How to use CLAUDE.md files for project context",
+                topics: [
+                  "What is CLAUDE.md",
+                  "Hierarchical memory files",
+                  "What to include in CLAUDE.md",
+                  "Best practices for project context"
+                ],
+                resources: [
+                  "https://code.claude.com/docs/en/memory",
+                  "https://www.anthropic.com/engineering/claude-code-best-practices"
+                ]
+              },
+              {
+                name: "MCP (Model Context Protocol)",
+                slug: "mcp-model-context-protocol",
+                description: "Connecting external tools via MCP",
+                topics: [
+                  "What is MCP",
+                  "Setting up MCP servers",
+                  "Available integrations (Slack, Jira, etc.)",
+                  "Creating custom MCP servers",
+                  "Impact on context usage"
+                ],
+                resources: [
+                  "https://code.claude.com/docs/en/mcp"
+                ]
+              },
+              {
+                name: "Hooks System",
+                slug: "hooks-automation",
+                description: "Automating workflows with Claude Code hooks",
+                topics: [
+                  "Available hook types (PreToolUse, PostToolUse, etc.)",
+                  "Setting up hooks",
+                  "Common automation patterns",
+                  "Example hooks for formatting, linting"
+                ],
+                resources: [
+                  "https://code.claude.com/docs/en/hooks",
+                  "https://code.claude.com/docs/en/hooks-guide"
+                ]
+              },
+              {
+                name: "Subagents and Custom Agents",
+                slug: "subagents-custom-agents",
+                description: "Creating and using custom agents",
+                topics: [
+                  "What are subagents",
+                  "The .claude/agents/ directory",
+                  "Creating custom agent definitions",
+                  "When to use subagents vs direct commands"
+                ],
+                resources: [
+                  "https://code.claude.com/docs/en/sub-agents"
+                ]
+              },
+              {
+                name: "Skills System",
+                slug: "skills-system",
+                description: "Markdown-based task guides and custom commands",
+                topics: [
+                  "What are skills",
+                  "Creating custom slash commands",
+                  "The .claude/commands/ directory",
+                  "Parameterized commands"
+                ],
+                resources: [
+                  "https://code.claude.com/docs/en/skills"
+                ]
+              },
+              {
+                name: "Configuration and Settings",
+                slug: "configuration-settings",
+                description: "Complete guide to Claude Code configuration",
+                topics: [
+                  "Settings file hierarchy",
+                  "User vs project vs local settings",
+                  "Model configuration",
+                  "Tool permissions"
+                ],
+                resources: [
+                  "https://code.claude.com/docs/en/settings",
+                  "https://code.claude.com/docs/en/model-config"
+                ]
+              },
+              {
+                name: "Headless Mode and Automation",
+                slug: "headless-automation",
+                description: "Using Claude Code in scripts and CI/CD",
+                topics: [
+                  "Print mode (-p flag)",
+                  "Piping and stdin",
+                  "CI/CD integration patterns",
+                  "Scripting best practices"
+                ],
+                resources: [
+                  "https://code.claude.com/docs/en/headless",
+                  "https://code.claude.com/docs/en/cli-reference"
+                ]
+              },
+              {
+                name: "IDE Integrations",
+                slug: "ide-integrations",
+                description: "Using Claude Code in VS Code and JetBrains",
+                topics: [
+                  "VS Code extension setup",
+                  "JetBrains IDE integration",
+                  "Desktop application",
+                  "Terminal vs IDE workflows"
+                ],
+                resources: [
+                  "https://code.claude.com/docs/en/overview"
+                ]
+              },
+              {
+                name: "Checkpointing and Session Management",
+                slug: "checkpointing-sessions",
+                description: "Saving and restoring Claude Code sessions",
+                topics: [
+                  "What is checkpointing",
+                  "Saving session state",
+                  "Restoring previous sessions",
+                  "Session persistence options"
+                ],
+                resources: [
+                  "https://code.claude.com/docs/en/checkpointing"
+                ]
+              }
+            ];
+
+            // Get the topic index
+            let topicIndex;
+            if (context.payload.inputs && context.payload.inputs.topic_index !== undefined) {
+              topicIndex = parseInt(context.payload.inputs.topic_index);
+            } else {
+              // Calculate based on day of year to cycle through topics
+              const now = new Date();
+              const start = new Date(now.getFullYear(), 0, 0);
+              const diff = now - start;
+              const oneDay = 1000 * 60 * 60 * 24;
+              const dayOfYear = Math.floor(diff / oneDay);
+              topicIndex = dayOfYear % topics.length;
+            }
+
+            const topic = topics[topicIndex];
+
+            // Check if issue already exists for this topic
+            const existingIssues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'claude-code,copilot-task'
+            });
+
+            const alreadyExists = existingIssues.data.some(
+              issue => issue.title.includes(topic.name)
+            );
+
+            if (alreadyExists) {
+              console.log(`Issue for "${topic.name}" already exists, skipping.`);
+              return;
+            }
+
+            // Format the date for the article
+            const date = new Date().toISOString().split('T')[0];
+
+            // Create the issue body
+            const body = `## Article Request
+
+**Feature:** ${topic.name}
+**Description:** ${topic.description}
+
+## Topics to Cover
+
+${topic.topics.map(t => `- ${t}`).join('\n')}
+
+## Research Resources
+
+${topic.resources.map(r => `- ${r}`).join('\n')}
+
+## Instructions for Copilot
+
+When assigned to this issue, please:
+
+1. **Research** the feature using the provided resources and official Claude Code documentation
+2. **Create** a new markdown file at \`_posts/${date}-claude-code-${topic.slug}.md\`
+3. **Follow** the existing article format (see other posts in \`_posts/\`)
+4. **Include**:
+   - Front matter with layout, title, date, author (Danny Willems), tags
+   - Clear explanations with code examples
+   - Practical tips and best practices
+   - Links to official documentation
+5. **Update** the cheat sheet at \`tools/claude-code-cheatsheet.md\` with relevant additions
+6. **Create** a PR targeting the \`master\` branch
+
+## Article Format
+
+\`\`\`markdown
+---
+layout: post
+title: Claude Code - ${topic.name}
+date: ${date} 10:00:00 +0000
+author: Danny Willems
+tags: [claude, ai, tooling, productivity]
+---
+
+[Article content here]
+\`\`\`
+
+---
+Part of #96 (Epic: Automated daily Claude Code feature articles)
+Part of #112 (Claude Code article series)
+`;
+
+            // Create the issue
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Article: Claude Code - ${topic.name}`,
+              body: body,
+              labels: ['documentation', 'claude-code', 'copilot-task']
+            });
+
+            console.log(`Created issue #${issue.data.number}: ${issue.data.title}`);
+            console.log(`URL: ${issue.data.html_url}`);
+
+            // Add comment with assignment instructions
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.data.number,
+              body: `To assign this to GitHub Copilot, use the assignee dropdown and select "Copilot", or run:\n\n\`\`\`bash\ngh issue edit ${issue.data.number} --add-assignee @me\n\`\`\`\n\nThen assign to Copilot from the GitHub UI.`
+            });

@@ -1,0 +1,77 @@
+name: Claude Code Feature Article
+description: Template for automated Claude Code documentation articles
+title: "Article: Claude Code - [FEATURE_NAME]"
+labels: ["documentation", "claude-code", "copilot-task"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Article Request
+        This issue is for writing a blog article about a Claude Code feature.
+
+  - type: input
+    id: feature
+    attributes:
+      label: Feature Name
+      description: The Claude Code feature to document
+      placeholder: e.g., /context command, MCP servers, hooks
+    validations:
+      required: true
+
+  - type: textarea
+    id: topics
+    attributes:
+      label: Topics to Cover
+      description: Key points the article should address
+      placeholder: |
+        - What is this feature?
+        - How to use it
+        - Configuration options
+        - Best practices
+        - Examples
+    validations:
+      required: true
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Research Resources
+      description: URLs and documentation to reference
+      placeholder: |
+        - https://code.claude.com/docs/en/overview
+        - https://github.com/anthropics/claude-code
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Instructions for Copilot
+
+        When assigned to this issue, please:
+
+        1. **Research** the feature using the provided resources and official Claude Code documentation
+        2. **Create** a new markdown file at `_posts/YYYY-MM-DD-claude-code-[feature-slug].md`
+        3. **Follow** the existing article format (see other posts in `_posts/`)
+        4. **Include**:
+           - Front matter with layout, title, date, author (Danny Willems), tags
+           - Clear explanations with code examples
+           - Practical tips and best practices
+           - Links to official documentation
+        5. **Update** the cheat sheet at `tools/claude-code-cheatsheet.md` if applicable
+        6. **Create** a PR targeting the `master` branch
+
+        ## Article Format
+
+        ```markdown
+        ---
+        layout: post
+        title: [Feature Name]
+        date: YYYY-MM-DD HH:MM:SS +0000
+        author: Danny Willems
+        tags: [claude, ai, tooling, productivity]
+        ---
+
+        [Article content here]
+        ```
