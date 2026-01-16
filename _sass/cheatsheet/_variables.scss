@@ -1,0 +1,179 @@
+// =============================================================================
+// CHEATSHEET VARIABLES
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// Theme Color Maps
+// Each theme defines: bg, text, border, glow, heading, code-bg, code-text,
+// section-bg, section-border, link, table-header-bg, table-header-text,
+// tip-bg, tip-border, tip-text, strong
+// -----------------------------------------------------------------------------
+
+$themes: (
+  retro-green: (
+    bg: #0a0a0a,
+    text: #00ff00,
+    border: #00ff00,
+    glow: rgba(0, 255, 0, 0.3),
+    heading: #00ff00,
+    heading-glow: rgba(0, 255, 0, 0.5),
+    code-bg: #1a1a1a,
+    code-text: #ffcc00,
+    pre-bg: #111,
+    pre-border: #333,
+    pre-text: #00ff00,
+    section-bg: #111,
+    section-border: #333,
+    link: #00ccff,
+    table-border: #333,
+    table-header-bg: #1a1a1a,
+    table-header-text: #ffcc00,
+    table-hover: #1a1a1a,
+    tip-bg: #1a0a0a,
+    tip-border: #ff6600,
+    tip-text: #ff9900,
+    strong: #ffcc00,
+    ascii: #00ff00
+  ),
+  amber: (
+    bg: #0a0800,
+    text: #ffb000,
+    border: #ffb000,
+    glow: rgba(255, 176, 0, 0.3),
+    heading: #ffb000,
+    heading-glow: rgba(255, 176, 0, 0.5),
+    code-bg: #2a2000,
+    code-text: #ffd700,
+    pre-bg: #1a1400,
+    pre-border: #4a3a00,
+    pre-text: #ffb000,
+    section-bg: #1a1400,
+    section-border: #4a3a00,
+    link: #ff8c00,
+    table-border: #4a3a00,
+    table-header-bg: #2a2000,
+    table-header-text: #ffd700,
+    table-hover: #2a2000,
+    tip-bg: #2a1a00,
+    tip-border: #ff6600,
+    tip-text: #ff9900,
+    strong: #ffd700,
+    ascii: #ffb000
+  ),
+  cyberpunk: (
+    bg: #0a0014,
+    bg-gradient: linear-gradient(135deg, #0a0014 0%, #1a0028 100%),
+    text: #ff00ff,
+    border: #ff00ff,
+    glow: rgba(255, 0, 255, 0.4),
+    inset-glow: rgba(0, 255, 255, 0.1),
+    heading: #00ffff,
+    heading-glow: #00ffff,
+    code-bg: #1a0033,
+    code-text: #00ffff,
+    code-glow: #00ffff,
+    pre-bg: rgba(20, 0, 40, 0.9),
+    pre-border: rgba(255, 0, 255, 0.33),
+    pre-text: #ff00ff,
+    section-bg: rgba(20, 0, 40, 0.8),
+    section-border: rgba(255, 0, 255, 0.33),
+    link: #ffff00,
+    link-glow: #ffff00,
+    table-border: rgba(255, 0, 255, 0.33),
+    table-header-bg: #2a0044,
+    table-header-text: #00ffff,
+    table-hover: #2a0044,
+    tip-bg: #2a0020,
+    tip-border: #ffff00,
+    tip-text: #ffff00,
+    strong: #00ffff,
+    ascii: #00ffff,
+    ascii-glow: #00ffff
+  ),
+  blueprint: (
+    bg: #001830,
+    text: #8cc8ff,
+    border: #4a90d9,
+    glow: rgba(74, 144, 217, 0.3),
+    heading: #fff,
+    heading-glow: rgba(255, 255, 255, 0.3),
+    code-bg: #003060,
+    code-text: #fff,
+    pre-bg: #002040,
+    pre-border: rgba(74, 144, 217, 0.33),
+    pre-text: #8cc8ff,
+    section-bg: #002040,
+    section-border: rgba(74, 144, 217, 0.33),
+    link: #ffcc00,
+    table-border: rgba(74, 144, 217, 0.33),
+    table-header-bg: #003060,
+    table-header-text: #fff,
+    table-hover: #003060,
+    tip-bg: #002850,
+    tip-border: #ffcc00,
+    tip-text: #ffcc00,
+    strong: #fff,
+    ascii: #4a90d9
+  ),
+  paper: (
+    bg: #fefefe,
+    text: #333,
+    border: #333,
+    glow: none,
+    box-shadow: 5px 5px 0 #ccc,
+    heading: #000,
+    heading-glow: none,
+    code-bg: #e8e8e8,
+    code-text: #c00,
+    pre-bg: #f0f0f0,
+    pre-border: #ccc,
+    pre-text: #333,
+    section-bg: #f5f5f5,
+    section-border: #ccc,
+    link: #0066cc,
+    table-border: #999,
+    table-header-bg: #e0e0e0,
+    table-header-text: #000,
+    table-hover: #f0f0f0,
+    tip-bg: #fff8e0,
+    tip-border: #f0a000,
+    tip-text: #806000,
+    strong: #000,
+    ascii: #333
+  )
+);
+
+// -----------------------------------------------------------------------------
+// Theme Switcher Colors
+// -----------------------------------------------------------------------------
+
+$switcher-bg: #1a1a1a;
+$switcher-text: #ccc;
+$switcher-border: #333;
+$switcher-border-hover: #666;
+$switcher-active-border: #00ff00;
+$switcher-active-text: #00ff00;
+
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+
+$font-mono: 'Courier New', Courier, monospace;
+
+// -----------------------------------------------------------------------------
+// Spacing
+// -----------------------------------------------------------------------------
+
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+
+// -----------------------------------------------------------------------------
+// Border Radius
+// -----------------------------------------------------------------------------
+
+$radius-sm: 3px;
+$radius-md: 4px;
+$radius-lg: 8px;
