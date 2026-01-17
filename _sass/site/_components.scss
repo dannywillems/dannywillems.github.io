@@ -1,0 +1,925 @@
+// =============================================================================
+// COMPONENT STYLES
+// Reusable UI components - preserves original hacker theme styles
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// Portrait (applies to all themes)
+// -----------------------------------------------------------------------------
+
+.portrait {
+  width: 250px;
+  height: 250px;
+  border-radius: $radius-full;
+}
+
+// -----------------------------------------------------------------------------
+// Logo (applies to all themes)
+// -----------------------------------------------------------------------------
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
+// -----------------------------------------------------------------------------
+// Publications (applies to all themes - uses hardcoded colors for hacker)
+// -----------------------------------------------------------------------------
+
+.publications {
+  margin-bottom: $spacing-md;
+}
+
+.publication-year {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.publication-title {
+  font-weight: bold;
+}
+
+.publication-description {
+  padding-left: 15px;
+}
+
+.publication-authors {
+  padding-left: 15px;
+  font-size: $font-size-xs;
+}
+
+.publication-item {
+  padding-left: 10px;
+}
+
+.publication-links {
+  margin-left: 15px;
+}
+
+.publication-link {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #b5e853;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid #b5e853;
+  padding: $spacing-sm $spacing-md;
+  font-size: $font-size-base;
+  border-radius: $radius-sm;
+  transition: color $transition-fast, background-color $transition-fast, border-color $transition-fast;
+  padding-left: 10px;
+
+  &:hover {
+    color: #1a1a1a;
+    background-color: #b5e853;
+    border-color: #b5e853;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: #1a1a1a;
+    background-color: #9ccc3d;
+    border-color: #9ccc3d;
+  }
+}
+
+// Non-hacker theme publication links
+html:not(.theme-hacker) .publication-link {
+  color: var(--accent);
+  border-color: var(--accent);
+
+  &:hover {
+    color: var(--bg-primary);
+    background-color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  &:active {
+    color: var(--bg-primary);
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// CV / Employment (applies to all themes - uses hardcoded colors for hacker)
+// -----------------------------------------------------------------------------
+
+.cv-jobs {
+  margin-bottom: $spacing-xl;
+}
+
+.cv-job {
+  margin-bottom: $spacing-lg;
+  padding-left: $spacing-md;
+  border-left: 2px solid #444;
+}
+
+.cv-employer {
+  font-size: $font-size-lg;
+  font-weight: bold;
+  margin-bottom: $spacing-sm;
+
+  a {
+    color: #b5e853;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.cv-positions {
+  margin-bottom: $spacing-sm;
+}
+
+.cv-position {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: $spacing-sm;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    flex-direction: column;
+    gap: $spacing-xs;
+  }
+}
+
+.cv-position-multi {
+  padding-left: $spacing-md;
+  border-left: 1px solid #666;
+  margin-bottom: $spacing-xs;
+}
+
+.cv-title {
+  font-weight: 500;
+}
+
+.cv-dates {
+  font-size: $font-size-sm;
+  color: #888;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    font-size: $font-size-sm;
+  }
+}
+
+.cv-description {
+  font-size: 0.95rem;
+  margin-top: $spacing-sm;
+  color: #ccc;
+
+  p {
+    margin: $spacing-xs 0;
+  }
+}
+
+.cv-links {
+  margin-top: $spacing-sm;
+}
+
+// Non-hacker theme CV overrides
+html:not(.theme-hacker) {
+  .cv-job {
+    border-left-color: var(--border-light);
+  }
+
+  .cv-employer a {
+    color: var(--accent);
+  }
+
+  .cv-position-multi {
+    border-left-color: var(--text-tertiary);
+  }
+
+  .cv-dates {
+    color: var(--text-secondary);
+  }
+
+  .cv-description {
+    color: var(--text-primary);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// CV / Education
+// -----------------------------------------------------------------------------
+
+.cv-education {
+  margin-bottom: $spacing-xl;
+}
+
+.cv-edu {
+  margin-bottom: $spacing-lg;
+  padding-left: $spacing-md;
+  border-left: 2px solid #444;
+}
+
+.cv-institution {
+  font-size: $font-size-lg;
+  font-weight: bold;
+  margin-bottom: $spacing-sm;
+
+  a {
+    color: #b5e853;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.cv-degree {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: $spacing-sm;
+  margin-bottom: $spacing-sm;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    flex-direction: column;
+    gap: $spacing-xs;
+  }
+}
+
+// Non-hacker theme education overrides
+html:not(.theme-hacker) {
+  .cv-edu {
+    border-left-color: var(--border-light);
+  }
+
+  .cv-institution a {
+    color: var(--accent);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Footer (applies to all themes - uses hardcoded colors for hacker)
+// -----------------------------------------------------------------------------
+
+.site-footer {
+  background-color: #1a1a1a;
+  border-top: 1px solid #333;
+  padding: $spacing-xl 0 $spacing-md;
+  margin-top: $spacing-2xl;
+
+  .container {
+    padding-bottom: 0;
+  }
+
+  h3 {
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: $spacing-sm;
+    color: #b5e853;
+  }
+
+  a {
+    color: #ccc;
+    display: block;
+    margin-bottom: $spacing-sm;
+
+    &:hover {
+      color: #b5e853;
+      text-decoration: none;
+    }
+  }
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: $spacing-xl;
+  margin-bottom: $spacing-xl;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    flex-direction: column;
+    gap: $spacing-lg;
+  }
+}
+
+.footer-contact,
+.footer-social,
+.footer-quick {
+  flex: 1;
+  min-width: 150px;
+}
+
+.footer-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm $spacing-md;
+
+  a {
+    display: inline;
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: $spacing-md;
+  text-align: center;
+
+  p {
+    color: #666;
+    font-size: $font-size-sm;
+    margin: 0;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// GitHub Contributions
+// -----------------------------------------------------------------------------
+
+.contributions {
+  margin-bottom: $spacing-xl;
+}
+
+.contributions-updated {
+  font-size: $font-size-sm;
+  color: #666;
+  margin-bottom: $spacing-lg;
+}
+
+.contributions-summary h3,
+.contributions-repos h3 {
+  color: #b5e853;
+  margin-bottom: $spacing-md;
+  font-size: 1.1rem;
+}
+
+.contributions-totals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: $spacing-md;
+  margin-bottom: $spacing-xl;
+}
+
+.contributions-period {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: $radius-md;
+  padding: $spacing-md;
+
+  h4 {
+    margin: 0 0 $spacing-sm 0;
+    font-size: $font-size-sm;
+    color: #ccc;
+  }
+}
+
+.contributions-stats {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+
+  .stat {
+    font-size: $font-size-sm;
+    color: #888;
+
+    strong {
+      color: #b5e853;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.contributions-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: $font-size-sm;
+
+  th, td {
+    padding: $spacing-sm;
+    text-align: left;
+    border-bottom: 1px solid #333;
+  }
+
+  th {
+    color: #b5e853;
+    font-weight: 600;
+    font-size: $font-size-sm;
+  }
+
+  .repo-name a {
+    color: #ccc;
+
+    &:hover {
+      color: #b5e853;
+    }
+  }
+
+  .repo-stat {
+    text-align: center;
+
+    .total {
+      display: block;
+      font-weight: 600;
+      color: #eee;
+    }
+
+    .breakdown {
+      display: block;
+      font-size: $font-size-xs;
+      color: #666;
+    }
+
+    .zero {
+      color: #444;
+    }
+  }
+
+  @media only screen and (max-width: $breakpoint-md) {
+    font-size: 0.8rem;
+
+    th, td {
+      padding: 0.35rem;
+    }
+
+    .repo-stat .breakdown {
+      display: none;
+    }
+  }
+}
+
+.contributions-note {
+  margin-top: $spacing-lg;
+  font-size: $font-size-sm;
+  color: #666;
+}
+
+// Non-hacker theme contributions overrides
+html:not(.theme-hacker) {
+  .contributions-updated {
+    color: var(--text-tertiary);
+  }
+
+  .contributions-summary h3,
+  .contributions-repos h3 {
+    color: var(--accent);
+  }
+
+  .contributions-period {
+    background: var(--bg-secondary);
+    border-color: var(--border);
+
+    h4 {
+      color: var(--text-primary);
+    }
+  }
+
+  .contributions-stats {
+    .stat {
+      color: var(--text-secondary);
+
+      strong {
+        color: var(--accent);
+      }
+    }
+  }
+
+  .contributions-table {
+    th, td {
+      border-bottom-color: var(--border);
+    }
+
+    th {
+      color: var(--accent);
+    }
+
+    .repo-name a {
+      color: var(--text-primary);
+
+      &:hover {
+        color: var(--accent);
+      }
+    }
+
+    .repo-stat {
+      .total {
+        color: var(--text-primary);
+      }
+
+      .breakdown {
+        color: var(--text-tertiary);
+      }
+
+      .zero {
+        color: var(--border-light);
+      }
+    }
+  }
+
+  .contributions-note {
+    color: var(--text-tertiary);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Countries
+// -----------------------------------------------------------------------------
+
+.countries {
+  margin-bottom: $spacing-xl;
+}
+
+.countries-stats {
+  display: flex;
+  gap: $spacing-xl;
+  margin-bottom: $spacing-xl;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+}
+
+.countries-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $spacing-md $spacing-xl;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: $radius-md;
+
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #b5e853;
+  }
+
+  .stat-label {
+    font-size: $font-size-sm;
+    color: #888;
+  }
+
+  @media only screen and (max-width: $breakpoint-md) {
+    padding: $spacing-sm $spacing-md;
+  }
+}
+
+.countries-by-continent {
+  margin-top: $spacing-xl;
+}
+
+.countries-continent {
+  margin-bottom: $spacing-xl;
+
+  h3 {
+    color: #b5e853;
+    border-bottom: 1px solid #333;
+    padding-bottom: $spacing-sm;
+    margin-bottom: $spacing-md;
+  }
+}
+
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: $spacing-md;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.country-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: $radius-md;
+  padding: $spacing-md;
+  transition: border-color $transition-fast;
+
+  &:hover {
+    border-color: #b5e853;
+  }
+
+  &.favorite {
+    border-left: 3px solid #b5e853;
+  }
+}
+
+.country-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: $spacing-sm;
+}
+
+.country-name {
+  font-weight: 600;
+  color: #eee;
+}
+
+.country-year {
+  font-size: $font-size-sm;
+  color: #666;
+}
+
+.country-visits {
+  font-size: $font-size-sm;
+  color: #888;
+  margin-bottom: $spacing-xs;
+}
+
+.country-notes {
+  font-size: $font-size-sm;
+  color: #aaa;
+  font-style: italic;
+}
+
+// Non-hacker theme countries overrides
+html:not(.theme-hacker) {
+  .countries-stat {
+    background: var(--bg-secondary);
+    border-color: var(--border);
+
+    .stat-number {
+      color: var(--accent);
+    }
+
+    .stat-label {
+      color: var(--text-secondary);
+    }
+  }
+
+  .countries-continent h3 {
+    color: var(--accent);
+    border-bottom-color: var(--border);
+  }
+
+  .country-card {
+    background: var(--bg-secondary);
+    border-color: var(--border);
+
+    &:hover {
+      border-color: var(--accent);
+    }
+
+    &.favorite {
+      border-left-color: var(--accent);
+    }
+  }
+
+  .country-name {
+    color: var(--text-primary);
+  }
+
+  .country-year {
+    color: var(--text-tertiary);
+  }
+
+  .country-visits {
+    color: var(--text-secondary);
+  }
+
+  .country-notes {
+    color: var(--text-secondary);
+  }
+}
+
+// Countries Map
+.countries-map-container {
+  margin: $spacing-xl 0;
+}
+
+.countries-map {
+  position: relative;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: $radius-md;
+  padding: $spacing-md;
+  overflow: hidden;
+
+  svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .city-overlay {
+    position: absolute;
+    top: $spacing-md;
+    left: $spacing-md;
+    right: $spacing-md;
+    bottom: $spacing-md;
+    pointer-events: none;
+  }
+}
+
+html:not(.theme-hacker) .countries-map {
+  background: var(--bg-tertiary);
+  border-color: var(--border);
+}
+
+.map-legend {
+  display: flex;
+  gap: $spacing-lg;
+  justify-content: center;
+  margin-top: $spacing-md;
+  font-size: $font-size-sm;
+  color: #888;
+}
+
+html:not(.theme-hacker) .map-legend {
+  color: var(--text-secondary);
+}
+
+.legend-visited,
+.legend-not-visited {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  margin-right: $spacing-sm;
+  vertical-align: middle;
+}
+
+.legend-visited {
+  background: #b5e853;
+}
+
+html:not(.theme-hacker) .legend-visited {
+  background: var(--accent);
+}
+
+.legend-not-visited {
+  background: #333;
+}
+
+html:not(.theme-hacker) .legend-not-visited {
+  background: var(--border);
+}
+
+.legend-city {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: $radius-full;
+  background: #ff6b6b;
+  margin-right: $spacing-sm;
+  vertical-align: middle;
+}
+
+// City markers on map
+.city-markers .city-marker {
+  circle {
+    fill: #ff6b6b;
+    stroke: #fff;
+    stroke-width: 1;
+  }
+
+  text {
+    fill: #fff;
+    font-size: 8px;
+    font-family: sans-serif;
+    pointer-events: none;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Cities
+// -----------------------------------------------------------------------------
+
+.cities {
+  margin-bottom: $spacing-xl;
+}
+
+.cities-stats {
+  display: flex;
+  gap: $spacing-xl;
+  margin-bottom: $spacing-xl;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+}
+
+.cities-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $spacing-md $spacing-xl;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: $radius-md;
+
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #b5e853;
+  }
+
+  .stat-label {
+    font-size: $font-size-sm;
+    color: #888;
+  }
+}
+
+html:not(.theme-hacker) .cities-stat {
+  background: var(--bg-secondary);
+  border-color: var(--border);
+
+  .stat-number {
+    color: var(--accent);
+  }
+
+  .stat-label {
+    color: var(--text-secondary);
+  }
+}
+
+.cities-map-container {
+  height: 500px;
+  border: 1px solid #333;
+  border-radius: $radius-md;
+  margin-bottom: $spacing-xl;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    height: 350px;
+  }
+}
+
+html:not(.theme-hacker) .cities-map-container {
+  border-color: var(--border);
+}
+
+.cities-list {
+  margin-top: $spacing-xl;
+
+  h3 {
+    color: #b5e853;
+    margin-bottom: $spacing-md;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    padding: $spacing-sm 0;
+    border-bottom: 1px solid #333;
+  }
+}
+
+html:not(.theme-hacker) .cities-list {
+  h3 {
+    color: var(--accent);
+  }
+
+  li {
+    border-bottom-color: var(--border);
+  }
+}
+
+.city-country {
+  color: #888;
+  font-size: $font-size-sm;
+}
+
+html:not(.theme-hacker) .city-country {
+  color: var(--text-secondary);
+}
+
+.city-date {
+  color: #666;
+  font-size: $font-size-sm;
+}
+
+html:not(.theme-hacker) .city-date {
+  color: var(--text-tertiary);
+}
+
+.city-notes {
+  color: #aaa;
+  font-size: $font-size-sm;
+  font-style: italic;
+  margin: $spacing-xs 0 0 0;
+}
+
+html:not(.theme-hacker) .city-notes {
+  color: var(--text-secondary);
+}
