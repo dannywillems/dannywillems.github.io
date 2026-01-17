@@ -1,0 +1,10 @@
+{
+  "name": "custom-mcp-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Example custom MCP server",
+  "main": "custom-server.js",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.2"
+  }
+}
