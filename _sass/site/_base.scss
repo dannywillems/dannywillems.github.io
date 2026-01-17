@@ -1,0 +1,122 @@
+// =============================================================================
+// BASE STYLES
+// Only applies to non-hacker themes to preserve original design
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// Text Alignment Utilities (applies to all themes)
+// -----------------------------------------------------------------------------
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+// -----------------------------------------------------------------------------
+// Non-Hacker Theme Base Styles
+// These override the default theme styles for alternative themes
+// -----------------------------------------------------------------------------
+
+html:not(.theme-hacker) {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background $transition-slow, color $transition-slow;
+
+  body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: $font-sans;
+  }
+
+  // Typography
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+    font-family: $font-sans;
+    font-weight: 600;
+    text-shadow: none;
+    letter-spacing: normal;
+  }
+
+  p, li {
+    color: var(--text-primary);
+  }
+
+  // Links
+  a {
+    color: var(--accent);
+    text-shadow: none;
+
+    &:hover {
+      color: var(--accent-hover);
+    }
+  }
+
+  // Code
+  code {
+    background: var(--bg-secondary);
+    color: var(--accent);
+    border: 1px solid var(--border);
+  }
+
+  code.highlighter-rouge {
+    background: var(--bg-secondary);
+    color: var(--accent);
+    border: 1px solid var(--border);
+  }
+
+  pre {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+
+    code {
+      background: transparent;
+      border: none;
+    }
+  }
+
+  // Tables
+  th {
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
+  }
+
+  td {
+    border-bottom: 1px solid var(--border);
+  }
+
+  // Blockquote
+  blockquote {
+    border-left-color: var(--accent);
+    color: var(--text-secondary);
+  }
+
+  // Horizontal rule
+  hr {
+    border-bottom-color: var(--accent);
+  }
+
+  // Selection
+  ::selection {
+    background: var(--accent);
+    color: var(--bg-primary);
+  }
+
+  // List bullets - remove custom image for non-hacker themes
+  ul li {
+    list-style-image: none;
+    list-style-type: disc;
+  }
+}

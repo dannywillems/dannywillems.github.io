@@ -1,0 +1,75 @@
+// =============================================================================
+// THEME SWITCHER STYLES
+// Dropdown component for switching between themes (in footer)
+// =============================================================================
+
+.theme-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-sm;
+  margin-top: $spacing-md;
+}
+
+.theme-switcher-label {
+  font-size: $font-size-sm;
+  color: #888;
+}
+
+html:not(.theme-hacker) .theme-switcher-label {
+  color: var(--text-secondary);
+}
+
+#theme-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: $radius-md;
+  color: #ccc;
+  padding: $spacing-sm $spacing-xl $spacing-sm $spacing-md;
+  font-size: $font-size-sm;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color $transition-fast, background-color $transition-fast;
+
+  // Custom dropdown arrow
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23888' d='M6 8L2 4h8z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right $spacing-sm center;
+
+  &:hover {
+    border-color: #b5e853;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #b5e853;
+  }
+
+  option {
+    background: #1a1a1a;
+    color: #ccc;
+    padding: $spacing-sm;
+  }
+}
+
+html:not(.theme-hacker) #theme-select {
+  background-color: var(--bg-secondary);
+  border-color: var(--border);
+  color: var(--text-primary);
+
+  &:hover {
+    border-color: var(--accent);
+  }
+
+  &:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--shadow);
+  }
+
+  option {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+  }
+}
