@@ -173,7 +173,7 @@ In June 2022, researchers from several universities disclosed ÆPIC Leak[^7], an
 
 ### Attack Mechanism
 
-ÆPIC Leak exploits a previously unknown feature in Intel's APIC implementation. The APIC includes a memory-mapped I/O (MMIO) range that, due to a design flaw, can return stale data from internal processor structures when read in specific ways. The attack works by:
+ÆPIC Leak exploits a previously unknown feature in Intel's APIC implementation. The APIC includes a memory-mapped I/O (MMIO) range that, due to an architectural flaw, can return stale data from internal processor structures when read in specific ways. The attack works by:
 
 1. The attacker sends an interrupt to the processor
 2. The APIC processes the interrupt, temporarily storing data in internal buffers
@@ -181,13 +181,13 @@ In June 2022, researchers from several universities disclosed ÆPIC Leak[^7], an
 4. Due to the vulnerability, these reads return stale data from other security contexts, including SGX enclaves
 5. Repeated sampling across many interrupts allows extraction of enclave secrets
 
-What makes ÆPIC Leak particularly dangerous is that it doesn't rely on speculative execution, cache timing, or voltage manipulation. Instead, it exploits a architectural vulnerability in how the APIC handles data.
+What makes ÆPIC Leak particularly dangerous is that it doesn't rely on speculative execution, cache timing, or voltage manipulation. Instead, it exploits an architectural vulnerability in how the APIC handles data.
 
 ### SGX Security Impact
 
 ÆPIC Leak demonstrates yet another breach of confidentiality, with some unique characteristics:
 
-- Works on the latest Intel processors (up to 11th generation Core)
+- Affects Intel processors through 11th generation Core (Ice Lake and Tiger Lake)
 - Doesn't require specialized attack code within the same address space
 - Can leak data at a relatively high bandwidth compared to some side-channel attacks
 - Affects not just SGX but potentially other security boundaries as well
@@ -210,7 +210,7 @@ Notably, Intel also began recommending more aggressive use of software-based def
 
 ### Real-World Implications
 
-ÆPIC Leak represented a maturation point in the SGX vulnerability landscape. Coming four years after Foreshadow, it demonstrated that despite Intel's efforts, new attack vectors continued to emerge. The attack affected even the newest processor generations, suggesting that architectural issues might require fundamental redesigns rather than incremental patches.
+ÆPIC Leak represented a maturation point in the SGX vulnerability landscape. Coming nearly four years after Foreshadow, it demonstrated that despite Intel's efforts, new attack vectors continued to emerge. The attack affected processor generations through 2020-2021, suggesting that architectural issues might require fundamental redesigns rather than incremental patches.
 
 For developers, ÆPIC Leak reinforced the message that SGX could not be relied upon as a sole security mechanism for highly sensitive applications.
 
