@@ -1,37 +1,37 @@
 {
-  "updated_at": "2026-01-27T06:12:55.934250Z",
+  "updated_at": "2026-01-17T06:10:48.331027Z",
   "totals": {
     "week": {
-      "commits": 90,
-      "prs": 29,
-      "reviews": 6,
-      "issues": 19,
-      "repos_contributed": 9,
-      "total": 144
+      "commits": 89,
+      "prs": 34,
+      "reviews": 12,
+      "issues": 38,
+      "repos_contributed": 4,
+      "total": 173
     },
     "month": {
-      "commits": 816,
-      "prs": 188,
-      "reviews": 29,
-      "issues": 357,
-      "repos_contributed": 18,
-      "total": 1390
+      "commits": 718,
+      "prs": 172,
+      "reviews": 28,
+      "issues": 307,
+      "repos_contributed": 16,
+      "total": 1225
     },
     "quarter": {
-      "commits": 1198,
-      "prs": 319,
+      "commits": 1061,
+      "prs": 288,
       "reviews": 85,
-      "issues": 598,
+      "issues": 517,
       "repos_contributed": 23,
-      "total": 2200
+      "total": 1951
     },
     "year": {
-      "commits": 4223,
-      "prs": 1180,
-      "reviews": 412,
-      "issues": 786,
+      "commits": 4110,
+      "prs": 1160,
+      "reviews": 414,
+      "issues": 705,
       "repos_contributed": 46,
-      "total": 6601
+      "total": 6389
     }
   },
   "repositories": [
@@ -39,96 +39,96 @@
       "name": "o1-labs/mina-rust",
       "url": "https://github.com/o1-labs/mina-rust",
       "week": {
-        "commits": 25,
-        "prs": 9,
-        "reviews": 0,
-        "issues": 9,
-        "total": 43
+        "commits": 12,
+        "prs": 5,
+        "reviews": 6,
+        "issues": 16,
+        "total": 39
       },
       "month": {
-        "commits": 47,
-        "prs": 17,
-        "reviews": 11,
-        "issues": 50,
-        "total": 125
+        "commits": 31,
+        "prs": 11,
+        "reviews": 14,
+        "issues": 72,
+        "total": 128
       },
       "quarter": {
-        "commits": 255,
-        "prs": 72,
-        "reviews": 50,
-        "issues": 282,
-        "total": 659
+        "commits": 235,
+        "prs": 65,
+        "reviews": 51,
+        "issues": 276,
+        "total": 627
       },
       "year": {
-        "commits": 1047,
-        "prs": 267,
+        "commits": 1022,
+        "prs": 258,
         "reviews": 96,
-        "issues": 408,
-        "total": 1818
+        "issues": 399,
+        "total": 1775
       }
     },
     {
       "name": "MinaProtocol/mina",
       "url": "https://github.com/MinaProtocol/mina",
       "week": {
-        "commits": 20,
-        "prs": 10,
-        "reviews": 4,
+        "commits": 10,
+        "prs": 2,
+        "reviews": 2,
         "issues": 0,
-        "total": 34
+        "total": 14
       },
       "month": {
-        "commits": 40,
-        "prs": 20,
-        "reviews": 7,
+        "commits": 26,
+        "prs": 11,
+        "reviews": 3,
         "issues": 1,
-        "total": 68
+        "total": 41
       },
       "quarter": {
-        "commits": 57,
-        "prs": 38,
-        "reviews": 10,
+        "commits": 38,
+        "prs": 30,
+        "reviews": 7,
         "issues": 1,
-        "total": 106
+        "total": 76
       },
       "year": {
-        "commits": 923,
-        "prs": 363,
-        "reviews": 131,
+        "commits": 908,
+        "prs": 359,
+        "reviews": 130,
         "issues": 7,
-        "total": 1424
+        "total": 1404
       }
     },
     {
       "name": "o1-labs/proof-systems",
       "url": "https://github.com/o1-labs/proof-systems",
       "week": {
-        "commits": 23,
-        "prs": 7,
-        "reviews": 0,
-        "issues": 0,
-        "total": 30
+        "commits": 9,
+        "prs": 2,
+        "reviews": 2,
+        "issues": 1,
+        "total": 14
       },
       "month": {
-        "commits": 65,
-        "prs": 14,
+        "commits": 79,
+        "prs": 21,
         "reviews": 6,
         "issues": 2,
-        "total": 87
+        "total": 108
       },
       "quarter": {
-        "commits": 167,
-        "prs": 59,
-        "reviews": 12,
+        "commits": 150,
+        "prs": 52,
+        "reviews": 14,
         "issues": 2,
-        "total": 240
+        "total": 218
       },
       "year": {
-        "commits": 915,
-        "prs": 232,
-        "reviews": 102,
+        "commits": 896,
+        "prs": 228,
+        "reviews": 106,
         "issues": 45,
-        "total": 1294
+        "total": 1275
       }
     },
     {
@@ -142,57 +142,57 @@
         "total": 1
       },
       "month": {
-        "commits": 299,
-        "prs": 62,
+        "commits": 301,
+        "prs": 60,
         "reviews": 1,
-        "issues": 138,
-        "total": 500
+        "issues": 139,
+        "total": 501
       },
       "quarter": {
         "commits": 301,
-        "prs": 62,
+        "prs": 60,
         "reviews": 1,
         "issues": 139,
-        "total": 503
+        "total": 501
       },
       "year": {
         "commits": 301,
-        "prs": 62,
+        "prs": 60,
         "reviews": 1,
         "issues": 139,
-        "total": 503
+        "total": 501
       }
     },
     {
       "name": "dannywillems/dannywillems.github.io",
       "url": "https://github.com/dannywillems/dannywillems.github.io",
       "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 1,
-        "total": 1
+        "commits": 58,
+        "prs": 23,
+        "reviews": 2,
+        "issues": 21,
+        "total": 104
       },
       "month": {
         "commits": 174,
         "prs": 58,
         "reviews": 2,
-        "issues": 47,
-        "total": 281
+        "issues": 45,
+        "total": 279
       },
       "quarter": {
-        "commits": 174,
+        "commits": 175,
         "prs": 58,
         "reviews": 2,
-        "issues": 47,
-        "total": 281
+        "issues": 45,
+        "total": 280
       },
       "year": {
         "commits": 185,
         "prs": 58,
         "reviews": 2,
-        "issues": 47,
-        "total": 292
+        "issues": 45,
+        "total": 290
       }
     },
     {
@@ -207,24 +207,24 @@
       },
       "month": {
         "commits": 2,
-        "prs": 3,
+        "prs": 2,
         "reviews": 0,
         "issues": 0,
-        "total": 5
+        "total": 4
       },
       "quarter": {
         "commits": 2,
-        "prs": 3,
+        "prs": 2,
         "reviews": 0,
         "issues": 0,
-        "total": 5
+        "total": 4
       },
       "year": {
         "commits": 140,
-        "prs": 59,
+        "prs": 58,
         "reviews": 15,
         "issues": 6,
-        "total": 220
+        "total": 219
       }
     },
     {
@@ -232,63 +232,31 @@
       "url": "https://github.com/o1-labs/snarky",
       "week": {
         "commits": 0,
-        "prs": 1,
-        "reviews": 2,
-        "issues": 0,
-        "total": 3
-      },
-      "month": {
-        "commits": 7,
-        "prs": 3,
-        "reviews": 2,
-        "issues": 0,
-        "total": 12
-      },
-      "quarter": {
-        "commits": 7,
-        "prs": 3,
-        "reviews": 2,
-        "issues": 0,
-        "total": 12
-      },
-      "year": {
-        "commits": 82,
-        "prs": 21,
-        "reviews": 22,
-        "issues": 1,
-        "total": 126
-      }
-    },
-    {
-      "name": "dannywillems/faturinha",
-      "url": "https://github.com/dannywillems/faturinha",
-      "week": {
-        "commits": 1,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 1
+        "total": 0
       },
       "month": {
-        "commits": 49,
-        "prs": 5,
+        "commits": 7,
+        "prs": 2,
         "reviews": 0,
-        "issues": 38,
-        "total": 92
+        "issues": 0,
+        "total": 9
       },
       "quarter": {
-        "commits": 49,
-        "prs": 5,
+        "commits": 7,
+        "prs": 2,
         "reviews": 0,
-        "issues": 38,
-        "total": 92
+        "issues": 0,
+        "total": 9
       },
       "year": {
-        "commits": 49,
-        "prs": 5,
-        "reviews": 0,
-        "issues": 38,
-        "total": 92
+        "commits": 82,
+        "prs": 20,
+        "reviews": 20,
+        "issues": 1,
+        "total": 123
       }
     },
     {
@@ -302,11 +270,11 @@
         "total": 0
       },
       "month": {
-        "commits": 0,
-        "prs": 0,
+        "commits": 3,
+        "prs": 1,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 4
       },
       "quarter": {
         "commits": 16,
@@ -350,73 +318,41 @@
       "year": {
         "commits": 53,
         "prs": 21,
-        "reviews": 4,
+        "reviews": 5,
         "issues": 0,
-        "total": 78
-      }
-    },
-    {
-      "name": "BaDaaS/cryptography.academy",
-      "url": "https://github.com/BaDaaS/cryptography.academy",
-      "week": {
-        "commits": 6,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 6,
-        "total": 12
-      },
-      "month": {
-        "commits": 32,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 32,
-        "total": 64
-      },
-      "quarter": {
-        "commits": 32,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 32,
-        "total": 64
-      },
-      "year": {
-        "commits": 32,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 32,
-        "total": 64
+        "total": 79
       }
     },
     {
       "name": "LeakIX/blog",
       "url": "https://github.com/LeakIX/blog",
       "week": {
-        "commits": 3,
+        "commits": 0,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 3
+        "total": 0
       },
       "month": {
-        "commits": 3,
+        "commits": 6,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 3
+        "total": 6
       },
       "quarter": {
-        "commits": 16,
+        "commits": 13,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 16
+        "total": 13
       },
       "year": {
-        "commits": 51,
+        "commits": 48,
         "prs": 8,
         "reviews": 0,
         "issues": 0,
-        "total": 59
+        "total": 56
       }
     },
     {
@@ -462,11 +398,11 @@
         "total": 0
       },
       "month": {
-        "commits": 0,
+        "commits": 2,
         "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
+        "reviews": 2,
+        "issues": 2,
+        "total": 6
       },
       "quarter": {
         "commits": 2,
@@ -545,6 +481,38 @@
         "reviews": 0,
         "issues": 11,
         "total": 31
+      }
+    },
+    {
+      "name": "LeakIX/l9format-python",
+      "url": "https://github.com/LeakIX/l9format-python",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 25,
+        "prs": 5,
+        "reviews": 0,
+        "issues": 0,
+        "total": 30
       }
     },
     {
@@ -647,37 +615,37 @@
       "name": "LeakIX/DocSite",
       "url": "https://github.com/LeakIX/DocSite",
       "week": {
-        "commits": 1,
+        "commits": 0,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 1
+        "total": 0
       },
       "month": {
-        "commits": 1,
+        "commits": 0,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 1
+        "total": 0
       },
       "quarter": {
-        "commits": 7,
+        "commits": 6,
         "prs": 1,
         "reviews": 3,
         "issues": 0,
-        "total": 11
+        "total": 10
       },
       "year": {
-        "commits": 17,
+        "commits": 16,
         "prs": 2,
         "reviews": 3,
         "issues": 0,
-        "total": 22
+        "total": 21
       }
     },
     {
-      "name": "BaDaaS/puzzle",
-      "url": "https://github.com/BaDaaS/puzzle",
+      "name": "dannywillems/vdf.rs",
+      "url": "https://github.com/dannywillems/vdf.rs",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -708,8 +676,8 @@
       }
     },
     {
-      "name": "dannywillems/vdf.rs",
-      "url": "https://github.com/dannywillems/vdf.rs",
+      "name": "BaDaaS/puzzle",
+      "url": "https://github.com/BaDaaS/puzzle",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -772,38 +740,6 @@
       }
     },
     {
-      "name": "MinaProtocol/docs2",
-      "url": "https://github.com/MinaProtocol/docs2",
-      "week": {
-        "commits": 1,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "month": {
-        "commits": 1,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "quarter": {
-        "commits": 3,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 3
-      },
-      "year": {
-        "commits": 11,
-        "prs": 1,
-        "reviews": 6,
-        "issues": 0,
-        "total": 18
-      }
-    },
-    {
       "name": "dannywillems/r2p2",
       "url": "https://github.com/dannywillems/r2p2",
       "week": {
@@ -836,6 +772,38 @@
       }
     },
     {
+      "name": "MinaProtocol/docs2",
+      "url": "https://github.com/MinaProtocol/docs2",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 2,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 2
+      },
+      "year": {
+        "commits": 10,
+        "prs": 1,
+        "reviews": 6,
+        "issues": 0,
+        "total": 17
+      }
+    },
+    {
       "name": "o1-labs/seeds",
       "url": "https://github.com/o1-labs/seeds",
       "week": {
@@ -855,9 +823,9 @@
       "quarter": {
         "commits": 0,
         "prs": 1,
-        "reviews": 0,
+        "reviews": 1,
         "issues": 0,
-        "total": 1
+        "total": 2
       },
       "year": {
         "commits": 0,
@@ -865,38 +833,6 @@
         "reviews": 12,
         "issues": 2,
         "total": 16
-      }
-    },
-    {
-      "name": "BaDaaS/badaas.github.io",
-      "url": "https://github.com/BaDaaS/badaas.github.io",
-      "week": {
-        "commits": 10,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 3,
-        "total": 13
-      },
-      "month": {
-        "commits": 10,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 3,
-        "total": 13
-      },
-      "quarter": {
-        "commits": 10,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 3,
-        "total": 13
-      },
-      "year": {
-        "commits": 12,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 3,
-        "total": 15
       }
     },
     {
@@ -1028,6 +964,38 @@
       }
     },
     {
+      "name": "dannywillems/resize-logo",
+      "url": "https://github.com/dannywillems/resize-logo",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 11,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 11
+      }
+    },
+    {
       "name": "BaDaaS/web-learning",
       "url": "https://github.com/BaDaaS/web-learning",
       "week": {
@@ -1060,8 +1028,8 @@
       }
     },
     {
-      "name": "dannywillems/play-with-asyncio",
-      "url": "https://github.com/dannywillems/play-with-asyncio",
+      "name": "dannywillems/social-hubs",
+      "url": "https://github.com/dannywillems/social-hubs",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -1084,6 +1052,38 @@
         "total": 0
       },
       "year": {
+        "commits": 7,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 3,
+        "total": 10
+      }
+    },
+    {
+      "name": "dannywillems/bitcoin-rs",
+      "url": "https://github.com/dannywillems/bitcoin-rs",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 9,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 9
+      },
+      "year": {
         "commits": 9,
         "prs": 0,
         "reviews": 0,
@@ -1092,8 +1092,8 @@
       }
     },
     {
-      "name": "dannywillems/bitcoin-rs",
-      "url": "https://github.com/dannywillems/bitcoin-rs",
+      "name": "dannywillems/play-with-asyncio",
+      "url": "https://github.com/dannywillems/play-with-asyncio",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -1284,6 +1284,38 @@
       }
     },
     {
+      "name": "dannywillems/rust-async-await-course-example",
+      "url": "https://github.com/dannywillems/rust-async-await-course-example",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 4,
+        "prs": 0,
+        "reviews": 1,
+        "issues": 0,
+        "total": 5
+      },
+      "year": {
+        "commits": 4,
+        "prs": 0,
+        "reviews": 1,
+        "issues": 0,
+        "total": 5
+      }
+    },
+    {
       "name": "o1-labs/community-grants",
       "url": "https://github.com/o1-labs/community-grants",
       "week": {
@@ -1316,38 +1348,6 @@
       }
     },
     {
-      "name": "dannywillems/rust-async-await-course-example",
-      "url": "https://github.com/dannywillems/rust-async-await-course-example",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "year": {
-        "commits": 4,
-        "prs": 0,
-        "reviews": 1,
-        "issues": 0,
-        "total": 5
-      }
-    },
-    {
       "name": "o1-labs/mina-network-debugger",
       "url": "https://github.com/o1-labs/mina-network-debugger",
       "week": {
@@ -1358,11 +1358,11 @@
         "total": 0
       },
       "month": {
-        "commits": 0,
+        "commits": 1,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 1
       },
       "quarter": {
         "commits": 3,
@@ -1476,6 +1476,38 @@
       }
     },
     {
+      "name": "BaDaaS/badaas.github.io",
+      "url": "https://github.com/BaDaaS/badaas.github.io",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 2,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 2
+      }
+    },
+    {
       "name": "zingolabs/zaino",
       "url": "https://github.com/zingolabs/zaino",
       "week": {
@@ -1502,6 +1534,38 @@
       "year": {
         "commits": 1,
         "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 2
+      }
+    },
+    {
+      "name": "o1-labs/proof-systems-vendors",
+      "url": "https://github.com/o1-labs/proof-systems-vendors",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 2,
         "reviews": 0,
         "issues": 0,
         "total": 2
@@ -1537,6 +1601,38 @@
         "reviews": 0,
         "issues": 0,
         "total": 2
+      }
+    },
+    {
+      "name": "dannywillems/cargo-example-async-await",
+      "url": "https://github.com/dannywillems/cargo-example-async-await",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 1,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      },
+      "year": {
+        "commits": 1,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
       }
     },
     {
@@ -1636,38 +1732,6 @@
       }
     },
     {
-      "name": "BaDaaS/scripts",
-      "url": "https://github.com/BaDaaS/scripts",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "year": {
-        "commits": 1,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
       "name": "dannywillems/steg-xai",
       "url": "https://github.com/dannywillems/steg-xai",
       "week": {
@@ -1700,8 +1764,8 @@
       }
     },
     {
-      "name": "dannywillems/cargo-example-async-await",
-      "url": "https://github.com/dannywillems/cargo-example-async-await",
+      "name": "BaDaaS/scripts",
+      "url": "https://github.com/BaDaaS/scripts",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -1734,38 +1798,6 @@
     {
       "name": "dannywillems/abitrusty",
       "url": "https://github.com/dannywillems/abitrusty",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "year": {
-        "commits": 1,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "dannywillems/resize-logo",
-      "url": "https://github.com/dannywillems/resize-logo",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -1894,38 +1926,6 @@
     {
       "name": "mirage/alcotest",
       "url": "https://github.com/mirage/alcotest",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "o1-labs/proof-systems-vendors",
-      "url": "https://github.com/o1-labs/proof-systems-vendors",
       "week": {
         "commits": 0,
         "prs": 0,
