@@ -1,0 +1,8 @@
+{
+  "hooks": {
+    "enabled": true,
+    "PostToolUse": {
+      "edit": "eslint --fix ${file}"
+    }
+  }
+}
