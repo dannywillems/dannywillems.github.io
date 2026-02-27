@@ -1,0 +1,25 @@
+stages:
+  - security
+  - report
+
+security_scan:
+  stage: security
+  image: ubuntu:latest
+  before_script:
+    - apt-get update && apt-get install -y curl git
+    - curl -fsSL https://claude.ai/install.sh | bash
+    - export PATH="$HOME/.local/bin:$PATH"
+  script:
+    - git diff $CI_MERGE_REQUEST_DIFF_BASE_SHA HEAD > changes.diff
+    - |
+      cat changes.diff | claude -p "analyze these changes for security vulnerabilities" \
+        --allowed-tools view,grep > security-report.txt
+    - cat security-report.txt
+  variables:
+    ANTHROPIC_API_KEY: $ANTHROPIC_API_KEY
+  only:
+    - merge_requests
+  artifacts:
+    reports:
+      security: security-report.txt
+    expire_in: 30 days

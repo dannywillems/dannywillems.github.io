@@ -154,6 +154,8 @@ what changes made it into v1.2.3?</code></pre>
 <p><strong>Piping:</strong></p>
 <pre><code>tail -f app.log | claude -p "analyze these logs"
 cat error.txt | claude -p "explain this error"</code></pre>
+
+<p><a href="/2026/01/16/claude-code-headless-automation.html">Read more: Headless mode and automation guide</a></p>
 </div>
 
 <h2 id="hooks">Hooks</h2>
