@@ -6,7 +6,7 @@
     <p class="center">
       Currently:
       <br />
-      Head of Cryptography (Architect) & Rust Node Team Lead @ <a href="https://o1labs.org">o1Labs</a>/Mina
+      Independent Cryptography Engineer & Researcher
       <br />
       Co-founder @ <a href="https://leakix.net">LeakIX</a>
     </p>
@@ -44,9 +44,10 @@
     everyone.
     With this mission in mind, I co-founded <a
     href="https://leakix.net">LeakIX</a> in 2021 with Gregory Boddin and we
-    aim to be the Internet red team. I am also a senior cryptography engineer at <a
-    href="https://o1labs.org">o1Labs</a>, a company catalyzing a new generation
-    of applications powered by zero-knowledge cryptography.
+    aim to be the Internet red team. I am also an independent cryptography
+    engineer and researcher. Previously, I was Head of Cryptography and led the
+    Rust Node team at <a href="https://o1labs.org">o1Labs</a>, working on
+    zero-knowledge cryptography for the Mina Protocol.
     <br />
     My current interest in cryptography is incrementally verifiable computation. I
     have also been interested in arithmetization-oriented cryptographic primitives.
