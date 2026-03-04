@@ -85,7 +85,7 @@
 
 {% include quotes.html %}
 
-## Recommended softwares
+## Recommended software
 
 - [KeepassXC](https://keepassxc.org/): see
   [my thread](https://twitter.com/dwillems42/status/1665316530035347457) on
