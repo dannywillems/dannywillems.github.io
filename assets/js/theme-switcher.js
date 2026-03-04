@@ -7,8 +7,8 @@
   'use strict';
 
   var STORAGE_KEY = 'site-theme';
-  var DEFAULT_THEME = 'hacker';
-  var VALID_THEMES = ['hacker', 'neon', 'minimal', 'twilight', 'paper'];
+  var DEFAULT_THEME = 'twilight';
+  var VALID_THEMES = ['neon', 'minimal', 'twilight', 'paper'];
 
   /**
    * Get the saved theme from localStorage

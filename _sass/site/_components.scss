@@ -1,10 +1,10 @@
 // =============================================================================
 // COMPONENT STYLES
-// Reusable UI components - preserves original hacker theme styles
+// Reusable UI components using CSS custom properties
 // =============================================================================
 
 // -----------------------------------------------------------------------------
-// Portrait (applies to all themes)
+// Portrait
 // -----------------------------------------------------------------------------
 
 .portrait {
@@ -14,7 +14,7 @@
 }
 
 // -----------------------------------------------------------------------------
-// Logo (applies to all themes)
+// Logo
 // -----------------------------------------------------------------------------
 
 .logo-link {
@@ -32,7 +32,7 @@
 }
 
 // -----------------------------------------------------------------------------
-// Publications (applies to all themes - uses hardcoded colors for hacker)
+// Publications
 // -----------------------------------------------------------------------------
 
 .publications {
@@ -69,43 +69,27 @@
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  color: #b5e853;
+  color: var(--accent);
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
   user-select: none;
   background-color: transparent;
-  border: 1px solid #b5e853;
+  border: 1px solid var(--accent);
   padding: $spacing-sm $spacing-md;
   font-size: $font-size-base;
   border-radius: $radius-sm;
-  transition: color $transition-fast, background-color $transition-fast, border-color $transition-fast;
+  transition: color $transition-fast,
+    background-color $transition-fast,
+    border-color $transition-fast;
   padding-left: 10px;
-
-  &:hover {
-    color: #1a1a1a;
-    background-color: #b5e853;
-    border-color: #b5e853;
-    text-decoration: none;
-  }
-
-  &:active {
-    color: #1a1a1a;
-    background-color: #9ccc3d;
-    border-color: #9ccc3d;
-  }
-}
-
-// Non-hacker theme publication links
-html:not(.theme-hacker) .publication-link {
-  color: var(--accent);
-  border-color: var(--accent);
 
   &:hover {
     color: var(--bg-primary);
     background-color: var(--accent);
     border-color: var(--accent);
+    text-decoration: none;
   }
 
   &:active {
@@ -116,7 +100,7 @@ html:not(.theme-hacker) .publication-link {
 }
 
 // -----------------------------------------------------------------------------
-// CV / Employment (applies to all themes - uses hardcoded colors for hacker)
+// CV / Employment
 // -----------------------------------------------------------------------------
 
 .cv-jobs {
@@ -126,7 +110,7 @@ html:not(.theme-hacker) .publication-link {
 .cv-job {
   margin-bottom: $spacing-lg;
   padding-left: $spacing-md;
-  border-left: 2px solid #444;
+  border-left: 2px solid var(--border-light);
 }
 
 .cv-employer {
@@ -135,7 +119,7 @@ html:not(.theme-hacker) .publication-link {
   margin-bottom: $spacing-sm;
 
   a {
-    color: #b5e853;
+    color: var(--accent);
     text-decoration: none;
 
     &:hover {
@@ -163,7 +147,7 @@ html:not(.theme-hacker) .publication-link {
 
 .cv-position-multi {
   padding-left: $spacing-md;
-  border-left: 1px solid #666;
+  border-left: 1px solid var(--text-tertiary);
   margin-bottom: $spacing-xs;
 }
 
@@ -173,7 +157,7 @@ html:not(.theme-hacker) .publication-link {
 
 .cv-dates {
   font-size: $font-size-sm;
-  color: #888;
+  color: var(--text-secondary);
 
   @media only screen and (max-width: $breakpoint-md) {
     font-size: $font-size-sm;
@@ -183,7 +167,7 @@ html:not(.theme-hacker) .publication-link {
 .cv-description {
   font-size: 0.95rem;
   margin-top: $spacing-sm;
-  color: #ccc;
+  color: var(--text-primary);
 
   p {
     margin: $spacing-xs 0;
@@ -192,29 +176,6 @@ html:not(.theme-hacker) .publication-link {
 
 .cv-links {
   margin-top: $spacing-sm;
-}
-
-// Non-hacker theme CV overrides
-html:not(.theme-hacker) {
-  .cv-job {
-    border-left-color: var(--border-light);
-  }
-
-  .cv-employer a {
-    color: var(--accent);
-  }
-
-  .cv-position-multi {
-    border-left-color: var(--text-tertiary);
-  }
-
-  .cv-dates {
-    color: var(--text-secondary);
-  }
-
-  .cv-description {
-    color: var(--text-primary);
-  }
 }
 
 // -----------------------------------------------------------------------------
@@ -228,7 +189,7 @@ html:not(.theme-hacker) {
 .cv-edu {
   margin-bottom: $spacing-lg;
   padding-left: $spacing-md;
-  border-left: 2px solid #444;
+  border-left: 2px solid var(--border-light);
 }
 
 .cv-institution {
@@ -237,7 +198,7 @@ html:not(.theme-hacker) {
   margin-bottom: $spacing-sm;
 
   a {
-    color: #b5e853;
+    color: var(--accent);
     text-decoration: none;
 
     &:hover {
@@ -260,24 +221,13 @@ html:not(.theme-hacker) {
   }
 }
 
-// Non-hacker theme education overrides
-html:not(.theme-hacker) {
-  .cv-edu {
-    border-left-color: var(--border-light);
-  }
-
-  .cv-institution a {
-    color: var(--accent);
-  }
-}
-
 // -----------------------------------------------------------------------------
-// Footer (applies to all themes - uses hardcoded colors for hacker)
+// Footer
 // -----------------------------------------------------------------------------
 
 .site-footer {
-  background-color: #1a1a1a;
-  border-top: 1px solid #333;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border);
   padding: $spacing-xl 0 $spacing-md;
   margin-top: $spacing-2xl;
 
@@ -290,16 +240,16 @@ html:not(.theme-hacker) {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: $spacing-sm;
-    color: #b5e853;
+    color: var(--accent);
   }
 
   a {
-    color: #ccc;
+    color: var(--text-primary);
     display: block;
     margin-bottom: $spacing-sm;
 
     &:hover {
-      color: #b5e853;
+      color: var(--accent);
       text-decoration: none;
     }
   }
@@ -336,12 +286,12 @@ html:not(.theme-hacker) {
 }
 
 .footer-bottom {
-  border-top: 1px solid #333;
+  border-top: 1px solid var(--border);
   padding-top: $spacing-md;
   text-align: center;
 
   p {
-    color: #666;
+    color: var(--text-tertiary);
     font-size: $font-size-sm;
     margin: 0;
   }
@@ -357,13 +307,13 @@ html:not(.theme-hacker) {
 
 .contributions-updated {
   font-size: $font-size-sm;
-  color: #666;
+  color: var(--text-tertiary);
   margin-bottom: $spacing-lg;
 }
 
 .contributions-summary h3,
 .contributions-repos h3 {
-  color: #b5e853;
+  color: var(--accent);
   margin-bottom: $spacing-md;
   font-size: 1.1rem;
 }
@@ -376,15 +326,15 @@ html:not(.theme-hacker) {
 }
 
 .contributions-period {
-  background: #1a1a1a;
-  border: 1px solid #333;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
   border-radius: $radius-md;
   padding: $spacing-md;
 
   h4 {
     margin: 0 0 $spacing-sm 0;
     font-size: $font-size-sm;
-    color: #ccc;
+    color: var(--text-primary);
   }
 }
 
@@ -395,10 +345,10 @@ html:not(.theme-hacker) {
 
   .stat {
     font-size: $font-size-sm;
-    color: #888;
+    color: var(--text-secondary);
 
     strong {
-      color: #b5e853;
+      color: var(--accent);
       font-size: 1.1rem;
     }
   }
@@ -412,20 +362,20 @@ html:not(.theme-hacker) {
   th, td {
     padding: $spacing-sm;
     text-align: left;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--border);
   }
 
   th {
-    color: #b5e853;
+    color: var(--accent);
     font-weight: 600;
     font-size: $font-size-sm;
   }
 
   .repo-name a {
-    color: #ccc;
+    color: var(--text-primary);
 
     &:hover {
-      color: #b5e853;
+      color: var(--accent);
     }
   }
 
@@ -435,17 +385,17 @@ html:not(.theme-hacker) {
     .total {
       display: block;
       font-weight: 600;
-      color: #eee;
+      color: var(--text-primary);
     }
 
     .breakdown {
       display: block;
       font-size: $font-size-xs;
-      color: #666;
+      color: var(--text-tertiary);
     }
 
     .zero {
-      color: #444;
+      color: var(--border-light);
     }
   }
 
@@ -465,74 +415,7 @@ html:not(.theme-hacker) {
 .contributions-note {
   margin-top: $spacing-lg;
   font-size: $font-size-sm;
-  color: #666;
-}
-
-// Non-hacker theme contributions overrides
-html:not(.theme-hacker) {
-  .contributions-updated {
-    color: var(--text-tertiary);
-  }
-
-  .contributions-summary h3,
-  .contributions-repos h3 {
-    color: var(--accent);
-  }
-
-  .contributions-period {
-    background: var(--bg-secondary);
-    border-color: var(--border);
-
-    h4 {
-      color: var(--text-primary);
-    }
-  }
-
-  .contributions-stats {
-    .stat {
-      color: var(--text-secondary);
-
-      strong {
-        color: var(--accent);
-      }
-    }
-  }
-
-  .contributions-table {
-    th, td {
-      border-bottom-color: var(--border);
-    }
-
-    th {
-      color: var(--accent);
-    }
-
-    .repo-name a {
-      color: var(--text-primary);
-
-      &:hover {
-        color: var(--accent);
-      }
-    }
-
-    .repo-stat {
-      .total {
-        color: var(--text-primary);
-      }
-
-      .breakdown {
-        color: var(--text-tertiary);
-      }
-
-      .zero {
-        color: var(--border-light);
-      }
-    }
-  }
-
-  .contributions-note {
-    color: var(--text-tertiary);
-  }
+  color: var(--text-tertiary);
 }
 
 // -----------------------------------------------------------------------------
@@ -559,19 +442,19 @@ html:not(.theme-hacker) {
   flex-direction: column;
   align-items: center;
   padding: $spacing-md $spacing-xl;
-  background: #1a1a1a;
-  border: 1px solid #333;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
   border-radius: $radius-md;
 
   .stat-number {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #b5e853;
+    color: var(--accent);
   }
 
   .stat-label {
     font-size: $font-size-sm;
-    color: #888;
+    color: var(--text-secondary);
   }
 
   @media only screen and (max-width: $breakpoint-md) {
@@ -587,8 +470,8 @@ html:not(.theme-hacker) {
   margin-bottom: $spacing-xl;
 
   h3 {
-    color: #b5e853;
-    border-bottom: 1px solid #333;
+    color: var(--accent);
+    border-bottom: 1px solid var(--border);
     padding-bottom: $spacing-sm;
     margin-bottom: $spacing-md;
   }
@@ -605,18 +488,18 @@ html:not(.theme-hacker) {
 }
 
 .country-card {
-  background: #1a1a1a;
-  border: 1px solid #333;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
   border-radius: $radius-md;
   padding: $spacing-md;
   transition: border-color $transition-fast;
 
   &:hover {
-    border-color: #b5e853;
+    border-color: var(--accent);
   }
 
   &.favorite {
-    border-left: 3px solid #b5e853;
+    border-left: 3px solid var(--accent);
   }
 }
 
@@ -629,74 +512,24 @@ html:not(.theme-hacker) {
 
 .country-name {
   font-weight: 600;
-  color: #eee;
+  color: var(--text-primary);
 }
 
 .country-year {
   font-size: $font-size-sm;
-  color: #666;
+  color: var(--text-tertiary);
 }
 
 .country-visits {
   font-size: $font-size-sm;
-  color: #888;
+  color: var(--text-secondary);
   margin-bottom: $spacing-xs;
 }
 
 .country-notes {
   font-size: $font-size-sm;
-  color: #aaa;
+  color: var(--text-secondary);
   font-style: italic;
-}
-
-// Non-hacker theme countries overrides
-html:not(.theme-hacker) {
-  .countries-stat {
-    background: var(--bg-secondary);
-    border-color: var(--border);
-
-    .stat-number {
-      color: var(--accent);
-    }
-
-    .stat-label {
-      color: var(--text-secondary);
-    }
-  }
-
-  .countries-continent h3 {
-    color: var(--accent);
-    border-bottom-color: var(--border);
-  }
-
-  .country-card {
-    background: var(--bg-secondary);
-    border-color: var(--border);
-
-    &:hover {
-      border-color: var(--accent);
-    }
-
-    &.favorite {
-      border-left-color: var(--accent);
-    }
-  }
-
-  .country-name {
-    color: var(--text-primary);
-  }
-
-  .country-year {
-    color: var(--text-tertiary);
-  }
-
-  .country-visits {
-    color: var(--text-secondary);
-  }
-
-  .country-notes {
-    color: var(--text-secondary);
-  }
 }
 
 // Countries Map
@@ -706,8 +539,8 @@ html:not(.theme-hacker) {
 
 .countries-map {
   position: relative;
-  background: #111;
-  border: 1px solid #333;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
   border-radius: $radius-md;
   padding: $spacing-md;
   overflow: hidden;
@@ -728,21 +561,12 @@ html:not(.theme-hacker) {
   }
 }
 
-html:not(.theme-hacker) .countries-map {
-  background: var(--bg-tertiary);
-  border-color: var(--border);
-}
-
 .map-legend {
   display: flex;
   gap: $spacing-lg;
   justify-content: center;
   margin-top: $spacing-md;
   font-size: $font-size-sm;
-  color: #888;
-}
-
-html:not(.theme-hacker) .map-legend {
   color: var(--text-secondary);
 }
 
@@ -757,18 +581,10 @@ html:not(.theme-hacker) .map-legend {
 }
 
 .legend-visited {
-  background: #b5e853;
-}
-
-html:not(.theme-hacker) .legend-visited {
   background: var(--accent);
 }
 
 .legend-not-visited {
-  background: #333;
-}
-
-html:not(.theme-hacker) .legend-not-visited {
   background: var(--border);
 }
 
@@ -822,38 +638,25 @@ html:not(.theme-hacker) .legend-not-visited {
   flex-direction: column;
   align-items: center;
   padding: $spacing-md $spacing-xl;
-  background: #1a1a1a;
-  border: 1px solid #333;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
   border-radius: $radius-md;
 
   .stat-number {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #b5e853;
-  }
-
-  .stat-label {
-    font-size: $font-size-sm;
-    color: #888;
-  }
-}
-
-html:not(.theme-hacker) .cities-stat {
-  background: var(--bg-secondary);
-  border-color: var(--border);
-
-  .stat-number {
     color: var(--accent);
   }
 
   .stat-label {
+    font-size: $font-size-sm;
     color: var(--text-secondary);
   }
 }
 
 .cities-map-container {
   height: 500px;
-  border: 1px solid #333;
+  border: 1px solid var(--border);
   border-radius: $radius-md;
   margin-bottom: $spacing-xl;
 
@@ -862,15 +665,11 @@ html:not(.theme-hacker) .cities-stat {
   }
 }
 
-html:not(.theme-hacker) .cities-map-container {
-  border-color: var(--border);
-}
-
 .cities-list {
   margin-top: $spacing-xl;
 
   h3 {
-    color: #b5e853;
+    color: var(--accent);
     margin-bottom: $spacing-md;
   }
 
@@ -881,45 +680,23 @@ html:not(.theme-hacker) .cities-map-container {
 
   li {
     padding: $spacing-sm 0;
-    border-bottom: 1px solid #333;
-  }
-}
-
-html:not(.theme-hacker) .cities-list {
-  h3 {
-    color: var(--accent);
-  }
-
-  li {
-    border-bottom-color: var(--border);
+    border-bottom: 1px solid var(--border);
   }
 }
 
 .city-country {
-  color: #888;
-  font-size: $font-size-sm;
-}
-
-html:not(.theme-hacker) .city-country {
   color: var(--text-secondary);
+  font-size: $font-size-sm;
 }
 
 .city-date {
-  color: #666;
-  font-size: $font-size-sm;
-}
-
-html:not(.theme-hacker) .city-date {
   color: var(--text-tertiary);
+  font-size: $font-size-sm;
 }
 
 .city-notes {
-  color: #aaa;
+  color: var(--text-secondary);
   font-size: $font-size-sm;
   font-style: italic;
   margin: $spacing-xs 0 0 0;
-}
-
-html:not(.theme-hacker) .city-notes {
-  color: var(--text-secondary);
 }

@@ -1,4 +1,4 @@
-theme: jekyll-theme-hacker
+# No gem theme - fully custom layouts and SCSS
 title: Danny Willems
 author:
   name: Danny Willems
