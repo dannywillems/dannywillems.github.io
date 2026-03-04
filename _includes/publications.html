@@ -3,7 +3,7 @@
   <div class="publication-item">
     <p class="publication-title">{{ pub.title | strip_newlines | strip }}</p>
     {% if pub.description %}
-      <p class="publication-description">{{ pub.description | markdownify }}</p>
+      <p class="publication-description">{{ pub.description }}</p>
     {% endif %}
     {% if pub.authors %}
       <p class="publication-authors">{{ pub.authors | strip_newlines | strip }}</p>
