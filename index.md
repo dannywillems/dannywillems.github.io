@@ -57,13 +57,6 @@
     Nowadays, I like getting my hands dirty coding in C, OCaml, Rust and read
     assembly code. Constantly requiring to be in an intellectually stimulating
     environment.
-    <br />
-    Regarding my personality, I am a curious person, I appreciate debating
-    respectfully. I enjoy being surrounded by self-minded and respectful people,
-    but I need to be in my world more than the average. In public, I might act
-    as an introvert, but you will see sparkles in my eyes if you start talking
-    about maths, computer sciences or sciences in general.
-    <br />
   </div>
 </div>
 
