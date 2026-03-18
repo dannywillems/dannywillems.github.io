@@ -20,17 +20,19 @@
 
     Current projects:
 
-    - **Papyrus**: a pipeline to convert, validate, and extract
-      structured mathematical knowledge from cryptographic research
-      papers, building toward the first formally verified knowledge
-      base of the field.
-    - **cryptography.academy**: a collaborative platform to formally
-      verify the world's cryptographic knowledge, transforming
-      scattered research PDFs into a queryable, cross-referenced,
-      machine-checkable knowledge graph.
-    - **LeakIX**: co-founded attack surface management platform
-      combining a search engine indexing public information and an
-      open reporting platform for vulnerability disclosure.
+    - **[Papyrus](https://papyrus.badaas.eu)**: a pipeline to
+      convert, validate, and extract structured mathematical
+      knowledge from cryptographic research papers, building toward
+      the first formally verified knowledge base of the field.
+    - **[cryptography.academy](https://cryptography.academy)**: a
+      collaborative platform to formally verify the world's
+      cryptographic knowledge, transforming scattered research PDFs
+      into a queryable, cross-referenced, machine-checkable
+      knowledge graph.
+    - **[LeakIX](https://leakix.net)**: co-founded attack surface
+      management platform combining a search engine indexing public
+      information and an open reporting platform for vulnerability
+      disclosure.
   links:
     - label: BaDaaS
       url: https://badaas.be
