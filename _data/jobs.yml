@@ -1,6 +1,23 @@
 # Employment history
 # Supports multiple positions per employer via 'positions' array
 
+- employer: BaDaaS
+  url: https://badaas.be
+  positions:
+    - title: Independent Researcher & Engineer
+      start: March 2026
+      end: Present
+  description: |
+    Independent researcher and engineer working on Papyrus,
+    cryptography.academy, and LeakIX.
+  links:
+    - label: BaDaaS
+      url: https://badaas.be
+    - label: cryptography.academy
+      url: https://cryptography.academy
+    - label: LeakIX
+      url: https://leakix.net
+
 - employer: o1Labs
   url: https://o1labs.org
   positions:
