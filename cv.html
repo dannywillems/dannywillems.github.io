@@ -13,6 +13,7 @@ permalink: /cv/
     <span><a href="https://github.com/dannywillems">github.com/dannywillems</a></span>
     <span><a href="https://linkedin.com/in/bedannywillems">LinkedIn</a></span>
     <span><a href="https://twitter.com/dwillems42">Twitter</a></span>
+    <span><a href="https://www.iacr.org/cryptodb/data/author.php?authorkey=12524">IACR</a></span>
   </div>
   <p class="cv-note">For the most up-to-date overview of my work, see my GitHub, LinkedIn, and Twitter profiles.</p>
 </header>
@@ -33,7 +34,9 @@ permalink: /cv/
     cryptographic infrastructure and the protocol itself at Nomadic
     Labs (Tezos), and
     co-authored peer-reviewed publications on arithmetization-oriented
-    hash functions and PlonK optimizations. Currently running BaDaaS,
+    hash functions and PlonK optimizations. Research interests include
+    SNARK-friendly primitives based on elliptic curves and
+    incrementally verifiable computation. Currently running BaDaaS,
     an independent mathematics research boutique, building tools to
     formally verify the world's cryptographic knowledge.
   </p>
@@ -41,7 +44,38 @@ permalink: /cv/
 
 <section class="cv-section">
   <h2>Professional Experience</h2>
+  {% assign early_started = false %}
   {% for job in site.data.jobs %}
+  {% if job.early %}
+    {% unless early_started %}
+      {% assign early_started = true %}
+  <details class="cv-early-experience">
+    <summary>Earlier experience (2015-2016)</summary>
+    {% endunless %}
+    <div class="cv-entry">
+      <div class="cv-entry-employer">
+        {% if job.url %}<a href="{{ job.url }}">{{ job.employer }}</a>{% else %}{{ job.employer }}{% endif %}
+      </div>
+      {% for position in job.positions %}
+      <div class="cv-entry-header">
+        <span class="cv-entry-title">{{ position.title }}</span>
+        <span class="cv-entry-dates">{{ position.start }} - {{ position.end }}</span>
+      </div>
+      {% endfor %}
+      {% if job.description %}
+      <div class="cv-entry-description">
+        {{ job.description | markdownify }}
+      </div>
+      {% endif %}
+      {% if job.links %}
+      <div class="cv-pub-venue">
+        {% for link in job.links %}
+          <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} | {% endunless %}
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  {% else %}
   <div class="cv-entry">
     <div class="cv-entry-employer">
       {% if job.url %}<a href="{{ job.url }}">{{ job.employer }}</a>{% else %}{{ job.employer }}{% endif %}
@@ -65,7 +99,11 @@ permalink: /cv/
     </div>
     {% endif %}
   </div>
+  {% endif %}
   {% endfor %}
+  {% if early_started %}
+  </details>
+  {% endif %}
 </section>
 
 <section class="cv-section">
@@ -126,7 +164,7 @@ permalink: /cv/
 
 <section class="cv-section">
   <h2>Notable Open Source Contributions</h2>
-  {% for project in site.data.opensource limit:5 %}
+  {% for project in site.data.opensource %}
   <div class="cv-pub">
     <div class="cv-pub-title">{{ project.title }}</div>
     {% if project.links %}
