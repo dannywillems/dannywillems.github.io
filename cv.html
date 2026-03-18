@@ -33,6 +33,13 @@ permalink: /cv/
       {{ job.description | markdownify }}
     </div>
     {% endif %}
+    {% if job.links %}
+    <div class="cv-pub-venue">
+      {% for link in job.links %}
+        <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} | {% endunless %}
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
   {% endfor %}
 </section>
