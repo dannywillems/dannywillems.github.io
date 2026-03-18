@@ -61,6 +61,10 @@
   </div>
 </div>
 
+## Experience
+
+{% include cv-jobs.html %}
+
 ## Research publications
 
 {% include publications.html %}
@@ -72,10 +76,6 @@
 ## Open source software contributions
 
 {% include opensource.html %}
-
-## Experience
-
-{% include cv-jobs.html %}
 
 ## Education
 
