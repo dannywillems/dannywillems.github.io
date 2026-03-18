@@ -1,5 +1,45 @@
 <div class="cv-jobs">
+{% assign early_started = false %}
 {% for job in site.data.jobs %}
+  {% if job.early %}
+    {% unless early_started %}
+      {% assign early_started = true %}
+  <details class="cv-early-experience">
+    <summary>Earlier experience (2015-2016)</summary>
+    {% endunless %}
+    <div class="cv-job">
+      <div class="cv-employer">
+        {% if job.url %}
+          <a href="{{ job.url }}">{{ job.employer }}</a>
+        {% else %}
+          {{ job.employer }}
+        {% endif %}
+      </div>
+
+      <div class="cv-positions">
+        {% for position in job.positions %}
+          <div class="cv-position{% if job.positions.size > 1 %} cv-position-multi{% endif %}">
+            <span class="cv-title">{{ position.title }}</span>
+            <span class="cv-dates">{{ position.start }} - {{ position.end }}</span>
+          </div>
+        {% endfor %}
+      </div>
+
+      {% if job.description %}
+        <div class="cv-description">
+          {{ job.description | markdownify }}
+        </div>
+      {% endif %}
+
+      {% if job.links %}
+        <div class="cv-links">
+          {% for link in job.links %}
+            <a class="publication-link" href="{{ link.url }}">{{ link.label }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  {% else %}
   <div class="cv-job">
     <div class="cv-employer">
       {% if job.url %}
@@ -32,5 +72,9 @@
       </div>
     {% endif %}
   </div>
+  {% endif %}
 {% endfor %}
+{% if early_started %}
+  </details>
+{% endif %}
 </div>
