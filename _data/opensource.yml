@@ -1,5 +1,65 @@
 # Open source software contributions
 
+- title: "cryptography.academy: formally verified cryptographic knowledge base (2025 - Present)"
+  description: |
+    A collaborative platform to formally verify the world's
+    cryptographic knowledge. Web frontend for the Papyrus pipeline,
+    presenting extracted and verified cryptographic knowledge in a
+    unified, searchable interface.
+  links:
+    - label: GitHub
+      url: https://github.com/BaDaaS/cryptography.academy
+    - label: Website
+      url: https://cryptography.academy
+
+- title: "mina-rust: full rewrite of the Mina Protocol node in Rust (2025 - 2026)"
+  description: |
+    Led the full rewrite of the Mina Protocol node from OCaml to
+    Rust. Mina is a layer-1 blockchain using zero-knowledge proofs
+    for succinctness. The Rust implementation aims to improve
+    performance, maintainability, and developer accessibility.
+  links:
+    - label: GitHub
+      url: https://github.com/o1-labs/mina-rust
+
+- title: "proof-systems: zero-knowledge proof systems library at o1Labs (2023 - 2026)"
+  description: |
+    Contributions to the proof-systems library used by the Mina
+    Protocol. Includes work on Kimchi (the PlonK-based prover),
+    custom gates, and lookups.
+  links:
+    - label: GitHub
+      url: https://github.com/o1-labs/proof-systems
+
+- title: "o1VM: a zkVM for MIPS (2023 - 2025)"
+  description: |
+    A general-purpose zkVM which can be used to prove the correct
+    execution of MIPS programs. Implemented the RISC-V interpreter
+    and focused on the folding aspect of the proof system. Built as
+    a team effort at o1Labs.
+  links:
+    - label: GitHub
+      url: https://github.com/o1-labs/proof-systems/tree/master/o1vm
+
+- title: "Arrabbiata: a folding scheme for arbitrary custom gates and degrees (2024 - 2025)"
+  description: |
+    Designed and started building Arrabbiata, a novel folding scheme
+    supporting arbitrary custom gates and degrees. Part of the
+    proof-systems repository at o1Labs.
+  links:
+    - label: GitHub
+      url: https://github.com/o1-labs/proof-systems/tree/master/arrabbiata
+
+- title: "Pickles: recursion layer for the Mina Protocol (2023 - 2025)"
+  description: |
+    Contributions to Pickles, the recursion layer used in Mina
+    based on Halo2 (Plonk-ish implementation of Halo). Pickles
+    enables the succinct blockchain property that makes Mina
+    unique.
+  links:
+    - label: GitHub
+      url: https://github.com/MinaProtocol/mina/tree/compatible/src/lib/crypto/pickles
+
 - title: "Octez: an OCaml implementation of the Tezos protocol (Dec 2019 - Present)"
   description: |
     Tezos is a blockchain that offers both consensus and meta-consensus, by which we
