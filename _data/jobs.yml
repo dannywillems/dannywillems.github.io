@@ -114,10 +114,11 @@
       start: 2020
       end: 2023
   description: |
-    Nomadic Labs are Tezos blockchain experts. Working on the core development,
-    evolution and adoption of the Tezos protocol in BENELUX.
-    Working in the cryptography team, focusing on the development on zero-knowledge
-    protocols, mainly the project Epoxy, a validity rollup for the Tezos protocol.
+    Nomadic Labs are Tezos blockchain experts. Working on the core
+    development, evolution and adoption of the Tezos protocol in
+    BENELUX. Contributed to the protocol itself and worked in the
+    cryptography team, focusing on zero-knowledge protocols, mainly
+    Epoxy, a validity rollup for the Tezos protocol.
   links:
     - label: Cryptography team website
       url: https://research-development.nomadic-labs.com/files/cryptography.html
