@@ -24,11 +24,10 @@
       convert, validate, and extract structured mathematical
       knowledge from cryptographic research papers, building toward
       the first formally verified knowledge base of the field.
-    - **[cryptography.academy](https://cryptography.academy)**: a
-      collaborative platform to formally verify the world's
-      cryptographic knowledge, transforming scattered research PDFs
-      into a queryable, cross-referenced, machine-checkable
-      knowledge graph.
+    - **[cryptography.academy](https://cryptography.academy)**: the
+      web frontend for the Papyrus pipeline, presenting all
+      extracted and verified cryptographic knowledge in a unified,
+      searchable interface.
     - **[LeakIX](https://leakix.net)**: co-founded attack surface
       management platform combining a search engine indexing public
       information and an open reporting platform for vulnerability
