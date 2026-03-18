@@ -16,20 +16,20 @@
 
   <div class="countries-map-container">
     <style>
-      /* Default: all countries gray */
+      /* Default: all countries use theme border color */
       .countries-map svg path,
       .countries-map svg g {
-        fill: #333;
-        stroke: #1a1a1a;
+        fill: var(--border);
+        stroke: var(--bg-primary);
         stroke-width: 0.5;
         transition: fill 0.2s ease;
       }
-      /* Visited countries: green */
+      /* Visited countries: theme accent */
       {% for country in countries %}
       .countries-map svg #{{ country.code | downcase }},
       .countries-map svg #{{ country.code | downcase }} path,
       .countries-map svg #{{ country.code | downcase }} .mainland {
-        fill: #b5e853;
+        fill: var(--accent);
       }
       {% endfor %}
     </style>

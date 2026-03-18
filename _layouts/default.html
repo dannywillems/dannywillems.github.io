@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}" class="theme-hacker">
+<html lang="{{ site.lang | default: "en-US" }}" class="theme-twilight">
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,14 +14,13 @@
     <!-- Theme initialization (prevents FOUC) -->
     <script>
       (function() {
-        var theme = localStorage.getItem('site-theme') || 'hacker';
-        var validThemes = ['hacker', 'neon', 'minimal', 'twilight', 'paper'];
-        if (validThemes.indexOf(theme) === -1) theme = 'hacker';
+        var theme = localStorage.getItem('site-theme') || 'twilight';
+        var validThemes = ['neon', 'minimal', 'twilight', 'paper'];
+        if (validThemes.indexOf(theme) === -1) theme = 'twilight';
         document.documentElement.className = 'theme-' + theme;
       })();
     </script>
 
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
     <!-- Favicons -->
@@ -32,15 +31,17 @@
     <link rel="icon" type="image/png" sizes="192x192" href="{{ '/android-chrome-192x192.png' | relative_url }}">
     <link rel="icon" type="image/png" sizes="512x512" href="{{ '/android-chrome-512x512.png' | relative_url }}">
 
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
+    <script>
+    MathJax = {
+      tex: {
         inlineMath: [['$','$'], ['\\(','\\)']],
         processEscapes: true
       }
-    });
+    };
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
 {% seo %}
   </head>
 
@@ -56,35 +57,17 @@
           <h2>
               {{ site.description | default: site.github.project_tagline }}
           </h2>
-        <div>
-          <a href="/cv/" class="btn">
-              Resume (PDF)
-          </a>
-          <a href="/contributions/" class="btn">
-              Contributions
-          </a>
-          <a href="/#research-publications" class="btn">
-              Research Publications
-          </a>
-          <a href="/#public-talks" class="btn">
-              Public Talks
-          </a>
-          <a href="/#open-source-software-contributions" class="btn">
-              Open source software contributions
-          </a>
-          <a href="/#experience" class="btn">
-              Experience
-          </a>
-          <a href="/#education" class="btn">
-              Education
-          </a>
-          <a href="/blog" class="btn">
-              Blog
-          </a>
-          <a href="/#recommended-softwares" class="btn">
-              Recommended softwares
-          </a>
-        </div>
+        <nav class="header-nav">
+          <a href="/cv/" class="btn">Resume (PDF)</a>
+          <a href="/contributions/" class="btn">Contributions</a>
+          <a href="/#research-publications" class="btn">Research Publications</a>
+          <a href="/#public-talks" class="btn">Public Talks</a>
+          <a href="/#open-source-software-contributions" class="btn">Open Source</a>
+          <a href="/#experience" class="btn">Experience</a>
+          <a href="/#education" class="btn">Education</a>
+          <a href="/blog" class="btn">Blog</a>
+          <a href="/#recommended-software" class="btn">Recommended Software</a>
+        </nav>
       </div>
     </header>
 

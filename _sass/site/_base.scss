@@ -1,10 +1,10 @@
 // =============================================================================
 // BASE STYLES
-// Only applies to non-hacker themes to preserve original design
+// Global reset and typography using CSS custom properties
 // =============================================================================
 
 // -----------------------------------------------------------------------------
-// Text Alignment Utilities (applies to all themes)
+// Text Alignment Utilities
 // -----------------------------------------------------------------------------
 
 .left {
@@ -26,11 +26,10 @@
 }
 
 // -----------------------------------------------------------------------------
-// Non-Hacker Theme Base Styles
-// These override the default theme styles for alternative themes
+// Base Styles
 // -----------------------------------------------------------------------------
 
-html:not(.theme-hacker) {
+html {
   background: var(--bg-primary);
   color: var(--text-primary);
   transition: background $transition-slow, color $transition-slow;
@@ -39,6 +38,7 @@ html:not(.theme-hacker) {
     background: var(--bg-primary);
     color: var(--text-primary);
     font-family: $font-sans;
+    line-height: 1.5;
   }
 
   // Typography
@@ -114,7 +114,7 @@ html:not(.theme-hacker) {
     color: var(--bg-primary);
   }
 
-  // List bullets - remove custom image for non-hacker themes
+  // List bullets
   ul li {
     list-style-image: none;
     list-style-type: disc;

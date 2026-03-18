@@ -1,0 +1,8 @@
+{
+  "hooks": {
+    "enabled": true,
+    "PostToolUse": {
+      "edit": "prettier --write ${file}"
+    }
+  }
+}

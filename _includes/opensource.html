@@ -3,7 +3,7 @@
   <div class="publication-item">
     <p class="publication-title">{{ project.title }}</p>
     {% if project.description %}
-      <p class="publication-description">{{ project.description | markdownify }}</p>
+      <p class="publication-description">{{ project.description }}</p>
     {% endif %}
     {% if project.links %}
       <div class="publication-links">

@@ -18,7 +18,7 @@
     href="https://datatracker.ietf.org/doc/draft-irtf-cfrg-hash-to-curve/">this
     specification</a> and the pippenger algorithm for
     fast multi scalar exponentiation, operations over the target group of the
-    pairing (GT), written additively, and pairing from $G1 x G2 to GT$.
+    pairing (GT), written additively, and pairing from \(G1 \times G2 \to GT\).
     Notable users include Octez, an OCaml implementation of the Tezos
     protocol to allow arithmetic operations over BLS12-381 in the smart
     contract language Michelson.
@@ -97,7 +97,7 @@
 - title: "ocaml-ff: Finite Field library in OCaml (April 2020 - Present)"
   description: |
     Ff provides module types to describe (prime) finite fields
-    $\mathbb{F}_{p^n}$ and provides functors to easily instantiate
+    \(\mathbb{F}_{p^n}\) and provides functors to easily instantiate
     implementations.
   links:
     - label: GitLab
