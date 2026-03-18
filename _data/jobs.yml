@@ -13,10 +13,7 @@
     Currently specialized in cryptography, formal verification, and
     distributed systems. Consulting, research, and engineering for
     protocol design, cryptographic library development, and security
-    auditing. Notable past contributions include core cryptography
-    work on the Mina Protocol (zero-knowledge proofs, leading a
-    team of up to 5 engineers) and the Tezos blockchain (validity
-    rollups, pairing-based cryptography).
+    auditing.
 
     Current projects:
 
@@ -94,15 +91,20 @@
       start: 2021
       end: Present
   description: |
-    LeakIX is the first platform combining a search engine indexing public
-    information by scanning Internet and an open reporting platform linked to the results.
-    We intent to provide a preemptive solution by trusting individual researchers
-    and security companies on the most sensible data we index by delivering a clear
-    report on the incidents, we also help to identify what information has/could be
-    affected and how to resolve the issue.
-    Our first goal is one of prevention, all the voluntary reports are free
-    and no sales attempts are made on LeakIX's side.
-    We ban sales attempt that would take advantage of the issue to sell shady security services.
+    Co-founded with Gregory Boddin. LeakIX is an attack surface
+    management platform combining a search engine that indexes
+    public information by scanning the Internet and an open
+    reporting platform for vulnerability disclosure. Serving 100+
+    clients and multiple national CERTs.
+
+    Our goal is prevention: we intend to provide a preemptive
+    solution by trusting individual researchers and security
+    companies on the most sensitive data we index. We deliver clear
+    incident reports, help identify what information has or could be
+    affected, and explain how to resolve the issue. All voluntary
+    reports are free and no sales attempts are made on LeakIX's
+    side. We ban sales attempts that take advantage of incidents to
+    sell shady security services.
   links:
     - label: Website
       url: https://leakix.net
@@ -132,15 +134,23 @@
       start: March 2017
       end: January 2020
   description: |
-    Lead developer/engineer on the accounting system (partially the risk system),
-    including a real time crypto/FIAT transaction detection across multiple blockchains.
-    Managing the infrastructure, the development, the release and the new features
-    around the blockchain and accounting projects.
-    Working on some parts of the trading system too. In general, participating
-    in the main developer tasks.
-    B2C2 is a leading cryptocurrency marketmaker.
-    Brokers, exchanges, hedge funds and family offices around the world trust us
-    to deliver seamless execution in the major cryptocurrencies and fiat currency pairs.
+    First engineer at B2C2, one of the earliest institutional crypto
+    liquidity providers, later acquired by
+    [SBI Holdings](https://www.sbigroup.co.jp/english/) in 2020.
+    B2C2 serves brokers, exchanges, hedge funds, and family offices
+    worldwide with 24/7 crypto and fiat liquidity.
+
+    Led the real-time accounting and risk infrastructure:
+
+    - Built and operated a fleet of blockchain nodes across multiple
+      chains for real-time transaction monitoring.
+    - Developed the real-time crypto/fiat accounting system with PnL
+      detection, integrated with the risk system.
+    - Built exchange interfaces for automated trade reconciliation.
+    - Managed the full lifecycle: infrastructure, development,
+      releases, and new features for the blockchain and accounting
+      projects.
+    - Contributed to parts of the trading system.
   links:
     - label: Website
       url: https://b2c2.com
