@@ -13,10 +13,7 @@
     Currently specialized in cryptography, formal verification, and
     distributed systems. Consulting, research, and engineering for
     protocol design, cryptographic library development, and security
-    auditing. Notable past contributions include core cryptography
-    work on the Mina Protocol (zero-knowledge proofs, leading a
-    team of up to 5 engineers) and the Tezos blockchain (validity
-    rollups, pairing-based cryptography).
+    auditing.
 
     Current projects:
 
@@ -132,15 +129,23 @@
       start: March 2017
       end: January 2020
   description: |
-    Lead developer/engineer on the accounting system (partially the risk system),
-    including a real time crypto/FIAT transaction detection across multiple blockchains.
-    Managing the infrastructure, the development, the release and the new features
-    around the blockchain and accounting projects.
-    Working on some parts of the trading system too. In general, participating
-    in the main developer tasks.
-    B2C2 is a leading cryptocurrency marketmaker.
-    Brokers, exchanges, hedge funds and family offices around the world trust us
-    to deliver seamless execution in the major cryptocurrencies and fiat currency pairs.
+    First engineer at B2C2, one of the earliest institutional crypto
+    liquidity providers, later acquired by
+    [SBI Holdings](https://www.sbigroup.co.jp/english/) in 2020.
+    B2C2 serves brokers, exchanges, hedge funds, and family offices
+    worldwide with 24/7 crypto and fiat liquidity.
+
+    Led the real-time accounting and risk infrastructure:
+
+    - Built and operated a fleet of blockchain nodes across multiple
+      chains for real-time transaction monitoring.
+    - Developed the real-time crypto/fiat accounting system with PnL
+      detection, integrated with the risk system.
+    - Built exchange interfaces for automated trade reconciliation.
+    - Managed the full lifecycle: infrastructure, development,
+      releases, and new features for the blockchain and accounting
+      projects.
+    - Contributed to parts of the trading system.
   links:
     - label: Website
       url: https://b2c2.com
