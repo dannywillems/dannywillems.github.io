@@ -44,7 +44,7 @@
     - label: PDF
       url: https://eprint.iacr.org/2022/462
 
-- title: To a typed language for modular programming
+- title: "To a typed language for modular programming (2016-2017)"
   description: |
     Modular programming consists of splitting programs in components called modules.
     In the functional programming language OCaml, the core and the module
