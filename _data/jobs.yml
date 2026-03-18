@@ -13,6 +13,8 @@
   links:
     - label: BaDaaS
       url: https://badaas.be
+    - label: Papyrus
+      url: https://papyrus.badaas.eu
     - label: cryptography.academy
       url: https://cryptography.academy
     - label: LeakIX
