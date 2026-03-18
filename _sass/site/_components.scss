@@ -155,6 +155,17 @@
   font-weight: 500;
 }
 
+.cv-note {
+  font-size: 0.9em;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.cv-summary {
+  font-style: italic;
+  line-height: 1.6;
+}
+
 .cv-dates {
   font-size: $font-size-sm;
   color: var(--text-secondary);
