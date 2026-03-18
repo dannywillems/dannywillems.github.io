@@ -29,6 +29,20 @@ jobs:
           python3 .github/scripts/fetch_contributions.py > "_data/contributions/${DATE}.json"
           cp "_data/contributions/${DATE}.json" _data/github_contributions.json
 
+      - name: Close old contribution PRs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr list \
+            --state open \
+            --head "chore/contributions-" \
+            --json number,headRefName \
+            --jq '.[].number' \
+          | while read -r pr_number; do
+              echo "Closing old contribution PR #${pr_number}"
+              gh pr close "${pr_number}" --delete-branch
+            done
+
       - name: Create PR if changed
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
