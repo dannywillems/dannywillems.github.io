@@ -199,6 +199,34 @@ a:hover {
   color: #666;
 }
 
+/* === SUMMARY & NOTE === */
+.cv-summary {
+  font-style: italic;
+  line-height: 1.6;
+  font-size: 10pt;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.cv-note {
+  font-size: 9pt;
+  font-style: italic;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+/* === EARLY EXPERIENCE (collapsible) === */
+.cv-early-experience {
+  margin-bottom: 0.75rem;
+}
+
+.cv-early-experience summary {
+  font-weight: 700;
+  font-size: 11pt;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
 /* === PRINT STYLES === */
 @page {
   size: A4;
@@ -234,18 +262,40 @@ a:hover {
     color: #222;
   }
 
-  /* Show URLs after links */
-  a[href^="http"]::after {
-    content: " (" attr(href) ")";
-    font-size: 8pt;
-    color: #666;
-    word-break: break-all;
+  /* Show URLs only for contact and job link sections */
+  .cv-contact a[href^="http"]::after,
+  .cv-pub-venue a[href^="http"]::after {
+    content: "";
   }
 
-  /* But not for email/simple links */
-  a[href^="mailto"]::after,
-  .cv-contact a::after {
-    content: "";
+  /* Hide URLs in description links to avoid clutter */
+  .cv-entry-description a::after {
+    content: "" !important;
+  }
+
+  /* Force collapsible sections open for print */
+  details.cv-early-experience {
+    display: block;
+  }
+
+  details.cv-early-experience > summary {
+    display: block;
+    font-weight: 700;
+    font-size: 11pt;
+  }
+
+  details.cv-early-experience[open] > summary,
+  details.cv-early-experience > summary {
+    list-style: none;
+  }
+
+  details.cv-early-experience > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  /* Hide the note about checking online profiles */
+  .cv-note {
+    display: none;
   }
 
   .cv-header {
@@ -260,7 +310,7 @@ a:hover {
     margin-bottom: 0.5rem;
   }
 
-  /* Page break controls - only avoid breaks within individual entries */
+  /* Page break controls */
   h2 {
     page-break-after: avoid;
   }
