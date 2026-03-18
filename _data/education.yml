@@ -6,6 +6,7 @@
   start: 2022
   end: 2023
   description: |
+    Topic: SNARK-friendly primitives based on elliptic curves.
     Under the direction of
     [Benjamin Smith](https://www.lix.polytechnique.fr/~smith/)
     (INRIA, Ecole Polytechnique). Discontinued to join o1Labs.
