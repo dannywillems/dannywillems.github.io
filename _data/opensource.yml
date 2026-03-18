@@ -60,7 +60,7 @@
     - label: GitHub
       url: https://github.com/MinaProtocol/mina/tree/compatible/src/lib/crypto/pickles
 
-- title: "Octez: an OCaml implementation of the Tezos protocol (Dec 2019 - Present)"
+- title: "Octez: an OCaml implementation of the Tezos protocol (Dec 2019 - 2023)"
   description: |
     Tezos is a blockchain that offers both consensus and meta-consensus, by which we
     mean that Tezos comes to consensus both about the state of its ledger, and also
@@ -70,7 +70,7 @@
     - label: GitLab
       url: https://gitlab.com/tezos/tezos/
 
-- title: "ocaml-bls12-381: an efficient OCaml implementation of the pairing-friendly curve BLS12-381 (January 2020 - Present)"
+- title: "ocaml-bls12-381: an efficient OCaml implementation of the pairing-friendly curve BLS12-381 (January 2020 - 2023)"
   description: |
     This library provides a fast implementation of operations over the scalar field,
     including (i)FFT, operations over the groups G1 and G2, including EC-FFT,
@@ -90,7 +90,7 @@
     - label: First release announcement
       url: https://discuss.ocaml.org/t/ann-bls12-381-3-0-0/9438
 
-- title: "ocaml-bls12-381-hash: efficient C and OCaml implementation of hash functions over the scalar field of BLS12-381 (Aug. 2022 - Present)"
+- title: "ocaml-bls12-381-hash: efficient C and OCaml implementation of hash functions over the scalar field of BLS12-381 (Aug. 2022 - 2023)"
   description: |
     This library provides efficient C and OCaml factory implementations of
     hash functions like <a href="https://eprint.iacr.org/2022/840">Anemoi</a>, <a href="https://eprint.iacr.org/2019/458">Poseidon</a>, <a
@@ -104,7 +104,7 @@
     - label: OPAM
       url: https://opam.ocaml.org/packages/bls12-381-hash/
 
-- title: "ocaml-bls12-381-signature: OCaml implementation of BLS signature for BLS12-381 (June 2021 - Present)"
+- title: "ocaml-bls12-381-signature: OCaml implementation of BLS signature for BLS12-381 (June 2021 - 2023)"
   description: |
     The library provides BLS signatures for the pairing friendly curve
     BLS12-381. The code follows the specification available <a
@@ -117,7 +117,7 @@
     - label: OPAM
       url: https://opam.ocaml.org/packages/bls12-381-signature/
 
-- title: "Plompiler: a monadic Domain Specific Language embedded in OCaml than can be used to build circuits for aPlonK (2021 - Present)"
+- title: "Plompiler: a monadic Domain Specific Language embedded in OCaml than can be used to build circuits for aPlonK (2021 - 2023)"
   description: |
     Programs written in Plompiler are typed to increase safety and can be
     compiled to their circuit representations or interpreted directly in
@@ -140,7 +140,7 @@
     - label: OPAM
       url: https://opam.ocaml.org/packages/tezos-plompiler
 
-- title: "Mec: Modular Experimental Cryptography library in OCaml (April 2020 - Present)"
+- title: "Mec: Modular Experimental Cryptography library in OCaml (April 2020 - 2023)"
   description: |
     Mec provides modular implementations of (prime) finite field and elliptic
     curve cryptographic primitives like hash functions and signature schemes.
@@ -154,7 +154,7 @@
     - label: OPAM
       url: https://opam.ocaml.org/packages/mec/
 
-- title: "ocaml-ff: Finite Field library in OCaml (April 2020 - Present)"
+- title: "ocaml-ff: Finite Field library in OCaml (April 2020 - 2023)"
   description: |
     Ff provides module types to describe (prime) finite fields
     \(\mathbb{F}_{p^n}\) and provides functors to easily instantiate
@@ -165,7 +165,7 @@
     - label: OPAM
       url: https://opam.ocaml.org/packages/ff/
 
-- title: "ocaml-polynomial: polynomial over finite fields in OCaml (April 2020 - Present)"
+- title: "ocaml-polynomial: polynomial over finite fields in OCaml (April 2020 - 2023)"
   description: |
     The library provides implementations of polynomials over finite fields,
     including routines like (i)FFT.
@@ -189,7 +189,7 @@
     - label: OPAM
       url: https://opam.ocaml.org/packages/class_group_vdf/
 
-- title: "ocaml-carray: contiguous C arrays in OCaml (May 2022 - Present)"
+- title: "ocaml-carray: contiguous C arrays in OCaml (May 2022 - 2023)"
   description: |
     OCaml arrays are not always contiguous piece of memory, requiring accessing
     different chunks of memory when accessing individual elements. When requiring a
@@ -210,7 +210,7 @@
     - label: OPAM
       url: https://opam.ocaml.org/packages/carray/
 
-- title: "Seum: OCaml DSL and tool to write and compare programs in assembly, in a typed and \"safe\" fashion way (June 2022 - Present)"
+- title: "Seum: OCaml DSL and tool to write and compare programs in assembly, in a typed and \"safe\" fashion way (June 2022 - 2023)"
   description: |
     Writing performant applications might require to write low level assembly code
     following a specific assembler syntax like GAS or NASM and when the code is
@@ -235,7 +235,7 @@
     - label: GitLab
       url: https://gitlab.com/dannywillems/seum/
 
-- title: "ocaml-arkworks: OCaml binding to Rust library arkworks (Dec 2022 - Present)"
+- title: "ocaml-arkworks: OCaml binding to Rust library arkworks (Dec 2022 - 2023)"
   description: |
     WIP (Dec. 2022) - Optimised OCaml binding to the library <a
     href="https://github.com/arkworks">arkworks</a>. Investigating the
