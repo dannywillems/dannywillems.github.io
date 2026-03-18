@@ -6,7 +6,7 @@
     <p class="center">
       Currently:
       <br />
-      Independent Cryptography Engineer & Researcher
+      Independent Researcher & Engineer @ <a href="https://badaas.be">BaDaaS</a>
       <br />
       Co-founder @ <a href="https://leakix.net">LeakIX</a>
     </p>
@@ -37,27 +37,37 @@
     </div>
   </div>
   <div class="col-6">
-    Hi! I am Danny Willems. I am a mathematician with multiple interests, mostly
-    related to computer sciences and theoretical physics.
+    Hi! I am Danny Willems. I am a mathematician with multiple
+    interests, mostly related to computer sciences and theoretical
+    physics.
     <br />
-    I spend most of my time <b>trying</b> to provide a better Internet for
-    everyone.
-    With this mission in mind, I co-founded <a
-    href="https://leakix.net">LeakIX</a> in 2021 with Gregory Boddin and we
-    aim to be the Internet red team. I am also an independent cryptography
-    engineer and researcher. Previously, I was Head of Cryptography and led the
-    Rust Node team at <a href="https://o1labs.org">o1Labs</a>, working on
-    zero-knowledge cryptography for the Mina Protocol.
+    I run <a href="https://badaas.be">BaDaaS</a>, a mathematics
+    research boutique focused on cryptography and formal
+    verification. I am currently building
+    <a href="https://papyrus.badaas.eu">Papyrus</a> and
+    <a href="https://cryptography.academy">cryptography.academy</a>,
+    tools to formally verify the world's cryptographic knowledge.
+    I also co-founded <a href="https://leakix.net">LeakIX</a> in
+    2021 with Gregory Boddin, an attack surface management platform
+    serving 100+ clients and multiple national CERTs.
     <br />
-    My current interest in cryptography is incrementally verifiable computation. I
-    have also been interested in arithmetization-oriented cryptographic primitives.
-    On my free-time I read about cybersecurity, low-level code optimizations, formal
-    verification and mathematics applied to physics. I also enjoy doing recreational
-    mathematics.
+    Previously, I was Head of Cryptography at
+    <a href="https://o1labs.org">o1Labs</a> and led a team to
+    reimplement the Mina Protocol node in Rust. Before that, I
+    worked as a cryptography engineer at
+    <a href="https://nomadic-labs.com">Nomadic Labs</a> on the
+    Tezos protocol.
     <br />
-    Nowadays, I like getting my hands dirty coding in C, OCaml, Rust and read
-    assembly code. Constantly requiring to be in an intellectually stimulating
-    environment.
+    My current interest in cryptography is incrementally verifiable
+    computation. I have also been interested in
+    arithmetization-oriented cryptographic primitives. On my
+    free-time I read about cybersecurity, low-level code
+    optimizations, formal verification and mathematics applied to
+    physics. I also enjoy doing recreational mathematics.
+    <br />
+    Nowadays, I like getting my hands dirty coding in C, OCaml,
+    Rust and read assembly code. Constantly requiring to be in an
+    intellectually stimulating environment.
   </div>
 </div>
 
