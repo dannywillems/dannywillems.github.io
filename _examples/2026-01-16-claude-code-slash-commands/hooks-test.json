@@ -1,0 +1,8 @@
+{
+  "hooks": {
+    "enabled": true,
+    "PostToolUse": {
+      "edit": "npm test -- --findRelatedTests ${file}"
+    }
+  }
+}

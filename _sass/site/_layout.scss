@@ -4,7 +4,7 @@
 // =============================================================================
 
 // -----------------------------------------------------------------------------
-// Grid System (from simple-grid) - applies to all themes
+// Grid System (from simple-grid)
 // -----------------------------------------------------------------------------
 
 .container {
@@ -95,7 +95,7 @@
 }
 
 // -----------------------------------------------------------------------------
-// Header actions wrapper (applies to all themes)
+// Header actions wrapper
 // -----------------------------------------------------------------------------
 
 .header-actions {
@@ -106,7 +106,7 @@
 }
 
 // -----------------------------------------------------------------------------
-// Profile Section (applies to all themes)
+// Profile Section
 // -----------------------------------------------------------------------------
 
 @media only screen and (min-width: $breakpoint-md) {
@@ -127,82 +127,35 @@
 }
 
 // -----------------------------------------------------------------------------
-// Non-Hacker Theme Header/Footer Overrides
+// Header and Footer
 // -----------------------------------------------------------------------------
 
-html:not(.theme-hacker) {
-  header {
-    background: var(--bg-secondary);
-    border-bottom: 1px solid var(--border);
-    padding: $spacing-xl 0;
-    margin: 0 0 40px 0;
+header {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  padding: $spacing-xl 0;
+  margin: 0 0 40px 0;
 
-    .container {
-      padding-bottom: 0;
-    }
-
-    h1 {
-      color: var(--text-primary);
-      text-shadow: none;
-      font-family: $font-sans;
-      font-weight: 700;
-      margin: 0 0 $spacing-sm;
-      font-size: 30px;
-      line-height: 1.5;
-
-      &:before {
-        content: none;
-      }
-
-      a {
-        color: var(--text-primary);
-        text-decoration: none;
-        text-shadow: none;
-
-        &:hover {
-          color: var(--accent);
-        }
-      }
-    }
-
-    h2 {
-      color: var(--text-secondary);
-      font-size: $font-size-base;
-      font-weight: normal;
-      margin: 0 0 $spacing-lg;
-      font-family: $font-sans;
-      text-shadow: none;
-    }
+  .container {
+    padding-bottom: 0;
   }
 
-  // Button overrides for non-hacker themes
-  .btn {
-    background: transparent;
-    border: 1px solid var(--border);
-    border-radius: $radius-md;
-    color: var(--text-secondary);
-    box-shadow: none;
+  h1 {
+    color: var(--text-primary);
     text-shadow: none;
     font-family: $font-sans;
+    font-weight: 700;
+    margin: 0 0 $spacing-sm;
+    font-size: 30px;
+    line-height: 1.5;
 
-    &:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      background: transparent;
-    }
-  }
-
-  // Footer
-  .site-footer {
-    background: var(--bg-secondary);
-    border-top: 1px solid var(--border);
-
-    h3 {
-      color: var(--accent);
+    &:before {
+      content: none;
     }
 
     a {
       color: var(--text-primary);
+      text-decoration: none;
       text-shadow: none;
 
       &:hover {
@@ -211,11 +164,68 @@ html:not(.theme-hacker) {
     }
   }
 
-  .footer-bottom {
-    border-top: 1px solid var(--border);
+  h2 {
+    color: var(--text-secondary);
+    font-size: $font-size-base;
+    font-weight: normal;
+    margin: 0 0 $spacing-lg;
+    font-family: $font-sans;
+    text-shadow: none;
+  }
+}
 
-    p {
-      color: var(--text-tertiary);
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+}
+
+.btn {
+  display: inline-block;
+  padding: $spacing-sm $spacing-md;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: $radius-md;
+  color: var(--text-secondary);
+  box-shadow: none;
+  text-shadow: none;
+  text-decoration: none;
+  font-family: $font-sans;
+  font-size: $font-size-sm;
+  line-height: 1.4;
+  transition: border-color $transition-fast,
+    color $transition-fast,
+    background-color $transition-fast;
+
+  &:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: transparent;
+  }
+}
+
+.site-footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+
+  h3 {
+    color: var(--accent);
+  }
+
+  a {
+    color: var(--text-primary);
+    text-shadow: none;
+
+    &:hover {
+      color: var(--accent);
     }
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--border);
+
+  p {
+    color: var(--text-tertiary);
   }
 }

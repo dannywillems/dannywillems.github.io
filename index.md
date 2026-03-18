@@ -6,7 +6,7 @@
     <p class="center">
       Currently:
       <br />
-      Head of Cryptography (Architect) & Rust Node Team Lead @ <a href="https://o1labs.org">o1Labs</a>/Mina
+      Independent Cryptography Engineer & Researcher
       <br />
       Co-founder @ <a href="https://leakix.net">LeakIX</a>
     </p>
@@ -44,9 +44,10 @@
     everyone.
     With this mission in mind, I co-founded <a
     href="https://leakix.net">LeakIX</a> in 2021 with Gregory Boddin and we
-    aim to be the Internet red team. I am also a senior cryptography engineer at <a
-    href="https://o1labs.org">o1Labs</a>, a company catalyzing a new generation
-    of applications powered by zero-knowledge cryptography.
+    aim to be the Internet red team. I am also an independent cryptography
+    engineer and researcher. Previously, I was Head of Cryptography and led the
+    Rust Node team at <a href="https://o1labs.org">o1Labs</a>, working on
+    zero-knowledge cryptography for the Mina Protocol.
     <br />
     My current interest in cryptography is incrementally verifiable computation. I
     have also been interested in arithmetization-oriented cryptographic primitives.
@@ -57,13 +58,6 @@
     Nowadays, I like getting my hands dirty coding in C, OCaml, Rust and read
     assembly code. Constantly requiring to be in an intellectually stimulating
     environment.
-    <br />
-    Regarding my personality, I am a curious person, I appreciate debating
-    respectfully. I enjoy being surrounded by self-minded and respectful people,
-    but I need to be in my world more than the average. In public, I might act
-    as an introvert, but you will see sparkles in my eyes if you start talking
-    about maths, computer sciences or sciences in general.
-    <br />
   </div>
 </div>
 
@@ -91,7 +85,7 @@
 
 {% include quotes.html %}
 
-## Recommended softwares
+## Recommended software
 
 - [KeepassXC](https://keepassxc.org/): see
   [my thread](https://twitter.com/dwillems42/status/1665316530035347457) on
