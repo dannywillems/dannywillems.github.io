@@ -1,29 +1,27 @@
-## Run locally
+# dannywillems.github.io
 
+Personal website of Danny Willems. Mathematician, cryptography researcher and
+engineer. Founder of [BaDaaS](https://badaas.be). Co-founder of
+[LeakIX](https://leakix.net).
+
+Live at: https://dannywillems.github.io
+
+## Development
+
+### Prerequisites
+
+- Ruby (see `.ruby-version`)
+- Bundler
+- Node.js (for prettier/markdownlint)
+
+### Quick start
+
+```bash
+make install  # Install Ruby dependencies
+make serve    # Serve locally at http://localhost:4000
 ```
-sudo apt-get install gnupg2 ruby-dev
-```
 
-- Use rvm and install jekyll and builder 2.0.2:
-
-```
-gpg2 --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-curl -sSL https://get.rvm.io | bash -s stable --ruby
-gem install bundler jekyll --user-install
-```
-
-- build and serve the website:
-
-```
-# to build locally in a vendor directory
-bundle config set --local path 'vendor/bundle'
-bundle install
-bundle exec jekyll serve
-```
-
-## Makefile Commands
-
-Use the provided Makefile for common development tasks:
+### All commands
 
 ```bash
 make help     # Show available commands
@@ -37,41 +35,32 @@ make lint     # Lint markdown files
 make format   # Format markdown files with prettier
 ```
 
-### Prerequisites
+## Structure
 
-For linting and formatting, install the required tools:
+- `_data/jobs.yml` - Work experience
+- `_data/education.yml` - Education
+- `_data/publications.yml` - Research publications
+- `_data/talks.yml` - Public talks
+- `_data/opensource.yml` - Open source contributions
+- `_posts/` - Blog posts
+- `cv.html` - CV page (print-optimized)
+- `index.md` - Homepage
 
-```bash
-npm install -g markdownlint-cli prettier
-```
+## Adding content
 
-## Adding Content
+### Blog posts
 
-### Countries Visited
+Add a new file in `_posts/` with the format `YYYY-MM-DD-title.md`.
 
-Edit `_data/countries.yml` to add countries you've visited:
+### Countries visited
+
+Edit `_data/countries.yml`:
 
 ```yaml
-- code: JP # ISO 3166-1 alpha-2 code (required for map highlighting)
-  name: Japan # Country name
-  continent: Asia # Africa, Asia, Europe, North America, South America, Oceania
-  first_visit: 2024 # Year of first visit (optional)
-  visits: 2 # Number of visits (optional)
-  favorite: true # Highlight as favorite (optional)
-  notes: Amazing! # Short note (optional)
+- code: JP
+  name: Japan
+  continent: Asia
+  first_visit: 2024
 ```
 
 Country codes: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
-
-### Cities Visited
-
-Edit `_data/cities.yml` to add cities (coming soon):
-
-```yaml
-- name: Tokyo
-  country: JP
-  lat: 35.6762
-  lng: 139.6503
-  visited: 2024-03
-  notes: Cherry blossom season
-```
