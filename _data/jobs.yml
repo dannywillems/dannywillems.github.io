@@ -24,11 +24,10 @@
       convert, validate, and extract structured mathematical
       knowledge from cryptographic research papers, building toward
       the first formally verified knowledge base of the field.
-    - **[cryptography.academy](https://cryptography.academy)**: a
-      collaborative platform to formally verify the world's
-      cryptographic knowledge, transforming scattered research PDFs
-      into a queryable, cross-referenced, machine-checkable
-      knowledge graph.
+    - **[cryptography.academy](https://cryptography.academy)**: the
+      web frontend for the Papyrus pipeline, presenting all
+      extracted and verified cryptographic knowledge in a unified,
+      searchable interface.
     - **[LeakIX](https://leakix.net)**: co-founded attack surface
       management platform combining a search engine indexing public
       information and an open reporting platform for vulnerability
@@ -53,8 +52,27 @@
       start: April 2023
       end: May 2025
   description: |
-    o1Labs is a global and remote company that incubated the Mina Protocol.
-    Our team operates on the cutting edge of Web3 and zero-knowledge-proofs.
+    o1Labs incubated the Mina Protocol, a layer-1 blockchain using
+    zero-knowledge proofs for succinctness.
+
+    As **Head of Cryptography**, oversaw the cryptography architecture
+    across an engineering team of 15-20 people, and led a team of up
+    to 5 engineers on the full rewrite of the Mina node from OCaml
+    to Rust.
+
+    As **Senior Cryptography Engineer**, contributed to
+    [o1VM](https://github.com/o1-labs/proof-systems/tree/master/o1vm),
+    a zkVM for MIPS built as a team effort. Implemented the RISC-V
+    interpreter, focused on the folding aspect, and designed and
+    started building
+    [Arrabbiata](https://github.com/o1-labs/proof-systems/tree/master/arrabbiata),
+    a folding scheme for arbitrary custom gates and degrees.
+    Contributed to
+    [Pickles](https://github.com/MinaProtocol/mina/tree/compatible/src/lib/crypto/pickles),
+    the recursion layer used in Mina based on Halo2 (Plonk-ish
+    implementation of Halo), and to the
+    [proof-systems](https://github.com/o1-labs/proof-systems)
+    library (Kimchi, custom gates, lookups).
   links:
     - label: o1Labs
       url: https://o1labs.org
@@ -62,6 +80,10 @@
       url: https://github.com/o1-labs/mina-rust
     - label: Proof Systems
       url: https://github.com/o1-labs/proof-systems
+    - label: o1VM
+      url: https://github.com/o1-labs/proof-systems/tree/master/o1vm
+    - label: Arrabbiata
+      url: https://github.com/o1-labs/proof-systems/tree/master/arrabbiata
     - label: OCaml Node
       url: https://github.com/MinaProtocol/mina
 
