@@ -37,13 +37,12 @@
     </div>
   </div>
   <div class="col-6">
-    Hi! I am Danny Willems. I am a mathematician with multiple
-    interests, mostly related to computer sciences and theoretical
-    physics.
+    Hi! I am Danny Willems. I am a mathematician and engineer
+    working at the intersection of cryptography, formal
+    verification, and distributed systems.
     <br />
     I run <a href="https://badaas.be">BaDaaS</a>, a mathematics
-    research boutique focused on cryptography and formal
-    verification. I am currently building
+    research boutique. I am currently building
     <a href="https://papyrus.badaas.eu">Papyrus</a> and
     <a href="https://cryptography.academy">cryptography.academy</a>,
     tools to formally verify the world's cryptographic knowledge.
@@ -58,12 +57,11 @@
     <a href="https://nomadic-labs.com">Nomadic Labs</a> on the
     Tezos protocol.
     <br />
-    My current interest in cryptography is incrementally verifiable
-    computation. I have also been interested in
-    arithmetization-oriented cryptographic primitives. On my
-    free-time I read about cybersecurity, low-level code
-    optimizations, formal verification and mathematics applied to
-    physics. I also enjoy doing recreational mathematics.
+    My current research interests include incrementally verifiable
+    computation and SNARK-friendly primitives based on elliptic
+    curves. On my free-time I read about cybersecurity, low-level
+    code optimizations, formal verification and mathematics applied
+    to physics. I also enjoy doing recreational mathematics.
     <br />
     Nowadays, I like getting my hands dirty coding in C, OCaml,
     Rust and read assembly code. Constantly requiring to be in an
