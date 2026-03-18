@@ -1,5 +1,15 @@
 # Education history
 
+- institution: Institut Polytechnique de Paris (IPP)
+  url: https://www.ip-paris.fr/en
+  degree: PhD Candidate in Cryptography (not completed)
+  start: 2022
+  end: 2023
+  description: |
+    Under the direction of
+    [Benjamin Smith](https://www.lix.polytechnique.fr/~smith/)
+    (INRIA, Ecole Polytechnique). Discontinued to join o1Labs.
+
 - institution: University of Mons
   url: https://math.umons.ac.be/en/
   degree: Master's Degree Mathematics and Computer Sciences
@@ -9,7 +19,7 @@
     Grade: Summa Cum Laude
 
     Bachelor degree: minor in Physics.
-    Awarded with the price of the Mathematics Department.
+    Awarded with the prize of the Mathematics Department.
   links:
     - label: UMONS - Mathematics Department
       url: https://math.umons.ac.be/en/

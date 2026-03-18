@@ -113,19 +113,44 @@
   url: https://nomadic-labs.com
   positions:
     - title: Cryptography Engineer
-      start: 2020
-      end: 2023
+      start: December 2019
+      end: March 2023
   description: |
-    Nomadic Labs are Tezos blockchain experts. Working on the core
-    development, evolution and adoption of the Tezos protocol in
-    BENELUX. Contributed to the protocol itself and worked in the
-    cryptography team, focusing on zero-knowledge protocols, mainly
-    Epoxy, a validity rollup for the Tezos protocol.
+    Nomadic Labs are Tezos blockchain experts. Cryptography engineer
+    in the cryptography team, contributing to the Tezos protocol and
+    its zero-knowledge research and development.
+
+    - Co-authored the
+      [Anemoi/Jive](https://eprint.iacr.org/2022/840) paper on
+      arithmetization-oriented hash functions for PlonK-based
+      systems. Focused on implementation and CPU optimizations.
+    - Co-authored the
+      [PlonK optimizations](https://eprint.iacr.org/2022/462)
+      paper. Focused on implementation.
+    - Built and maintained the
+      [ocaml-bls12-381](https://gitlab.com/dannywillems/ocaml-bls12-381)
+      ecosystem: pairing operations, BLS signatures, and hash
+      functions over BLS12-381.
+    - Contributed to
+      [Plompiler](https://opam.ocaml.org/packages/tezos-plompiler),
+      a monadic DSL for building aPlonK circuits.
+    - Worked on Epoxy, a validity rollup for the Tezos protocol.
+    - Contributed directly to the Tezos protocol
+      ([Octez](https://gitlab.com/tezos/tezos/)).
+
+    Also enrolled at Institut Polytechnique de Paris (IPP) for a
+    PhD in cryptography under the direction of
+    [Benjamin Smith](https://www.lix.polytechnique.fr/~smith/)
+    (INRIA, Ecole Polytechnique). Discontinued to join o1Labs.
   links:
     - label: Cryptography team website
       url: https://research-development.nomadic-labs.com/files/cryptography.html
     - label: Nomadic Labs
       url: https://nomadic-labs.com
+    - label: Anemoi/Jive paper
+      url: https://eprint.iacr.org/2022/840
+    - label: ocaml-bls12-381
+      url: https://gitlab.com/dannywillems/ocaml-bls12-381
 
 - employer: B2C2
   url: https://www.b2c2.com
