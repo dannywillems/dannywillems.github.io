@@ -8,11 +8,36 @@
       start: March 2026
       end: Present
   description: |
-    Independent researcher and engineer working on Papyrus,
-    cryptography.academy, and LeakIX.
+    BaDaaS is a Belgium-based mathematics research boutique founded
+    in 2020, bridging abstract mathematics and concrete applications.
+    Currently specialized in cryptography, formal verification, and
+    distributed systems. Consulting, research, and engineering for
+    protocol design, cryptographic library development, and security
+    auditing. Notable past contributions include core cryptography
+    work on the Mina Protocol (zero-knowledge proofs, leading a
+    team of up to 5 engineers) and the Tezos blockchain (validity
+    rollups, pairing-based cryptography).
+
+    Current projects:
+
+    - **[Papyrus](https://papyrus.badaas.eu)**: a pipeline to
+      convert, validate, and extract structured mathematical
+      knowledge from cryptographic research papers, building toward
+      the first formally verified knowledge base of the field.
+    - **[cryptography.academy](https://cryptography.academy)**: a
+      collaborative platform to formally verify the world's
+      cryptographic knowledge, transforming scattered research PDFs
+      into a queryable, cross-referenced, machine-checkable
+      knowledge graph.
+    - **[LeakIX](https://leakix.net)**: co-founded attack surface
+      management platform combining a search engine indexing public
+      information and an open reporting platform for vulnerability
+      disclosure.
   links:
     - label: BaDaaS
       url: https://badaas.be
+    - label: Papyrus
+      url: https://papyrus.badaas.eu
     - label: cryptography.academy
       url: https://cryptography.academy
     - label: LeakIX
