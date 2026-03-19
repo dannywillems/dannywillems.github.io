@@ -1,3 +1,9 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
 <ul>
 {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
 {% for yearMonth in postsByYearMonth %}

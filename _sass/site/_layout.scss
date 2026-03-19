@@ -24,51 +24,17 @@
 }
 
 .row {
-  position: relative;
-  width: 100%;
-
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-.row [class^="col"] {
-  float: left;
-  margin: $spacing-sm 2%;
-  min-height: 0.125rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
 }
 
 // Mobile-first: all columns are full width
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 {
-  width: 96%;
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
 }
-
-// Small column variants (always apply)
-.col-1-sm { width: 4.33%; }
-.col-2-sm { width: 12.66%; }
-.col-3-sm { width: 21%; }
-.col-4-sm { width: 29.33%; }
-.col-5-sm { width: 37.66%; }
-.col-6-sm { width: 46%; }
-.col-7-sm { width: 54.33%; }
-.col-8-sm { width: 62.66%; }
-.col-9-sm { width: 71%; }
-.col-10-sm { width: 79.33%; }
-.col-11-sm { width: 87.66%; }
-.col-12-sm { width: 96%; }
 
 .hidden-sm {
   display: none;
@@ -76,18 +42,18 @@
 
 // Desktop columns
 @media only screen and (min-width: $breakpoint-md) {
-  .col-1 { width: 4.33%; }
-  .col-2 { width: 12.66%; }
-  .col-3 { width: 21%; }
-  .col-4 { width: 29.33%; }
-  .col-5 { width: 37.66%; }
-  .col-6 { width: 46%; }
-  .col-7 { width: 54.33%; }
-  .col-8 { width: 62.66%; }
-  .col-9 { width: 71%; }
-  .col-10 { width: 79.33%; }
-  .col-11 { width: 87.66%; }
-  .col-12 { width: 96%; }
+  .col-1  { flex: 0 0 calc(100% / 12 * 1);  max-width: calc(100% / 12 * 1); }
+  .col-2  { flex: 0 0 calc(100% / 12 * 2);  max-width: calc(100% / 12 * 2); }
+  .col-3  { flex: 0 0 calc(100% / 12 * 3);  max-width: calc(100% / 12 * 3); }
+  .col-4  { flex: 0 0 calc(100% / 12 * 4);  max-width: calc(100% / 12 * 4); }
+  .col-5  { flex: 0 0 calc(100% / 12 * 5);  max-width: calc(100% / 12 * 5); }
+  .col-6  { flex: 0 0 calc(100% / 12 * 6);  max-width: calc(100% / 12 * 6); }
+  .col-7  { flex: 0 0 calc(100% / 12 * 7);  max-width: calc(100% / 12 * 7); }
+  .col-8  { flex: 0 0 calc(100% / 12 * 8);  max-width: calc(100% / 12 * 8); }
+  .col-9  { flex: 0 0 calc(100% / 12 * 9);  max-width: calc(100% / 12 * 9); }
+  .col-10 { flex: 0 0 calc(100% / 12 * 10); max-width: calc(100% / 12 * 10); }
+  .col-11 { flex: 0 0 calc(100% / 12 * 11); max-width: calc(100% / 12 * 11); }
+  .col-12 { flex: 0 0 100%;                 max-width: 100%; }
 
   .hidden-sm {
     display: block;
@@ -111,12 +77,7 @@
 
 @media only screen and (min-width: $breakpoint-md) {
   .profile-row {
-    display: flex;
     align-items: center;
-  }
-
-  .profile-row .col-6 {
-    float: none;
   }
 
   .profile-left {
@@ -134,7 +95,7 @@ header {
   background: var(--bg-secondary);
   border-bottom: 1px solid var(--border);
   padding: $spacing-xl 0;
-  margin: 0 0 40px 0;
+  margin: 0 0 $spacing-2xl 0;
 
   .container {
     padding-bottom: 0;
@@ -146,7 +107,7 @@ header {
     font-family: $font-sans;
     font-weight: 700;
     margin: 0 0 $spacing-sm;
-    font-size: 30px;
+    font-size: $font-size-2xl;
     line-height: 1.5;
 
     &:before {
