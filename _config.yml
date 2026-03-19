@@ -13,3 +13,5 @@ permalink: /blog/:year/:month/:day/:title/
 excerpt_separator: <!--more-->
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
