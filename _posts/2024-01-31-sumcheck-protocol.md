@@ -3,6 +3,7 @@ layout: post
 title: The Sumcheck protocol
 date: 2024-01-31 10:02:36 +0000
 author: Danny Willems
+use_math: true
 tags: [privacy, toolkit]
 ---
 

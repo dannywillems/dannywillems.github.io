@@ -3,6 +3,7 @@ post_date: 2019-07-09
 author: Danny Willems
 post_title: "libff: cpp library to play with finite fields"
 tags: [SNARK, ZK, Zero Knowledge, Finite Fields, libff, libsnark]
+use_math: true
 ---
 
 # DRAFT !!!!

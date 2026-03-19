@@ -3,6 +3,7 @@ layout: post
 title: Mutlivariate cryptography
 date: 2024-03-31 10:02:36 +0000
 author: Danny Willems
+use_math: true
 tags: [privacy, mutlivariate, cryptography]
 ---
 

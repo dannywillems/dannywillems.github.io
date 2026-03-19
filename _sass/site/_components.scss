@@ -8,8 +8,8 @@
 // -----------------------------------------------------------------------------
 
 .portrait {
-  width: 250px;
-  height: 250px;
+  width: 15.625rem;
+  height: 15.625rem;
   border-radius: $radius-full;
 }
 
@@ -22,13 +22,13 @@
 }
 
 .logo {
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
 }
 
 .icon {
-  height: 40px;
-  width: 40px;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 // -----------------------------------------------------------------------------
@@ -41,7 +41,7 @@
 
 .publication-year {
   font-weight: bold;
-  font-size: 20px;
+  font-size: $font-size-lg;
 }
 
 .publication-title {
@@ -49,20 +49,20 @@
 }
 
 .publication-description {
-  padding-left: 15px;
+  padding-left: $spacing-md;
 }
 
 .publication-authors {
-  padding-left: 15px;
+  padding-left: $spacing-md;
   font-size: $font-size-xs;
 }
 
 .publication-item {
-  padding-left: 10px;
+  padding-left: $spacing-sm;
 }
 
 .publication-links {
-  margin-left: 15px;
+  margin-left: $spacing-md;
 }
 
 .publication-link {
@@ -83,7 +83,7 @@
   transition: color $transition-fast,
     background-color $transition-fast,
     border-color $transition-fast;
-  padding-left: 10px;
+  padding-left: $spacing-sm;
 
   &:hover {
     color: var(--bg-primary);
