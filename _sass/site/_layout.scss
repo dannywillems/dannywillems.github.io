@@ -26,7 +26,10 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  gap: $spacing-sm;
+}
+
+.row [class^="col"] {
+  padding: $spacing-sm 2%;
 }
 
 // Mobile-first: all columns are full width
@@ -47,7 +50,7 @@
   .col-3  { flex: 0 0 calc(100% / 12 * 3);  max-width: calc(100% / 12 * 3); }
   .col-4  { flex: 0 0 calc(100% / 12 * 4);  max-width: calc(100% / 12 * 4); }
   .col-5  { flex: 0 0 calc(100% / 12 * 5);  max-width: calc(100% / 12 * 5); }
-  .col-6  { flex: 0 0 calc(100% / 12 * 6);  max-width: calc(100% / 12 * 6); }
+  .col-6  { flex: 0 0 50%;                  max-width: 50%; }
   .col-7  { flex: 0 0 calc(100% / 12 * 7);  max-width: calc(100% / 12 * 7); }
   .col-8  { flex: 0 0 calc(100% / 12 * 8);  max-width: calc(100% / 12 * 8); }
   .col-9  { flex: 0 0 calc(100% / 12 * 9);  max-width: calc(100% / 12 * 9); }
@@ -83,8 +86,8 @@
 
 @media only screen and (min-width: $breakpoint-sm) {
   .profile-row .col-6 {
-    flex: 0 0 calc(100% / 12 * 6);
-    max-width: calc(100% / 12 * 6);
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 
   .profile-left {
