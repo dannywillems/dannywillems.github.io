@@ -11,6 +11,16 @@ description: >-
   cryptography.academy. Co-founder of LeakIX.
 permalink: /blog/:year/:month/:day/:title/
 excerpt_separator: <!--more-->
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
