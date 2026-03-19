@@ -177,7 +177,29 @@ header {
 .header-nav {
   display: flex;
   flex-wrap: wrap;
+  gap: $spacing-lg;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    gap: $spacing-md;
+  }
+}
+
+.nav-group {
+  display: flex;
+  flex-wrap: wrap;
   gap: $spacing-sm;
+  padding-right: $spacing-lg;
+  border-right: 1px solid var(--border-light);
+
+  &:last-child {
+    padding-right: 0;
+    border-right: none;
+  }
+
+  @media only screen and (max-width: $breakpoint-md) {
+    padding-right: 0;
+    border-right: none;
+  }
 }
 
 .btn {
