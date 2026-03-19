@@ -10,7 +10,7 @@
     <div class="cv-job">
       <div class="cv-employer">
         {% if job.url %}
-          <a href="{{ job.url }}">{{ job.employer }}</a>
+          <a href="{{ job.url }}" target="_blank" rel="noopener noreferrer">{{ job.employer }}</a>
         {% else %}
           {{ job.employer }}
         {% endif %}
@@ -34,7 +34,7 @@
       {% if job.links %}
         <div class="cv-links">
           {% for link in job.links %}
-            <a class="publication-link" href="{{ link.url }}">{{ link.label }}</a>
+            <a class="publication-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>
           {% endfor %}
         </div>
       {% endif %}
@@ -43,7 +43,7 @@
   <div class="cv-job">
     <div class="cv-employer">
       {% if job.url %}
-        <a href="{{ job.url }}">{{ job.employer }}</a>
+        <a href="{{ job.url }}" target="_blank" rel="noopener noreferrer">{{ job.employer }}</a>
       {% else %}
         {{ job.employer }}
       {% endif %}
@@ -67,7 +67,7 @@
     {% if job.links %}
       <div class="cv-links">
         {% for link in job.links %}
-          <a class="publication-link" href="{{ link.url }}">{{ link.label }}</a>
+          <a class="publication-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>
         {% endfor %}
       </div>
     {% endif %}
