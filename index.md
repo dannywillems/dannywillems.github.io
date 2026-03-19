@@ -1,7 +1,11 @@
+---
+use_math: true
+---
+
 <div class="row profile-row">
   <div class="col-6 profile-left">
     <div class="center">
-        <img class="portrait" src="{{ 'assets/me.jpg'}}" alt="Danny Willems portrait" loading="lazy" />
+        <img class="portrait" src="{{ '/assets/me.jpg' | relative_url }}" alt="Danny Willems portrait" loading="lazy" />
     </div>
     <p class="center">
       Currently:
@@ -12,27 +16,27 @@
     </p>
     <div class="center">
        <a href="https://twitter.com/dwillems42" class="logo-link">
-         <img class="logo" src="{{ 'assets/twitter.svg' }}" alt="Twitter">
+         <img class="logo" src="{{ '/assets/twitter.svg' | relative_url }}" alt="Twitter">
        </a>
        <a href="https://github.com/dannywillems" class="logo-link">
-         <img class="logo" src="{{ 'assets/github.svg' }}" alt="GitHub">
+         <img class="logo" src="{{ '/assets/github.svg' | relative_url }}" alt="GitHub">
        </a>
        <a href="https://gitlab.com/dannywillems" class="logo-link">
-         <img class="logo" src="{{ 'assets/gitlab.svg' }}" alt="GitLab">
+         <img class="logo" src="{{ '/assets/gitlab.svg' | relative_url }}" alt="GitLab">
        </a>
        <a href="https://linkedin.com/in/bedannywillems" class="logo-link">
-         <img class="logo" src="{{ 'assets/linkedin.svg' }}" alt="LinkedIn">
+         <img class="logo" src="{{ '/assets/linkedin.svg' | relative_url }}" alt="LinkedIn">
        </a>
     </div>
     <div class="center">
        <a href="https://leakix.net" class="logo-link">
-         <img class="logo" src="{{ 'assets/leakix.svg' }}" alt="LeakIX">
+         <img class="logo" src="{{ '/assets/leakix.svg' | relative_url }}" alt="LeakIX">
        </a>
        <a href='http://www.catb.org/hacker-emblem/'>
-         <img src="{{ 'assets/Glider.svg' }}" alt='hacker emblem' class="logo" />
+         <img src="{{ '/assets/Glider.svg' | relative_url }}" alt='hacker emblem' class="logo" />
        </a>
        <a href='https://www.iacr.org/cryptodb/data/author.php?authorkey=12524'>
-         <img src="{{ 'assets/iacrlogo_small.png' }}" alt='iacr_logo' class="logo" />
+         <img src="{{ '/assets/iacrlogo_small.png' | relative_url }}" alt='iacr_logo' class="logo" />
        </a>
     </div>
   </div>

@@ -3,6 +3,7 @@ layout: post
 title: A recap of lookup arguments
 date: 2023-10-31 00:02:36 +0000
 author: Danny Willems
+use_math: true
 tags: [SNARK, lookup, arguments]
 ---
 
