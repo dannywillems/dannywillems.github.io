@@ -105,11 +105,8 @@ use_math: true
 
 ## Must read
 
-<ul>
-  <li>A Cypherpunk's Manifesto - Eric Hughes - https://www.activism.net/cypherpunk/manifesto.html</li>
-  <li> How To Become A Hacker - Eric Steven Raymond - http://www.catb.org/~esr/faqs/hacker-howto.html
-</li>
-</ul>
+- [A Cypherpunk's Manifesto](https://www.activism.net/cypherpunk/manifesto.html) - Eric Hughes
+- [How To Become A Hacker](https://www.catb.org/~esr/faqs/hacker-howto.html) - Eric Steven Raymond
 
 <!-- ## Recent scientific readings -->
 
