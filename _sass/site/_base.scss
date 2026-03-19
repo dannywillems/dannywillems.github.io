@@ -29,6 +29,10 @@
 // Base Styles
 // -----------------------------------------------------------------------------
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html {
   background: var(--bg-primary);
   color: var(--text-primary);
