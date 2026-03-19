@@ -10,32 +10,32 @@ use_math: true
     <p class="center">
       Currently:
       <br />
-      Independent Researcher & Engineer @ <a href="https://badaas.be">BaDaaS</a>
+      Independent Researcher & Engineer @ <a href="https://badaas.be" target="_blank" rel="noopener noreferrer">BaDaaS</a>
       <br />
-      Co-founder @ <a href="https://leakix.net">LeakIX</a>
+      Co-founder @ <a href="https://leakix.net" target="_blank" rel="noopener noreferrer">LeakIX</a>
     </p>
     <div class="center">
-       <a href="https://twitter.com/dwillems42" class="logo-link">
+       <a href="https://twitter.com/dwillems42" class="logo-link" target="_blank" rel="noopener noreferrer">
          <img class="logo" src="{{ '/assets/twitter.svg' | relative_url }}" alt="Twitter">
        </a>
-       <a href="https://github.com/dannywillems" class="logo-link">
+       <a href="https://github.com/dannywillems" class="logo-link" target="_blank" rel="noopener noreferrer">
          <img class="logo" src="{{ '/assets/github.svg' | relative_url }}" alt="GitHub">
        </a>
-       <a href="https://gitlab.com/dannywillems" class="logo-link">
+       <a href="https://gitlab.com/dannywillems" class="logo-link" target="_blank" rel="noopener noreferrer">
          <img class="logo" src="{{ '/assets/gitlab.svg' | relative_url }}" alt="GitLab">
        </a>
-       <a href="https://linkedin.com/in/bedannywillems" class="logo-link">
+       <a href="https://linkedin.com/in/bedannywillems" class="logo-link" target="_blank" rel="noopener noreferrer">
          <img class="logo" src="{{ '/assets/linkedin.svg' | relative_url }}" alt="LinkedIn">
        </a>
     </div>
     <div class="center">
-       <a href="https://leakix.net" class="logo-link">
+       <a href="https://leakix.net" class="logo-link" target="_blank" rel="noopener noreferrer">
          <img class="logo" src="{{ '/assets/leakix.svg' | relative_url }}" alt="LeakIX">
        </a>
-       <a href='http://www.catb.org/hacker-emblem/'>
+       <a href='http://www.catb.org/hacker-emblem/' target="_blank" rel="noopener noreferrer">
          <img src="{{ '/assets/Glider.svg' | relative_url }}" alt='hacker emblem' class="logo" />
        </a>
-       <a href='https://www.iacr.org/cryptodb/data/author.php?authorkey=12524'>
+       <a href='https://www.iacr.org/cryptodb/data/author.php?authorkey=12524' target="_blank" rel="noopener noreferrer">
          <img src="{{ '/assets/iacrlogo_small.png' | relative_url }}" alt='iacr_logo' class="logo" />
        </a>
     </div>
@@ -45,20 +45,20 @@ use_math: true
     working at the intersection of cryptography, formal
     verification, and distributed systems.
     <br />
-    I run <a href="https://badaas.be">BaDaaS</a>, a mathematics
+    I run <a href="https://badaas.be" target="_blank" rel="noopener noreferrer">BaDaaS</a>, a mathematics
     research boutique. I am currently building
-    <a href="https://papyrus.badaas.eu">Papyrus</a> and
-    <a href="https://cryptography.academy">cryptography.academy</a>,
+    <a href="https://papyrus.badaas.eu" target="_blank" rel="noopener noreferrer">Papyrus</a> and
+    <a href="https://cryptography.academy" target="_blank" rel="noopener noreferrer">cryptography.academy</a>,
     tools to formally verify the world's cryptographic knowledge.
-    I also co-founded <a href="https://leakix.net">LeakIX</a> in
+    I also co-founded <a href="https://leakix.net" target="_blank" rel="noopener noreferrer">LeakIX</a> in
     2021 with Gregory Boddin, an attack surface management platform
     serving 100+ clients and multiple national CERTs.
     <br />
     Previously, I was Head of Cryptography at
-    <a href="https://o1labs.org">o1Labs</a> and led a team to
+    <a href="https://o1labs.org" target="_blank" rel="noopener noreferrer">o1Labs</a> and led a team to
     reimplement the Mina Protocol node in Rust. Before that, I
     worked as a cryptography engineer at
-    <a href="https://nomadic-labs.com">Nomadic Labs</a> on the
+    <a href="https://nomadic-labs.com" target="_blank" rel="noopener noreferrer">Nomadic Labs</a> on the
     Tezos protocol.
     <br />
     My current research interests include incrementally verifiable

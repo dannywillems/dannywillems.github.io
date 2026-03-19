@@ -8,7 +8,7 @@
     {% if project.links %}
       <div class="publication-links">
         {% for link in project.links %}
-          <a class="publication-link" href="{{ link.url }}">{{ link.label }}</a>
+          <a class="publication-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>
         {% endfor %}
       </div>
     {% endif %}

@@ -3,7 +3,7 @@
   <div class="cv-edu">
     <div class="cv-institution">
       {% if edu.url %}
-        <a href="{{ edu.url }}">{{ edu.institution }}</a>
+        <a href="{{ edu.url }}" target="_blank" rel="noopener noreferrer">{{ edu.institution }}</a>
       {% else %}
         {{ edu.institution }}
       {% endif %}
@@ -23,7 +23,7 @@
     {% if edu.links %}
       <div class="cv-links">
         {% for link in edu.links %}
-          <a class="publication-link" href="{{ link.url }}">{{ link.label }}</a>
+          <a class="publication-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>
         {% endfor %}
       </div>
     {% endif %}

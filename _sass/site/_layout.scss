@@ -75,9 +75,16 @@
 // Profile Section
 // -----------------------------------------------------------------------------
 
-@media only screen and (min-width: $breakpoint-md) {
-  .profile-row {
-    align-items: center;
+.profile-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media only screen and (min-width: $breakpoint-sm) {
+  .profile-row .col-6 {
+    flex: 0 0 calc(100% / 12 * 6);
+    max-width: calc(100% / 12 * 6);
   }
 
   .profile-left {
