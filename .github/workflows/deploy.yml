@@ -26,6 +26,8 @@ jobs:
         with:
           ruby-version: "3.4"
           bundler-cache: true
+        env:
+          BUNDLE_FORCE_RUBY_PLATFORM: "true"
 
       - name: Setup Pages
         id: pages
