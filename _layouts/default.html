@@ -63,15 +63,19 @@
               {{ site.description | default: site.github.project_tagline }}
           </h2>
         <nav class="header-nav">
-          <a href="/cv/" class="btn">Resume (PDF)</a>
-          <a href="/contributions/" class="btn">Contributions</a>
-          <a href="/#research-publications" class="btn">Research Publications</a>
-          <a href="/#public-talks" class="btn">Public Talks</a>
-          <a href="/#open-source-software-contributions" class="btn">Open Source</a>
-          <a href="/#experience" class="btn">Experience</a>
-          <a href="/#education" class="btn">Education</a>
-          <a href="/blog" class="btn">Blog</a>
-          <a href="/#recommended-software" class="btn">Recommended Software</a>
+          <div class="nav-group">
+            <a href="/#experience" class="btn">Experience</a>
+            <a href="/cv/" class="btn">Resume</a>
+          </div>
+          <div class="nav-group">
+            <a href="/#research-publications" class="btn">Publications</a>
+            <a href="/#public-talks" class="btn">Talks</a>
+            <a href="/#open-source-software-contributions" class="btn">Open Source</a>
+          </div>
+          <div class="nav-group">
+            <a href="/blog" class="btn">Blog</a>
+            <a href="/contributions/" class="btn">Contributions</a>
+          </div>
         </nav>
       </div>
     </header>
