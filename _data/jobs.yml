@@ -8,27 +8,11 @@
       start: March 2026
       end: Present
   description: |
-    BaDaaS is a Belgium-based mathematics research boutique founded
-    in 2020, bridging abstract mathematics and concrete applications.
-    Currently specialized in cryptography, formal verification, and
-    distributed systems. Consulting, research, and engineering for
-    protocol design, cryptographic library development, and security
-    auditing.
-
-    Current projects:
-
-    - **[Papyrus](https://papyrus.badaas.eu)**: a pipeline to
-      convert, validate, and extract structured mathematical
-      knowledge from cryptographic research papers, building toward
-      the first formally verified knowledge base of the field.
-    - **[cryptography.academy](https://cryptography.academy)**: the
-      web frontend for the Papyrus pipeline, presenting all
-      extracted and verified cryptographic knowledge in a unified,
-      searchable interface.
-    - **[LeakIX](https://leakix.net)**: co-founded attack surface
-      management platform combining a search engine indexing public
-      information and an open reporting platform for vulnerability
-      disclosure.
+    BaDaaS is a mathematics research boutique. We specialise in applied
+    cryptography, formal verification, and AI tooling. From zero-knowledge
+    proof systems to post-quantum cryptography, from machine-checked proofs
+    in Lean 4 to open-source infrastructure, we work across the full stack
+    of mathematical engineering.
   links:
     - label: BaDaaS
       url: https://badaas.be
