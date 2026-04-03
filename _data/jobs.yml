@@ -10,10 +10,11 @@
   description: |
     BaDaaS is a Belgium-based mathematics research boutique founded
     in 2020, bridging abstract mathematics and concrete applications.
-    Currently specialized in cryptography, formal verification, and
-    distributed systems. Consulting, research, and engineering for
-    protocol design, cryptographic library development, and security
-    auditing.
+    Currently specialized in cryptography, formal verification,
+    post-quantum cryptography, cryptanalysis of arithmetisation
+    oriented hash functions, and distributed systems. Consulting,
+    research, and engineering for protocol design, cryptographic
+    library development, and security auditing.
 
     Current projects:
 
