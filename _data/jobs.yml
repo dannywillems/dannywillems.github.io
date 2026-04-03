@@ -13,6 +13,21 @@
     proof systems to post-quantum cryptography, from machine-checked proofs
     in Lean 4 to open-source infrastructure, we work across the full stack
     of mathematical engineering.
+
+    Current projects:
+
+    - **[Papyrus](https://papyrus.badaas.eu)**: a pipeline to
+      convert, validate, and extract structured mathematical
+      knowledge from cryptographic research papers, building toward
+      the first formally verified knowledge base of the field.
+    - **[cryptography.academy](https://cryptography.academy)**: the
+      web frontend for the Papyrus pipeline, presenting all
+      extracted and verified cryptographic knowledge in a unified,
+      searchable interface.
+    - **[LeakIX](https://leakix.net)**: co-founded attack surface
+      management platform combining a search engine indexing public
+      information and an open reporting platform for vulnerability
+      disclosure.
   links:
     - label: BaDaaS
       url: https://badaas.be
