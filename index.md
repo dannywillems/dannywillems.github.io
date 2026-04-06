@@ -62,10 +62,11 @@ use_math: true
     Tezos protocol.
     <br />
     My current research interests include incrementally verifiable
-    computation and SNARK-friendly primitives based on elliptic
-    curves. On my free-time I read about cybersecurity, low-level
-    code optimizations, formal verification and mathematics applied
-    to physics. I also enjoy doing recreational mathematics.
+    computation, cryptanalysis of AO hash functions and post-quantum
+    cryptography. Previously, I spent time on SNARK-friendly primitives. On my
+    free-time I read abou cybersecurity, low-level code optimizations, formal
+    verification and mathematics applied to physics. I also enjoy doing
+    recreational mathematics.
     <br />
     Nowadays, I like getting my hands dirty coding in C, OCaml,
     Rust and read assembly code. Constantly requiring to be in an
