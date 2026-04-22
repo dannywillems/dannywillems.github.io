@@ -164,20 +164,16 @@
     First engineer at B2C2, one of the earliest institutional crypto
     liquidity providers, later acquired by
     [SBI Holdings](https://www.sbigroup.co.jp/english/) in 2020.
-    B2C2 serves brokers, exchanges, hedge funds, and family offices
-    worldwide with 24/7 crypto and fiat liquidity.
 
-    Led the real-time accounting and risk infrastructure:
+    Led the real-time accounting and contributed to the risk infrastructure:
 
     - Built and operated a fleet of blockchain nodes across multiple
       chains for real-time transaction monitoring.
-    - Developed the real-time crypto/fiat accounting system with PnL
+    - Contributed to the real-time crypto/fiat accounting system with PnL
       detection, integrated with the risk system.
-    - Built exchange interfaces for automated trade reconciliation.
     - Managed the full lifecycle: infrastructure, development,
       releases, and new features for the blockchain and accounting
       projects.
-    - Contributed to parts of the trading system.
   links:
     - label: Website
       url: https://b2c2.com
