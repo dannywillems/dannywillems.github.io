@@ -110,7 +110,7 @@ use_math: true
   Eric Hughes
 - [How To Become A Hacker](https://www.catb.org/~esr/faqs/hacker-howto.html) -
   Eric Steven Raymond
-
+- https://drive.proton.me/urls/PMH5Q3Y8QM#RSn89oJLjgMe
 <!-- ## Recent scientific readings -->
 
 <!-- Here will come my notes on scientific papers/article I read. Mostly to keep a -->
