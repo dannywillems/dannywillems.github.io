@@ -4,17 +4,17 @@
 - employer: BaDaaS
   url: https://badaas.be
   positions:
-    - title: Independent Researcher & Engineer
-      start: March 2026
+    - title: Founder & cryptography researcher/engineer (part-time)
+      start: 2020
       end: Present
   description: |
     BaDaaS is a Belgium-based mathematics research boutique founded
     in 2020, bridging abstract mathematics and concrete applications.
-    Currently specialized in cryptography, formal verification,
-    post-quantum cryptography, cryptanalysis of arithmetisation
-    oriented hash functions, and distributed systems. Consulting,
-    research, and engineering for protocol design, cryptographic
+    Consulting, research, and engineering for protocol design, cryptography
     library development, and security auditing.
+
+    We have a broad sets of interests of applied mathematics, from
+    (post-quantum) cryptography, SNARK to formal verification.
 
     Current projects:
 
@@ -88,7 +88,7 @@
 - employer: LeakIX
   url: https://leakix.net
   positions:
-    - title: Co-founder/CEO
+    - title: Co-founder/CEO (part-time)
       start: 2021
       end: Present
   description: |
