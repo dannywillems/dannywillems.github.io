@@ -55,9 +55,10 @@
       (recursion layer based on Halo2).
     - Contributed to [o1js](https://github.com/o1-labs/o1js),
       the TypeScript SDK for writing zkApps.
-    - Built the RISC-V interpreter and folding layer for
-      [o1VM](https://github.com/o1-labs/proof-systems/tree/master/o1vm),
-      a zkVM for MIPS.
+    - Co-designed [o1VM](https://github.com/o1-labs/proof-systems/tree/master/o1vm),
+      a zkVM for MIPS. Built the RISC-V interpreter and folding
+      layer, low-level optimizations for witness generation
+      (see talks below).
     - Designed [Arrabbiata](https://github.com/o1-labs/proof-systems/tree/master/arrabbiata),
       a folding scheme for arbitrary custom gates and degrees.
   links:
