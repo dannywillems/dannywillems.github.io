@@ -3,41 +3,44 @@
 // Generates theme classes from $themes map
 // =============================================================================
 
+@use "sass:map";
+@use "./variables" as *;
+
 // -----------------------------------------------------------------------------
 // Theme Application Mixin
 // Takes a theme map and applies all color properties
 // -----------------------------------------------------------------------------
 
 @mixin apply-theme($theme) {
-  $bg: map-get($theme, bg);
-  $bg-gradient: map-get($theme, bg-gradient);
-  $text: map-get($theme, text);
-  $border: map-get($theme, border);
-  $glow: map-get($theme, glow);
-  $box-shadow: map-get($theme, box-shadow);
-  $inset-glow: map-get($theme, inset-glow);
-  $heading: map-get($theme, heading);
-  $heading-glow: map-get($theme, heading-glow);
-  $code-bg: map-get($theme, code-bg);
-  $code-text: map-get($theme, code-text);
-  $code-glow: map-get($theme, code-glow);
-  $pre-bg: map-get($theme, pre-bg);
-  $pre-border: map-get($theme, pre-border);
-  $pre-text: map-get($theme, pre-text);
-  $section-bg: map-get($theme, section-bg);
-  $section-border: map-get($theme, section-border);
-  $link: map-get($theme, link);
-  $link-glow: map-get($theme, link-glow);
-  $table-border: map-get($theme, table-border);
-  $table-header-bg: map-get($theme, table-header-bg);
-  $table-header-text: map-get($theme, table-header-text);
-  $table-hover: map-get($theme, table-hover);
-  $tip-bg: map-get($theme, tip-bg);
-  $tip-border: map-get($theme, tip-border);
-  $tip-text: map-get($theme, tip-text);
-  $strong: map-get($theme, strong);
-  $ascii: map-get($theme, ascii);
-  $ascii-glow: map-get($theme, ascii-glow);
+  $bg: map.get($theme, bg);
+  $bg-gradient: map.get($theme, bg-gradient);
+  $text: map.get($theme, text);
+  $border: map.get($theme, border);
+  $glow: map.get($theme, glow);
+  $box-shadow: map.get($theme, box-shadow);
+  $inset-glow: map.get($theme, inset-glow);
+  $heading: map.get($theme, heading);
+  $heading-glow: map.get($theme, heading-glow);
+  $code-bg: map.get($theme, code-bg);
+  $code-text: map.get($theme, code-text);
+  $code-glow: map.get($theme, code-glow);
+  $pre-bg: map.get($theme, pre-bg);
+  $pre-border: map.get($theme, pre-border);
+  $pre-text: map.get($theme, pre-text);
+  $section-bg: map.get($theme, section-bg);
+  $section-border: map.get($theme, section-border);
+  $link: map.get($theme, link);
+  $link-glow: map.get($theme, link-glow);
+  $table-border: map.get($theme, table-border);
+  $table-header-bg: map.get($theme, table-header-bg);
+  $table-header-text: map.get($theme, table-header-text);
+  $table-hover: map.get($theme, table-hover);
+  $tip-bg: map.get($theme, tip-bg);
+  $tip-border: map.get($theme, tip-border);
+  $tip-text: map.get($theme, tip-text);
+  $strong: map.get($theme, strong);
+  $ascii: map.get($theme, ascii);
+  $ascii-glow: map.get($theme, ascii-glow);
 
   // Background
   @if $bg-gradient {

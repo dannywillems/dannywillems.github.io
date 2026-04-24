@@ -7,19 +7,19 @@
 // =============================================================================
 
 // Variables must come first (defines $themes, spacing, typography, etc.)
-@import "site/variables";
+@use "site/variables";
 
 // Theme classes (generates .theme-* classes with CSS custom properties)
-@import "site/themes";
+@use "site/themes";
 
 // Base styles (reset, typography, links)
-@import "site/base";
+@use "site/base";
 
 // Layout (grid, header, footer)
-@import "site/layout";
+@use "site/layout";
 
 // Components (publications, CV, contributions, etc.)
-@import "site/components";
+@use "site/components";
 
 // Theme switcher dropdown
-@import "site/switcher";
+@use "site/switcher";
