@@ -75,6 +75,8 @@ use_math: true
     Nowadays, I like getting my hands dirty coding in C, OCaml,
     Rust and read assembly code. Constantly requiring to be in an
     intellectually stimulating environment.
+    <br />
+    I published on the BaDaaS blog: https://badaas.be/blog. 
   </div>
 </div>
 
