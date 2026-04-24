@@ -9,9 +9,10 @@
       start: 2020
       end: Present
   description: |
-    Personal mathematics research boutique. Independent research,
-    consulting, and engineering for protocol design, cryptography
-    library development, and security auditing.
+    Personal mathematics research boutique founded in 2020,
+    bridging abstract mathematics and concrete applications.
+    Independent research, consulting, and engineering for protocol
+    design, cryptography library development, and security auditing.
 
     - **[Papyrus](https://papyrus.badaas.eu)**: pipeline to
       extract and formally verify cryptographic knowledge from
