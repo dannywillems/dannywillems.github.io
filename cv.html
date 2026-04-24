@@ -6,7 +6,7 @@ permalink: /cv/
 
 <header class="cv-header">
   <h1>Danny Willems</h1>
-  <p class="cv-title">Mathematician & Software engineer</p>
+  <p class="cv-title">Mathematician & Software Engineer - Looking for new opportunities</p>
   <div class="cv-contact">
     <span><a href="mailto:danny@badaas.be">danny@badaas.be</a></span>
     <span><a href="https://dannywillems.github.io">dannywillems.github.io</a></span>
@@ -22,29 +22,30 @@ permalink: /cv/
   <p class="cv-summary">
     Mathematician and engineer with 10+ years of experience in
     cryptography research, infrastructure, and production systems.
-    First engineer at B2C2, one of the earliest institutional crypto
-    liquidity providers (acquired by SBI Holdings in 2020), leading
-    the real-time accounting systems, blockchain node infrastructure
-    for real-time transaction monitoring, and worked on exchange interfaces for
-    PnL detection. Co-founder of LeakIX, an attack surface management platform
-    serving 100+ clients and multiple national CERTs.
-    Cryptography researcher and engineer at o1Labs (Mina Protocol),
-    and led a team to reimplement the node in Rust. Contributed to
-    cryptography libraries and research, in addition to the Tezos protocol at
-    Nomadic Labs (Tezos), and
-    contributed to publications on arithmetization-oriented
-    hash functions and PlonK optimizations. Current research interests include
-    post-quantum cryptography, cryptanalysis of AO hash functions, formal
-    verification, and previously SNARK-friendly primitives based on elliptic
-    curves and incrementally verifiable computation. Currently running BaDaaS,
-    an independent mathematics research boutique.
+    <strong>Currently open to opportunities.</strong>
   </p>
 </section>
 
 <section class="cv-section">
-  <h2>Professional Experience</h2>
+  <h2>Current Research Interests</h2>
+  <div class="cv-entry">
+    <div class="cv-entry-description">
+      <p>
+        Post-quantum cryptography, cryptanalysis of
+        arithmetization-oriented hash functions, formal verification
+        of cryptographic protocols and primitives. Previously focused
+        on SNARK-friendly primitives based on elliptic curves, SNARK
+        implementations, and incrementally verifiable computation.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="cv-section">
+  <h2>Past Full-time Positions</h2>
   {% assign early_started = false %}
   {% for job in site.data.jobs %}
+  {% if job.side %}{% continue %}{% endif %}
   {% if job.early %}
     {% unless early_started %}
       {% assign early_started = true %}
@@ -103,6 +104,36 @@ permalink: /cv/
   {% if early_started %}
   </details>
   {% endif %}
+</section>
+
+<section class="cv-section">
+  <h2>Part-time Involvement</h2>
+  {% for job in site.data.jobs %}
+  {% unless job.side %}{% continue %}{% endunless %}
+  <div class="cv-entry">
+    <div class="cv-entry-employer">
+      {% if job.url %}<a href="{{ job.url }}" target="_blank" rel="noopener noreferrer">{{ job.employer }}</a>{% else %}{{ job.employer }}{% endif %}
+    </div>
+    {% for position in job.positions %}
+    <div class="cv-entry-header">
+      <span class="cv-entry-title">{{ position.title }}</span>
+      <span class="cv-entry-dates">{{ position.start }} - {{ position.end }}</span>
+    </div>
+    {% endfor %}
+    {% if job.description %}
+    <div class="cv-entry-description">
+      {{ job.description | markdownify }}
+    </div>
+    {% endif %}
+    {% if job.links %}
+    <div class="cv-pub-venue">
+      {% for link in job.links %}
+        <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>{% unless forloop.last %} | {% endunless %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
 </section>
 
 <section class="cv-section">
