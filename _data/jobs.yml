@@ -9,25 +9,19 @@
       start: 2020
       end: Present
   description: |
-    Personal mathematics research boutique founded in 2020,
-    bridging abstract mathematics and concrete applications.
-    Independent research, consulting, and engineering for protocol
-    design, cryptography library development, and security auditing.
+    Personal mathematics research boutique. Independent research,
+    consulting, and engineering for protocol design, cryptography
+    library development, and security auditing.
 
-    Current projects:
-
-    - **[Papyrus](https://papyrus.badaas.eu)**: a pipeline to
-      convert, validate, and extract structured mathematical
-      knowledge from cryptographic research papers, building toward
-      the first formally verified knowledge base of the field.
-    - **[cryptography.academy](https://cryptography.academy)**: the
-      web frontend for the Papyrus pipeline, presenting all
-      extracted and verified cryptographic knowledge in a unified,
-      searchable interface.
+    - **[Papyrus](https://papyrus.badaas.eu)**: pipeline to
+      extract and formally verify cryptographic knowledge from
+      research papers.
+    - **[cryptography.academy](https://cryptography.academy)**:
+      web frontend for Papyrus, presenting verified cryptographic
+      knowledge in a searchable interface.
     - **[LeakIX](https://leakix.net)**: co-founded attack surface
-      management platform combining a search engine indexing public
-      information and an open reporting platform for vulnerability
-      disclosure.
+      management platform serving 100+ clients and multiple
+      national CERTs.
   links:
     - label: BaDaaS
       url: https://badaas.be
@@ -48,28 +42,24 @@
       start: April 2023
       end: May 2025
   description: |
-    o1Labs incubated the Mina Protocol, a layer-1 blockchain using
-    zero-knowledge proofs for succinctness.
+    o1Labs incubated the Mina Protocol, a layer-1 blockchain
+    using zero-knowledge proofs for succinctness.
 
-    As **Head of Cryptography**, oversaw the cryptography architecture
-    across an engineering team of 15-20 people, and led a team of up
-    to 5 engineers on the full rewrite of the Mina node from OCaml
-    to Rust.
-
-    As **Senior Cryptography Engineer**, worked across the full
-    cryptography stack. Contributed to
-    [Kimchi](https://github.com/o1-labs/proof-systems) (custom gates,
-    lookups),
-    [Pickles](https://github.com/MinaProtocol/mina/tree/compatible/src/lib/crypto/pickles)
-    (the recursion layer based on Halo2),
-    and [o1js](https://github.com/o1-labs/o1js) (the TypeScript SDK
-    for writing zkApps). Contributed to
-    [o1VM](https://github.com/o1-labs/proof-systems/tree/master/o1vm),
-    a zkVM for MIPS built as a team effort, implementing the RISC-V
-    interpreter and focusing on the folding aspect. Designed and
-    started building
-    [Arrabbiata](https://github.com/o1-labs/proof-systems/tree/master/arrabbiata),
-    a folding scheme for arbitrary custom gates and degrees.
+    - Oversaw cryptography architecture across a 15-20 person
+      engineering team as Head of Cryptography.
+    - Led a team of up to 5 engineers on the full rewrite of
+      the Mina node from OCaml to Rust.
+    - Contributed to [Kimchi](https://github.com/o1-labs/proof-systems)
+      (custom gates, lookups) and
+      [Pickles](https://github.com/MinaProtocol/mina/tree/compatible/src/lib/crypto/pickles)
+      (recursion layer based on Halo2).
+    - Contributed to [o1js](https://github.com/o1-labs/o1js),
+      the TypeScript SDK for writing zkApps.
+    - Built the RISC-V interpreter and folding layer for
+      [o1VM](https://github.com/o1-labs/proof-systems/tree/master/o1vm),
+      a zkVM for MIPS.
+    - Designed [Arrabbiata](https://github.com/o1-labs/proof-systems/tree/master/arrabbiata),
+      a folding scheme for arbitrary custom gates and degrees.
   links:
     - label: o1Labs
       url: https://o1labs.org
@@ -92,20 +82,14 @@
       start: 2021
       end: Present
   description: |
-    Co-founded with Gregory Boddin. LeakIX is an attack surface
-    management platform combining a search engine that indexes
-    public information by scanning the Internet and an open
-    reporting platform for vulnerability disclosure. Serving 100+
-    clients and multiple national CERTs.
+    Co-founded with Gregory Boddin. Attack surface management
+    platform serving 100+ clients and multiple national CERTs.
 
-    Our goal is prevention: we intend to provide a preemptive
-    solution by trusting individual researchers and security
-    companies on the most sensitive data we index. We deliver clear
-    incident reports, help identify what information has or could be
-    affected, and explain how to resolve the issue. All voluntary
-    reports are free and no sales attempts are made on LeakIX's
-    side. We ban sales attempts that take advantage of incidents to
-    sell shady security services.
+    - Search engine indexing public information by scanning the
+      Internet, combined with an open vulnerability disclosure
+      platform.
+    - Preemptive security: free incident reports for affected
+      parties, no sales attempts on reported incidents.
   links:
     - label: Website
       url: https://leakix.net
@@ -117,33 +101,23 @@
       start: December 2019
       end: March 2023
   description: |
-    Nomadic Labs are Tezos blockchain experts. Cryptography engineer
-    in the cryptography team, contributing to the Tezos protocol and
-    its zero-knowledge research and development.
+    Cryptography team at Nomadic Labs (Tezos blockchain).
 
-    - Contributed to the
-      [Anemoi/Jive](https://eprint.iacr.org/2022/840) paper on
-      arithmetization-oriented hash functions for PlonK-based
-      systems. Focused on implementation and CPU optimizations.
-    - Contributed to the
-      [PlonK optimizations](https://eprint.iacr.org/2022/462)
-      paper. Focused on implementation.
-    - Built and maintained the
-      [ocaml-bls12-381](https://gitlab.com/dannywillems/ocaml-bls12-381)
-      ecosystem: pairing operations, BLS signatures, and hash
-      functions over BLS12-381.
-    - Contributed to
-      [Plompiler](https://opam.ocaml.org/packages/tezos-plompiler),
-      a monadic DSL for building aPlonK circuits.
-    - Worked on Epoxy, a validity rollup for the Tezos protocol.
-    - Contributed directly to the Tezos protocol
-      ([Octez](https://gitlab.com/tezos/tezos/)).
-
-    Also enrolled at Institut Polytechnique de Paris (IPP) for a
-    PhD on SNARK-friendly primitives based on elliptic curves,
-    under the direction of
-    [Benjamin Smith](https://www.lix.polytechnique.fr/~smith/)
-    (INRIA, Ecole Polytechnique). Discontinued to join o1Labs.
+    - Co-authored the [Anemoi/Jive](https://eprint.iacr.org/2022/840)
+      paper on AO hash functions for PlonK. Implementation and
+      CPU optimizations.
+    - Co-authored [PlonK optimizations](https://eprint.iacr.org/2022/462)
+      paper. Implementation.
+    - Built [ocaml-bls12-381](https://gitlab.com/dannywillems/ocaml-bls12-381):
+      pairing operations, BLS signatures, hash functions over
+      BLS12-381.
+    - Contributed to [Plompiler](https://opam.ocaml.org/packages/tezos-plompiler),
+      a monadic DSL for aPlonK circuits.
+    - Worked on Epoxy, a validity rollup for Tezos.
+    - Contributed to the Tezos protocol ([Octez](https://gitlab.com/tezos/tezos/)).
+    - Enrolled at IPP for a PhD on SNARK-friendly elliptic curve
+      primitives (supervisor: [Benjamin Smith](https://www.lix.polytechnique.fr/~smith/),
+      INRIA). Discontinued to join o1Labs.
   links:
     - label: Cryptography team website
       url: https://research-development.nomadic-labs.com/files/cryptography.html
@@ -161,19 +135,15 @@
       start: March 2017
       end: January 2020
   description: |
-    First engineer at B2C2, one of the earliest institutional crypto
-    liquidity providers, later acquired by
-    [SBI Holdings](https://www.sbigroup.co.jp/english/) in 2020.
+    First engineer at B2C2, an early institutional crypto liquidity
+    provider (acquired by [SBI Holdings](https://www.sbigroup.co.jp/english/)
+    in 2020).
 
-    Led the real-time accounting and contributed to the risk infrastructure:
-
-    - Built and operated a fleet of blockchain nodes across multiple
-      chains for real-time transaction monitoring.
-    - Contributed to the real-time crypto/fiat accounting system with PnL
+    - Built and operated blockchain nodes across multiple chains
+      for real-time transaction monitoring.
+    - Contributed to real-time crypto/fiat accounting with PnL
       detection, integrated with the risk system.
-    - Managed the full lifecycle: infrastructure, development,
-      releases, and new features for the blockchain and accounting
-      projects.
+    - Managed full lifecycle: infrastructure, development, releases.
   links:
     - label: Website
       url: https://b2c2.com
