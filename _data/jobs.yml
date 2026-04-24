@@ -3,18 +3,16 @@
 
 - employer: BaDaaS
   url: https://badaas.be
+  side: true
   positions:
-    - title: Founder & cryptography researcher/engineer (part-time)
+    - title: Founder & Independent Researcher
       start: 2020
       end: Present
   description: |
-    BaDaaS is a Belgium-based mathematics research boutique founded
-    in 2020, bridging abstract mathematics and concrete applications.
-    Consulting, research, and engineering for protocol design, cryptography
-    library development, and security auditing.
-
-    We have a broad sets of interests of applied mathematics, from
-    (post-quantum) cryptography, SNARK to formal verification.
+    Personal mathematics research boutique founded in 2020,
+    bridging abstract mathematics and concrete applications.
+    Independent research, consulting, and engineering for protocol
+    design, cryptography library development, and security auditing.
 
     Current projects:
 
@@ -58,19 +56,20 @@
     to 5 engineers on the full rewrite of the Mina node from OCaml
     to Rust.
 
-    As **Senior Cryptography Engineer**, contributed to
+    As **Senior Cryptography Engineer**, worked across the full
+    cryptography stack. Contributed to
+    [Kimchi](https://github.com/o1-labs/proof-systems) (custom gates,
+    lookups),
+    [Pickles](https://github.com/MinaProtocol/mina/tree/compatible/src/lib/crypto/pickles)
+    (the recursion layer based on Halo2),
+    and [o1js](https://github.com/o1-labs/o1js) (the TypeScript SDK
+    for writing zkApps). Contributed to
     [o1VM](https://github.com/o1-labs/proof-systems/tree/master/o1vm),
-    a zkVM for MIPS built as a team effort. Implemented the RISC-V
-    interpreter, focused on the folding aspect, and designed and
+    a zkVM for MIPS built as a team effort, implementing the RISC-V
+    interpreter and focusing on the folding aspect. Designed and
     started building
     [Arrabbiata](https://github.com/o1-labs/proof-systems/tree/master/arrabbiata),
     a folding scheme for arbitrary custom gates and degrees.
-    Contributed to
-    [Pickles](https://github.com/MinaProtocol/mina/tree/compatible/src/lib/crypto/pickles),
-    the recursion layer used in Mina based on Halo2 (Plonk-ish
-    implementation of Halo), and to the
-    [proof-systems](https://github.com/o1-labs/proof-systems)
-    library (Kimchi, custom gates, lookups).
   links:
     - label: o1Labs
       url: https://o1labs.org
@@ -87,8 +86,9 @@
 
 - employer: LeakIX
   url: https://leakix.net
+  side: true
   positions:
-    - title: Co-founder/CEO (part-time)
+    - title: Co-founder (part-time)
       start: 2021
       end: Present
   description: |

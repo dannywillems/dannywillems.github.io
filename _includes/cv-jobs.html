@@ -1,6 +1,15 @@
 <div class="cv-jobs">
 {% assign early_started = false %}
+{% assign filter_side = include.side %}
 {% for job in site.data.jobs %}
+  {% if filter_side != nil %}
+    {% if filter_side == true and job.side != true %}
+      {% continue %}
+    {% endif %}
+    {% if filter_side == false and job.side == true %}
+      {% continue %}
+    {% endif %}
+  {% endif %}
   {% if job.early %}
     {% unless early_started %}
       {% assign early_started = true %}

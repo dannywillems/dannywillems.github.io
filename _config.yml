@@ -5,10 +5,13 @@ baseurl: ""
 author:
   name: Danny Willems
 description: >-
-  A mathematician fighting for privacy and security on the Internet, while
-  dreaming about describing the Universe with equations and symbols.
-  Cryptography researcher and engineer. Founder of BaDaaS. Building Papyrus and
-  cryptography.academy. Co-founder of LeakIX.
+  A mathematician dreaming about describing the Universe with equations
+  and symbols. Cryptography researcher and engineer.
+  Founder of BaDaaS (personal research). Part-time involved at LeakIX.
+tagline:
+  - >-
+    A mathematician dreaming about describing the Universe
+    with equations and symbols.
 permalink: /blog/:year/:month/:day/:title/
 excerpt_separator: <!--more-->
 defaults:
