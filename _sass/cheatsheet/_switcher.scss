@@ -3,6 +3,8 @@
 // Buttons for switching between themes
 // =============================================================================
 
+@use "./variables" as *;
+
 .theme-switcher {
   display: flex;
   gap: $spacing-sm;

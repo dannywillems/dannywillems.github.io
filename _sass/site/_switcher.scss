@@ -3,6 +3,8 @@
 // Dropdown component for switching between themes (in footer)
 // =============================================================================
 
+@use "./variables" as *;
+
 .theme-switcher {
   display: inline-flex;
   align-items: center;

@@ -3,6 +3,8 @@
 // Theme-agnostic structural styles
 // =============================================================================
 
+@use "./variables" as *;
+
 .cheatsheet {
   font-family: $font-mono;
   padding: $spacing-xl;

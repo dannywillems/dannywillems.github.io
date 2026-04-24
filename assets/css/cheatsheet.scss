@@ -7,7 +7,7 @@
 // Main entry point - imports all partials
 // =============================================================================
 
-@import "cheatsheet/variables";
-@import "cheatsheet/switcher";
-@import "cheatsheet/base";
-@import "cheatsheet/themes";
+@use "cheatsheet/variables";
+@use "cheatsheet/switcher";
+@use "cheatsheet/base";
+@use "cheatsheet/themes";
