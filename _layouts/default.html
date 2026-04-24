@@ -52,7 +52,13 @@
               </a>
           </h1>
           <h2>
+            {% if site.tagline %}
+              {% for line in site.tagline %}
+                {{ line }}{% unless forloop.last %}<br />{% endunless %}
+              {% endfor %}
+            {% else %}
               {{ site.description | default: site.github.project_tagline }}
+            {% endif %}
           </h2>
         <nav class="header-nav">
           <div class="nav-group">

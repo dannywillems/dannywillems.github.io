@@ -210,31 +210,6 @@
     - label: OPAM
       url: https://opam.ocaml.org/packages/carray/
 
-- title: "Seum: OCaml DSL and tool to write and compare programs in assembly, in a typed and \"safe\" fashion way (June 2022 - 2023)"
-  description: |
-    Writing performant applications might require to write low level assembly code
-    following a specific assembler syntax like GAS or NASM and when the code is
-    written, OCaml developers must write boilerplate code in C and in OCaml to bind
-    the hand-written assembly routines to expose it into a library.
-    Also, comparing two routines implementing the same algorithm in
-    assembly is hard because they might be implemented in different assembler, might
-    use different ISA or request access a different number of time the memory.
-
-    Seum aims to embed a syntax close to the NASM syntax in OCaml to write typed
-    assembly program. Parsers for different assemblers are provided to be able to
-    compare programs using the internal Seum representation. A cost model is
-    implemented counting the number of CPU cycle each instruction requires in
-    addition to counting the number of memory accesses and registers used, providing
-    more precise comparisons of algorithm implementations.
-    Additionnally, using the embedded syntax, OCaml bindings to the assembly code can be
-    automatically generated. Calling the assembly code directly from OCaml like any
-    other function should also be possible and straightforward. The OCaml developer
-    has never to write assembly in a different file and can threat assembly code
-    like pure OCaml functions.
-  links:
-    - label: GitLab
-      url: https://gitlab.com/dannywillems/seum/
-
 - title: "ocaml-arkworks: OCaml binding to Rust library arkworks (Dec 2022 - 2023)"
   description: |
     WIP (Dec. 2022) - Optimised OCaml binding to the library <a

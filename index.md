@@ -8,11 +8,11 @@ use_math: true
         <img class="portrait" src="{{ '/assets/me.jpg' | relative_url }}" alt="Danny Willems portrait" loading="lazy" />
     </div>
     <p class="center">
-      Currently:
+      <strong>Open to opportunities</strong>
       <br />
-      Independent Researcher & Engineer @ <a href="https://badaas.be" target="_blank" rel="noopener noreferrer">BaDaaS</a>
+      Independent Researcher @ <a href="https://badaas.be" target="_blank" rel="noopener noreferrer">BaDaaS</a> (personal research)
       <br />
-      Co-founder @ <a href="https://leakix.net" target="_blank" rel="noopener noreferrer">LeakIX</a>
+      Part-time involved @ <a href="https://leakix.net" target="_blank" rel="noopener noreferrer">LeakIX</a>
     </p>
     <div class="center">
        <a href="https://twitter.com/dwillems42" class="logo-link" target="_blank" rel="noopener noreferrer">
@@ -44,15 +44,17 @@ use_math: true
     Hi! I am Danny Willems. I am a mathematician and engineer
     working at the intersection of cryptography, formal
     verification, and distributed systems.
+    I am currently <a href="mailto:danny@badaas.be"><strong>looking for new opportunities</strong></a>.
     <br />
-    I run <a href="https://badaas.be" target="_blank" rel="noopener noreferrer">BaDaaS</a>, a mathematics
-    research boutique. I am currently building
+    On the side, I run <a href="https://badaas.be" target="_blank" rel="noopener noreferrer">BaDaaS</a>,
+    a personal mathematics research boutique where I build
     <a href="https://papyrus.badaas.eu" target="_blank" rel="noopener noreferrer">Papyrus</a> and
     <a href="https://cryptography.academy" target="_blank" rel="noopener noreferrer">cryptography.academy</a>,
     tools to formally verify the world's cryptographic knowledge.
     I also co-founded <a href="https://leakix.net" target="_blank" rel="noopener noreferrer">LeakIX</a> in
     2021 with Gregory Boddin, an attack surface management platform
-    serving 100+ clients and multiple national CERTs.
+    serving 100+ clients and multiple national CERTs, where I remain
+    part-time involved.
     <br />
     Previously, I was Head of Cryptography at
     <a href="https://o1labs.org" target="_blank" rel="noopener noreferrer">o1Labs</a> and led a team to
@@ -61,12 +63,14 @@ use_math: true
     <a href="https://nomadic-labs.com" target="_blank" rel="noopener noreferrer">Nomadic Labs</a> on the
     Tezos protocol.
     <br />
-    My current research interests include incrementally verifiable
-    computation, cryptanalysis of AO hash functions and post-quantum
-    cryptography. Previously, I spent time on SNARK-friendly primitives. On my
-    free-time I read abou cybersecurity, low-level code optimizations, formal
-    verification and mathematics applied to physics. I also enjoy doing
-    recreational mathematics.
+    My current research interests include post-quantum cryptography,
+    cryptanalysis of AO hash functions, and formal verification of
+    cryptographic protocols and primitives. Previously, I spent time on
+    SNARK-friendly primitives based on elliptic curves, SNARK
+    implementations, and incrementally verifiable computation. On my
+    free-time I read about cybersecurity, low-level code optimizations,
+    formal verification, and mathematics applied to physics. I also
+    enjoy doing recreational mathematics.
     <br />
     Nowadays, I like getting my hands dirty coding in C, OCaml,
     Rust and read assembly code. Constantly requiring to be in an
@@ -76,7 +80,11 @@ use_math: true
 
 ## Experience
 
-{% include cv-jobs.html %}
+{% include cv-jobs.html side=false %}
+
+## Side projects & part-time involvement
+
+{% include cv-jobs.html side=true %}
 
 ## Research publications
 
