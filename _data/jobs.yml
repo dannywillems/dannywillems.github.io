@@ -112,7 +112,7 @@
     - Built [ocaml-bls12-381](https://gitlab.com/dannywillems/ocaml-bls12-381):
       pairing operations, BLS signatures, hash functions over
       BLS12-381.
-    - Contributed to [Plompiler](https://opam.ocaml.org/packages/tezos-plompiler),
+    - Contributed to [Plompiler](https://gitlab.com/tezos/tezos/-/tree/master/src/lib_plompiler),
       a monadic DSL for aPlonK circuits.
     - Worked on Epoxy, a validity rollup for Tezos.
     - Contributed to the Tezos protocol ([Octez](https://gitlab.com/tezos/tezos/)).
