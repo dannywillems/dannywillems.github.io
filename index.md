@@ -41,9 +41,9 @@ use_math: true
     </div>
   </div>
   <div class="col-6">
-    Hi! I am Danny Willems. I am a mathematician and engineer
-    working at the intersection of cryptography, formal
-    verification, and distributed systems.
+    Hi! I am Danny Willems. I am a mathematician, cryptography
+    engineer and researcher working at the intersection of
+    cryptography, formal verification, and distributed systems.
     I am currently <a href="mailto:danny@badaas.be"><strong>looking for new opportunities</strong></a>.
     <br />
     On the side, I run <a href="https://badaas.be" target="_blank" rel="noopener noreferrer">BaDaaS</a>,
