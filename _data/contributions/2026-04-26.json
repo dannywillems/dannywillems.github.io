@@ -1,37 +1,37 @@
 {
-  "updated_at": "2026-05-20T07:24:42.553416Z",
+  "updated_at": "2026-04-26T06:46:22.049449Z",
   "totals": {
     "week": {
-      "commits": 23,
-      "prs": 0,
+      "commits": 512,
+      "prs": 457,
       "reviews": 0,
-      "issues": 0,
-      "repos_contributed": 4,
-      "total": 23
+      "issues": 3,
+      "repos_contributed": 16,
+      "total": 972
     },
     "month": {
-      "commits": 733,
-      "prs": 552,
+      "commits": 989,
+      "prs": 1035,
       "reviews": 1,
-      "issues": 3,
-      "repos_contributed": 18,
-      "total": 1289
+      "issues": 16,
+      "repos_contributed": 22,
+      "total": 2041
     },
     "quarter": {
-      "commits": 4756,
-      "prs": 3421,
-      "reviews": 5,
-      "issues": 87,
-      "repos_contributed": 38,
-      "total": 8269
+      "commits": 5081,
+      "prs": 3437,
+      "reviews": 24,
+      "issues": 243,
+      "repos_contributed": 46,
+      "total": 8785
     },
     "year": {
-      "commits": 8035,
-      "prs": 4251,
-      "reviews": 295,
-      "issues": 995,
-      "repos_contributed": 70,
-      "total": 13576
+      "commits": 8080,
+      "prs": 4242,
+      "reviews": 350,
+      "issues": 1000,
+      "repos_contributed": 69,
+      "total": 13672
     }
   },
   "repositories": [
@@ -39,32 +39,32 @@
       "name": "BaDaaS/cryptography.academy",
       "url": "https://github.com/BaDaaS/cryptography.academy",
       "week": {
-        "commits": 0,
-        "prs": 0,
+        "commits": 399,
+        "prs": 441,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 840
       },
       "month": {
-        "commits": 465,
-        "prs": 528,
-        "reviews": 0,
-        "issues": 0,
-        "total": 993
-      },
-      "quarter": {
-        "commits": 3852,
-        "prs": 3247,
+        "commits": 668,
+        "prs": 989,
         "reviews": 0,
         "issues": 1,
-        "total": 7100
+        "total": 1658
+      },
+      "quarter": {
+        "commits": 3822,
+        "prs": 3161,
+        "reviews": 0,
+        "issues": 20,
+        "total": 7003
       },
       "year": {
-        "commits": 3919,
-        "prs": 3248,
+        "commits": 3853,
+        "prs": 3161,
         "reviews": 0,
         "issues": 52,
-        "total": 7219
+        "total": 7066
       }
     },
     {
@@ -85,50 +85,18 @@
         "total": 0
       },
       "quarter": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
+        "commits": 27,
+        "prs": 6,
+        "reviews": 3,
+        "issues": 2,
+        "total": 38
       },
       "year": {
         "commits": 1083,
-        "prs": 272,
+        "prs": 273,
         "reviews": 99,
         "issues": 410,
-        "total": 1864
-      }
-    },
-    {
-      "name": "o1-labs/proof-systems",
-      "url": "https://github.com/o1-labs/proof-systems",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "year": {
-        "commits": 465,
-        "prs": 122,
-        "reviews": 51,
-        "issues": 20,
-        "total": 658
+        "total": 1865
       }
     },
     {
@@ -149,23 +117,23 @@
         "total": 0
       },
       "quarter": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
+        "commits": 10,
+        "prs": 4,
+        "reviews": 4,
         "issues": 0,
-        "total": 0
+        "total": 18
       },
       "year": {
-        "commits": 365,
-        "prs": 156,
-        "reviews": 89,
-        "issues": 3,
-        "total": 613
+        "commits": 552,
+        "prs": 208,
+        "reviews": 107,
+        "issues": 6,
+        "total": 873
       }
     },
     {
-      "name": "dannywillems/dannywillems.github.io",
-      "url": "https://github.com/dannywillems/dannywillems.github.io",
+      "name": "o1-labs/proof-systems",
+      "url": "https://github.com/o1-labs/proof-systems",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -174,18 +142,50 @@
         "total": 0
       },
       "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 123,
+        "prs": 27,
+        "reviews": 10,
+        "issues": 1,
+        "total": 161
+      },
+      "year": {
+        "commits": 507,
+        "prs": 130,
+        "reviews": 69,
+        "issues": 22,
+        "total": 728
+      }
+    },
+    {
+      "name": "dannywillems/dannywillems.github.io",
+      "url": "https://github.com/dannywillems/dannywillems.github.io",
+      "week": {
         "commits": 34,
         "prs": 5,
         "reviews": 0,
         "issues": 0,
         "total": 39
       },
-      "quarter": {
-        "commits": 166,
-        "prs": 82,
+      "month": {
+        "commits": 56,
+        "prs": 11,
         "reviews": 0,
         "issues": 0,
-        "total": 248
+        "total": 67
+      },
+      "quarter": {
+        "commits": 169,
+        "prs": 83,
+        "reviews": 0,
+        "issues": 1,
+        "total": 253
       },
       "year": {
         "commits": 358,
@@ -207,17 +207,17 @@
       },
       "month": {
         "commits": 0,
-        "prs": 0,
+        "prs": 1,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 1
       },
       "quarter": {
         "commits": 5,
-        "prs": 7,
+        "prs": 11,
         "reviews": 0,
         "issues": 0,
-        "total": 12
+        "total": 16
       },
       "year": {
         "commits": 306,
@@ -231,57 +231,57 @@
       "name": "BaDaaS/badaas.github.io",
       "url": "https://github.com/BaDaaS/badaas.github.io",
       "week": {
-        "commits": 0,
-        "prs": 0,
+        "commits": 22,
+        "prs": 1,
         "reviews": 0,
-        "issues": 0,
-        "total": 0
+        "issues": 2,
+        "total": 25
       },
       "month": {
-        "commits": 37,
+        "commits": 95,
         "prs": 7,
-        "reviews": 1,
-        "issues": 2,
-        "total": 47
+        "reviews": 0,
+        "issues": 3,
+        "total": 105
       },
       "quarter": {
-        "commits": 163,
-        "prs": 14,
-        "reviews": 1,
+        "commits": 147,
+        "prs": 9,
+        "reviews": 0,
         "issues": 3,
-        "total": 181
+        "total": 159
       },
       "year": {
-        "commits": 186,
-        "prs": 15,
-        "reviews": 1,
+        "commits": 159,
+        "prs": 9,
+        "reviews": 0,
         "issues": 6,
-        "total": 208
+        "total": 174
       }
     },
     {
       "name": "LeakIX/ironhtml",
       "url": "https://github.com/LeakIX/ironhtml",
       "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
         "commits": 3,
         "prs": 1,
         "reviews": 0,
         "issues": 0,
         "total": 4
       },
-      "quarter": {
-        "commits": 7,
+      "month": {
+        "commits": 4,
         "prs": 1,
         "reviews": 0,
         "issues": 0,
-        "total": 8
+        "total": 5
+      },
+      "quarter": {
+        "commits": 56,
+        "prs": 18,
+        "reviews": 0,
+        "issues": 48,
+        "total": 122
       },
       "year": {
         "commits": 72,
@@ -309,11 +309,11 @@
         "total": 0
       },
       "quarter": {
-        "commits": 40,
-        "prs": 8,
-        "reviews": 0,
-        "issues": 2,
-        "total": 50
+        "commits": 97,
+        "prs": 21,
+        "reviews": 2,
+        "issues": 19,
+        "total": 139
       },
       "year": {
         "commits": 97,
@@ -321,6 +321,38 @@
         "reviews": 2,
         "issues": 19,
         "total": 139
+      }
+    },
+    {
+      "name": "o1-labs/snarky",
+      "url": "https://github.com/o1-labs/snarky",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 82,
+        "prs": 21,
+        "reviews": 22,
+        "issues": 1,
+        "total": 126
       }
     },
     {
@@ -341,11 +373,11 @@
         "total": 0
       },
       "quarter": {
-        "commits": 25,
-        "prs": 15,
-        "reviews": 1,
-        "issues": 7,
-        "total": 48
+        "commits": 60,
+        "prs": 36,
+        "reviews": 2,
+        "issues": 25,
+        "total": 123
       },
       "year": {
         "commits": 60,
@@ -353,38 +385,6 @@
         "reviews": 2,
         "issues": 25,
         "total": 123
-      }
-    },
-    {
-      "name": "BaDaaS/replication-algorithm-overview",
-      "url": "https://github.com/BaDaaS/replication-algorithm-overview",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 115,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 115
-      },
-      "quarter": {
-        "commits": 115,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 115
-      },
-      "year": {
-        "commits": 115,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 115
       }
     },
     {
@@ -405,11 +405,11 @@
         "total": 0
       },
       "quarter": {
-        "commits": 0,
-        "prs": 0,
+        "commits": 11,
+        "prs": 2,
         "reviews": 0,
-        "issues": 0,
-        "total": 0
+        "issues": 1,
+        "total": 14
       },
       "year": {
         "commits": 62,
@@ -423,128 +423,32 @@
       "name": "LeakIX/catapulta",
       "url": "https://github.com/LeakIX/catapulta",
       "week": {
-        "commits": 1,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "month": {
-        "commits": 4,
+        "commits": 3,
         "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 5
-      },
-      "quarter": {
-        "commits": 73,
-        "prs": 3,
-        "reviews": 0,
-        "issues": 20,
-        "total": 96
-      },
-      "year": {
-        "commits": 77,
-        "prs": 3,
-        "reviews": 0,
-        "issues": 20,
-        "total": 100
-      }
-    },
-    {
-      "name": "LeakIX/leakix-mcp",
-      "url": "https://github.com/LeakIX/leakix-mcp",
-      "week": {
-        "commits": 2,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 2
-      },
-      "month": {
-        "commits": 4,
-        "prs": 0,
         "reviews": 0,
         "issues": 0,
         "total": 4
       },
-      "quarter": {
-        "commits": 57,
-        "prs": 13,
-        "reviews": 1,
-        "issues": 0,
-        "total": 71
-      },
-      "year": {
-        "commits": 65,
-        "prs": 13,
-        "reviews": 1,
-        "issues": 0,
-        "total": 79
-      }
-    },
-    {
-      "name": "o1-labs/mina-explorer",
-      "url": "https://github.com/o1-labs/mina-explorer",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
       "month": {
-        "commits": 0,
-        "prs": 0,
+        "commits": 8,
+        "prs": 1,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 9
       },
       "quarter": {
-        "commits": 2,
-        "prs": 0,
+        "commits": 76,
+        "prs": 3,
         "reviews": 0,
-        "issues": 0,
-        "total": 2
+        "issues": 20,
+        "total": 99
       },
       "year": {
-        "commits": 58,
-        "prs": 0,
+        "commits": 76,
+        "prs": 3,
         "reviews": 0,
-        "issues": 16,
-        "total": 74
-      }
-    },
-    {
-      "name": "LeakIX/oxide-sql",
-      "url": "https://github.com/LeakIX/oxide-sql",
-      "week": {
-        "commits": 2,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 2
-      },
-      "month": {
-        "commits": 2,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 2
-      },
-      "quarter": {
-        "commits": 7,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 7
-      },
-      "year": {
-        "commits": 58,
-        "prs": 5,
-        "reviews": 0,
-        "issues": 8,
-        "total": 71
+        "issues": 20,
+        "total": 99
       }
     },
     {
@@ -566,22 +470,54 @@
       },
       "quarter": {
         "commits": 0,
-        "prs": 0,
+        "prs": 1,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 1
       },
       "year": {
-        "commits": 38,
-        "prs": 18,
-        "reviews": 5,
+        "commits": 41,
+        "prs": 29,
+        "reviews": 6,
         "issues": 5,
-        "total": 66
+        "total": 81
       }
     },
     {
-      "name": "LeakIX/protonmail-client",
-      "url": "https://github.com/LeakIX/protonmail-client",
+      "name": "LeakIX/leakix-mcp",
+      "url": "https://github.com/LeakIX/leakix-mcp",
+      "week": {
+        "commits": 2,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 2
+      },
+      "month": {
+        "commits": 8,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 8
+      },
+      "quarter": {
+        "commits": 63,
+        "prs": 13,
+        "reviews": 1,
+        "issues": 0,
+        "total": 77
+      },
+      "year": {
+        "commits": 63,
+        "prs": 13,
+        "reviews": 1,
+        "issues": 0,
+        "total": 77
+      }
+    },
+    {
+      "name": "o1-labs/mina-explorer",
+      "url": "https://github.com/o1-labs/mina-explorer",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -597,11 +533,75 @@
         "total": 0
       },
       "quarter": {
-        "commits": 14,
+        "commits": 58,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 16,
+        "total": 74
+      },
+      "year": {
+        "commits": 58,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 16,
+        "total": 74
+      }
+    },
+    {
+      "name": "LeakIX/oxide-sql",
+      "url": "https://github.com/LeakIX/oxide-sql",
+      "week": {
+        "commits": 0,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 14
+        "total": 0
+      },
+      "month": {
+        "commits": 3,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 3
+      },
+      "quarter": {
+        "commits": 56,
+        "prs": 5,
+        "reviews": 0,
+        "issues": 8,
+        "total": 69
+      },
+      "year": {
+        "commits": 56,
+        "prs": 5,
+        "reviews": 0,
+        "issues": 8,
+        "total": 69
+      }
+    },
+    {
+      "name": "LeakIX/protonmail-client",
+      "url": "https://github.com/LeakIX/protonmail-client",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 1,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      },
+      "quarter": {
+        "commits": 43,
+        "prs": 4,
+        "reviews": 0,
+        "issues": 11,
+        "total": 58
       },
       "year": {
         "commits": 43,
@@ -615,18 +615,18 @@
       "name": "LeakIX/DocSite",
       "url": "https://github.com/LeakIX/DocSite",
       "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
         "commits": 21,
         "prs": 8,
         "reviews": 0,
         "issues": 0,
         "total": 29
+      },
+      "month": {
+        "commits": 23,
+        "prs": 8,
+        "reviews": 0,
+        "issues": 0,
+        "total": 31
       },
       "quarter": {
         "commits": 24,
@@ -641,38 +641,6 @@
         "reviews": 3,
         "issues": 0,
         "total": 54
-      }
-    },
-    {
-      "name": "BaDaaS/ao-security",
-      "url": "https://github.com/BaDaaS/ao-security",
-      "week": {
-        "commits": 18,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 18
-      },
-      "month": {
-        "commits": 20,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 20
-      },
-      "quarter": {
-        "commits": 47,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 4,
-        "total": 51
-      },
-      "year": {
-        "commits": 47,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 4,
-        "total": 51
       }
     },
     {
@@ -708,53 +676,21 @@
       }
     },
     {
-      "name": "o1-labs/snarky",
-      "url": "https://github.com/o1-labs/snarky",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "year": {
-        "commits": 36,
-        "prs": 8,
-        "reviews": 3,
-        "issues": 1,
-        "total": 48
-      }
-    },
-    {
       "name": "dannywillems/ocaml-ff",
       "url": "https://github.com/dannywillems/ocaml-ff",
       "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
         "commits": 2,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
         "total": 2
+      },
+      "month": {
+        "commits": 35,
+        "prs": 11,
+        "reviews": 0,
+        "issues": 0,
+        "total": 46
       },
       "quarter": {
         "commits": 35,
@@ -839,18 +775,18 @@
       "name": "LeakIX/sponsor",
       "url": "https://github.com/LeakIX/sponsor",
       "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
         "commits": 1,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
         "total": 1
+      },
+      "month": {
+        "commits": 5,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 5
       },
       "quarter": {
         "commits": 7,
@@ -897,6 +833,38 @@
         "reviews": 0,
         "issues": 0,
         "total": 33
+      }
+    },
+    {
+      "name": "BaDaaS/ao-security",
+      "url": "https://github.com/BaDaaS/ao-security",
+      "week": {
+        "commits": 1,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      },
+      "month": {
+        "commits": 22,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 1,
+        "total": 23
+      },
+      "quarter": {
+        "commits": 28,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 4,
+        "total": 32
+      },
+      "year": {
+        "commits": 28,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 4,
+        "total": 32
       }
     },
     {
@@ -974,11 +942,11 @@
         "total": 0
       },
       "month": {
-        "commits": 0,
+        "commits": 16,
         "prs": 0,
         "reviews": 0,
-        "issues": 0,
-        "total": 0
+        "issues": 7,
+        "total": 23
       },
       "quarter": {
         "commits": 16,
@@ -1095,18 +1063,18 @@
       "name": "BaDaaS/lean4-courses",
       "url": "https://github.com/BaDaaS/lean4-courses",
       "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
         "commits": 9,
         "prs": 0,
         "reviews": 0,
         "issues": 1,
         "total": 10
+      },
+      "month": {
+        "commits": 19,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 1,
+        "total": 20
       },
       "quarter": {
         "commits": 19,
@@ -1141,11 +1109,11 @@
         "total": 0
       },
       "quarter": {
-        "commits": 0,
+        "commits": 1,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 1
       },
       "year": {
         "commits": 12,
@@ -1153,6 +1121,38 @@
         "reviews": 6,
         "issues": 0,
         "total": 19
+      }
+    },
+    {
+      "name": "LeakIX/caddyfile-rs",
+      "url": "https://github.com/LeakIX/caddyfile-rs",
+      "week": {
+        "commits": 1,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      },
+      "month": {
+        "commits": 2,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 2
+      },
+      "quarter": {
+        "commits": 17,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 17
+      },
+      "year": {
+        "commits": 17,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 17
       }
     },
     {
@@ -1173,49 +1173,17 @@
         "total": 0
       },
       "quarter": {
-        "commits": 8,
+        "commits": 16,
         "prs": 0,
         "reviews": 0,
         "issues": 1,
-        "total": 9
+        "total": 17
       },
       "year": {
         "commits": 16,
         "prs": 0,
         "reviews": 0,
         "issues": 1,
-        "total": 17
-      }
-    },
-    {
-      "name": "LeakIX/caddyfile-rs",
-      "url": "https://github.com/LeakIX/caddyfile-rs",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 1,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "quarter": {
-        "commits": 2,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 2
-      },
-      "year": {
-        "commits": 17,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
         "total": 17
       }
     },
@@ -1272,8 +1240,8 @@
         "commits": 0,
         "prs": 0,
         "reviews": 0,
-        "issues": 0,
-        "total": 0
+        "issues": 13,
+        "total": 13
       },
       "year": {
         "commits": 0,
@@ -1294,18 +1262,18 @@
         "total": 0
       },
       "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
         "commits": 2,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
         "total": 2
+      },
+      "quarter": {
+        "commits": 13,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 13
       },
       "year": {
         "commits": 13,
@@ -1422,11 +1390,11 @@
         "total": 0
       },
       "month": {
-        "commits": 0,
+        "commits": 7,
         "prs": 0,
         "reviews": 0,
-        "issues": 0,
-        "total": 0
+        "issues": 3,
+        "total": 10
       },
       "quarter": {
         "commits": 7,
@@ -1607,11 +1575,11 @@
       "name": "BaDaaS/awesome-pqc",
       "url": "https://github.com/BaDaaS/awesome-pqc",
       "week": {
-        "commits": 0,
+        "commits": 6,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 6
       },
       "month": {
         "commits": 6,
@@ -1653,11 +1621,11 @@
         "total": 0
       },
       "quarter": {
-        "commits": 0,
+        "commits": 2,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 2
       },
       "year": {
         "commits": 5,
@@ -1764,6 +1732,38 @@
       }
     },
     {
+      "name": "dannywillems/mina-extension",
+      "url": "https://github.com/dannywillems/mina-extension",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 5,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 5
+      },
+      "year": {
+        "commits": 5,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 5
+      }
+    },
+    {
       "name": "BaDaaS/proton-drive-client",
       "url": "https://github.com/BaDaaS/proton-drive-client",
       "week": {
@@ -1828,8 +1828,8 @@
       }
     },
     {
-      "name": "dannywillems/mina-extension",
-      "url": "https://github.com/dannywillems/mina-extension",
+      "name": "o1-labs/cargo-specification",
+      "url": "https://github.com/o1-labs/cargo-specification",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -1846,16 +1846,16 @@
       },
       "quarter": {
         "commits": 0,
-        "prs": 0,
+        "prs": 4,
         "reviews": 0,
-        "issues": 0,
-        "total": 0
+        "issues": 1,
+        "total": 5
       },
       "year": {
-        "commits": 5,
-        "prs": 0,
+        "commits": 0,
+        "prs": 4,
         "reviews": 0,
-        "issues": 0,
+        "issues": 1,
         "total": 5
       }
     },
@@ -1888,38 +1888,6 @@
         "prs": 0,
         "reviews": 1,
         "issues": 0,
-        "total": 5
-      }
-    },
-    {
-      "name": "o1-labs/cargo-specification",
-      "url": "https://github.com/o1-labs/cargo-specification",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "year": {
-        "commits": 0,
-        "prs": 4,
-        "reviews": 0,
-        "issues": 1,
         "total": 5
       }
     },
@@ -1959,11 +1927,11 @@
       "name": "BaDaaS/pretty-printer",
       "url": "https://github.com/BaDaaS/pretty-printer",
       "week": {
-        "commits": 0,
+        "commits": 4,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 4
       },
       "month": {
         "commits": 4,
@@ -1999,10 +1967,10 @@
       },
       "month": {
         "commits": 0,
-        "prs": 0,
+        "prs": 4,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 4
       },
       "quarter": {
         "commits": 0,
@@ -2037,11 +2005,11 @@
         "total": 0
       },
       "quarter": {
-        "commits": 2,
+        "commits": 4,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 2
+        "total": 4
       },
       "year": {
         "commits": 4,
@@ -2055,11 +2023,11 @@
       "name": "BaDaaS/converted-papers",
       "url": "https://github.com/BaDaaS/converted-papers",
       "week": {
-        "commits": 0,
+        "commits": 3,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 3
       },
       "month": {
         "commits": 3,
@@ -2067,38 +2035,6 @@
         "reviews": 0,
         "issues": 0,
         "total": 3
-      },
-      "quarter": {
-        "commits": 3,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 3
-      },
-      "year": {
-        "commits": 3,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 3
-      }
-    },
-    {
-      "name": "dannywillems/dannywillems",
-      "url": "https://github.com/dannywillems/dannywillems",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 2,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 2
       },
       "quarter": {
         "commits": 3,
@@ -2127,10 +2063,10 @@
       },
       "month": {
         "commits": 0,
-        "prs": 0,
-        "reviews": 0,
+        "prs": 2,
+        "reviews": 1,
         "issues": 0,
-        "total": 0
+        "total": 3
       },
       "quarter": {
         "commits": 0,
@@ -2212,21 +2148,21 @@
       }
     },
     {
-      "name": "dannywillems/ms-waitlist-notifier",
-      "url": "https://github.com/dannywillems/ms-waitlist-notifier",
+      "name": "dannywillems/dannywillems",
+      "url": "https://github.com/dannywillems/dannywillems",
       "week": {
-        "commits": 0,
+        "commits": 1,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 1
       },
       "month": {
-        "commits": 0,
+        "commits": 1,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 1
       },
       "quarter": {
         "commits": 2,
@@ -2278,6 +2214,102 @@
     {
       "name": "dannywillems/o1vm-test",
       "url": "https://github.com/dannywillems/o1vm-test",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 2,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 2
+      },
+      "year": {
+        "commits": 2,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 2
+      }
+    },
+    {
+      "name": "dannywillems/ms-waitlist-notifier",
+      "url": "https://github.com/dannywillems/ms-waitlist-notifier",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 2,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 2
+      },
+      "year": {
+        "commits": 2,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 2
+      }
+    },
+    {
+      "name": "LeakIX/corrode",
+      "url": "https://github.com/LeakIX/corrode",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 2,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 2
+      },
+      "year": {
+        "commits": 2,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 2
+      }
+    },
+    {
+      "name": "LeakIX/audit-dependencies",
+      "url": "https://github.com/LeakIX/audit-dependencies",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -2404,70 +2436,6 @@
       }
     },
     {
-      "name": "LeakIX/audit-dependencies",
-      "url": "https://github.com/LeakIX/audit-dependencies",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "year": {
-        "commits": 2,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 2
-      }
-    },
-    {
-      "name": "LeakIX/corrode",
-      "url": "https://github.com/LeakIX/corrode",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "year": {
-        "commits": 2,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 2
-      }
-    },
-    {
       "name": "zingolabs/zaino",
       "url": "https://github.com/zingolabs/zaino",
       "week": {
@@ -2532,70 +2500,6 @@
       }
     },
     {
-      "name": "nymtech/nym",
-      "url": "https://github.com/nymtech/nym",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "nymtech/sphinx",
-      "url": "https://github.com/nymtech/sphinx",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
       "name": "BaDaaS/primavera",
       "url": "https://github.com/BaDaaS/primavera",
       "week": {
@@ -2606,11 +2510,11 @@
         "total": 0
       },
       "month": {
-        "commits": 0,
+        "commits": 1,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 1
       },
       "quarter": {
         "commits": 1,
@@ -2756,8 +2660,8 @@
       }
     },
     {
-      "name": "tevador/RandomX",
-      "url": "https://github.com/tevador/RandomX",
+      "name": "o1-labs/mdbook-linkcheck",
+      "url": "https://github.com/o1-labs/mdbook-linkcheck",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -2788,8 +2692,8 @@
       }
     },
     {
-      "name": "dannywillems/ledger-mina",
-      "url": "https://github.com/dannywillems/ledger-mina",
+      "name": "dannywillems/zaino",
+      "url": "https://github.com/dannywillems/zaino",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -2852,8 +2756,40 @@
       }
     },
     {
-      "name": "dannywillems/zaino",
-      "url": "https://github.com/dannywillems/zaino",
+      "name": "tevador/RandomX",
+      "url": "https://github.com/tevador/RandomX",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "dannywillems/ledger-mina",
+      "url": "https://github.com/dannywillems/ledger-mina",
       "week": {
         "commits": 0,
         "prs": 0,
