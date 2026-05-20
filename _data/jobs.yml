@@ -33,6 +33,18 @@
     - label: LeakIX
       url: https://leakix.net
 
+- employer: ZODL (Zcash Open Development Labs)
+  url: https://zodl.com
+  positions:
+    - title: Principal Cryptography Engineer
+      start: May 2026
+      end: Present
+  description: |
+    Zcash Open Development Labs, working on the Zcash protocol.
+  links:
+    - label: ZODL
+      url: https://zodl.com
+
 - employer: o1Labs
   url: https://o1labs.org
   positions:

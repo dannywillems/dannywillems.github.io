@@ -1,8 +1,9 @@
 # dannywillems.github.io
 
 Personal website of Danny Willems. Mathematician, cryptography researcher and
-engineer. Open to opportunities. Founder of [BaDaaS](https://badaas.be)
-(personal research). Part-time involved at [LeakIX](https://leakix.net).
+engineer. Principal Cryptography Engineer at [ZODL](https://zodl.com) (Zcash
+Open Development Labs). Part-time involved in [LeakIX](https://leakix.net) and
+[BaDaaS](https://badaas.be) (personal research).
 
 Live at: https://dannywillems.github.io
 

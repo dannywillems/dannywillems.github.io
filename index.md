@@ -8,11 +8,9 @@ use_math: true
         <img class="portrait" src="{{ '/assets/me.jpg' | relative_url }}" alt="Danny Willems portrait" loading="lazy" />
     </div>
     <p class="center">
-      <strong>Open to opportunities</strong>
+      <strong>Principal Cryptography Engineer @ <a href="https://zodl.com" target="_blank" rel="noopener noreferrer">ZODL</a></strong>
       <br />
-      Independent Researcher @ <a href="https://badaas.be" target="_blank" rel="noopener noreferrer">BaDaaS</a> (personal research)
-      <br />
-      Part-time involved @ <a href="https://leakix.net" target="_blank" rel="noopener noreferrer">LeakIX</a>
+      Part-time involved in <a href="https://leakix.net" target="_blank" rel="noopener noreferrer">LeakIX</a> & <a href="https://badaas.be" target="_blank" rel="noopener noreferrer">BaDaaS</a>
     </p>
     <div class="center">
        <a href="https://twitter.com/dwillems42" class="logo-link" target="_blank" rel="noopener noreferrer">
@@ -44,7 +42,9 @@ use_math: true
     Hi! I am Danny Willems. I am a mathematician, cryptography
     engineer and researcher working at the intersection of
     cryptography, formal verification, and distributed systems.
-    I am currently <a href="mailto:danny@badaas.be"><strong>looking for new opportunities</strong></a>.
+    I am currently Principal Cryptography Engineer at
+    <a href="https://zodl.com" target="_blank" rel="noopener noreferrer">ZODL</a>
+    (Zcash Open Development Labs), working on the Zcash protocol.
     <br />
     On the side, I run <a href="https://badaas.be" target="_blank" rel="noopener noreferrer">BaDaaS</a>,
     a personal mathematics research boutique where I build
