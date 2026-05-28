@@ -69,7 +69,7 @@ works in progress and will evolve along with the upstream code:
 
 - [zebra](https://dannywillems.github.io/zebra/): the Zcash full node
   implementation in Rust.
-- [zcash](https://dannywillems.github.io/zcash/): the original C++ node, used
+- [zcashd](https://dannywillems.github.io/zcashd/): the original C++ node, used
   here mostly as a reference for consensus rules.
 - [orchard](https://dannywillems.github.io/orchard/): the Orchard shielded pool,
   including the Pallas curve, Sinsemilla commitments, and the circuit.
