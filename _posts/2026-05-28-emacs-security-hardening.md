@@ -1,5 +1,5 @@
 ---
-title: Hardening a hand-rolled Emacs config: five findings and their fixes
+title: "Hardening a hand-rolled Emacs config: five findings and their fixes"
 author: Danny Willems
 date: 2026-05-28 00:00:00 +0000
 layout: post
