@@ -1,5 +1,5 @@
 ---
-title: From Spacemacs to a small hand-rolled Emacs: why and what is in it
+title: "From Spacemacs to a small hand-rolled Emacs: why and what is in it"
 author: Danny Willems
 date: 2026-05-28 00:00:00 +0000
 layout: post
