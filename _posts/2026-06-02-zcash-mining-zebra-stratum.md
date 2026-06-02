@@ -75,6 +75,18 @@ on a miner. A typical session looks like this:
 5. The pool credits shares and pays out according to its scheme (PPS, PPS+, or
    PPLNS).
 
+Stratum V1 was never standardized in a single RFC; the de facto reference is the
+[Bitcoin Wiki's Stratum mining protocol page](https://en.bitcoin.it/wiki/Stratum_mining_protocol),
+which documents `mining.subscribe`, `mining.notify`, `mining.submit`, and the
+rest. Zcash does not use Bitcoin's Stratum verbatim. The original protocol bakes
+in Bitcoin's block-header layout and nonce space, and Zcash's header format and
+Equihash proof of work break those assumptions. Zcash therefore defines its own
+variant in [ZIP 301: Zcash Stratum Protocol](https://zips.z.cash/zip-0301),
+where, for instance, `mining.submit` carries the worker name, job id, time,
+`nonce_2`, and the Equihash solution rather than Bitcoin's fields. ZIP 301 grew
+out of the earlier
+[slushpool Zcash Stratum protocol changes](https://github.com/slushpool/poclbm-zcash/wiki/Stratum-protocol-changes-for-ZCash).
+
 Two properties matter. Stratum is push-based, so the pool notifies miners of new
 work rather than miners polling for it. And the split between share difficulty
 and network difficulty is what makes pooled mining low-variance and measurable.
@@ -85,11 +97,14 @@ Putting the pieces in order:
 ASIC / GPU  --Stratum/TCP-->  pool stratum server  --getblocktemplate RPC-->  zebrad
 ```
 
-There is also a newer redesign, Stratum V2, which is binary, encrypted, and adds
-a mode that lets miners choose their own transaction set rather than accepting
-the pool's. Its production use so far has been mostly in Bitcoin. I did not find
-evidence of meaningful Stratum V2 adoption in Zcash mining, so for Zcash the
-practical protocol today is still V1.
+There is also a newer redesign, [Stratum V2](https://stratumprotocol.org/),
+which is binary, encrypted, and adds a mode that lets miners choose their own
+transaction set rather than accepting the pool's; its specification is
+maintained in the
+[sv2-spec repository](https://github.com/stratum-mining/sv2-spec/tree/afae8e5439adfb8f6f65823bbe83afbd04abacf4).
+Its production use so far has been mostly in Bitcoin. I did not find evidence of
+meaningful Stratum V2 adoption in Zcash mining, so for Zcash the practical
+protocol today is still V1.
 
 ## how a block is created and received, in Zebra's code
 
@@ -335,6 +350,10 @@ and which hardware.
   in this post pinned to the v4.5.1 commit
   [`76c440e6`](https://github.com/ZcashFoundation/zebra/tree/76c440e67f2c909cbf8418b11a3f56371aed7d95)
 - [Experimental Mining Support in Zebra (Zcash Foundation)](https://zfnd.org/experimental-mining-support-in-zebra/)
+- [ZIP 301: Zcash Stratum Protocol](https://zips.z.cash/zip-0301)
+- [Bitcoin Wiki: Stratum mining protocol (V1)](https://en.bitcoin.it/wiki/Stratum_mining_protocol)
+- [Stratum V2 protocol site](https://stratumprotocol.org/) and
+  [sv2-spec repository](https://github.com/stratum-mining/sv2-spec)
 - [Zebra issue #5234: RPC calls used by mining pools](https://github.com/ZcashFoundation/zebra/issues/5234)
 - [2Miners ZEC mining pool](https://2miners.com/zec-mining-pool)
 - [MiningPoolStats: Zcash](https://miningpoolstats.net/coins/zcash/)
