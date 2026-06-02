@@ -13,7 +13,12 @@
 #                                 #   "Security platform" (optional label)
 #     description: string         # short blurb about the ecosystem (optional)
 #     website:     url            # link rendered next to the title (optional)
-#     repositories:               # ordered list of repos I contributed to
+#
+#     # Each ecosystem renders three tabs: Repositories, Blog articles and
+#     # Documentation. The three lists below feed those tabs. Any list may be
+#     # omitted or left empty; its tab then shows an empty-state message.
+#
+#     repositories:               # "Repositories" tab
 #       - name:        string     # display name, e.g. "owner/repo" (required)
 #         url:         url        # link to the repository (required)
 #         description: string     # what the repo is / what I did (optional)
@@ -22,6 +27,28 @@
 #         period:      string     # involvement window, e.g. "2023 - 2026"
 #         state:       enum       # maintenance state of the repo (see below)
 #         vibe_coded:  bool       # true => largely AI/"vibe" coded (optional)
+#         me_url:      url        # link to *my* commits in this repo. When
+#                                 #   omitted it is derived automatically from
+#                                 #   url: GitHub -> /commits?author=dannywillems,
+#                                 #   GitLab -> /-/commits/master?author=dannywillems.
+#                                 #   Set it explicitly when the default branch
+#                                 #   is not master or the url is a subpath.
+#
+#     blog:                       # "Blog articles" tab
+#       - title:       string     # article title (required)
+#         url:         url        # link to the article (required)
+#         publication: string     # where it was published (optional)
+#         role:        string     # Author / Co-author / Contributor (optional)
+#         date:        string     # when, e.g. "2025-03" or "2025" (optional)
+#         description: string     # short blurb (optional)
+#
+#     documentation:              # "Documentation" tab (same fields as blog)
+#       - title:       string     # doc page / section title (required)
+#         url:         url        # link to the documentation (required)
+#         publication: string     # site / project it belongs to (optional)
+#         role:        string     # Author / Contributor / Translator (optional)
+#         date:        string     # when (optional)
+#         description: string     # short blurb (optional)
 #
 # Allowed values for `state` (controls the coloured badge):
 #   maintained   - actively maintained, accepting changes
@@ -195,26 +222,62 @@ ecosystems:
         state: maintained
         vibe_coded: false
 
-      - name: zcash/zcash-test-vectors
-        url: https://github.com/zcash/zcash-test-vectors
+      - name: dannywillems/nheqminer
+        url: https://github.com/dannywillems/nheqminer
         description: >-
-          Cross-implementation test vectors for the Zcash protocols.
-        language: Python
-        role: Contributor
-        period: 2021
-        state: maintained
-        vibe_coded: false
-
-      - name: zcash/zcash
-        url: https://github.com/zcash/zcash
-        description: >-
-          The original zcashd full node. Early contributions; now being
-          deprecated in favour of Zebra and the Rust wallet.
+          Fork of the nheqminer Equihash miner for Zcash. Modest improvements
+          to repository hygiene and status.
         language: C++
         role: Contributor
-        period: 2020
-        state: deprecated
+        state: active
         vibe_coded: false
+
+    blog:
+      - title: "How Zcash mining fits together: the node, Stratum, and the
+          mining stack"
+        url: https://dannywillems.github.io/blog/2026/06/02/zcash-mining-zebra-stratum/
+        publication: dannywillems.github.io
+        role: Author
+        date: "2026-06-02"
+      - title: A new onboarding method, applied to the Zcash stack at ZODL
+        url: https://dannywillems.github.io/blog/2026/05/28/zodl-onboarding-method/
+        publication: dannywillems.github.io
+        role: Author
+        date: "2026-05-28"
+    documentation:
+      - title: Orchard
+        url: https://dannywillems.github.io/orchard/
+        publication: dannywillems.github.io
+        role: Author
+        description: >-
+          Documentation for Orchard, the Halo 2-based shielded protocol used
+          by Zcash.
+      - title: halo2
+        url: https://dannywillems.github.io/halo2/
+        publication: dannywillems.github.io
+        role: Author
+        description: >-
+          Documentation for halo2, the PLONKish proving system underpinning
+          Orchard.
+      - title: zcashd
+        url: https://dannywillems.github.io/zcashd/
+        publication: dannywillems.github.io
+        role: Author
+        description: >-
+          Documentation for zcashd, the original Zcash full node.
+      - title: Zebra
+        url: https://dannywillems.github.io/zebra/
+        publication: dannywillems.github.io
+        role: Author
+        description: >-
+          Documentation for Zebra, the Rust implementation of a Zcash node.
+      - title: librustzcash
+        url: https://dannywillems.github.io/librustzcash/
+        publication: dannywillems.github.io
+        role: Author
+        description: >-
+          Documentation for librustzcash, the Rust crates implementing the
+          Zcash protocol.
 
   - name: Tezos
     type: Blockchain
@@ -272,6 +335,7 @@ ecosystems:
 
       - name: nomadic-labs/privacy-team (Plompiler)
         url: https://gitlab.com/nomadic-labs/cryptography/privacy-team/-/tree/master/plompiler
+        me_url: https://gitlab.com/nomadic-labs/cryptography/privacy-team/-/commits/master?author=dannywillems&path=plompiler
         description: >-
           A monadic DSL embedded in OCaml for building circuits for aPlonK.
           Sporadic contributions, e.g. new primitives and peer-coding.
@@ -352,8 +416,7 @@ ecosystems:
     description: >-
       LeakIX is a search engine and attack-surface monitoring platform for
       exposed services and misconfigurations. As a part-time contributor I
-      work on the API clients and a set of Rust libraries and tooling that
-      support the platform and its infrastructure.
+      work on the API clients and tooling that support the platform.
     repositories:
       - name: LeakIX/LeakIXClient-Python
         url: https://github.com/LeakIX/LeakIXClient-Python
@@ -382,79 +445,6 @@ ecosystems:
           MCP server for the LeakIX API, exposing security research and
           reconnaissance to AI assistants.
         language: Python
-        role: Contributor
-        period: 2026 - Present
-        state: active
-        vibe_coded: false
-
-      - name: LeakIX/ironhtml
-        url: https://github.com/LeakIX/ironhtml
-        description: >-
-          A minimal, zero-dependency HTML builder for Rust.
-        language: Rust
-        role: Author
-        period: 2026 - Present
-        state: active
-        vibe_coded: false
-
-      - name: LeakIX/oxide-sql
-        url: https://github.com/LeakIX/oxide-sql
-        description: >-
-          Type-safe SQL parser and builder for Rust with compile-time
-          validation and SQL-injection prevention.
-        language: Rust
-        role: Author
-        period: 2026 - Present
-        state: active
-        vibe_coded: false
-
-      - name: LeakIX/catapulta
-        url: https://github.com/LeakIX/catapulta
-        description: >-
-          Declarative deployment DSL for Rust: provision, configure and
-          launch containers to any VPS.
-        language: Rust
-        role: Author
-        period: 2026 - Present
-        state: active
-        vibe_coded: false
-
-      - name: LeakIX/caddyfile-rs
-        url: https://github.com/LeakIX/caddyfile-rs
-        description: >-
-          Rust library for parsing, formatting and building Caddyfile
-          configuration files.
-        language: Rust
-        role: Author
-        period: 2026 - Present
-        state: active
-        vibe_coded: false
-
-      - name: LeakIX/email-extract
-        url: https://github.com/LeakIX/email-extract
-        description: >-
-          Intelligent email parsing with structured type extraction.
-        language: Rust
-        role: Author
-        period: 2026 - Present
-        state: active
-        vibe_coded: false
-
-      - name: LeakIX/protonmail-client
-        url: https://github.com/LeakIX/protonmail-client
-        description: >-
-          IMAP client library for Proton Mail via Proton Bridge.
-        language: Rust
-        role: Author
-        period: 2026 - Present
-        state: active
-        vibe_coded: false
-
-      - name: LeakIX/zcash-web-wallet
-        url: https://github.com/LeakIX/zcash-web-wallet
-        description: >-
-          Web wallet for Zcash, built in Rust.
-        language: Rust
         role: Contributor
         period: 2026 - Present
         state: active
