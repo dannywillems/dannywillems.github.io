@@ -26,8 +26,11 @@ sources, not as my recommendations. Numbers in this space change quickly.
 ## a node is not a miner
 
 Zebra is a Zcash validator node. It validates blocks and transactions, follows
-the chain, and talks to peers. It does not, by itself, mine. There is no
-`zebrad mine` subcommand.
+the chain, and talks to peers. By default it does not mine, and there is no
+`zebrad mine` subcommand: in a normal build, producing blocks is the job of
+separate miner software. (Zebra does ship an experimental, opt-in internal miner
+behind a build-time feature flag, which I cover near the end; the default binary
+does not include it.)
 
 What Zebra provides to miners is a JSON-RPC method called `getblocktemplate`.
 This method hands back everything needed to assemble a candidate block: the
@@ -252,6 +255,64 @@ unmaintained upstream (the linked commits are their last states, not active
 development). Any of these would need verifying against current Zebra and
 current Equihash (200, 9) before relying on it. Large commercial pools run
 proprietary stacks that are not public.
+
+## mining inside Zebra: the internal miner
+
+There is a detail I glossed over when I said a node "is not a miner": Zebra
+ships an experimental internal miner, so for solo or testnet use you can skip
+the external pool and miner entirely. The key is that the Equihash algorithm has
+two sides, and Zebra has access to both through the `equihash` crate published
+from [librustzcash](https://github.com/zcash/librustzcash):
+
+- the verifier, `equihash::is_valid_solution`, which every node uses to check a
+  block's proof of work
+  ([`zebra-chain/src/work/equihash.rs:89`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebra-chain/src/work/equihash.rs#L89)),
+- the solver, `equihash::tromp::solve_200_9`, a binding to Tromp's optimized
+  Equihash (200, 9) solver, which searches for a valid solution
+  ([`equihash.rs:155`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebra-chain/src/work/equihash.rs#L155)).
+
+The solver is gated behind a Cargo feature so it is not compiled into the
+default node:
+[`zebra-chain/Cargo.toml:34`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebra-chain/Cargo.toml#L34)
+reads `internal-miner = ["equihash/solver"]`, and `zebrad` re-exports the same
+feature at
+[`zebrad/Cargo.toml:66`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebrad/Cargo.toml#L66).
+With that feature, `Solution::solve`
+([`equihash.rs:134`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebra-chain/src/work/equihash.rs#L134))
+drives the solver over a nonce range.
+
+The component that ties it together is
+[`zebrad/src/components/miner.rs`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebrad/src/components/miner.rs).
+It runs, in-process, the exact loop from the earlier code section: it calls
+`get_block_template`
+([`miner.rs:282`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebrad/src/components/miner.rs#L282)),
+runs `Solution::solve` on a blocking thread
+([`miner.rs:578`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebrad/src/components/miner.rs#L578)),
+and submits the solved block through `submit_block`
+([`miner.rs:500`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebrad/src/components/miner.rs#L500)).
+That is `getblocktemplate -> solve -> submitblock` with no `s-nomp` and no
+`nheqminer`. To use it, build with the feature and set a miner address:
+
+```console
+cargo build --release --features internal-miner --bin zebrad
+```
+
+So why does the rest of this post still point at external miners? Two reasons,
+both visible in the code. First, the feature is labelled experimental
+([`zebrad/Cargo.toml:65`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebrad/Cargo.toml#L65)).
+Second, it is CPU-only and single-threaded per solver: the doc comment on
+`solve` notes it "uses 144 MB of RAM and one CPU core" and "can run for minutes
+or hours if the network difficulty is high"
+([`equihash.rs:130`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebra-chain/src/work/equihash.rs#L130)).
+That is fine for a private chain, regtest, or testnet experiments, but it is not
+competitive with the GPU and ASIC solvers on mainnet. The solver it binds,
+Tromp's, is the same family as `nheqminer`'s `tromp` CPU solver, so the
+performance ceiling is similar.
+
+In other words, the choice is not "node or miner" but which solver and how much
+hardware: librustzcash's `equihash` solver is enough to mine, and Zebra already
+wires it up, but production mining uses faster solvers and a pool layer to
+aggregate many of them.
 
 ## what production miners run
 
