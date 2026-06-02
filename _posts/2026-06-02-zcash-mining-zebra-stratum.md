@@ -259,10 +259,10 @@ proprietary stacks that are not public.
 ## mining inside Zebra: the internal miner
 
 There is a detail I glossed over when I said a node "is not a miner": Zebra
-ships an experimental internal miner, so for solo or testnet use you can skip
-the external pool and miner entirely. The key is that the Equihash algorithm has
-two sides, and Zebra has access to both through the `equihash` crate published
-from [librustzcash](https://github.com/zcash/librustzcash):
+ships an experimental internal miner, so for solo, regtest, or private-chain use
+you can skip the external pool and miner entirely. The key is that the Equihash
+algorithm has two sides, and Zebra has access to both through the `equihash`
+crate published from [librustzcash](https://github.com/zcash/librustzcash):
 
 - the verifier, `equihash::is_valid_solution`, which every node uses to check a
   block's proof of work
@@ -291,23 +291,63 @@ runs `Solution::solve` on a blocking thread
 and submits the solved block through `submit_block`
 ([`miner.rs:500`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebrad/src/components/miner.rs#L500)).
 That is `getblocktemplate -> solve -> submitblock` with no `s-nomp` and no
-`nheqminer`. To use it, build with the feature and set a miner address:
+`nheqminer`.
+
+### activating the internal miner
+
+Turning it on takes two steps, because the build-time feature and the runtime
+switch are separate.
+
+First, compile `zebrad` with the feature (the default release build omits it):
 
 ```console
 cargo build --release --features internal-miner --bin zebrad
 ```
 
-So why does the rest of this post still point at external miners? Two reasons,
-both visible in the code. First, the feature is labelled experimental
-([`zebrad/Cargo.toml:65`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebrad/Cargo.toml#L65)).
-Second, it is CPU-only and single-threaded per solver: the doc comment on
+Second, enable it in the config and set an address to pay the coinbase to. The
+relevant field is `internal_miner` in the `[mining]` section, defined at
+[`zebra-rpc/src/config/mining.rs:43`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebra-rpc/src/config/mining.rs#L43):
+
+```toml
+[mining]
+miner_address = "your-transparent-or-shielded-address"
+internal_miner = true
+```
+
+At startup, `zebrad` only spawns the miner task when
+`config.mining.is_internal_miner_enabled()` returns true
+([`zebrad/src/commands/start.rs:440`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebrad/src/commands/start.rs#L440)),
+which is what the `internal_miner = true` flag controls
+([`mining.rs:49`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebra-rpc/src/config/mining.rs#L49)).
+Run the resulting binary as usual (`zebrad start -c zebrad.toml`) and the miner
+runs in-process.
+
+### caveats, and a discrepancy worth knowing
+
+Why does the rest of this post still point at external miners? A few reasons,
+all visible in the code. The feature is labelled experimental
+([`zebrad/Cargo.toml:65`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebrad/Cargo.toml#L65)),
+and the solver is CPU-only and single-threaded per thread: the doc comment on
 `solve` notes it "uses 144 MB of RAM and one CPU core" and "can run for minutes
 or hours if the network difficulty is high"
 ([`equihash.rs:130`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebra-chain/src/work/equihash.rs#L130)).
-That is fine for a private chain, regtest, or testnet experiments, but it is not
-competitive with the GPU and ASIC solvers on mainnet. The solver it binds,
-Tromp's, is the same family as `nheqminer`'s `tromp` CPU solver, so the
-performance ceiling is similar.
+The solver it binds, Tromp's, is the same family as `nheqminer`'s `tromp` CPU
+solver, so the performance ceiling is similar, and it is not competitive with
+GPU and ASIC solvers on mainnet.
+
+There is also a discrepancy in Zebra's own source that is worth flagging rather
+than papering over. The implementation in `miner.rs` runs the real Tromp solver
+and checks difficulty before submitting, with no network restriction. But the
+doc comment on the config field itself
+([`mining.rs:38`](https://github.com/ZcashFoundation/zebra/blob/76c440e67f2c909cbf8418b11a3f56371aed7d95/zebra-rpc/src/config/mining.rs#L38))
+describes the feature as "only supported on regtest" using "null solutions," and
+`is_internal_miner_enabled` carries a stale TODO referring to a period when the
+miner was disabled entirely (Zebra issues
+[#8180](https://github.com/ZcashFoundation/zebra/issues/8180) and
+[#8183](https://github.com/ZcashFoundation/zebra/issues/8183)). The safe reading
+is to treat the internal miner as intended for Regtest and private chains, where
+it is genuinely useful for producing blocks on demand, and to verify its
+behaviour on any other network before depending on it.
 
 In other words, the choice is not "node or miner" but which solver and how much
 hardware: librustzcash's `equihash` solver is enough to mine, and Zebra already
