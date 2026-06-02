@@ -1,0 +1,202 @@
+{% assign handle = "dannywillems" %}
+<div class="ecosystems">
+  {% for ecosystem in site.data.ecosystems.ecosystems %}
+  {% assign gi = forloop.index %}
+  <section class="eco-group">
+    <div class="eco-group-header">
+      <h3 class="eco-group-title">
+        {{ ecosystem.name }}
+        {% if ecosystem.type %}
+        <span class="eco-group-type">{{ ecosystem.type }}</span>
+        {% endif %}
+        {% if ecosystem.website %}
+        <a
+          class="eco-group-website"
+          href="{{ ecosystem.website }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          >website</a
+        >
+        {% endif %}
+      </h3>
+      {% if ecosystem.description %}
+      <p class="eco-group-description">{{ ecosystem.description }}</p>
+      {% endif %}
+    </div>
+
+    <div class="eco-tabs">
+      <input
+        class="eco-tab-input"
+        type="radio"
+        name="eco-tabs-{{ gi }}"
+        id="eco-{{ gi }}-repos"
+        checked
+      />
+      <input
+        class="eco-tab-input"
+        type="radio"
+        name="eco-tabs-{{ gi }}"
+        id="eco-{{ gi }}-blog"
+      />
+      <input
+        class="eco-tab-input"
+        type="radio"
+        name="eco-tabs-{{ gi }}"
+        id="eco-{{ gi }}-docs"
+      />
+
+      <div class="eco-tab-bar" role="tablist">
+        <label class="eco-tab-label" for="eco-{{ gi }}-repos">
+          Repositories
+          <span class="eco-tab-count">{{ ecosystem.repositories | size }}</span>
+        </label>
+        <label class="eco-tab-label" for="eco-{{ gi }}-blog">
+          Blog articles
+          <span class="eco-tab-count">{{ ecosystem.blog | size }}</span>
+        </label>
+        <label class="eco-tab-label" for="eco-{{ gi }}-docs">
+          Documentation
+          <span class="eco-tab-count">{{ ecosystem.documentation | size }}</span>
+        </label>
+      </div>
+
+      <div class="eco-tab-panels">
+        <!-- Repositories -->
+        <div class="eco-tab-panel" role="tabpanel">
+          {% if ecosystem.repositories and ecosystem.repositories != empty %}
+          <div class="eco-repos">
+            {% for repo in ecosystem.repositories %}
+            {% if repo.me_url %}
+              {% assign contrib_url = repo.me_url %}
+            {% elsif repo.url contains "github.com" %}
+              {% assign contrib_url = repo.url | append: "/commits?author=" | append: handle %}
+            {% elsif repo.url contains "gitlab.com" %}
+              {% assign contrib_url = repo.url | append: "/-/commits/master?author=" | append: handle %}
+            {% else %}
+              {% assign contrib_url = "" %}
+            {% endif %}
+            <div class="eco-repo">
+              <div class="eco-repo-top">
+                <a
+                  class="eco-repo-name"
+                  href="{{ repo.url }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >{{ repo.name }}</a
+                >
+                {% if repo.state %}
+                <span class="eco-badge eco-badge--{{ repo.state }}">{{ repo.state }}</span>
+                {% endif %}
+                {% if repo.vibe_coded %}
+                <span class="eco-badge eco-badge--vibe" title="Predominantly written by vibe coding">vibe coded</span>
+                {% endif %}
+              </div>
+              {% if repo.description %}
+              <p class="eco-repo-description">{{ repo.description }}</p>
+              {% endif %}
+              <div class="eco-repo-meta">
+                {% if repo.language %}
+                <span class="eco-meta">{{ repo.language }}</span>
+                {% endif %}
+                {% if repo.role %}
+                <span class="eco-meta">{{ repo.role }}</span>
+                {% endif %}
+                {% if repo.period %}
+                <span class="eco-meta">{{ repo.period }}</span>
+                {% endif %}
+                {% if contrib_url != "" %}
+                <a
+                  class="eco-repo-contrib"
+                  href="{{ contrib_url }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >my contributions</a
+                >
+                {% endif %}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          {% else %}
+          <p class="eco-empty">No repositories listed yet.</p>
+          {% endif %}
+        </div>
+
+        <!-- Blog articles -->
+        <div class="eco-tab-panel" role="tabpanel">
+          {% if ecosystem.blog and ecosystem.blog != empty %}
+          <div class="eco-repos">
+            {% for item in ecosystem.blog %}
+            <div class="eco-repo">
+              <div class="eco-repo-top">
+                <a
+                  class="eco-repo-name"
+                  href="{{ item.url }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >{{ item.title }}</a
+                >
+              </div>
+              {% if item.description %}
+              <p class="eco-repo-description">{{ item.description }}</p>
+              {% endif %}
+              <div class="eco-repo-meta">
+                {% if item.publication %}
+                <span class="eco-meta">{{ item.publication }}</span>
+                {% endif %}
+                {% if item.role %}
+                <span class="eco-meta">{{ item.role }}</span>
+                {% endif %}
+                {% if item.date %}
+                <span class="eco-meta">{{ item.date }}</span>
+                {% endif %}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          {% else %}
+          <p class="eco-empty">No blog articles yet.</p>
+          {% endif %}
+        </div>
+
+        <!-- Documentation -->
+        <div class="eco-tab-panel" role="tabpanel">
+          {% if ecosystem.documentation and ecosystem.documentation != empty %}
+          <div class="eco-repos">
+            {% for item in ecosystem.documentation %}
+            <div class="eco-repo">
+              <div class="eco-repo-top">
+                <a
+                  class="eco-repo-name"
+                  href="{{ item.url }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >{{ item.title }}</a
+                >
+              </div>
+              {% if item.description %}
+              <p class="eco-repo-description">{{ item.description }}</p>
+              {% endif %}
+              <div class="eco-repo-meta">
+                {% if item.publication %}
+                <span class="eco-meta">{{ item.publication }}</span>
+                {% endif %}
+                {% if item.role %}
+                <span class="eco-meta">{{ item.role }}</span>
+                {% endif %}
+                {% if item.date %}
+                <span class="eco-meta">{{ item.date }}</span>
+                {% endif %}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          {% else %}
+          <p class="eco-empty">No documentation yet.</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+</div>
