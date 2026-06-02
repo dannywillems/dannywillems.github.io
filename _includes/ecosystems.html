@@ -1,0 +1,62 @@
+<div class="ecosystems">
+  {% for ecosystem in site.data.ecosystems.ecosystems %}
+  <section class="eco-group">
+    <div class="eco-group-header">
+      <h3 class="eco-group-title">
+        {{ ecosystem.name }}
+        {% if ecosystem.type %}
+        <span class="eco-group-type">{{ ecosystem.type }}</span>
+        {% endif %}
+        {% if ecosystem.website %}
+        <a
+          class="eco-group-website"
+          href="{{ ecosystem.website }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          >website</a
+        >
+        {% endif %}
+      </h3>
+      {% if ecosystem.description %}
+      <p class="eco-group-description">{{ ecosystem.description }}</p>
+      {% endif %}
+    </div>
+
+    <div class="eco-repos">
+      {% for repo in ecosystem.repositories %}
+      <div class="eco-repo">
+        <div class="eco-repo-top">
+          <a
+            class="eco-repo-name"
+            href="{{ repo.url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ repo.name }}</a
+          >
+          {% if repo.state %}
+          <span class="eco-badge eco-badge--{{ repo.state }}">{{ repo.state }}</span>
+          {% endif %}
+          {% if repo.vibe_coded %}
+          <span class="eco-badge eco-badge--vibe" title="Predominantly written by vibe coding">vibe coded</span>
+          {% endif %}
+        </div>
+        {% if repo.description %}
+        <p class="eco-repo-description">{{ repo.description }}</p>
+        {% endif %}
+        <div class="eco-repo-meta">
+          {% if repo.language %}
+          <span class="eco-meta">{{ repo.language }}</span>
+          {% endif %}
+          {% if repo.role %}
+          <span class="eco-meta">{{ repo.role }}</span>
+          {% endif %}
+          {% if repo.period %}
+          <span class="eco-meta">{{ repo.period }}</span>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</div>

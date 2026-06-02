@@ -432,24 +432,39 @@
 }
 
 // -----------------------------------------------------------------------------
-// Blockchain contributions
+// Ecosystems & products
 // -----------------------------------------------------------------------------
 
-.blockchain-contributions {
+.ecosystems {
   margin-bottom: $spacing-xl;
 }
 
-.bc-project {
+.eco-group {
   margin-bottom: $spacing-2xl;
 }
 
-.bc-project-title {
+.eco-group-title {
   color: var(--accent);
   font-size: $font-size-xl;
   margin-bottom: $spacing-xs;
 }
 
-.bc-project-website {
+.eco-group-type {
+  display: inline-block;
+  font-size: $font-size-xs;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-left: $spacing-sm;
+  padding: 0.25em 0.5em;
+  border-radius: $radius-sm;
+  color: var(--text-secondary);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+}
+
+.eco-group-website {
   font-size: $font-size-sm;
   font-weight: 400;
   margin-left: $spacing-sm;
@@ -461,19 +476,19 @@
   }
 }
 
-.bc-project-description {
+.eco-group-description {
   color: var(--text-secondary);
   margin-bottom: $spacing-lg;
   max-width: 60ch;
 }
 
-.bc-repos {
+.eco-repos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: $spacing-md;
 }
 
-.bc-repo {
+.eco-repo {
   background: var(--bg-secondary);
   border: 1px solid var(--border);
   border-radius: $radius-md;
@@ -483,14 +498,14 @@
   gap: $spacing-sm;
 }
 
-.bc-repo-top {
+.eco-repo-top {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: $spacing-sm;
 }
 
-.bc-repo-name {
+.eco-repo-name {
   font-weight: 600;
   color: var(--text-primary);
   word-break: break-word;
@@ -500,25 +515,25 @@
   }
 }
 
-.bc-repo-description {
+.eco-repo-description {
   margin: 0;
   font-size: $font-size-sm;
   color: var(--text-secondary);
 }
 
-.bc-repo-meta {
+.eco-repo-meta {
   display: flex;
   flex-wrap: wrap;
   gap: $spacing-xs $spacing-md;
   margin-top: auto;
 }
 
-.bc-meta {
+.eco-meta {
   font-size: $font-size-xs;
   color: var(--text-tertiary);
 }
 
-.bc-badge {
+.eco-badge {
   display: inline-block;
   font-size: $font-size-xs;
   font-weight: 600;
@@ -532,27 +547,27 @@
 }
 
 // State badges use fixed colours so they read on every theme (light & dark).
-.bc-badge--maintained {
+.eco-badge--maintained {
   background: #2da44e;
 }
 
-.bc-badge--active {
+.eco-badge--active {
   background: #0969da;
 }
 
-.bc-badge--deprecated {
+.eco-badge--deprecated {
   background: #bf8700;
 }
 
-.bc-badge--archived {
+.eco-badge--archived {
   background: #6e7781;
 }
 
-.bc-badge--inactive {
+.eco-badge--inactive {
   background: #6e7781;
 }
 
-.bc-badge--vibe {
+.eco-badge--vibe {
   background: #8957e5;
 }
 

@@ -1,15 +1,17 @@
 # =============================================================================
-# Blockchain contributions
+# Contributions by ecosystem / product
 #
-# This file drives the /blockchain/ page. It is fully configurable: add,
-# remove or reorder projects and repositories here and the page updates
+# This file drives the /ecosystems/ page. It is fully configurable: add,
+# remove or reorder ecosystems and repositories here and the page updates
 # automatically. Nothing on the page is hard-coded.
 #
 # Schema
 # ------
-# projects:                       # ordered list, rendered top to bottom
-#   - name:        string         # project / ecosystem name (required)
-#     description: string         # short blurb about the project (optional)
+# ecosystems:                     # ordered list, rendered top to bottom
+#   - name:        string         # ecosystem / product name (required)
+#     type:        string         # what it is, e.g. "Blockchain",
+#                                 #   "Security platform" (optional label)
+#     description: string         # short blurb about the ecosystem (optional)
 #     website:     url            # link rendered next to the title (optional)
 #     repositories:               # ordered list of repos I contributed to
 #       - name:        string     # display name, e.g. "owner/repo" (required)
@@ -36,8 +38,9 @@
 # point `url` at the right place.
 # =============================================================================
 
-projects:
+ecosystems:
   - name: Mina
+    type: Blockchain
     website: https://minaprotocol.com
     description: >-
       Mina is a layer-1 blockchain that stays a constant size (~22 KB) by
@@ -143,6 +146,7 @@ projects:
         vibe_coded: false
 
   - name: Zcash
+    type: Blockchain
     website: https://z.cash
     description: >-
       Zcash is a privacy-preserving cryptocurrency that uses zk-SNARKs to
@@ -213,6 +217,7 @@ projects:
         vibe_coded: false
 
   - name: Tezos
+    type: Blockchain
     website: https://tezos.com
     description: >-
       Tezos is a self-amending blockchain with on-chain governance. At
@@ -339,4 +344,128 @@ projects:
         role: Author
         period: 2022 - 2023
         state: inactive
+        vibe_coded: false
+
+  - name: LeakIX
+    type: Security platform
+    website: https://leakix.net
+    description: >-
+      LeakIX is a search engine and attack-surface monitoring platform for
+      exposed services and misconfigurations. As a part-time contributor I
+      work on the API clients and a set of Rust libraries and tooling that
+      support the platform and its infrastructure.
+    repositories:
+      - name: LeakIX/LeakIXClient-Python
+        url: https://github.com/LeakIX/LeakIXClient-Python
+        description: >-
+          Python client for the LeakIX API.
+        language: Python
+        role: Contributor
+        period: 2026 - Present
+        state: maintained
+        vibe_coded: false
+
+      - name: LeakIX/l9format-python
+        url: https://github.com/LeakIX/l9format-python
+        description: >-
+          Python bindings for l9format, the network-recon interoperability
+          format used across the LeakIX tooling.
+        language: Python
+        role: Contributor
+        period: 2026 - Present
+        state: maintained
+        vibe_coded: false
+
+      - name: LeakIX/leakix-mcp
+        url: https://github.com/LeakIX/leakix-mcp
+        description: >-
+          MCP server for the LeakIX API, exposing security research and
+          reconnaissance to AI assistants.
+        language: Python
+        role: Contributor
+        period: 2026 - Present
+        state: active
+        vibe_coded: false
+
+      - name: LeakIX/ironhtml
+        url: https://github.com/LeakIX/ironhtml
+        description: >-
+          A minimal, zero-dependency HTML builder for Rust.
+        language: Rust
+        role: Author
+        period: 2026 - Present
+        state: active
+        vibe_coded: false
+
+      - name: LeakIX/oxide-sql
+        url: https://github.com/LeakIX/oxide-sql
+        description: >-
+          Type-safe SQL parser and builder for Rust with compile-time
+          validation and SQL-injection prevention.
+        language: Rust
+        role: Author
+        period: 2026 - Present
+        state: active
+        vibe_coded: false
+
+      - name: LeakIX/catapulta
+        url: https://github.com/LeakIX/catapulta
+        description: >-
+          Declarative deployment DSL for Rust: provision, configure and
+          launch containers to any VPS.
+        language: Rust
+        role: Author
+        period: 2026 - Present
+        state: active
+        vibe_coded: false
+
+      - name: LeakIX/caddyfile-rs
+        url: https://github.com/LeakIX/caddyfile-rs
+        description: >-
+          Rust library for parsing, formatting and building Caddyfile
+          configuration files.
+        language: Rust
+        role: Author
+        period: 2026 - Present
+        state: active
+        vibe_coded: false
+
+      - name: LeakIX/email-extract
+        url: https://github.com/LeakIX/email-extract
+        description: >-
+          Intelligent email parsing with structured type extraction.
+        language: Rust
+        role: Author
+        period: 2026 - Present
+        state: active
+        vibe_coded: false
+
+      - name: LeakIX/protonmail-client
+        url: https://github.com/LeakIX/protonmail-client
+        description: >-
+          IMAP client library for Proton Mail via Proton Bridge.
+        language: Rust
+        role: Author
+        period: 2026 - Present
+        state: active
+        vibe_coded: false
+
+      - name: LeakIX/zcash-web-wallet
+        url: https://github.com/LeakIX/zcash-web-wallet
+        description: >-
+          Web wallet for Zcash, built in Rust.
+        language: Rust
+        role: Contributor
+        period: 2026 - Present
+        state: active
+        vibe_coded: false
+
+      - name: LeakIX/DocSite
+        url: https://github.com/LeakIX/DocSite
+        description: >-
+          Documentation site for LeakIX.
+        language: Makefile
+        role: Contributor
+        period: 2026 - Present
+        state: maintained
         vibe_coded: false
