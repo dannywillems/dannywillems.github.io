@@ -28,10 +28,11 @@ constructions. That is one lever for assurance: reduce the surface you have to
 trust. This post is about the other levers, the testing and verification
 techniques that sit underneath that goal, with an emphasis on fuzzing.
 
-This article was written with the help of an AI assistant, working from my notes
-and the primary sources linked at the end. Mentioning it is not a novelty claim;
-it is that "AI helped write it" does not exempt the claims below from scrutiny.
-If something looks wrong, check the references.
+This article was written entirely by an AI assistant, working from my framing
+and from the primary sources linked at the end. I curated the topic and the
+sources and reviewed the result, but the prose is fully AI-generated. Saying so
+is not a disclaimer of responsibility: "AI wrote it" does not exempt the claims
+below from scrutiny. If something looks wrong, check the references.
 
 ## The assurance spectrum
 
@@ -75,12 +76,12 @@ same primitive and reports any disagreement. The disagreement is the oracle: if
 OpenSSL and BoringSSL compute different AES-GCM tags for the same key, nonce,
 and plaintext, at least one is wrong.
 
-The reference tool is [Cryptofuzz](https://github.com/guidovranken/cryptofuzz)
-by Guido Vranken, built on libFuzzer. It is described as the first differential
-fuzzing tool to use mutation and code coverage to find cryptographic
-discrepancies, and it has compared dozens of libraries against each other and
-reported a long list of real bugs. Two concrete classes it has surfaced,
-documented in
+The reference tool is
+[Cryptofuzz](https://github.com/MozillaSecurity/cryptofuzz) by Guido Vranken,
+built on libFuzzer. It is described as the first differential fuzzing tool to
+use mutation and code coverage to find cryptographic discrepancies, and it has
+compared dozens of libraries against each other and reported a long list of real
+bugs. Two concrete classes it has surfaced, documented in
 [Quarkslab's write-up](https://blog.quarkslab.com/differential-fuzzing-for-cryptography.html),
 are logic errors (for example a `jb` instruction where `jbe` was needed in an
 OpenSSL AES-OCB length check) and digest miscomputations at specific message
