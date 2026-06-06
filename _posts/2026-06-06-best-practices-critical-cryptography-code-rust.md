@@ -31,9 +31,9 @@ A useful way to organize the work is to split it into a cheap layer and a
 security layer.
 
 **The cheap layer** is static analysis you run on every commit: the compiler's
-own lints and Clippy. It is fast, it has near-zero false-negative cost to enable,
-and it catches a specific set of bugs (panics, lossy casts, dead code). It does
-not understand cryptography.
+own lints and Clippy. It is fast, it has near-zero false-negative cost to
+enable, and it catches a specific set of bugs (panics, lossy casts, dead code).
+It does not understand cryptography.
 
 **The security layer** is the set of properties that actually matter for a
 cipher, a signature scheme, or a key-derivation function: timing behavior,
@@ -87,8 +87,8 @@ is provably safe). The full lint list is in the Clippy documentation
 ([rust-lang.github.io/rust-clippy][clippy-lints]).
 
 Enabling these on an existing codebase is a multi-commit cleanup, not a one-line
-change. Each denied lint surfaces existing call sites that need either a fix or a
-documented `#[allow]`. That is expected and is part of the value.
+change. Each denied lint surfaces existing call sites that need either a fix or
+a documented `#[allow]`. That is expected and is part of the value.
 
 ## The lint to skip: blanket arithmetic checking
 
@@ -115,10 +115,10 @@ If you want overflow protection, two narrower approaches tend to work better:
   overflow-checks = true
   ```
 
-  Rust performs these checks in debug builds by default and omits them in release
-  builds (RFC 560, [the integer overflow RFC][rfc560]). Turning them on for the
-  test profile catches overflow during CI and fuzzing without paying the cost in
-  production.
+  Rust performs these checks in debug builds by default and omits them in
+  release builds (RFC 560, [the integer overflow RFC][rfc560]). Turning them on
+  for the test profile catches overflow during CI and fuzzing without paying the
+  cost in production.
 
 - Make intent explicit at the call site with `checked_*`, `wrapping_*`, or
   `saturating_*`. This documents whether an overflow is a bug or by design,
@@ -315,7 +315,8 @@ projects run `cargo deny check` and rely on it for the advisory check as well.
 - [Chromium project: memory safety][chromium]
 
 [clippy-lints]: https://rust-lang.github.io/rust-clippy/master/index.html
-[rfc560]: https://github.com/rust-lang/rfcs/blob/master/text/0560-integer-overflow.md
+[rfc560]:
+  https://github.com/rust-lang/rfcs/blob/master/text/0560-integer-overflow.md
 [subtle]: https://docs.rs/subtle/latest/subtle/
 [zeroize]: https://docs.rs/zeroize/latest/zeroize/
 [miri]: https://github.com/rust-lang/miri
@@ -323,5 +324,6 @@ projects run `cargo deny check` and rely on it for the advisory check as well.
 [rustsec]: https://rustsec.org/
 [deny]: https://github.com/EmbarkStudios/cargo-deny
 [kocher]: https://www.rambus.com/wp-content/uploads/2015/08/TimingAttacks.pdf
-[msrc]: https://msrc.microsoft.com/blog/2019/07/a-proactive-approach-to-more-secure-code/
+[msrc]:
+  https://msrc.microsoft.com/blog/2019/07/a-proactive-approach-to-more-secure-code/
 [chromium]: https://www.chromium.org/Home/chromium-security/memory-safety/
