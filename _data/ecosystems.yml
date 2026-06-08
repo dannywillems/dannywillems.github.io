@@ -71,9 +71,9 @@ ecosystems:
     website: https://minaprotocol.com
     description: >-
       Mina is a layer-1 blockchain that stays a constant size (~22 KB) by
-      recursively composing zero-knowledge proofs. During my time at o1Labs
-      I worked across the protocol, its proof systems, and the full rewrite
-      of the node in Rust.
+      recursively composing zero-knowledge proofs. During my time at o1Labs I
+      worked across the protocol, its proof systems, and the full rewrite of the
+      node in Rust.
     repositories:
       - name: MinaProtocol/mina
         url: https://github.com/MinaProtocol/mina
@@ -90,8 +90,8 @@ ecosystems:
         url: https://github.com/o1-labs/proof-systems
         description: >-
           The proof systems powering Mina. Work on Kimchi (the PlonK-based
-          prover), custom gates and lookups, the Arrabbiata folding scheme,
-          and the o1VM zkVM for MIPS.
+          prover), custom gates and lookups, the Arrabbiata folding scheme, and
+          the o1VM zkVM for MIPS.
         language: Rust
         role: Core contributor / maintainer
         period: 2023 - 2026
@@ -133,8 +133,8 @@ ecosystems:
       - name: o1-labs/cargo-specification
         url: https://github.com/o1-labs/cargo-specification
         description: >-
-          Tool to generate specifications from Rust code and comments, used
-          to document the proof-systems library.
+          Tool to generate specifications from Rust code and comments, used to
+          document the proof-systems library.
         language: Rust
         role: Contributor
         period: 2023 - 2025
@@ -176,9 +176,9 @@ ecosystems:
     type: Blockchain
     website: https://z.cash
     description: >-
-      Zcash is a privacy-preserving cryptocurrency that uses zk-SNARKs to
-      shield transactions. I contribute to the Rust wallet and protocol
-      libraries, with earlier contributions to the original zcashd node.
+      Zcash is a privacy-preserving cryptocurrency that uses zk-SNARKs to shield
+      transactions. I contribute to the Rust wallet and protocol libraries, with
+      earlier contributions to the original zcashd node.
     repositories:
       - name: zcash/librustzcash
         url: https://github.com/zcash/librustzcash
@@ -204,8 +204,8 @@ ecosystems:
       - name: zcash/zcash_note_encryption
         url: https://github.com/zcash/zcash_note_encryption
         description: >-
-          Note encryption interfaces and convenience methods for the Sapling
-          and Orchard protocols.
+          Note encryption interfaces and convenience methods for the Sapling and
+          Orchard protocols.
         language: Rust
         role: Contributor
         period: 2026 - Present
@@ -225,16 +225,17 @@ ecosystems:
       - name: dannywillems/nheqminer
         url: https://github.com/dannywillems/nheqminer
         description: >-
-          Fork of the nheqminer Equihash miner for Zcash. Modest improvements
-          to repository hygiene and status.
+          Fork of the nheqminer Equihash miner for Zcash. Modest improvements to
+          repository hygiene and status.
         language: C++
         role: Contributor
         state: active
         vibe_coded: false
 
     blog:
-      - title: "How Zcash mining fits together: the node, Stratum, and the
-          mining stack"
+      - title:
+          "How Zcash mining fits together: the node, Stratum, and the mining
+          stack"
         url: https://dannywillems.github.io/blog/2026/06/02/zcash-mining-zebra-stratum/
         publication: dannywillems.github.io
         role: Author
@@ -250,8 +251,8 @@ ecosystems:
         publication: dannywillems.github.io
         role: Author
         description: >-
-          Documentation for Orchard, the Halo 2-based shielded protocol used
-          by Zcash.
+          Documentation for Orchard, the Halo 2-based shielded protocol used by
+          Zcash.
       - title: halo2
         url: https://dannywillems.github.io/halo2/
         publication: dannywillems.github.io
@@ -276,17 +277,24 @@ ecosystems:
         publication: dannywillems.github.io
         role: Author
         description: >-
-          Documentation for librustzcash, the Rust crates implementing the
-          Zcash protocol.
+          Documentation for librustzcash, the Rust crates implementing the Zcash
+          protocol.
+      - title: sapling-crypto
+        url: https://dannywillems.github.io/sapling-crypto/
+        publication: dannywillems.github.io
+        role: Author
+        description: >-
+          Documentation for sapling-crypto, the Rust crates implementing the
+          Sapling shielded pool.
 
   - name: Tezos
     type: Blockchain
     website: https://tezos.com
     description: >-
-      Tezos is a self-amending blockchain with on-chain governance. At
-      Nomadic Labs I worked on the protocol's cryptography stack: pairing
-      curves, finite-field and polynomial libraries, proof systems and
-      rollups. This work lives on GitLab.
+      Tezos is a self-amending blockchain with on-chain governance. At Nomadic
+      Labs I worked on the protocol's cryptography stack: pairing curves,
+      finite-field and polynomial libraries, proof systems and rollups. This
+      work lives on GitLab.
     repositories:
       - name: tezos/tezos (Octez)
         url: https://gitlab.com/tezos/tezos
@@ -303,8 +311,8 @@ ecosystems:
         url: https://gitlab.com/dannywillems/ocaml-bls12-381
         description: >-
           Efficient OCaml implementation of the pairing-friendly curve
-          BLS12-381: (i)FFT, G1/G2/GT operations, hash-to-curve, Pippenger
-          MSM and pairings. Used by Octez.
+          BLS12-381: (i)FFT, G1/G2/GT operations, hash-to-curve, Pippenger MSM
+          and pairings. Used by Octez.
         language: OCaml
         role: Author / maintainer
         period: 2020 - 2023
@@ -402,8 +410,8 @@ ecosystems:
       - name: dannywillems/ocaml-arkworks
         url: https://gitlab.com/dannywillems/ocaml-arkworks
         description: >-
-          Optimised OCaml bindings to the Rust arkworks library, investigated
-          as the low-level backend for Epoxy (Tezos validity rollups).
+          Optimised OCaml bindings to the Rust arkworks library, investigated as
+          the low-level backend for Epoxy (Tezos validity rollups).
         language: OCaml
         role: Author
         period: 2022 - 2023
@@ -415,8 +423,8 @@ ecosystems:
     website: https://leakix.net
     description: >-
       LeakIX is a search engine and attack-surface monitoring platform for
-      exposed services and misconfigurations. As a part-time contributor I
-      work on the API clients and tooling that support the platform.
+      exposed services and misconfigurations. As a part-time contributor I work
+      on the API clients and tooling that support the platform.
     repositories:
       - name: LeakIX/LeakIXClient-Python
         url: https://github.com/LeakIX/LeakIXClient-Python
