@@ -190,6 +190,8 @@ cat error.txt | claude -p "explain this error"</code></pre>
 <p><strong>Setup:</strong></p>
 <pre><code>/mcp</code></pre>
 
+<p><a href="/2026/01/17/claude-code-mcp.html">Read more: MCP (Model Context Protocol) explained</a></p>
+
 <div class="tip">
 Warning: MCP tools can consume significant context (40%+). Disable unused servers.
 </div>
