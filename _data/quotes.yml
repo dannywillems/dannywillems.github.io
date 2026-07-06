@@ -3,7 +3,9 @@
 - text: Le savoir est une arme, mais personne braque pour acheter des livres
   author: Kery James
 
-- text: A mathematician who is not also something of a poet will never be a complete mathematician.
+- text:
+    A mathematician who is not also something of a poet will never be a complete
+    mathematician.
   author: Karl Weierstrass
 
 - text: |
@@ -12,7 +14,8 @@
     have nothing to say
   author: Edward Snowden
 
-- text: Never attribute to malice that which is adequately explained by stupidity
+- text:
+    Never attribute to malice that which is adequately explained by stupidity
   author: Hanlon's razor
   author_url: https://en.wikipedia.org/wiki/Hanlon%27s_razor
 
@@ -32,3 +35,11 @@
 - text: Hardly anybody actually understands money
   author: Nick Szabo
   author_url: http://unenumerated.blogspot.com/2011/05/bitcoin-what-took-ye-so-long.html
+
+- text: |
+    Trop bon, trop con, mais gagne à la fin. Ne te prends pas la tête !
+    C'est pas grave. Oui tu vas recevoir des flammes, les gens ils vont te prendre
+    pour un con, te mettre à l'amande ou dans des trucs. Mais à la fin, ces
+    personnes-là je te le dis. A la fin c'est eux qui sont en galère, et c'est toi
+    qui est bien.
+  author: Soprano
