@@ -46,21 +46,25 @@ lint: ## Lint markdown files
 		echo "markdownlint not installed. Install with: npm install -g markdownlint-cli"; \
 	fi
 
+.PHONY: install-node
+install-node: ## Install pinned Node tooling (prettier) from package-lock.json
+	npm ci
+
 .PHONY: format
-format: ## Format files with prettier
-	@if command -v prettier >/dev/null 2>&1; then \
-		prettier --write "**/*.css" "*.md" "_posts/*.md"; \
+format: ## Format files with the pinned prettier
+	@if [ -x node_modules/.bin/prettier ]; then \
+		node_modules/.bin/prettier --write "**/*.css" "*.md" "_posts/*.md"; \
 	else \
-		echo "prettier not installed. Install with: npm install -g prettier"; \
+		echo "prettier not installed. Run: make install-node (or npm ci)"; \
 		exit 1; \
 	fi
 
 .PHONY: check-format
-check-format: ## Check formatting with prettier
-	@if command -v prettier >/dev/null 2>&1; then \
-		prettier --check "**/*.css" "*.md" "_posts/*.md"; \
+check-format: ## Check formatting with the pinned prettier
+	@if [ -x node_modules/.bin/prettier ]; then \
+		node_modules/.bin/prettier --check "**/*.css" "*.md" "_posts/*.md"; \
 	else \
-		echo "prettier not installed. Install with: npm install -g prettier"; \
+		echo "prettier not installed. Run: make install-node (or npm ci)"; \
 		exit 1; \
 	fi
 
