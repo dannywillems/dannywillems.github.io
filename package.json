@@ -1,0 +1,13 @@
+{
+  "name": "dannywillems-github-io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tooling for the personal website. Prettier is pinned here so local formatting matches CI exactly.",
+  "scripts": {
+    "format": "prettier --write \"**/*.css\" \"*.md\" \"_posts/*.md\"",
+    "check-format": "prettier --check \"**/*.css\" \"*.md\" \"_posts/*.md\""
+  },
+  "devDependencies": {
+    "prettier": "3.9.5"
+  }
+}
