@@ -1,0 +1,24 @@
+stages:
+  - test
+  - review
+
+claude_review:
+  stage: review
+  image: ubuntu:latest
+  before_script:
+    - apt-get update && apt-get install -y curl
+    - curl -fsSL https://claude.ai/install.sh | bash
+    - export PATH="$HOME/.local/bin:$PATH"
+  script:
+    - |
+      claude -p "review the changes in this merge request" \
+        --max-turns 1 > review.txt
+    - cat review.txt
+  variables:
+    ANTHROPIC_API_KEY: $ANTHROPIC_API_KEY
+  only:
+    - merge_requests
+  artifacts:
+    paths:
+      - review.txt
+    expire_in: 1 week
