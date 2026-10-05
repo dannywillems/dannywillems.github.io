@@ -1,0 +1,56 @@
+{% assign songs = site.data.songs %}
+{% if songs and songs.size > 0 %}
+<ol class="songs">
+  {% for song in songs %}
+  <li class="song">
+    <div class="song-header">
+      <span class="song-title">
+        {% if song.url %}
+        <a href="{{ song.url }}" target="_blank" rel="noopener noreferrer"
+          >{{ song.title }}</a
+        >
+        {% else %}
+        {{ song.title }}
+        {% endif %}
+      </span>
+      <span class="song-artist">
+        {{ song.artist }}{% if song.year %} ({{ song.year }}){% endif %}
+      </span>
+      {% if song.lyrics_url %}
+      <a
+        class="song-lyrics-link"
+        href="{{ song.lyrics_url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        >lyrics</a
+      >
+      {% endif %}
+    </div>
+    {% if song.values and song.values.size > 0 %}
+    <ul class="song-values">
+      {% for value in song.values %}
+      <li class="song-value">{{ value }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% if song.lyric %}
+    <blockquote class="song-lyric">{{ song.lyric | strip }}</blockquote>
+    {% endif %}
+    {% if song.why %}
+    <div class="song-why">
+      <h4 class="song-section-title">Why it matters</h4>
+      {{ song.why | strip | markdownify }}
+    </div>
+    {% endif %}
+    {% if song.analysis %}
+    <details class="song-analysis">
+      <summary>Analysis</summary>
+      {{ song.analysis | strip | markdownify }}
+    </details>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ol>
+{% else %}
+<p class="songs-empty">No songs listed yet.</p>
+{% endif %}

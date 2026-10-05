@@ -950,3 +950,100 @@
   font-style: italic;
   margin: $spacing-xs 0 0 0;
 }
+
+// -----------------------------------------------------------------------------
+// Songs
+// -----------------------------------------------------------------------------
+
+.songs {
+  list-style: none;
+  padding-left: 0;
+}
+
+.song {
+  padding: $spacing-md 0;
+  border-bottom: 1px solid var(--border);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.song-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: $spacing-sm;
+}
+
+.song-title {
+  font-weight: bold;
+  font-size: $font-size-lg;
+}
+
+.song-artist {
+  color: var(--text-secondary);
+}
+
+ul.song-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-xs;
+  padding-left: 0;
+  margin: $spacing-sm 0;
+}
+
+ul.song-values li.song-value {
+  list-style-type: none;
+  font-size: $font-size-xs;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: $radius-sm;
+  padding: 0 $spacing-sm;
+}
+
+.song-lyric {
+  font-style: italic;
+  margin: $spacing-sm 0;
+}
+
+.song-lyrics-link {
+  font-size: $font-size-sm;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: $radius-sm;
+  padding: 0 $spacing-sm;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--bg-primary);
+    background-color: var(--accent);
+  }
+}
+
+.song-section-title {
+  font-size: $font-size-sm;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin: $spacing-md 0 0;
+}
+
+.song-why p,
+.song-analysis p {
+  margin: $spacing-sm 0 0;
+}
+
+.song-analysis {
+  margin-top: $spacing-md;
+
+  summary {
+    cursor: pointer;
+    font-size: $font-size-sm;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+}
+
+.songs-empty {
+  color: var(--text-tertiary);
+}

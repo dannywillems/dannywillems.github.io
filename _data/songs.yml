@@ -1,0 +1,22 @@
+# Songs that shaped my values
+#
+# Each entry:
+#
+# - title: Song title                     (required)
+#   artist: Artist name                   (required)
+#   year: 1998                            (optional)
+#   url: https://...                      (optional, link to listen)
+#   lyrics_url: https://...               (optional, link to the lyrics)
+#   values: [solidarity, education]       (optional, short tags)
+#   lyric: A short line from the song     (optional, keep it short)
+#   why: |                                (optional, why it is important)
+#     A few sentences. Markdown allowed.
+#   analysis: |                           (optional, my analysis)
+#     As long as needed. Markdown allowed, paragraphs separated by a
+#     blank line. Shown collapsed under "Analysis" on the page.
+#
+# Entries are rendered in the order they appear here.
+
+- title: Plus d'amour
+  artist: BRAV
+  url: https://www.youtube.com/watch?v=BZYLx97-b6A
