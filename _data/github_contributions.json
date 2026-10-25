@@ -1,37 +1,37 @@
 {
-  "updated_at": "2026-08-27T17:29:01.168355Z",
+  "updated_at": "2026-08-30T11:35:25.649804Z",
   "totals": {
     "week": {
-      "commits": 50,
-      "prs": 10,
-      "reviews": 15,
-      "issues": 0,
+      "commits": 89,
+      "prs": 37,
+      "reviews": 35,
+      "issues": 2,
       "repos_contributed": 12,
-      "total": 75
+      "total": 163
     },
     "month": {
-      "commits": 398,
-      "prs": 105,
-      "reviews": 79,
-      "issues": 20,
+      "commits": 353,
+      "prs": 101,
+      "reviews": 90,
+      "issues": 12,
       "repos_contributed": 18,
-      "total": 602
+      "total": 556
     },
     "quarter": {
-      "commits": 1416,
-      "prs": 440,
-      "reviews": 268,
+      "commits": 1405,
+      "prs": 436,
+      "reviews": 292,
       "issues": 196,
-      "repos_contributed": 51,
-      "total": 2320
+      "repos_contributed": 42,
+      "total": 2329
     },
     "year": {
-      "commits": 8529,
-      "prs": 4428,
-      "reviews": 420,
+      "commits": 8531,
+      "prs": 4453,
+      "reviews": 442,
       "issues": 1058,
       "repos_contributed": 96,
-      "total": 14435
+      "total": 14484
     }
   },
   "repositories": [
@@ -92,11 +92,11 @@
         "total": 0
       },
       "year": {
-        "commits": 727,
-        "prs": 186,
+        "commits": 703,
+        "prs": 184,
         "reviews": 66,
-        "issues": 328,
-        "total": 1307
+        "issues": 326,
+        "total": 1279
       }
     },
     {
@@ -117,11 +117,11 @@
         "total": 0
       },
       "quarter": {
-        "commits": 42,
-        "prs": 25,
+        "commits": 35,
+        "prs": 21,
         "reviews": 0,
         "issues": 106,
-        "total": 173
+        "total": 162
       },
       "year": {
         "commits": 413,
@@ -137,23 +137,23 @@
       "week": {
         "commits": 0,
         "prs": 0,
-        "reviews": 2,
+        "reviews": 1,
         "issues": 0,
-        "total": 2
+        "total": 1
       },
       "month": {
-        "commits": 130,
-        "prs": 45,
-        "reviews": 42,
-        "issues": 15,
-        "total": 232
+        "commits": 79,
+        "prs": 29,
+        "reviews": 32,
+        "issues": 5,
+        "total": 145
       },
       "quarter": {
-        "commits": 390,
-        "prs": 147,
-        "reviews": 123,
+        "commits": 389,
+        "prs": 143,
+        "reviews": 122,
         "issues": 38,
-        "total": 698
+        "total": 692
       },
       "year": {
         "commits": 390,
@@ -220,11 +220,11 @@
         "total": 0
       },
       "year": {
-        "commits": 351,
+        "commits": 325,
         "prs": 90,
-        "reviews": 31,
+        "reviews": 30,
         "issues": 3,
-        "total": 475
+        "total": 448
       }
     },
     {
@@ -285,10 +285,10 @@
       },
       "year": {
         "commits": 113,
-        "prs": 55,
-        "reviews": 23,
+        "prs": 53,
+        "reviews": 21,
         "issues": 1,
-        "total": 192
+        "total": 188
       }
     },
     {
@@ -302,11 +302,11 @@
         "total": 3
       },
       "month": {
-        "commits": 47,
-        "prs": 26,
-        "reviews": 9,
+        "commits": 34,
+        "prs": 16,
+        "reviews": 7,
         "issues": 1,
-        "total": 83
+        "total": 58
       },
       "quarter": {
         "commits": 105,
@@ -327,32 +327,32 @@
       "name": "LeakIX/l9format-python",
       "url": "https://github.com/LeakIX/l9format-python",
       "week": {
-        "commits": 6,
+        "commits": 2,
         "prs": 0,
-        "reviews": 0,
+        "reviews": 1,
         "issues": 0,
-        "total": 6
+        "total": 3
       },
       "month": {
-        "commits": 8,
+        "commits": 9,
         "prs": 0,
-        "reviews": 0,
+        "reviews": 1,
         "issues": 0,
-        "total": 8
+        "total": 10
       },
       "quarter": {
-        "commits": 13,
+        "commits": 15,
         "prs": 1,
-        "reviews": 1,
+        "reviews": 2,
         "issues": 2,
-        "total": 17
+        "total": 20
       },
       "year": {
-        "commits": 110,
+        "commits": 112,
         "prs": 22,
-        "reviews": 3,
+        "reviews": 4,
         "issues": 21,
-        "total": 156
+        "total": 159
       }
     },
     {
@@ -391,18 +391,18 @@
       "name": "LeakIX/leakix-mcp",
       "url": "https://github.com/LeakIX/leakix-mcp",
       "week": {
-        "commits": 7,
+        "commits": 2,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 7
+        "total": 2
       },
       "month": {
-        "commits": 11,
+        "commits": 10,
         "prs": 0,
         "reviews": 2,
         "issues": 0,
-        "total": 13
+        "total": 12
       },
       "quarter": {
         "commits": 40,
@@ -455,18 +455,18 @@
       "name": "zcash/zcash-swift-wallet-sdk",
       "url": "https://github.com/zcash/zcash-swift-wallet-sdk",
       "week": {
-        "commits": 3,
-        "prs": 1,
+        "commits": 1,
+        "prs": 0,
         "reviews": 1,
         "issues": 0,
-        "total": 5
+        "total": 2
       },
       "month": {
-        "commits": 32,
-        "prs": 21,
-        "reviews": 15,
+        "commits": 25,
+        "prs": 14,
+        "reviews": 13,
         "issues": 4,
-        "total": 72
+        "total": 56
       },
       "quarter": {
         "commits": 60,
@@ -513,6 +513,38 @@
         "reviews": 3,
         "issues": 25,
         "total": 125
+      }
+    },
+    {
+      "name": "LeakIX/Synapse",
+      "url": "https://github.com/LeakIX/Synapse",
+      "week": {
+        "commits": 72,
+        "prs": 26,
+        "reviews": 21,
+        "issues": 2,
+        "total": 121
+      },
+      "month": {
+        "commits": 72,
+        "prs": 26,
+        "reviews": 21,
+        "issues": 2,
+        "total": 121
+      },
+      "quarter": {
+        "commits": 72,
+        "prs": 26,
+        "reviews": 21,
+        "issues": 2,
+        "total": 121
+      },
+      "year": {
+        "commits": 72,
+        "prs": 26,
+        "reviews": 21,
+        "issues": 2,
+        "total": 121
       }
     },
     {
@@ -590,11 +622,11 @@
         "total": 1
       },
       "month": {
-        "commits": 2,
+        "commits": 1,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 2
+        "total": 1
       },
       "quarter": {
         "commits": 8,
@@ -654,11 +686,11 @@
         "total": 0
       },
       "month": {
-        "commits": 47,
+        "commits": 34,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 47
+        "total": 34
       },
       "quarter": {
         "commits": 105,
@@ -846,11 +878,11 @@
         "total": 5
       },
       "month": {
-        "commits": 33,
+        "commits": 26,
         "prs": 1,
         "reviews": 4,
         "issues": 0,
-        "total": 38
+        "total": 31
       },
       "quarter": {
         "commits": 61,
@@ -1141,11 +1173,11 @@
         "total": 0
       },
       "quarter": {
-        "commits": 31,
+        "commits": 3,
         "prs": 1,
         "reviews": 0,
         "issues": 0,
-        "total": 32
+        "total": 4
       },
       "year": {
         "commits": 31,
@@ -1230,11 +1262,11 @@
         "total": 0
       },
       "month": {
-        "commits": 4,
+        "commits": 1,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 4
+        "total": 1
       },
       "quarter": {
         "commits": 26,
@@ -1249,38 +1281,6 @@
         "reviews": 0,
         "issues": 0,
         "total": 26
-      }
-    },
-    {
-      "name": "LeakIX/Synapse",
-      "url": "https://github.com/LeakIX/Synapse",
-      "week": {
-        "commits": 23,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 23
-      },
-      "month": {
-        "commits": 23,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 23
-      },
-      "quarter": {
-        "commits": 23,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 23
-      },
-      "year": {
-        "commits": 23,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 23
       }
     },
     {
@@ -1572,38 +1572,6 @@
       }
     },
     {
-      "name": "dannywillems/ferrel",
-      "url": "https://github.com/dannywillems/ferrel",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 13,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 13
-      },
-      "year": {
-        "commits": 13,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 13
-      }
-    },
-    {
       "name": "zcash/orchard",
       "url": "https://github.com/zcash/orchard",
       "week": {
@@ -1664,6 +1632,38 @@
         "prs": 5,
         "reviews": 2,
         "issues": 1,
+        "total": 13
+      }
+    },
+    {
+      "name": "dannywillems/ferrel",
+      "url": "https://github.com/dannywillems/ferrel",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 13,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
         "total": 13
       }
     },
@@ -1892,6 +1892,38 @@
       }
     },
     {
+      "name": "zodl-inc/zodl-ios",
+      "url": "https://github.com/zodl-inc/zodl-ios",
+      "week": {
+        "commits": 2,
+        "prs": 4,
+        "reviews": 4,
+        "issues": 0,
+        "total": 10
+      },
+      "month": {
+        "commits": 2,
+        "prs": 4,
+        "reviews": 4,
+        "issues": 0,
+        "total": 10
+      },
+      "quarter": {
+        "commits": 2,
+        "prs": 4,
+        "reviews": 4,
+        "issues": 0,
+        "total": 10
+      },
+      "year": {
+        "commits": 2,
+        "prs": 4,
+        "reviews": 4,
+        "issues": 0,
+        "total": 10
+      }
+    },
+    {
       "name": "dannywillems/bitcoin-rs",
       "url": "https://github.com/dannywillems/bitcoin-rs",
       "week": {
@@ -1909,11 +1941,11 @@
         "total": 0
       },
       "quarter": {
-        "commits": 1,
+        "commits": 0,
         "prs": 0,
         "reviews": 0,
         "issues": 0,
-        "total": 1
+        "total": 0
       },
       "year": {
         "commits": 10,
@@ -2017,38 +2049,6 @@
         "reviews": 2,
         "issues": 1,
         "total": 8
-      }
-    },
-    {
-      "name": "zodl-inc/zodl-ios",
-      "url": "https://github.com/zodl-inc/zodl-ios",
-      "week": {
-        "commits": 1,
-        "prs": 4,
-        "reviews": 1,
-        "issues": 0,
-        "total": 6
-      },
-      "month": {
-        "commits": 1,
-        "prs": 4,
-        "reviews": 1,
-        "issues": 0,
-        "total": 6
-      },
-      "quarter": {
-        "commits": 1,
-        "prs": 4,
-        "reviews": 1,
-        "issues": 0,
-        "total": 6
-      },
-      "year": {
-        "commits": 1,
-        "prs": 4,
-        "reviews": 1,
-        "issues": 0,
-        "total": 6
       }
     },
     {
@@ -2185,9 +2185,9 @@
       "week": {
         "commits": 1,
         "prs": 0,
-        "reviews": 2,
+        "reviews": 1,
         "issues": 0,
-        "total": 3
+        "total": 2
       },
       "month": {
         "commits": 2,
@@ -2217,9 +2217,9 @@
       "week": {
         "commits": 0,
         "prs": 0,
-        "reviews": 2,
+        "reviews": 0,
         "issues": 0,
-        "total": 2
+        "total": 0
       },
       "month": {
         "commits": 0,
@@ -2500,38 +2500,6 @@
       }
     },
     {
-      "name": "volrath/treepy.el",
-      "url": "https://github.com/volrath/treepy.el",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 2,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 1,
-        "total": 4
-      },
-      "year": {
-        "commits": 2,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 1,
-        "total": 4
-      }
-    },
-    {
       "name": "zingolabs/infrastructure",
       "url": "https://github.com/zingolabs/infrastructure",
       "week": {
@@ -2692,6 +2660,38 @@
       }
     },
     {
+      "name": "volrath/treepy.el",
+      "url": "https://github.com/volrath/treepy.el",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 2,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 1,
+        "total": 4
+      }
+    },
+    {
       "name": "leanprover-community/lean4-mode",
       "url": "https://github.com/leanprover-community/lean4-mode",
       "week": {
@@ -2721,134 +2721,6 @@
         "reviews": 0,
         "issues": 0,
         "total": 4
-      }
-    },
-    {
-      "name": "dannywillems/vim-tips",
-      "url": "https://github.com/dannywillems/vim-tips",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 3,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 3
-      },
-      "year": {
-        "commits": 3,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 3
-      }
-    },
-    {
-      "name": "zkry/yaml.el",
-      "url": "https://github.com/zkry/yaml.el",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 2,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 3
-      },
-      "year": {
-        "commits": 2,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 3
-      }
-    },
-    {
-      "name": "noctuid/annalist.el",
-      "url": "https://github.com/noctuid/annalist.el",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 2,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 3
-      },
-      "year": {
-        "commits": 2,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 3
-      }
-    },
-    {
-      "name": "atomontage/xterm-color",
-      "url": "https://github.com/atomontage/xterm-color",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 2,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 3
-      },
-      "year": {
-        "commits": 2,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 3
       }
     },
     {
@@ -2910,6 +2782,134 @@
       "year": {
         "commits": 3,
         "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 3
+      }
+    },
+    {
+      "name": "dannywillems/vim-tips",
+      "url": "https://github.com/dannywillems/vim-tips",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 3,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 3
+      }
+    },
+    {
+      "name": "noctuid/annalist.el",
+      "url": "https://github.com/noctuid/annalist.el",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 2,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 3
+      }
+    },
+    {
+      "name": "zkry/yaml.el",
+      "url": "https://github.com/zkry/yaml.el",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 2,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 3
+      }
+    },
+    {
+      "name": "atomontage/xterm-color",
+      "url": "https://github.com/atomontage/xterm-color",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 2,
+        "prs": 1,
         "reviews": 0,
         "issues": 0,
         "total": 3
@@ -3016,10 +3016,10 @@
       "url": "https://github.com/daira/ironwood",
       "week": {
         "commits": 0,
-        "prs": 1,
-        "reviews": 1,
+        "prs": 0,
+        "reviews": 0,
         "issues": 0,
-        "total": 2
+        "total": 0
       },
       "month": {
         "commits": 0,
@@ -3076,40 +3076,8 @@
       }
     },
     {
-      "name": "ocaml/merlin",
-      "url": "https://github.com/ocaml/merlin",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 1,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 2
-      },
-      "year": {
-        "commits": 1,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 2
-      }
-    },
-    {
-      "name": "jasonm23/autothemer",
-      "url": "https://github.com/jasonm23/autothemer",
+      "name": "zcash/schemerz",
+      "url": "https://github.com/zcash/schemerz",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -3142,38 +3110,6 @@
     {
       "name": "zcash/zcash-devtool",
       "url": "https://github.com/zcash/zcash-devtool",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 1,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 2
-      },
-      "year": {
-        "commits": 1,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 2
-      }
-    },
-    {
-      "name": "zcash/schemerz",
-      "url": "https://github.com/zcash/schemerz",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -3396,6 +3332,70 @@
       }
     },
     {
+      "name": "jasonm23/autothemer",
+      "url": "https://github.com/jasonm23/autothemer",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 1,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 2
+      }
+    },
+    {
+      "name": "ocaml/merlin",
+      "url": "https://github.com/ocaml/merlin",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 1,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 2
+      }
+    },
+    {
       "name": "ShieldedLabs/crosslink_monolith",
       "url": "https://github.com/ShieldedLabs/crosslink_monolith",
       "week": {
@@ -3424,6 +3424,38 @@
         "prs": 2,
         "reviews": 0,
         "issues": 0,
+        "total": 2
+      }
+    },
+    {
+      "name": "henryiii/check-sdist",
+      "url": "https://github.com/henryiii/check-sdist",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 1,
         "total": 2
       }
     },
@@ -3460,35 +3492,99 @@
       }
     },
     {
-      "name": "henryiii/check-sdist",
-      "url": "https://github.com/henryiii/check-sdist",
+      "name": "LeakIX/l9format",
+      "url": "https://github.com/LeakIX/l9format",
       "week": {
         "commits": 0,
-        "prs": 0,
+        "prs": 1,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 1
       },
       "month": {
         "commits": 0,
-        "prs": 0,
+        "prs": 1,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 1
       },
       "quarter": {
         "commits": 0,
-        "prs": 0,
+        "prs": 1,
         "reviews": 0,
         "issues": 0,
-        "total": 0
+        "total": 1
       },
       "year": {
         "commits": 0,
         "prs": 1,
         "reviews": 0,
-        "issues": 1,
-        "total": 2
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "LeakIX/yql-elastic",
+      "url": "https://github.com/LeakIX/yql-elastic",
+      "week": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      },
+      "month": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "LeakIX/go-emaildecoder",
+      "url": "https://github.com/LeakIX/go-emaildecoder",
+      "week": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      },
+      "month": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
       }
     },
     {
@@ -3582,550 +3678,6 @@
       "year": {
         "commits": 1,
         "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "dannywillems-fork/sage-shell-mode",
-      "url": "https://github.com/dannywillems-fork/sage-shell-mode",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "rust-lang/rust-mode",
-      "url": "https://github.com/rust-lang/rust-mode",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "sagemath/sage-shell-mode",
-      "url": "https://github.com/sagemath/sage-shell-mode",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "kiwanami/emacs-deferred",
-      "url": "https://github.com/kiwanami/emacs-deferred",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "deb0ch/emacs-winum",
-      "url": "https://github.com/deb0ch/emacs-winum",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "noctuid/general.el",
-      "url": "https://github.com/noctuid/general.el",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "tumashu/posframe",
-      "url": "https://github.com/tumashu/posframe",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "org-roam/org-roam",
-      "url": "https://github.com/org-roam/org-roam",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "ocaml/caml-mode",
-      "url": "https://github.com/ocaml/caml-mode",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "dannywillems-fork/rust-mode",
-      "url": "https://github.com/dannywillems-fork/rust-mode",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "dannywillems-fork/imenu-list",
-      "url": "https://github.com/dannywillems-fork/imenu-list",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "bmag/imenu-list",
-      "url": "https://github.com/bmag/imenu-list",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "linktohack/evil-commentary",
-      "url": "https://github.com/linktohack/evil-commentary",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "dannywillems-fork/autothemer",
-      "url": "https://github.com/dannywillems-fork/autothemer",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "emacs-evil/evil-surround",
-      "url": "https://github.com/emacs-evil/evil-surround",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "str4d/rage",
-      "url": "https://github.com/str4d/rage",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "Chlup/ZODLIronwoodMigrationRust",
-      "url": "https://github.com/Chlup/ZODLIronwoodMigrationRust",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
         "reviews": 0,
         "issues": 0,
         "total": 1
@@ -4228,8 +3780,8 @@
       }
     },
     {
-      "name": "emacs-rustic/rustic",
-      "url": "https://github.com/emacs-rustic/rustic",
+      "name": "Chlup/ZODLIronwoodMigrationRust",
+      "url": "https://github.com/Chlup/ZODLIronwoodMigrationRust",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -4260,8 +3812,8 @@
       }
     },
     {
-      "name": "Fuco1/smartparens",
-      "url": "https://github.com/Fuco1/smartparens",
+      "name": "str4d/rage",
+      "url": "https://github.com/str4d/rage",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -4288,102 +3840,6 @@
         "prs": 1,
         "reviews": 0,
         "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "brotzeit/rustic",
-      "url": "https://github.com/brotzeit/rustic",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "ocaml/dune",
-      "url": "https://github.com/ocaml/dune",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 1,
-        "reviews": 0,
-        "issues": 0,
-        "total": 1
-      }
-    },
-    {
-      "name": "magit/forge",
-      "url": "https://github.com/magit/forge",
-      "week": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "month": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 0,
-        "total": 0
-      },
-      "quarter": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 1,
-        "total": 1
-      },
-      "year": {
-        "commits": 0,
-        "prs": 0,
-        "reviews": 0,
-        "issues": 1,
         "total": 1
       }
     },
@@ -4612,6 +4068,38 @@
       }
     },
     {
+      "name": "nymtech/sphinx",
+      "url": "https://github.com/nymtech/sphinx",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
       "name": "nymtech/nym",
       "url": "https://github.com/nymtech/nym",
       "week": {
@@ -4644,8 +4132,72 @@
       }
     },
     {
-      "name": "nymtech/sphinx",
-      "url": "https://github.com/nymtech/sphinx",
+      "name": "dannywillems-fork/autothemer",
+      "url": "https://github.com/dannywillems-fork/autothemer",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "emacs-evil/evil-surround",
+      "url": "https://github.com/emacs-evil/evil-surround",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "dannywillems/crosslink_monolith",
+      "url": "https://github.com/dannywillems/crosslink_monolith",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -4740,8 +4292,8 @@
       }
     },
     {
-      "name": "dannywillems/crosslink_monolith",
-      "url": "https://github.com/dannywillems/crosslink_monolith",
+      "name": "linktohack/evil-commentary",
+      "url": "https://github.com/linktohack/evil-commentary",
       "week": {
         "commits": 0,
         "prs": 0,
@@ -4768,6 +4320,550 @@
         "prs": 1,
         "reviews": 0,
         "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "bmag/imenu-list",
+      "url": "https://github.com/bmag/imenu-list",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "dannywillems-fork/imenu-list",
+      "url": "https://github.com/dannywillems-fork/imenu-list",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "dannywillems-fork/rust-mode",
+      "url": "https://github.com/dannywillems-fork/rust-mode",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "ocaml/caml-mode",
+      "url": "https://github.com/ocaml/caml-mode",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "dannywillems-fork/sage-shell-mode",
+      "url": "https://github.com/dannywillems-fork/sage-shell-mode",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "rust-lang/rust-mode",
+      "url": "https://github.com/rust-lang/rust-mode",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "sagemath/sage-shell-mode",
+      "url": "https://github.com/sagemath/sage-shell-mode",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "kiwanami/emacs-deferred",
+      "url": "https://github.com/kiwanami/emacs-deferred",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "deb0ch/emacs-winum",
+      "url": "https://github.com/deb0ch/emacs-winum",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "noctuid/general.el",
+      "url": "https://github.com/noctuid/general.el",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "tumashu/posframe",
+      "url": "https://github.com/tumashu/posframe",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "org-roam/org-roam",
+      "url": "https://github.com/org-roam/org-roam",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "ocaml/dune",
+      "url": "https://github.com/ocaml/dune",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "brotzeit/rustic",
+      "url": "https://github.com/brotzeit/rustic",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "Fuco1/smartparens",
+      "url": "https://github.com/Fuco1/smartparens",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "emacs-rustic/rustic",
+      "url": "https://github.com/emacs-rustic/rustic",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 1,
+        "reviews": 0,
+        "issues": 0,
+        "total": 1
+      }
+    },
+    {
+      "name": "magit/forge",
+      "url": "https://github.com/magit/forge",
+      "week": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "month": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "quarter": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 0,
+        "total": 0
+      },
+      "year": {
+        "commits": 0,
+        "prs": 0,
+        "reviews": 0,
+        "issues": 1,
         "total": 1
       }
     },
