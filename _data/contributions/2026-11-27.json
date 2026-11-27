@@ -1,0 +1,38 @@
+{
+  "updated_at": "2026-11-27T16:23:10.357014Z",
+  "totals": {
+    "week": {
+      "commits": 0,
+      "prs": 0,
+      "reviews": 0,
+      "issues": 0,
+      "repos_contributed": 0,
+      "total": 0
+    },
+    "month": {
+      "commits": 0,
+      "prs": 0,
+      "reviews": 0,
+      "issues": 0,
+      "repos_contributed": 0,
+      "total": 0
+    },
+    "quarter": {
+      "commits": 0,
+      "prs": 0,
+      "reviews": 0,
+      "issues": 0,
+      "repos_contributed": 0,
+      "total": 0
+    },
+    "year": {
+      "commits": 0,
+      "prs": 0,
+      "reviews": 0,
+      "issues": 0,
+      "repos_contributed": 0,
+      "total": 0
+    }
+  },
+  "repositories": []
+}
